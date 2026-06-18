@@ -339,13 +339,13 @@
 			}]
 			tasks: [
 				{
-					count: 64L
+					count: 32L
 					id: "01C3AA6513BF178E"
 					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 64L
+					count: 32L
 					id: "0A8947163D5614E8"
 					item: "minecraft:light_gray_wool"
 					type: "item"
@@ -625,15 +625,15 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 32L
 					id: "00F4B5BB765A312B"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 32L
 					id: "2E6C7F4A8C836D98"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
@@ -874,13 +874,13 @@
 			}]
 			tasks: [
 				{
-					count: 64L
+					count: 48L
 					id: "1A320ABD03F9019B"
 					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 64L
+					count: 48L
 					id: "7FB8018D18B3EF6A"
 					item: "minecraft:light_gray_wool"
 					type: "item"
@@ -937,13 +937,13 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "50A136283ED83AA1"
 					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "488EEBB0535FBDDD"
 					item: "minecraft:light_gray_wool"
 					type: "item"
@@ -1007,13 +1007,13 @@
 			}]
 			tasks: [
 				{
-					count: 256L
+					count: 64L
 					id: "1E43B6291B08794D"
 					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 256L
+					count: 64L
 					id: "4321D28F3A09E339"
 					item: "minecraft:red_wool"
 					type: "item"
