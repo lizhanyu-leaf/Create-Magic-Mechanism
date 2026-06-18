@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "north":    "kubejs:block/andesite_mechine_front",
+        "east":     "create:block/andesite_casing",
+        "south":    "create:block/andesite_casing",
+        "west":     "create:block/andesite_casing",
+        "up":       "create:block/andesite_casing",
+        "down":     "create:block/andesite_casing",
+        "particle": "create:block/andesite_casing"
+    }
+}

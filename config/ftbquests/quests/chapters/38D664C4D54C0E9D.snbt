@@ -1,0 +1,264 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "38D664C4D54C0E9D"
+	group: "76AE7F0DD0D55C7E"
+	icon: "create_sa:brass_cube"
+	id: "38D664C4D54C0E9D"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{image:kubejs:textures/ftbquest/1/redstone_sheet_advanced.png width:188 height:123 align:center}"]
+			icon: "kubejs:redstone_sheet"
+			id: "2530ECE605F54677"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "6AF8F852B10CC475"
+				team_reward: true
+				title: "{cmm.tech.redstone_sheet_advanced}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 32L
+					id: "2CD5AA417A9A2E20"
+					item: { Count: 32, id: "create:precision_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "5A36B13EE21F61A5"
+					item: { Count: 64, id: "kubejs:redstone_precision_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "3C9F724FAE6DDEE7"
+					item: { Count: 256, id: "kubejs:slime_mechanism" }
+					type: "item"
+				}
+			]
+			title: "{cmm.tech.redstone_sheet_advanced}"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: ["{image:kubejs:textures/ftbquest/1/precision_mechanism_2_advanced.png width:188 height:123 align:center}"]
+			icon: "kubejs:precision_mechanism_2"
+			id: "088BA9AFE55F81AC"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "53EA3419BC932A84"
+				team_reward: true
+				title: "{cmm.tech.precision_mechanism_2_advanced}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "3A1702F217144692"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "57CD7B71EEAF56DC"
+					item: { Count: 32, id: "kubejs:redstone_precision_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 128L
+					id: "5E26D21DB0282A9E"
+					item: { Count: 128, id: "kubejs:slime_mechanism" }
+					type: "item"
+				}
+			]
+			title: "{cmm.tech.precision_mechanism_2_advanced}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["{image:kubejs:textures/ftbquest/1/redstone_precision_mechanism_laser_cutting_recipe.png width:184 height:94 align:center}"]
+			icon: "kubejs:redstone_precision_mechanism"
+			id: "2950D9299BDC4B79"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "6EE640CE65C5D1D3"
+				team_reward: true
+				title: "{cmm.tech.redstone_precision_mechanism_laser_cutting_recipe}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 512L
+					id: "7A0C99DA0DFD483A"
+					item: { Count: 32, id: "kubejs:redstone_precision_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "68C59DA2809B0D8D"
+					item: { Count: 256, id: "kubejs:colorful_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "6EE08AF21DE61435"
+					item: { Count: 256, id: "create:precision_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "66F0472B34B4050B"
+					item: { Count: 256, id: "kubejs:sturdy_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 512L
+					id: "5389D4CB27B761A3"
+					item: { Count: 512, id: "kubejs:precision_mechanism_3" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6CF6BEF1ECE22BFA"
+					item: "kubejs:magic_mechanism"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 512L
+					id: "7D364CAE09F988F6"
+					item: { Count: 512, id: "kubejs:slime_mechanism" }
+					type: "item"
+				}
+			]
+			title: "{cmm.tech.redstone_precision_mechanism_laser_cutting_recipe}"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			description: ["{image:kubejs:textures/ftbquest/1/sturdy_sheet_simple_recipe.png width:185 height:110 align:center}"]
+			icon: "create:sturdy_sheet"
+			id: "05C93068EAEBD4A9"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "06B0A75BEB9D8C9E"
+				team_reward: true
+				title: "{cmm.tech.sturdy_sheet_simple_recipe}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "1F77121B36423A59"
+					item: "kubejs:sturdy_mechanism"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "710DA28CC19EAE09"
+					item: "kubejs:colorful_mechanism"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "05F2630199B163B6"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+			]
+			title: "{cmm.tech.sturdy_sheet_simple_recipe}"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: ["{image:kubejs:textures/ftbquest/1/electron_tube_advanced.png width:188 height:123 align:center}"]
+			icon: "create:electron_tube"
+			id: "1853584FF67511A7"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "5CBFA5EEFE60F599"
+				team_reward: true
+				title: "{cmm.tech.electron_tube_advanced}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "79D30ED8DEE0D725"
+					item: { Count: 128, id: "kubejs:colorful_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "39A8F50DDB08EBA6"
+					item: { Count: 256, id: "kubejs:redstone_precision_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "7192B9D709650FF9"
+					item: { Count: 64, id: "kubejs:slime_mechanism" }
+					type: "item"
+				}
+			]
+			title: "{cmm.tech.electron_tube_advanced}"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:kubejs:textures/ftbquest/1/bedrock_advanced_1.png width:184 height:68 align:center}"
+				"{image:kubejs:textures/ftbquest/1/bedrock_advanced_2.png width:185 height:78 align:center}"
+			]
+			icon: "minecraft:bedrock"
+			id: "23758CC2F209D105"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "5E7E166F164836B6"
+				team_reward: true
+				title: "{cmm.tech.bedrock_advanced}"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 512L
+					id: "05D703E43B160EE5"
+					item: "kubejs:sturdy_mechanism"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 512L
+					id: "7F97310D049A6689"
+					item: { Count: 512, id: "kubejs:blaze_mechanism" }
+					type: "item"
+				}
+			]
+			title: "{cmm.tech.bedrock_advanced}"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "{cmm.chapter.simplified_crafting}"
+}

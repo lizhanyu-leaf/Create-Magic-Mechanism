@@ -1,0 +1,2497 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5FAF5CCDBD76A08F"
+	group: "76AE7F0DD0D55C7E"
+	icon: "kubejs:redstone_sheet"
+	id: "5FAF5CCDBD76A08F"
+	images: [
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.5d
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 14.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 16.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 17.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 180.0d
+			width: 1.5d
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -90.0d
+			width: 1.5d
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.5d
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 16.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 15.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 14.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 17.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 18.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 11.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.5d
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -45.0d
+			width: 1.5d
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.5d
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.5d
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.5d
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.5d
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -22.5d
+			width: 1.5d
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 9.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 12.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 14.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 11.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 15.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 4.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"79DB35B520CADD07"
+				"3BEFDC66E64CB24A"
+			]
+			hide_dependent_lines: true
+			id: "5FF6AB182B5D55E8"
+			tasks: [{
+				id: "010038B3254EFD44"
+				item: "kubejs:redstone_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "79DB35B520CADD07"
+			tasks: [{
+				id: "471A718742A788D2"
+				item: "kubejs:charging_iron_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"5FF6AB182B5D55E8"
+				"6C4F63A866610703"
+			]
+			hide_dependent_lines: true
+			id: "6116238290294823"
+			rewards: [{
+				id: "30C4EBDBC5F4447D"
+				item: "minecraft:diamond"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C9B7FADB9AE75CA"
+				item: "kubejs:redstone_precision_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"70F9CBB8D8D56C1A"
+				"0D1C2B6D008398C6"
+			]
+			hide_dependent_lines: true
+			id: "6C4F63A866610703"
+			rewards: [{
+				count: 64
+				id: "7BCB4B755378EEED"
+				item: "create:polished_rose_quartz"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "4FC288D673E3BCB0"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["54C4C63FC5FB5CA4"]
+			hide_dependent_lines: true
+			id: "70F9CBB8D8D56C1A"
+			rewards: [{
+				id: "1D5627699AC2CAE8"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C93A104B57743FC"
+				item: "kubejs:slime_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "54C4C63FC5FB5CA4"
+			tasks: [{
+				id: "0EDD1867D76963D7"
+				item: "createaddition:seed_oil_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6116238290294823"
+				"62507DF3243DA97F"
+				"2789040FC529AA2E"
+				"7C4894C1DF1DE576"
+				"3A70F33C98E8AAC6"
+				"1AF29FC731307206"
+				"57571BC0F514FB07"
+				"5D7C6E8652BCF361"
+				"074085DB9074C543"
+				"4D44D4A5BA6FE441"
+				"784216103B0A5C8A"
+				"218B03FC0220BB05"
+				"3A9A1E0AC86B0328"
+				"5ED283EC8337E17C"
+				"1F30EDA3C2C56DE1"
+				"45FE2208A4546E5E"
+				"7FC1908F12FF8E4F"
+			]
+			hide_dependent_lines: true
+			id: "31A1DC36D121BCB1"
+			tasks: [{
+				id: "5616A9B557CB3073"
+				item: "kubejs:colorful_mechanism"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "7CE4512E68D92871"
+			shape: "rsquare"
+			tasks: [{
+				id: "0ED9973BBD88F204"
+				item: "minecraft:white_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "1E2F3E72B1AAEDA4"
+			shape: "rsquare"
+			tasks: [{
+				id: "78D4E4E90045BB0F"
+				item: "minecraft:light_gray_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "5DE7A2E137290A7A"
+			tasks: [{
+				id: "5B08BF39ECDCC4DB"
+				item: "minecraft:gray_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "1F11CB137BFA161A"
+			tasks: [{
+				id: "2CF181C2806CE6DB"
+				item: "minecraft:black_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "0169C3E1EE4C5EC2"
+			tasks: [{
+				id: "39D25D023BAD1162"
+				item: "minecraft:brown_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "4D52919BFDCBB804"
+			tasks: [{
+				id: "66EBC50FC15F9053"
+				item: "minecraft:red_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "7726B5620365EB3F"
+			tasks: [{
+				id: "58E72CC9168C7817"
+				item: "minecraft:orange_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "34DB1CE5C2AAF7A4"
+			tasks: [{
+				id: "185CD3A586825C01"
+				item: "minecraft:yellow_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "1B9C0CF8D0EB79BF"
+			tasks: [{
+				id: "5AB7022BB26D2D1C"
+				item: "minecraft:lime_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "5E081ADADC31E45E"
+			tasks: [{
+				id: "7D38B69AFCC26C0F"
+				item: "minecraft:green_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "7FBA85718D0E196C"
+			tasks: [{
+				id: "130A53511C8D42ED"
+				item: "minecraft:cyan_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "66AB811E1E70F95F"
+			tasks: [{
+				id: "19E8724EE1D502B7"
+				item: "minecraft:light_blue_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "5F02B559CF536097"
+			tasks: [{
+				id: "414709EDC2145BE9"
+				item: "minecraft:blue_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "091F5E8C9F5FF66D"
+			tasks: [{
+				id: "2E7EFA039BFB824E"
+				item: "minecraft:purple_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "0E71F6CCDCE268BE"
+			tasks: [{
+				id: "7CF26EA8EC985128"
+				item: "minecraft:magenta_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["657F5F3D95EF55EE"]
+			hide_dependent_lines: true
+			id: "1D88FC64A4257483"
+			tasks: [{
+				id: "63E805BF44AEB8E4"
+				item: "minecraft:pink_dye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["7CE4512E68D92871"]
+			hide_dependent_lines: true
+			id: "3A9A1E0AC86B0328"
+			tasks: [{
+				id: "1E4DAB6BDFEA07D5"
+				item: "kubejs:white_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E2F3E72B1AAEDA4"]
+			hide_dependent_lines: true
+			id: "784216103B0A5C8A"
+			tasks: [{
+				id: "0D25E17A6D7D2E53"
+				item: "kubejs:light_gray_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5DE7A2E137290A7A"]
+			hide_dependent_lines: true
+			id: "7C4894C1DF1DE576"
+			tasks: [{
+				id: "59FB2E8B67BD27D6"
+				item: "kubejs:gray_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1F11CB137BFA161A"]
+			hide_dependent_lines: true
+			id: "1AF29FC731307206"
+			tasks: [{
+				id: "068DD4A956B06981"
+				item: "kubejs:black_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0169C3E1EE4C5EC2"]
+			hide_dependent_lines: true
+			id: "45FE2208A4546E5E"
+			tasks: [{
+				id: "4F3BCD4335142792"
+				item: "kubejs:brown_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4D52919BFDCBB804"]
+			hide_dependent_lines: true
+			id: "5ED283EC8337E17C"
+			tasks: [{
+				id: "15C08514A182D688"
+				item: "kubejs:red_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7726B5620365EB3F"]
+			hide_dependent_lines: true
+			id: "218B03FC0220BB05"
+			tasks: [{
+				id: "53319388BA8D8047"
+				item: "kubejs:orange_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["34DB1CE5C2AAF7A4"]
+			hide_dependent_lines: true
+			id: "1F30EDA3C2C56DE1"
+			tasks: [{
+				id: "0902831039055DA8"
+				item: "kubejs:yellow_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1B9C0CF8D0EB79BF"]
+			hide_dependent_lines: true
+			id: "3A70F33C98E8AAC6"
+			tasks: [{
+				id: "0A7A83F846D4F476"
+				item: "kubejs:lime_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5E081ADADC31E45E"]
+			hide_dependent_lines: true
+			id: "62507DF3243DA97F"
+			tasks: [{
+				id: "414B732C37E63589"
+				item: "kubejs:green_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7FBA85718D0E196C"]
+			hide_dependent_lines: true
+			id: "7FC1908F12FF8E4F"
+			tasks: [{
+				id: "6B5CB8C4D25EDD1C"
+				item: "kubejs:cyan_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["66AB811E1E70F95F"]
+			hide_dependent_lines: true
+			id: "074085DB9074C543"
+			tasks: [{
+				id: "23BAB43BA5481B80"
+				item: "kubejs:light_blue_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5F02B559CF536097"]
+			hide_dependent_lines: true
+			id: "57571BC0F514FB07"
+			tasks: [{
+				id: "76723D5DF9702398"
+				item: "kubejs:blue_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["091F5E8C9F5FF66D"]
+			hide_dependent_lines: true
+			id: "5D7C6E8652BCF361"
+			tasks: [{
+				id: "07039A07E08E7F9F"
+				item: "kubejs:purple_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0E71F6CCDCE268BE"]
+			hide_dependent_lines: true
+			id: "4D44D4A5BA6FE441"
+			tasks: [{
+				id: "48682722F0F7F1F9"
+				item: "kubejs:magenta_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["1D88FC64A4257483"]
+			hide_dependent_lines: true
+			id: "2789040FC529AA2E"
+			tasks: [{
+				id: "0EE194FCF57D9D17"
+				item: "kubejs:pink_dye_diluent_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["31A1DC36D121BCB1"]
+			hide_dependent_lines: true
+			id: "719FDDECB0609505"
+			tasks: [{
+				id: "18C50F6FEB2D72C3"
+				item: "kubejs:iridescent_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3A9A1E0AC86B0328"
+				"719FDDECB0609505"
+			]
+			id: "6B9D4F98CAF17BA7"
+			tasks: [{
+				id: "2A0E444372D9C4BC"
+				item: "kubejs:white_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"784216103B0A5C8A"
+				"719FDDECB0609505"
+			]
+			id: "5C14F3D10C30194B"
+			tasks: [{
+				id: "05B1EBCF4F30CA85"
+				item: "kubejs:light_gray_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7C4894C1DF1DE576"
+				"719FDDECB0609505"
+			]
+			id: "3146718F1D9BE2F6"
+			tasks: [{
+				id: "54FDB7E50B663079"
+				item: "kubejs:gray_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1AF29FC731307206"
+				"719FDDECB0609505"
+			]
+			id: "171C3BA601B00E1C"
+			tasks: [{
+				id: "563233112401FBDD"
+				item: "kubejs:black_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"45FE2208A4546E5E"
+				"719FDDECB0609505"
+			]
+			id: "283E42DA1CD3CFDE"
+			tasks: [{
+				id: "0A3E2954846991CC"
+				item: "kubejs:brown_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"5ED283EC8337E17C"
+				"719FDDECB0609505"
+			]
+			id: "73A9F6AB606A6B58"
+			tasks: [{
+				id: "4E009F20AE1C0754"
+				item: "kubejs:red_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"218B03FC0220BB05"
+				"719FDDECB0609505"
+			]
+			id: "0B680F6F21E42C9A"
+			tasks: [{
+				id: "5CE643E4E1C5F045"
+				item: "kubejs:orange_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1F30EDA3C2C56DE1"
+				"719FDDECB0609505"
+			]
+			id: "614731E1C13C1E0B"
+			tasks: [{
+				id: "724A8524393C20DC"
+				item: "kubejs:yellow_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"3A70F33C98E8AAC6"
+				"719FDDECB0609505"
+			]
+			id: "5C743D4831EC23A6"
+			tasks: [{
+				id: "25AC02B26F4227F5"
+				item: "kubejs:lime_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"62507DF3243DA97F"
+				"719FDDECB0609505"
+			]
+			id: "0B95903B72DA0254"
+			tasks: [{
+				id: "23217AC772C5AF8C"
+				item: "kubejs:green_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"7FC1908F12FF8E4F"
+				"719FDDECB0609505"
+			]
+			id: "541C9A08CC79C369"
+			tasks: [{
+				id: "094201D3643F27AA"
+				item: "kubejs:cyan_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"074085DB9074C543"
+				"719FDDECB0609505"
+			]
+			id: "04DF0E635E61F6E3"
+			tasks: [{
+				id: "296460776055C075"
+				item: "kubejs:light_blue_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"57571BC0F514FB07"
+				"719FDDECB0609505"
+			]
+			id: "1372635968A9A4A5"
+			tasks: [{
+				id: "09A6657EDD26AE0A"
+				item: "kubejs:blue_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"5D7C6E8652BCF361"
+				"719FDDECB0609505"
+			]
+			id: "1B1E2CB66C49FCF6"
+			tasks: [{
+				id: "5C1CD387AC9594CF"
+				item: "kubejs:purple_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"4D44D4A5BA6FE441"
+				"719FDDECB0609505"
+			]
+			id: "704AE1931768B8CF"
+			tasks: [{
+				id: "04E8A5D0926A6A36"
+				item: "kubejs:magenta_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"2789040FC529AA2E"
+				"719FDDECB0609505"
+			]
+			id: "0164C6E3CECDD601"
+			tasks: [{
+				id: "6A28E8BD60E915FE"
+				item: "kubejs:pink_dye_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"6B9D4F98CAF17BA7"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "50CD4B09F2CA60F0"
+			tasks: [{
+				id: "1D38117DEC86534A"
+				item: "kubejs:refined_white_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5C14F3D10C30194B"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "7A62A2F91BF823BC"
+			tasks: [{
+				id: "0D9A7D8023AB0A19"
+				item: "kubejs:refined_light_gray_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3146718F1D9BE2F6"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "3AE5CDFC639FB10A"
+			tasks: [{
+				id: "3B3C899B69AC56FF"
+				item: "kubejs:refined_gray_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"171C3BA601B00E1C"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "47D1FD4FAE362ADA"
+			tasks: [{
+				id: "12D79AFE9822F2F8"
+				item: "kubejs:refined_black_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"283E42DA1CD3CFDE"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "59C2FE4930A8D65C"
+			tasks: [{
+				id: "7BF1B916786F9905"
+				item: "kubejs:refined_brown_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0B680F6F21E42C9A"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "21F19844EA79D7C2"
+			tasks: [{
+				id: "084FCB30A5F09CF8"
+				item: "kubejs:refined_orange_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"73A9F6AB606A6B58"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "5C08C312DAE0A8CA"
+			tasks: [{
+				id: "539B8C63EEF99B8F"
+				item: "kubejs:refined_red_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"614731E1C13C1E0B"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "4E1A074502047EF2"
+			tasks: [{
+				id: "25E5A652C0F2683C"
+				item: "kubejs:refined_yellow_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"5C743D4831EC23A6"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "412F984533282AC2"
+			tasks: [{
+				id: "3B803E5AD40D1963"
+				item: "kubejs:refined_lime_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"0B95903B72DA0254"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "7B55B29448817A0E"
+			tasks: [{
+				id: "66431D530EF0DF24"
+				item: "kubejs:refined_green_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"541C9A08CC79C369"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "797E2837253479F4"
+			tasks: [{
+				id: "315640B7B5B5045A"
+				item: "kubejs:refined_cyan_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"04DF0E635E61F6E3"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "646D3AC3CFE88ABD"
+			tasks: [{
+				id: "33BF438DD5368A14"
+				item: "kubejs:refined_light_blue_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"1372635968A9A4A5"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "7F3705F3B3D33DAC"
+			tasks: [{
+				id: "7DA94B64319B2C1E"
+				item: "kubejs:refined_blue_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"1B1E2CB66C49FCF6"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "031CF7E0F1A0491C"
+			tasks: [{
+				id: "0362E4ABFD480FEE"
+				item: "kubejs:refined_purple_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"704AE1931768B8CF"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "43263F5980C9491F"
+			tasks: [{
+				id: "5BF6730AB764237C"
+				item: "kubejs:refined_magenta_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"0164C6E3CECDD601"
+				"31A1DC36D121BCB1"
+				"54C4C63FC5FB5CA4"
+			]
+			id: "1CB9A72F02E8175C"
+			tasks: [{
+				id: "12C924DCEA4EBF2D"
+				item: "kubejs:refined_pink_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["50CD4B09F2CA60F0"]
+			id: "340C50A146D32A37"
+			tasks: [{
+				id: "76DB99388D746DDA"
+				item: "kubejs:refined_white_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A62A2F91BF823BC"]
+			id: "20FD275979E444BC"
+			tasks: [{
+				id: "5445EE0C6F394C51"
+				item: "kubejs:refined_light_gray_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3AE5CDFC639FB10A"]
+			id: "6069AB299C333A7F"
+			tasks: [{
+				id: "6C74BAD2953F37D1"
+				item: "kubejs:refined_gray_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["47D1FD4FAE362ADA"]
+			id: "4D1BCF5F0573D8C4"
+			tasks: [{
+				id: "2D8F209B55720374"
+				item: "kubejs:refined_black_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["59C2FE4930A8D65C"]
+			id: "5897B0F47B19F67D"
+			tasks: [{
+				id: "16A59F17B2C0741A"
+				item: "kubejs:refined_brown_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5C08C312DAE0A8CA"]
+			id: "0BAD5CFA29465692"
+			tasks: [{
+				id: "66B57552D0399C89"
+				item: "kubejs:refined_red_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["21F19844EA79D7C2"]
+			id: "771DC9F854623AEF"
+			tasks: [{
+				id: "120D58ACB9E79196"
+				item: "kubejs:refined_orange_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4E1A074502047EF2"]
+			id: "1DEE6C59D50DCF76"
+			tasks: [{
+				id: "393F33C65BA70A3F"
+				item: "kubejs:refined_yellow_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["412F984533282AC2"]
+			id: "4C9351DF77813FE9"
+			tasks: [{
+				id: "5A595FD744D82F5E"
+				item: "kubejs:refined_lime_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7B55B29448817A0E"]
+			id: "60B069DB8223445C"
+			tasks: [{
+				id: "2466401D8B03AECB"
+				item: "kubejs:refined_green_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["797E2837253479F4"]
+			id: "26A66B1FA668FF49"
+			tasks: [{
+				id: "699A511D6C74BC4D"
+				item: "kubejs:refined_cyan_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["646D3AC3CFE88ABD"]
+			id: "0E5F0768779DAC4A"
+			tasks: [{
+				id: "0D59F499F5AABCA3"
+				item: "kubejs:refined_light_blue_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7F3705F3B3D33DAC"]
+			id: "007FBC2BC71A0D37"
+			tasks: [{
+				id: "048E7C0B5D099424"
+				item: "kubejs:refined_blue_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["031CF7E0F1A0491C"]
+			id: "2F8D1116EDEDAD38"
+			tasks: [{
+				id: "6D9B33D109AAA56A"
+				item: "kubejs:refined_purple_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["43263F5980C9491F"]
+			id: "1E878D0E07B7EA56"
+			tasks: [{
+				id: "24F64CAE2CD3758B"
+				item: "kubejs:refined_magenta_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["1CB9A72F02E8175C"]
+			id: "09B17EA2C1C5A909"
+			tasks: [{
+				id: "67379C4C547BB5D6"
+				item: "kubejs:refined_pink_dye"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"340C50A146D32A37"
+				"3A321F6F190281F6"
+			]
+			id: "203D385F080089E2"
+			tasks: [{
+				id: "6C2FC7E3AA399DED"
+				item: "kubejs:charged_white_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"20FD275979E444BC"
+				"3A321F6F190281F6"
+			]
+			id: "64BF974E2D7FF706"
+			tasks: [{
+				id: "48F3C975AEE4BFB1"
+				item: "kubejs:charged_light_gray_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6069AB299C333A7F"
+				"3A321F6F190281F6"
+			]
+			id: "710C13D7D8697DED"
+			tasks: [{
+				id: "3914B3B8FD32E707"
+				item: "kubejs:charged_gray_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4D1BCF5F0573D8C4"
+				"3A321F6F190281F6"
+			]
+			id: "69B69C1FBAD9F7C0"
+			tasks: [{
+				id: "0ACF73DEECA8D7A8"
+				item: "kubejs:charged_black_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5897B0F47B19F67D"
+				"3A321F6F190281F6"
+			]
+			id: "7284C13F949149DC"
+			tasks: [{
+				id: "3A49108453B55F5D"
+				item: "kubejs:charged_brown_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0BAD5CFA29465692"
+				"3A321F6F190281F6"
+			]
+			id: "23B2E50912399147"
+			tasks: [{
+				id: "2E0EB300054E473C"
+				item: "kubejs:charged_red_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"771DC9F854623AEF"
+				"3A321F6F190281F6"
+			]
+			id: "4FFE6CB582F0C538"
+			tasks: [{
+				id: "1A13632B48CC1464"
+				item: "kubejs:charged_orange_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1DEE6C59D50DCF76"
+				"3A321F6F190281F6"
+			]
+			id: "14E3E7571FDB16F9"
+			tasks: [{
+				id: "1F96C3096A84A8C7"
+				item: "kubejs:charged_yellow_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"4C9351DF77813FE9"
+				"3A321F6F190281F6"
+			]
+			id: "25B70990599B1B38"
+			tasks: [{
+				id: "4530FF624DB2D916"
+				item: "kubejs:charged_lime_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"60B069DB8223445C"
+				"3A321F6F190281F6"
+			]
+			id: "6CEA9EC8E0F5ACBB"
+			tasks: [{
+				id: "1A235548879E0F6C"
+				item: "kubejs:charged_green_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"26A66B1FA668FF49"
+				"3A321F6F190281F6"
+			]
+			id: "606CE27CAAC943FD"
+			tasks: [{
+				id: "02B759473731FC87"
+				item: "kubejs:charged_cyan_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"0E5F0768779DAC4A"
+				"3A321F6F190281F6"
+			]
+			id: "7AFCA615BFDC99E5"
+			tasks: [{
+				id: "56E6369C9F3909D0"
+				item: "kubejs:charged_light_blue_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"007FBC2BC71A0D37"
+				"3A321F6F190281F6"
+			]
+			id: "7C11821BED6E4F44"
+			tasks: [{
+				id: "7DCFCF3F3344452A"
+				item: "kubejs:charged_blue_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"2F8D1116EDEDAD38"
+				"3A321F6F190281F6"
+			]
+			id: "03F0393F66A6DFD0"
+			tasks: [{
+				id: "23D8C7F172E1E5D8"
+				item: "kubejs:charged_purple_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"1E878D0E07B7EA56"
+				"3A321F6F190281F6"
+			]
+			id: "6C42124A90F00159"
+			tasks: [{
+				id: "3A18D25E77E9D854"
+				item: "kubejs:charged_magenta_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"09B17EA2C1C5A909"
+				"3A321F6F190281F6"
+			]
+			id: "0DEB3DFFA2C34206"
+			tasks: [{
+				id: "77570116B9E9A8AC"
+				item: "kubejs:charged_pink_dye"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"203D385F080089E2"
+				"6116238290294823"
+			]
+			id: "714D87A355DC5894"
+			tasks: [{
+				id: "783E401B73E7A05E"
+				item: "kubejs:charged_white_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"710C13D7D8697DED"
+				"6116238290294823"
+			]
+			id: "10A21E8B1C12A2D7"
+			tasks: [{
+				id: "62620EE44E09F2C1"
+				item: "kubejs:charged_gray_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"64BF974E2D7FF706"
+				"6116238290294823"
+			]
+			hide_dependent_lines: true
+			id: "2C84BCF846BA42D9"
+			tasks: [{
+				id: "2C9667EA154E9EF1"
+				item: "kubejs:charged_light_gray_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"69B69C1FBAD9F7C0"
+				"6116238290294823"
+			]
+			hide_dependent_lines: true
+			id: "6F6DD51F5BE9220C"
+			tasks: [{
+				id: "4BF135B948641D63"
+				item: "kubejs:charged_black_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7284C13F949149DC"
+				"6116238290294823"
+			]
+			hide_dependent_lines: true
+			id: "79227EDB272B8315"
+			tasks: [{
+				id: "73CE46629C1B79E1"
+				item: "kubejs:charged_brown_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"23B2E50912399147"
+				"6116238290294823"
+			]
+			id: "735FF301CF190AEB"
+			tasks: [{
+				id: "3F49D836843C55CC"
+				item: "kubejs:charged_red_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4FFE6CB582F0C538"
+				"6116238290294823"
+			]
+			hide_dependent_lines: true
+			id: "552678E67FAA393A"
+			tasks: [{
+				id: "72D400922755A373"
+				item: "kubejs:charged_orange_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"14E3E7571FDB16F9"
+				"6116238290294823"
+			]
+			hide_dependent_lines: true
+			id: "44EF1792C6A9B1E1"
+			tasks: [{
+				id: "1B8405B2DFB44C52"
+				item: "kubejs:charged_yellow_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"25B70990599B1B38"
+				"6116238290294823"
+			]
+			hide_dependent_lines: true
+			id: "592997C2E5B7148F"
+			tasks: [{
+				id: "41AFC6778432FBF5"
+				item: "kubejs:charged_lime_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"6CEA9EC8E0F5ACBB"
+				"6116238290294823"
+			]
+			id: "373C9ECAD7F04572"
+			tasks: [{
+				id: "568B7F48B99DD3F6"
+				item: "kubejs:charged_green_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"606CE27CAAC943FD"
+				"6116238290294823"
+			]
+			id: "283C96F74D278BD4"
+			tasks: [{
+				id: "4BCE573A80DADFA5"
+				item: "kubejs:charged_cyan_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"7AFCA615BFDC99E5"
+				"6116238290294823"
+			]
+			hide_dependent_lines: true
+			id: "222F35243B6ED579"
+			tasks: [{
+				id: "276B438A88D0352C"
+				item: "kubejs:charged_light_blue_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"7C11821BED6E4F44"
+				"6116238290294823"
+			]
+			id: "411C4FFE1B1E2F14"
+			tasks: [{
+				id: "5A2E3E1BADBB42FF"
+				item: "kubejs:charged_blue_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"03F0393F66A6DFD0"
+				"6116238290294823"
+			]
+			id: "08D41D7725C535D7"
+			tasks: [{
+				id: "35A6BE65CE3F7CD4"
+				item: "kubejs:charged_purple_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"6C42124A90F00159"
+				"6116238290294823"
+			]
+			id: "0E1FE1256A63F52A"
+			tasks: [{
+				id: "242D9C1E4F8D7009"
+				item: "kubejs:charged_magenta_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"0DEB3DFFA2C34206"
+				"6116238290294823"
+			]
+			id: "11714B466CD35962"
+			tasks: [{
+				id: "1C2EB2A0C0DD6DA6"
+				item: "kubejs:charged_pink_dye_solution_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["552678E67FAA393A"]
+			hide_dependent_lines: true
+			id: "359141E8A84CE3D8"
+			tasks: [{
+				id: "208449C5DAE3E268"
+				item: "kubejs:blaze_mechanism"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5FF6AB182B5D55E8"
+				"091F5E8C9F5FF66D"
+			]
+			hide_dependent_lines: true
+			id: "3A321F6F190281F6"
+			tasks: [{
+				id: "139C4112F7B43164"
+				item: "kubejs:strange_potion_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6F6DD51F5BE9220C"]
+			hide_dependent_lines: true
+			id: "0ADF67978E1A2CB2"
+			tasks: [{
+				id: "61676034B5113E7F"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"0ADF67978E1A2CB2"
+				"3A321F6F190281F6"
+			]
+			hide_dependent_lines: true
+			id: "2DC54F1567D9A4AD"
+			tasks: [{
+				id: "0C5741903AE5DF1A"
+				item: "kubejs:bedrock_powder"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2DC54F1567D9A4AD"]
+			hide_dependent_lines: true
+			id: "6B19D9C1E4E49E68"
+			tasks: [{
+				id: "206B92C4864D9F5E"
+				item: "kubejs:sturdy_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6B19D9C1E4E49E68"
+				"359141E8A84CE3D8"
+				"2C84BCF846BA42D9"
+				"08FD69466BDA4EE1"
+				"79227EDB272B8315"
+			]
+			hide_dependent_lines: true
+			id: "465B3CD84943FC6B"
+			tasks: [{
+				id: "60C8F6BEFE03B94F"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "08FD69466BDA4EE1"
+			tasks: [{
+				id: "71B4DD431690F57B"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44EF1792C6A9B1E1"
+				"4D2FCF0CFF4D122A"
+				"5B97403F5EC3FFB1"
+			]
+			id: "1F87AC51BDEF7762"
+			rewards: [{
+				id: "1B444CCE4BE5E853"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 5.0d
+			tasks: [{
+				id: "1A3B5819A2499FFC"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["67106B17642F2302"]
+			hide_dependent_lines: true
+			id: "0D1C2B6D008398C6"
+			tasks: [{
+				id: "5527CB0FD0448472"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "67106B17642F2302"
+			tasks: [{
+				id: "20A72F4C5323EEED"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["359141E8A84CE3D8"]
+			hide_dependent_lines: true
+			id: "76FD69B427A4DE09"
+			tasks: [{
+				id: "11D7F19E073F0256"
+				item: "kubejs:heat_lava_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["465B3CD84943FC6B"]
+			hide_dependent_lines: true
+			id: "5B97403F5EC3FFB1"
+			tasks: [{
+				id: "0FAD11A1115EE879"
+				item: "kubejs:loose_precision_mechanism"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"76FD69B427A4DE09"
+				"222F35243B6ED579"
+			]
+			hide_dependent_lines: true
+			id: "4D2FCF0CFF4D122A"
+			tasks: [{
+				id: "0D20445DA7AF7233"
+				item: "kubejs:refrigerant_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			id: "62113E44550A0D0C"
+			tasks: [{
+				id: "57993C739F44C3FB"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			id: "2ABE1E1C548DB18A"
+			tasks: [{
+				id: "2755AB75A035F0A6"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			id: "7290B1148AE182EE"
+			tasks: [{
+				id: "783A43185A508C98"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			id: "7536D3624A97454C"
+			tasks: [{
+				id: "1B27CBD93284E9E8"
+				item: "minecraft:copper_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 9.0d
+		}
+		{
+			id: "0381D7EF7A389F8A"
+			tasks: [{
+				id: "4C7D32890D1D52C5"
+				item: "minecraft:emerald_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.0d
+		}
+		{
+			id: "458FEE3B0B098D16"
+			tasks: [{
+				id: "398980031786CBB9"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			id: "4DFB0FB2E13D97E7"
+			tasks: [{
+				id: "0816A3DF6ABF822D"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			id: "7AE491D65CE5EBBB"
+			tasks: [{
+				id: "341C89D8C06F3F54"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			id: "701D63685D4F1E63"
+			tasks: [{
+				id: "6BC12BA71A73A106"
+				item: "create:zinc_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 13.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "657F5F3D95EF55EE"
+			rewards: [
+				{
+					id: "4022B4D7356C976D"
+					item: "minecraft:rose_bush"
+					type: "item"
+				}
+				{
+					id: "406741681B2F4B84"
+					item: "minecraft:cocoa_beans"
+					type: "item"
+				}
+				{
+					id: "2BD1FF26933A0455"
+					item: "minecraft:sunflower"
+					type: "item"
+				}
+				{
+					id: "1D96F9A5C1D13405"
+					item: "minecraft:lilac"
+					type: "item"
+				}
+				{
+					id: "7084C3069D856EE2"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "118D296076C27038"
+					item: "minecraft:jungle_log"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "023129CDC686D2A4"
+				title: "颜料系统"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			id: "728143DE4EC782C9"
+			tasks: [{
+				id: "46D22559FE420D1A"
+				item: "create_dd:tin_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			id: "5B4CCD270443C292"
+			tasks: [{
+				id: "6EC039D92DF62FD6"
+				item: "create:brass_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 7.0d
+		}
+		{
+			id: "2AF24B930C0BB46F"
+			tasks: [{
+				id: "54E161EEE36AB77E"
+				item: "minecraft:lapis_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 15.0d
+		}
+	]
+	title: "{cmm.chapter.redstone_engineer}"
+}

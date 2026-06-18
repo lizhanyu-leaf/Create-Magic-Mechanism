@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "north": "kubejs:block/precise_mixer_off",
+        "east": "kubejs:block/precise_mixer_side_off",
+        "south": "kubejs:block/precise_mixer_side_off",
+        "west": "kubejs:block/precise_mixer_side_off",
+        "up": "kubejs:block/precise_mixer_top_off",
+        "down": "create:block/railway_casing",
+        "particle": "kubejs:block/precise_mixer_off"
+    }
+}

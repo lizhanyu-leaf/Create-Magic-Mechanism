@@ -1,0 +1,102 @@
+{
+    "name": "电力不稳定加工台",
+    "appearance": {
+    },
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "id": "input0",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input1",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input2",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:fluid",
+            "id": "tank1",
+            "mode": "input",
+            "capacity": 1000
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "output",
+            "mode": "output",
+            "capacity": 64
+        },
+        {
+            "capacity": 80000,
+            "type": "custommachinery:energy"
+        }
+    ],
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 125,
+            "y": 27,
+            "id": "input0"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 75,
+            "y": 27,
+            "id": "input1"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 93,
+            "y": 27,
+            "id": "input2"
+        },
+        {
+            "type": "custommachinery:fluid",
+            "x": 75,
+            "y": 48,
+            "id": "tank1"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 54,
+            "y": 32
+        },
+        {
+            "type": "custommachinery:progress",
+            "x": 125,
+            "y": 51
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 160,
+            "y": 50,
+            "id": "output"
+        },
+        {
+            "x": 47,
+            "y": 104,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        },
+        {
+            "text": "电力不稳定加工台",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        }
+    ]
+}

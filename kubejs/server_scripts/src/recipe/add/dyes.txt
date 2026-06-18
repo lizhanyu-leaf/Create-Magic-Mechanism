@@ -1,0 +1,81 @@
+ServerEvents.recipes(event => {
+    const { create, vintageimprovements } = event.recipes
+
+    function dye(dye, output_dye){
+        create.mixing(
+            [
+                output_dye,
+                'kubejs:colorful_mechanism'
+            ],
+            [
+                dye,
+                Fluid.of('minecraft:water', 200),
+                'kubejs:colorful_mechanism'
+            ]
+        ).heated().id(`kubejs:dyes/mixing_${dye.split(':')[1]}_to_${output_dye.split(':')[1]}`)
+
+        vintageimprovements.pressurizing(
+                '6x ' + output_dye,
+                [
+                    Fluid.of('kubejs:strange_potion', 100),
+                    output_dye,
+                    'minecraft:white_dye',
+                    Fluid.of('minecraft:water', 250)
+                ]
+            ).secondaryFluidInput(1).id(`kubejs:dyes/pressurizing_${output_dye.split(':')[1]}`)
+
+        if (output_dye != 'minecraft:white_dye'){        
+            create.deploying(
+                output_dye,
+                [
+                    'minecraft:white_dye',
+                    output_dye
+                ]
+            ).keepHeldItem()
+        }
+    }
+
+    
+
+    // 白 => 红
+    dye('minecraft:white_dye', 'minecraft:red_dye')
+    // 红 => 橙
+    dye('minecraft:red_dye', 'minecraft:orange_dye')
+    // 橙 => 黄
+    dye('minecraft:orange_dye', 'minecraft:yellow_dye')
+    // 黄 => 绿
+    dye('minecraft:yellow_dye', 'minecraft:green_dye')
+    // 绿 => 黄绿
+    dye('minecraft:green_dye', 'minecraft:lime_dye')
+    // 黄绿 => 青
+    dye('minecraft:lime_dye', 'minecraft:cyan_dye')
+    // 青 => 浅蓝
+    dye('minecraft:cyan_dye', 'minecraft:light_blue_dye')
+    // 浅蓝 => 蓝
+    dye('minecraft:cyan_dye', 'minecraft:blue_dye')
+    // 蓝 => 紫
+    dye('minecraft:blue_dye', 'minecraft:purple_dye')
+    // 紫 => 品红
+    dye('minecraft:purple_dye', 'minecraft:magenta_dye')
+    // 品红 => 粉
+    dye('minecraft:magenta_dye', 'minecraft:pink_dye')
+    // 粉 => 黑
+    dye('minecraft:pink_dye', 'minecraft:black_dye')
+    // 黑 => 灰
+    dye('minecraft:black_dye', 'minecraft:gray_dye')
+    // 灰 => 浅灰
+    dye('minecraft:gray_dye', 'minecraft:light_gray_dye')
+    // 浅灰 => 白
+    dye('minecraft:light_gray_dye', 'minecraft:white_dye')
+
+    vintageimprovements.pressurizing(
+        [
+            'minecraft:white_dye',
+            'kubejs:colorful_mechanism'
+        ],
+        [
+            Fluid.of('minecraft:water', 200),
+            'kubejs:colorful_mechanism'
+        ]
+    ).secondaryFluidInput(0).id('kubejs:dyes/pressurizing_white_dye_with_colorful_mechanism')
+})

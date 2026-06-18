@@ -1,0 +1,11 @@
+{
+    "type": "flowing_block",
+    "flowing": "#kubejs:strange_potion",
+    "blocks_nearby": [
+        "kubejs:slime"
+    ],
+    "result": {
+        "type": "block",
+        "block": "minecraft:slime_block"
+    }
+}

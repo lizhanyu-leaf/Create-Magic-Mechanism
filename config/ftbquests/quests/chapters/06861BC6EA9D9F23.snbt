@@ -1,0 +1,1180 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "06861BC6EA9D9F23"
+	group: ""
+	hide_quest_until_deps_visible: true
+	icon: "kubejs:technology_mechanism"
+	id: "06861BC6EA9D9F23"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "587A893DCCA16E37"
+			subtitle: "此章必选，否则进度无法推进"
+			tasks: [{
+				id: "603C6883766CA18D"
+				title: "？！科技？！"
+				type: "checkmark"
+			}]
+			title: "科技树"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3D8C312D47ABD26A"
+				"459E1E918D78B559"
+				"3E45D24BD2BC7902"
+				"1A92AC72B4670861"
+				"170F7B2EB81DF497"
+				"1C0E1782FFB4AF3A"
+				"6D8E4F67FAC24E76"
+				"18A88913C1458E38"
+				"4C5E80D1C707FAA5"
+				"587A893DCCA16E37"
+			]
+			hide_until_deps_complete: false
+			icon: "minecraft:brown_wool"
+			id: "4A9F9318880D3EB6"
+			rewards: [{
+				icon: "minecraft:brown_wool"
+				id: "126AD2B383950322"
+				team_reward: true
+				title: "科技: 机械科技包"
+				type: "custom"
+			}]
+			subtitle: "你的第一个科技包！"
+			tasks: [{
+				id: "601FD08EE813CAF8"
+				type: "checkmark"
+			}]
+			title: "机械科技包"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4A9F9318880D3EB6"
+				"6E4DA079AB1E7DAF"
+			]
+			description: [
+				"通过多次辊压，成功将一块黑曜石铸成圆柱状。"
+				""
+				"应该能发挥很多用处"
+			]
+			icon: "kubejs:precision_mechanism_1"
+			id: "63BC4506B9B36167"
+			rewards: [{
+				icon: "kubejs:incomplete_precision_mechanism_1"
+				id: "6A892AC95A4BA891"
+				team_reward: true
+				title: "科技: 解锁坚固旋钮"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 16L
+				id: "338898852C6B8F24"
+				item: "minecraft:brown_wool"
+				type: "item"
+			}]
+			title: "坚固旋钮"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["63BC4506B9B36167"]
+			icon: "create:andesite_funnel"
+			id: "239135E18354E25F"
+			rewards: [{
+				icon: "create:andesite_funnel"
+				id: "390C7AF447438BB1"
+				team_reward: true
+				title: "科技: 基础物流"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 16L
+				id: "5CC95B97820597BA"
+				item: "minecraft:brown_wool"
+				type: "item"
+			}]
+			title: "基础物流"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1B0EA8C65D242CE1"
+				"275F39771F606B44"
+			]
+			id: "0F697EE7DF6F80A7"
+			rewards: [{
+				icon: "minecraft:brown_wool"
+				id: "72F1E3A9705C0530"
+				team_reward: true
+				title: "科技: 机械科技包简化"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 128L
+				id: "652A4C7E381F3421"
+				item: { Count: 128, id: "minecraft:brown_wool" }
+				type: "item"
+			}]
+			title: "机械科技包简化"
+			x: 3.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["63BC4506B9B36167"]
+			icon: "create:gearbox"
+			id: "60D643EC7519B549"
+			rewards: [{
+				icon: "create:gearbox"
+				id: "5709CC9EDE7AE5A8"
+				team_reward: true
+				title: "科技:  基础传动"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 16L
+				id: "46E521A4AF1B4773"
+				item: "minecraft:brown_wool"
+				type: "item"
+			}]
+			title: "基础传动"
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["63BC4506B9B36167"]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:limited_iron_barrel_1"
+				tag: {
+					woodType: "spruce"
+				}
+			}
+			id: "0CD39A4DE031D8EC"
+			rewards: [{
+				icon: {
+					Count: 1
+					id: "sophisticatedstorage:limited_iron_barrel_1"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				id: "464E0B98AE369468"
+				team_reward: true
+				title: "科技: 基础存储"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 16L
+				id: "538983134E01855E"
+				item: "minecraft:brown_wool"
+				type: "item"
+			}]
+			title: "基础存储"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A9F9318880D3EB6"]
+			description: [
+				"为了追求高韧性的材料，需要制作一种新的合金。"
+				""
+				"&a工业铁&r属于铁碳合金，但碳含量较低，并不需要额外添加碳。"
+				"本质上，&a工业铁&r其实属于&a锻铁&r&8（或称为熟铁）&r，但又于之不同："
+				""
+				"在锻铁过程中加入红石&4提高韧性&r&8（红石在药水中起到增强时效效果）"
+				"&r但加入红石的代价是&4无法提高材料硬度&r&8（药水中使用红石后无法使用萤石提升效果等级）&r"
+				""
+				"似乎与一个&a材料硬度高的材料&r结合就可以解决材料硬度低的问题（？"
+			]
+			icon: "create_dd:industrial_iron_ingot"
+			id: "076AE8C608D0C610"
+			rewards: [{
+				icon: "create_dd:industrial_iron_ingot"
+				id: "7AB0037B0257999F"
+				team_reward: true
+				title: "科技: 工业铁熔炼"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 24L
+				id: "6BCA6C620468B209"
+				item: { Count: 24, id: "minecraft:brown_wool" }
+				type: "item"
+			}]
+			title: "工业铁熔炼"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4A9F9318880D3EB6"]
+			description: [
+				"通过高温将黑曜石压制为板状。"
+				""
+				"&a坚固板&r拥有&4很高的材料硬度&r，但&4质地偏脆&r。"
+				""
+				"似乎与&a高韧性的材料&r结合就能解决质地脆的问题（？"
+			]
+			icon: "create:sturdy_sheet"
+			id: "175B1AC5B98EE416"
+			rewards: [{
+				icon: "create:sturdy_sheet"
+				id: "568B1B86743CCEDA"
+				team_reward: true
+				title: "科技: 坚固板锻造"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 32L
+				id: "4271442E5B45044B"
+				item: { Count: 32, id: "minecraft:brown_wool" }
+				type: "item"
+			}]
+			title: "锻造坚固板"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"175B1AC5B98EE416"
+				"076AE8C608D0C610"
+				"7F95EFB07391F2CD"
+				"2BAC57CBA3EE5DC0"
+			]
+			description: [
+				""
+				"这个世界的钢不是我们世界的钢，更像是&a黑曜石和工业铁的合金&r。在这个世界的规则下，这样的材料才能保证钢的性能。"
+			]
+			hide_until_deps_complete: true
+			icon: "unify:steel_ingot"
+			id: "29C4C734F7CEC029"
+			rewards: [{
+				icon: "unify:steel_ingot"
+				id: "34805123630A1887"
+				team_reward: true
+				title: "科技: 炼钢"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 64L
+				id: "5C7D12151AE1675D"
+				item: { Count: 64, id: "minecraft:brown_wool" }
+				type: "item"
+			}]
+			title: "炼钢"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["076AE8C608D0C610"]
+			icon: "kubejs:mechanical_furnace"
+			id: "7F95EFB07391F2CD"
+			rewards: [{
+				icon: "kubejs:mechanical_furnace"
+				id: "79DC8A8639827E8E"
+				team_reward: true
+				title: "多方块机器: 工业熔炉"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 32L
+				id: "05A3E9E359A331CE"
+				item: { Count: 32, id: "minecraft:brown_wool" }
+				type: "item"
+			}]
+			title: "多方块机器: 工业熔炉"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["29C4C734F7CEC029"]
+			hide_dependent_lines: true
+			icon: "minecraft:light_gray_wool"
+			id: "1550E269692BAB18"
+			rewards: [{
+				icon: "minecraft:light_gray_wool"
+				id: "2CAC2744B9E58FA7"
+				team_reward: true
+				title: "科技: 钢材科技包"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 128L
+				id: "2F469925247E7492"
+				item: { Count: 128, id: "create_dd:steel_ingot" }
+				type: "item"
+			}]
+			title: "钢材科技包"
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"0CD39A4DE031D8EC"
+				"1550E269692BAB18"
+			]
+			icon: "sophisticatedstorage:stack_upgrade_tier_2"
+			id: "2E63A73EDA17ACDE"
+			rewards: [{
+				icon: "sophisticatedstorage:stack_upgrade_tier_2"
+				id: "475ED2278BE4C9A0"
+				team_reward: true
+				title: "科技: 基础存储升级"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "01C3AA6513BF178E"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "0A8947163D5614E8"
+					item: { Count: 128, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "基础存储升级"
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"60D643EC7519B549"
+				"4CE51AD5C345E2EC"
+			]
+			icon: "kubejs:incomplete_precision_mechanism_3"
+			id: "39096268D4595FA3"
+			rewards: [{
+				icon: "kubejs:incomplete_precision_mechanism_3"
+				id: "34F2DD88E65E6AC0"
+				team_reward: true
+				title: "科技: 传动集合"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 256L
+					id: "3F0F4498C4FEA290"
+					item: { Count: 256, id: "create:cogwheel" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "61D11BC950357661"
+					item: { Count: 256, id: "create:large_cogwheel" }
+					type: "item"
+				}
+			]
+			title: "传动集合"
+			x: 2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4A9F9318880D3EB6"]
+			icon: "minecraft:redstone_block"
+			id: "7AC4FD9044C6BD8D"
+			tasks: [
+				{
+					count: 32L
+					id: "03A8452C895C0B84"
+					item: { Count: 32, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "042A80147AB116B4"
+					item: { Count: 1024, id: "minecraft:redstone_block" }
+					type: "item"
+				}
+			]
+			title: "红石学"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7AC4FD9044C6BD8D"]
+			hide_until_deps_complete: true
+			icon: "kubejs:redstone_sheet"
+			id: "3BEFDC66E64CB24A"
+			rewards: [{
+				icon: "kubejs:redstone_sheet"
+				id: "7AE6FF3538712355"
+				team_reward: true
+				title: "科技: 红石电路板"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 256L
+				id: "2EEA3617656865BB"
+				item: { Count: 256, id: "minecraft:redstone_block" }
+				type: "item"
+			}]
+			title: "红石电路板"
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3BEFDC66E64CB24A"]
+			hide_dependent_lines: true
+			icon: "minecraft:red_wool"
+			id: "64B476FF6749A8D3"
+			rewards: [{
+				icon: "minecraft:red_wool"
+				id: "4E4CAD3282BC6770"
+				team_reward: true
+				title: "科技: 红石科技包"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 512L
+					id: "75706B1A46D5BA2B"
+					item: { Count: 512, id: "minecraft:redstone_block" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "28A78B503F997962"
+					item: { Count: 128, id: "kubejs:redstone_sheet" }
+					type: "item"
+				}
+			]
+			title: "红石科技包"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"64B476FF6749A8D3"
+				"076AE8C608D0C610"
+			]
+			description: [
+				""
+				"集合可以使用切石机进行加工，集合的形状变化则通过&a集合托盘&r来完成。&a集合托盘&r变化集合形状的原理是通过红石来控制上方的材料形状&a快速变化&r，切石机加工本质只是&a触发集合托盘的红石信号&r而已。"
+			]
+			hide_dependent_lines: true
+			icon: "kubejs:set_tray"
+			id: "4CE51AD5C345E2EC"
+			rewards: [{
+				icon: "kubejs:set_tray"
+				id: "58CECCCCF0CA9E9D"
+				team_reward: true
+				title: "科技: 集合托盘"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 32L
+					id: "73D2B4FC7FD95B05"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "29187B3402B80C83"
+					item: { Count: 32, id: "minecraft:red_wool" }
+					type: "item"
+				}
+			]
+			title: "集合托盘"
+			x: -6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"1550E269692BAB18"
+				"00E1C5F1F3A68287"
+			]
+			icon: "create:chain_conveyor"
+			id: "5BD26377E8CD8C72"
+			rewards: [{
+				icon: "create:chain_conveyor"
+				id: "2B85DA3999DD5CEE"
+				team_reward: true
+				title: "科技: 初级锁链传输"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "3B9BA505F8531931"
+					item: { Count: 64, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "038451CAF1442703"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "初级锁链传输"
+			x: 4.5d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"239135E18354E25F"
+				"64B476FF6749A8D3"
+				"1550E269692BAB18"
+				"00E1C5F1F3A68287"
+			]
+			icon: "kubejs:andesite_input"
+			id: "6A7C85AA51CC74C2"
+			rewards: [{
+				icon: "kubejs:andesite_input"
+				id: "48C8FB124199A9CC"
+				team_reward: true
+				title: "科技: 安山输入/输出仓"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "77A4C30613F0B618"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "044080E579C0B5C5"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "1958521B820FB1DD"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "安山输入/输出仓"
+			x: 3.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"64B476FF6749A8D3"
+				"6A7C85AA51CC74C2"
+			]
+			icon: "create:deployer"
+			id: "1B0EA8C65D242CE1"
+			rewards: [{
+				icon: "kubejs:automated_assembly_station"
+				id: "18376A47FEF46130"
+				team_reward: true
+				title: "多方快机器: 自动化组装机"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "43042017ED3E6C2F"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "47AC6108A8309629"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "1E949B7E741B8441"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "多方快机器: 自动化组装机"
+			x: 3.5d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"239135E18354E25F"
+				"1550E269692BAB18"
+			]
+			hide_dependent_lines: true
+			icon: "create_dd:inductive_mechanism"
+			id: "00E1C5F1F3A68287"
+			rewards: [{
+				icon: "create_dd:inductive_mechanism"
+				id: "3AF27BE31F90D519"
+				team_reward: true
+				title: "科技: 物流构件"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "00F4B5BB765A312B"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "2E6C7F4A8C836D98"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "物流构件"
+			x: 3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"64B476FF6749A8D3"
+				"1550E269692BAB18"
+			]
+			description: [
+				""
+				"因为这个世界和我们的世界差异过大，这些金属对于温度的要求&a极为敏感&r，因此只能通过工业炉经行熔炼"
+			]
+			hide_dependent_lines: true
+			icon: "create:blaze_burner"
+			id: "40E52ADBE64FC444"
+			tasks: [
+				{
+					count: 128L
+					id: "5C0F7965202FAFBD"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "4C980C122A2402B1"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "1FA2F24237F9BEB8"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "高级金属熔炼"
+			x: -2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["40E52ADBE64FC444"]
+			hide_dependent_lines: true
+			icon: "create:zinc_ingot"
+			id: "580B6D3CD6BC5A57"
+			rewards: [{
+				icon: "create:zinc_ingot"
+				id: "4912670762F698A3"
+				team_reward: true
+				title: "金属熔炼: 锌"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "78205452B8DD1082"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "1E5C37FE11CD25BC"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "0427AE1517792FCE"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "金属熔炼: 锌"
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["40E52ADBE64FC444"]
+			hide_dependent_lines: true
+			icon: "unify:tin_ingot"
+			id: "19D367A5E5A8F109"
+			rewards: [{
+				icon: "unify:tin_ingot"
+				id: "6687632FA947A3A9"
+				team_reward: true
+				title: "金属熔炼: 锡"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "723F4E8ABBC4AC27"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "54C4C4FF1116763F"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "5B6EB7E469A512AE"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "金属熔炼: 锡"
+			x: -2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["19D367A5E5A8F109"]
+			hide_dependent_lines: true
+			icon: "unify:bronze_ingot"
+			id: "109B163A1E29D33D"
+			rewards: [{
+				icon: "unify:bronze_ingot"
+				id: "3B5E9874C5D8DDF7"
+				team_reward: true
+				title: "合金: 青铜"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "13CA2611DE8D83D6"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "04AA5C7A4544EEB0"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "727579209E44A9B3"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "合金: 青铜"
+			x: -2.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["40E52ADBE64FC444"]
+			description: [
+				""
+				"严格来说，这已经不是黑曜石了，而是一种&a新的金属&r。岩浆只是这种看似黑曜石的金属的熔融形态，而黑曜石只是一种比较容易理解的说法"
+			]
+			hide_dependent_lines: true
+			icon: "kubejs:obsidian_ingot"
+			id: "74C30C66C453C230"
+			rewards: [{
+				icon: "kubejs:obsidian_ingot"
+				id: "4885D6D9DCEA610E"
+				team_reward: true
+				title: "金属熔炼: 黑曜石"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "1AC4B75E9DB962C1"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "1E3B72D9E1006D4E"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "1D2516A1531BEAAF"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "金属熔炼: 黑曜石?"
+			x: -1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"00E1C5F1F3A68287"
+				"109B163A1E29D33D"
+			]
+			hide_dependent_lines: true
+			icon: "create:brass_funnel"
+			id: "3584E3F6D57898B7"
+			rewards: [{
+				icon: "create:brass_funnel"
+				id: "4272AC09BD8CDB92"
+				team_reward: true
+				title: "科技: 智能物流"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 512L
+				id: "2C85B410984EAAFC"
+				item: { Count: 64, id: "minecraft:brown_wool" }
+				type: "item"
+			}]
+			title: "智能物流"
+			x: 4.5d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"39096268D4595FA3"
+				"1550E269692BAB18"
+			]
+			icon: "kubejs:precision_mechanism_3"
+			id: "76ADED4C08ED80CD"
+			rewards: [{
+				icon: "kubejs:precision_mechanism_3"
+				id: "0683FC52720655D1"
+				team_reward: true
+				title: "科技: 精密齿轮组"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "1A320ABD03F9019B"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "7FB8018D18B3EF6A"
+					item: { Count: 128, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "精密齿轮组"
+			x: 2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["64B476FF6749A8D3"]
+			description: [""]
+			hide_dependent_lines: true
+			icon: "kubejs:strange_potion_bucket"
+			id: "2BAC57CBA3EE5DC0"
+			rewards: [{
+				icon: "kubejs:strange_potion_bucket"
+				id: "4F2AF909630B45BC"
+				team_reward: true
+				title: "科技: 奇异药水"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 32L
+					id: "1B5D86010CCBD494"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7D7633AB070AED54"
+					item: { Count: 32, id: "minecraft:red_wool" }
+					type: "item"
+				}
+			]
+			title: "奇异药水"
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"76ADED4C08ED80CD"
+				"00E1C5F1F3A68287"
+			]
+			icon: "kubejs:mechanical_mechanism"
+			id: "275F39771F606B44"
+			rewards: [{
+				icon: "kubejs:mechanical_mechanism"
+				id: "78E5AC7A6397F5EE"
+				team_reward: true
+				title: "科技: 机械构件"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 256L
+					id: "50A136283ED83AA1"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "488EEBB0535FBDDD"
+					item: "minecraft:light_gray_wool"
+					type: "item"
+				}
+			]
+			title: "机械构件"
+			x: 2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["40E52ADBE64FC444"]
+			hide_dependent_lines: true
+			icon: "unify:silver_ingot"
+			id: "62C267A5944FA598"
+			rewards: [{
+				icon: "unify:silver_ingot"
+				id: "316F4532E34A9DD2"
+				team_reward: true
+				title: "金属熔炼: 银"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "66352D3DE85589C6"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "511C95A09947B888"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "09C063071B9F8440"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "金属熔炼: 银"
+			x: 0.5d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"62C267A5944FA598"
+				"64B476FF6749A8D3"
+				"204CDA6085003C1A"
+			]
+			hide_dependent_lines: true
+			icon: "kubejs:redstone_precision_mechanism"
+			id: "10B2CDE84C825FDE"
+			rewards: [{
+				icon: "kubejs:redstone_precision_mechanism"
+				id: "6866BB2C5AD3AB26"
+				team_reward: true
+				title: "科技: 红石电路构件"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 256L
+					id: "1E43B6291B08794D"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "4321D28F3A09E339"
+					item: "minecraft:red_wool"
+					type: "item"
+				}
+			]
+			title: "红石电路构件"
+			x: -5.0d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"64B476FF6749A8D3"
+				"5850816BC4219B8F"
+			]
+			icon: "create:electron_tube"
+			id: "204CDA6085003C1A"
+			rewards: [{
+				icon: "create:electron_tube"
+				id: "3C3A58936BD29FB8"
+				team_reward: true
+				title: "科技: 电子管"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 32L
+					id: "4A4CDCB9686A202C"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0B06D63B7534EDEE"
+					item: "minecraft:red_wool"
+					type: "item"
+				}
+			]
+			title: "电子管"
+			x: -5.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"64B476FF6749A8D3"
+				"1550E269692BAB18"
+			]
+			icon: "createaddition:seed_oil_bucket"
+			id: "5850816BC4219B8F"
+			rewards: [{
+				icon: "createaddition:seed_oil_bucket"
+				id: "47C4D179EBDD3121"
+				team_reward: true
+				title: "科技: 种子油/黏液"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 32L
+					id: "75017ADDE8A48349"
+					item: { Count: 32, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3B9751896F3CC63D"
+					item: { Count: 32, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1F3FD43DD9276C80"
+					item: { Count: 32, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "种子油/黏液"
+			x: -5.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"0F697EE7DF6F80A7"
+				"10B2CDE84C825FDE"
+			]
+			id: "2696D4EC112D783E"
+			rewards: [{
+				icon: "minecraft:red_wool"
+				id: "4E0641617894D284"
+				team_reward: true
+				title: "科技: 红石科技包简化"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 128L
+				id: "290382E3BCFEA3FC"
+				item: "minecraft:red_wool"
+				type: "item"
+			}]
+			title: "红石科技包简化"
+			x: 3.5d
+			y: -15.0d
+		}
+		{
+			dependencies: [
+				"2E63A73EDA17ACDE"
+				"62C267A5944FA598"
+				"109B163A1E29D33D"
+				"74C30C66C453C230"
+				"19D367A5E5A8F109"
+				"580B6D3CD6BC5A57"
+			]
+			hide_dependent_lines: true
+			icon: "sophisticatedstorage:stack_upgrade_tier_5"
+			id: "41E1FD29F4E4B8BA"
+			rewards: [{
+				icon: "sophisticatedstorage:stack_upgrade_tier_5"
+				id: "1ACEC55FCD7286EF"
+				team_reward: true
+				title: "科技: 中级存储升级"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "0A240BCEAEB2348E"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "53A93D9BD74C59CF"
+					item: { Count: 128, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "中级存储升级"
+			x: 1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"41E1FD29F4E4B8BA"
+				"3584E3F6D57898B7"
+			]
+			icon: "sophisticatedstorage:controller"
+			id: "2356975FCF8C4116"
+			rewards: [{
+				icon: "sophisticatedstorage:controller"
+				id: "417940508E6701E2"
+				team_reward: true
+				title: "科技: 智能存储"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "7A441F8842DA4FD0"
+					item: { Count: 64, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "5E4ACB63D46BC734"
+					item: "minecraft:red_wool"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "0D75653D3E8A15A2"
+					item: "minecraft:light_gray_wool"
+					type: "item"
+				}
+			]
+			title: "智能物流"
+			x: 1.5d
+			y: -15.0d
+		}
+	]
+	title: "科技树"
+}

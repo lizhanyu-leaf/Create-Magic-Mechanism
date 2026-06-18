@@ -1,0 +1,15 @@
+{
+	id: "6CBF427589CACDE5"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "sophisticatedstorage:pickup_upgrade" }
+		{ item: "sophisticatedstorage:compacting_upgrade" }
+		{ item: "sophisticatedstorage:void_upgrade" }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_4" }
+		{ item: "sophisticatedstorage:compression_upgrade" }
+		{ item: "sophisticatedstorage:hopper_upgrade" }
+		{ item: "sophisticatedstorage:basic_to_diamond_tier_upgrade" }
+	]
+	title: "升级"
+}

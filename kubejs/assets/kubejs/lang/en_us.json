@@ -1,0 +1,230 @@
+{
+    "cmm.modpack.title": "Create: Magic Mechanism",
+
+    "cmm.chapter.prologue": "Prologue",
+    "cmm.chapter.metal_propagation": "Metal Propagation",
+    "cmm.chapter.factory_lines": "Factory Lines",
+
+    "cmm.chapter.flight": "Flight",
+    "cmm.chapter.logistics": "Logistics",
+    "cmm.chapter.storage": "Storage",
+
+    "cmm.chapter.novice_engineer": "1.1 Novice Engineer",
+    "cmm.chapter.redstone_engineer": "1.2 Redstone Engineer",
+    "cmm.chapter.precision_engineer": "1.3 Precision Engineer",
+    "cmm.chapter.arcane_engineer": "2.1 Arcane Engineer",
+    "cmm.chapter.aggregation_engineer": "2.2 Aggregation Engineer",
+    "cmm.chapter.unstable_engineer": "2.3 Unstable Engineer",
+
+    "cmm.chapter.simplified_crafting": "Simplified Crafting",
+
+    "cmm.chapter.shop1": "A100512B s Shop",
+
+    "cmm.quests.copper_sink": "Modpack",
+    "cmm.quests.long_distance_logistics": "Long-Distance Logistics",
+    "cmm.quests.fluid_logistics": "Fluid Logistics",
+    "cmm.quests.item_logistics": "Item Logistics",
+    "cmm.quests.dynamic_structure": "Dynamic Structure",
+
+    "cmm.quests.welcome": "Welcome to the Modpack",
+    "cmm.quests.starter_pack": "Starter Pack",
+    "cmm.quests.ore_pack": "Ore Pack",
+    "cmm.quests.blueprint_kit": "Blueprint Kit",
+    "cmm.quests.engineer_s_tools": "Engineer's Tools",
+    "cmm.quests.disable_time_flow": "Disable Time Flow",
+    "cmm.quests.keep_inventory": "Keep Inventory",
+    "cmm.quests.sapling": "Sapling Pack",
+    "cmm.quests.peaceful": "Peaceful",
+    "cmm.quests.ores": "Ores...",
+    "cmm.quests.ores.description": "Ore generation has been modified to provide abundant resources. Certain ores drop ingots directly, but others drop raw ore. If you encounter raw ore, use this tool to smelt it automatically.",
+    "cmm.quests.changelog": "ChangeLog",
+    "cmm.quests.waypoint": "Waypoint...",
+    "cmm.quests.waypoint.description": "The /warp command is available for fast travel.\nNote: Waypoint data is shared across worlds with the same name.",
+
+    "cmm.chapterGroup.miscellaneous": "Miscellaneous",
+    "cmm.chapterGroup.shop": "Shop",
+    "cmm.chapterGroup.the_age_of_transformation": "The Age of Transformation",
+    "cmm.chapterGroup.in_search_of_create_s_footsteps": "In Search of Create's Footsteps (WIP)",
+    
+    "cmm.tech.simple_precision_mechanism_3_recipe": "Precision Gear Set Recipe Simplification",
+    "cmm.tech.incomplete_precision_mechanism_3_cutting_recipe": "Precision Gear Stonecutter Recipe",
+    "cmm.tech.unlock_sfm": "Unlock SFM (Super Factory Manager)",
+    "cmm.tech.presice_mixer_advanced_recipe": "Advanced Precision Mixer Recipe (WIP)",
+    "cmm.tech.coin_button_recipe": "Coin Button Mixing Recipe",
+    "cmm.tech.colorful_mechanism_simple_recipe": "Iridescent Mechanism Simplified Recipe",
+    "cmm.tech.sturdy_sheet_simple_recipe": "Sturdy Sheet Conversion Recipe",
+    "cmm.tech.redstone_precision_mechanism_laser_cutting_recipe": "Redstone Circuit Mechanism Laser Cutting Recipe",
+    "cmm.tech.redstone_sheet_advanced": "Advanced Redstone Circuit Board Recipe",
+    "cmm.tech.precision_mechanism_2_advanced": "Advanced Precision Redstone Recipe",
+    "cmm.tech.electron_tube_advanced": "Advanced Electron Tube Recipe",
+    "cmm.tech.bedrock_advanced": "Bedrock Conversion Recipe",
+    "cmm.tech.unlock_upgrade": "Unlock",
+
+    "biome.kubejs.stone_rich": "Stone Rich",
+
+    "recipe.kubejs.charging": "Bulk Charging",
+    "recipe.kubejs.charging.catalysts": "Fan behind Lava",
+    "recipe.kubejs.lava_transformation_recipe": "Lava Transformation Recipe",
+    "recipe.kubejs.lava_transformation_recipe.catalysts": "Drop Items into Lava",
+
+    "item.kubejs.precision_mechanism_1": "Sturdy Knob",
+    "item.kubejs.incomplete_precision_mechanism_1": "Sturdy Knob [Incomplete]",
+    "item.kubejs.precision_mechanism_2": "Precision Redstone",
+    "item.kubejs.incomplete_precision_mechanism_2": "Precision Redstone [Incomplete]",
+    "item.kubejs.incomplete_precision_mechanism_3": "Precision Gear",
+    "item.kubejs.precision_mechanism_3": "Precision Gear Set",
+    "item.kubejs.precision_mechanism_4": "Solar Particle",
+    "item.kubejs.charging_iron_sheet": "Charged Plate",
+    "item.kubejs.loose_precision_mechanism": "Loose Precision Mechanism",
+
+    "item.kubejs.creative_wood": "Creative Wooden Replicator",
+    "item.kubejs.wood_set": "Wooden Assembly",
+
+    "item.kubejs.redstone_sheet": "Redstone Circuit Board",
+    "item.kubejs.incomplete_redstone_sheet": "Redstone Circuit Board [Incomplete]",
+    "item.kubejs.redstone_precision_mechanism": "Redstone Circuit Mechanism",
+    "item.kubejs.incomplete_redstone_precision_mechanism": "Redstone Circuit Mechanism [Incomplete]",
+    "item.kubejs.colorful_mechanism": "Iridescent Mechanism",
+    "item.kubejs.incomplete_colorful_mechanism": "Iridescent Mechanism [Incomplete]",
+    "item.kubejs.mechanical_core": "Mechanical Core",
+
+    "fluid.kubejs.redstone_catalyst": "Redstone Catalyst",
+    "fluid.kubejs.redstone_diluent": "Redstone Diluent",
+    "item.kubejs.redstone_catalyst_bucket": "Redstone Catalyst Bucket",
+    "item.kubejs.redstone_diluent_bucket": "Redstone Diluent Bucket",
+    "block.kubejs.redstone_catalyst": "Redstone Catalyst",
+    "block.kubejs.redstone_diluent": "Redstone Diluent",
+
+    "fluid.kubejs.strange_potion": "Strange Potion",
+    "item.kubejs.strange_potion_bucket": "Strange Potion Bucket",
+    "block.kubejs.strange_potion": "Strange Potion",
+
+    "item.kubejs.modern_mechanism": "Modern Mechanism",
+
+    "item.kubejs.raw_bedrock": "Unshaped Bedrock",
+    "item.kubejs.sturdy_mechanism": "Sturdy Mechanism",
+    "item.kubejs.incomplete_sturdy_mechanism": "Sturdy Mechanism [Incomplete]",
+
+    "item.kubejs.blaze_mechanism": "Blaze Mechanism",
+    "item.kubejs.incomplete_blaze_mechanism": "Blaze Mechanism [Incomplete]",
+
+    "fluid.kubejs.gunpowder_catalyst": "Gunpowder Catalyst",
+    "item.kubejs.gunpowder_catalyst_bucket": "Gunpowder Catalyst Bucket",
+    "block.kubejs.gunpowder_catalyst": "Gunpowder Catalyst",
+
+    "item.kubejs.slime_mechanism": "Slime Mechanism",
+    "item.kubejs.incomplete_slime_mechanism": "Slime Mechanism [Incomplete]",
+
+    "fluid.kubejs.gunpowder_diluent": "Gunpowder Diluent",
+    "item.kubejs.gunpowder_diluent_bucket": "Gunpowder Diluent Bucket",
+    "block.kubejs.gunpowder_diluent": "Gunpowder Diluent",
+
+    "fluid.kubejs.slime": "Slime",
+    "item.kubejs.slime_bucket": "Slime Bucket",
+    "block.kubejs.slime": "Slime",
+
+    "fluid.kubejs.magenta_strange_potion": "Magenta Strange Potion",
+    "item.kubejs.magenta_strange_potion_bucket": "Magenta Strange Potion Bucket",
+    "block.kubejs.magenta_strange_potion": "Magenta Strange Potion",
+
+    "fluid.kubejs.magic_potion": "Magic Potion",
+    "item.kubejs.magic_potion_bucket": "Magic Potion Bucket",
+    "block.kubejs.magic_potion": "Magic Potion",
+
+    "item.kubejs.ender_mechanism": "Ender Mechanism",
+    "item.kubejs.incomplete_ender_mechanism": "Ender Mechanism [Incomplete]",
+
+    "item.kubejs.incomplete_diamond": "Diamond",
+    "item.kubejs.incomplete_emerald": "Emerald",
+
+    "item.kubejs.magic_mechanism": "Magic Mechanism",
+    "item.kubejs.incomplete_magic_mechanism": "Magic Mechanism [Incomplete]",
+
+    "item.kubejs.assembly_block": "Mineral Aggregate Block",
+    "item.kubejs.incomplete_assembly_block": "Mineral Aggregate Block [Incomplete]",
+    
+    "item.kubejs.base_catalyst": "Catalyst Pedestal",
+    "item.kubejs.incomplete_base_catalyst": "Catalyst Pedestal [Incomplete]",
+
+    "item.kubejs.catalyst_blaze": "Blaze Catalyst",
+
+    "item.kubejs.heat_lava_bucket": "High-Temperature Magma Bucket",
+    "fluid.kubejs.heat_lava": "High-Temperature Magma",
+    "block.kubejs.heat_lava": "High-Temperature Magma",
+
+    "item.kubejs.soul_lava_bucket": "Soul Magma Bucket",
+    "fluid.kubejs.soul_lava": "Soul Magma",
+
+    "item.kubejs.refrigerant_bucket": "Coolant Bucket",
+    "fluid.kubejs.refrigerant": "Coolant",
+    "block.kubejs.refrigerant": "Coolant",
+    "item.kubejs.ice_powder": "Cryogenic Powder",
+    "item.kubejs.incomplete_ice_powder": "Cryogenic Powder [Incomplete]",
+
+    "item.kubejs.pack": "Empty Item Package",
+    "item.kubejs.pack_open": "Item Package [Open]",
+
+    "item.kubejs.cardboard_mechanism": "Paper Mechanism",
+    "item.kubejs.pack_stone": "Stone Item Package",
+    "item.kubejs.pack_stone_bricks": "Stone Brick Item Package",
+    "item.kubejs.pack_deepslate": "Deepslate Item Package",
+    "item.kubejs.pack_netherrack": "Netherrack Item Package",
+    
+    "item.kubejs.pack_iron": "Iron Item Package",
+    "item.kubejs.pack_gold": "Gold Item Package",
+    "item.kubejs.pack_copper": "Copper Item Package",
+    "item.kubejs.pack_diamond": "Diamond Item Package",
+    "item.kubejs.pack_andesite_alloy": "Andesite Alloy Item Package",
+    "item.kubejs.pack_brass": "Brass Item Package",
+    "item.kubejs.pack_zinc": "Zinc Item Package",
+
+    "item.kubejs.pack_source_fluid": "Source Fluid Package",
+    "item.kubejs.pack_fluid_tank": "Empty Fluid Package",
+    "item.kubejs.pack_fluid_tank_open": "Fluid Package[Open]",
+    "item.kubejs.incomplete_pack_fluid_tank": "Fluid Package[Incomplete]",
+    "item.kubejs.pack_magic_potion": "Magic Potion Fluid Package",
+
+    "item.kubejs.pack_colorful_mechanism": "Iridescent Mechanism Package",
+    "item.kubejs.pack_blaze_mechanism": "Blaze Mechanism Package",
+    "item.kubejs.pack_experience_mechanism": "Experience Mechanism Package",
+    "item.kubejs.pack_sturdy_mechanism": "Sturdy Mechanism Package",
+
+    "item.kubejs.unstable_item": "Unstable Item",
+
+    "item.kubejs.experience_mechanism": "Experience Mechanism",
+    "item.kubejs.incomplete_experience_mechanism": "Experience Mechanism [Incomplete]",
+
+    "fluid.kubejs.assembly_molten_andesite_alloy": "Aggregated Molten Andesite Alloy",
+    "item.kubejs.assembly_molten_andesite_alloy_bucket": "Aggregated Molten Andesite Alloy Bucket",
+    "block.kubejs.assembly_molten_andesite_alloy": "Aggregated Molten Andesite Alloy",
+    "fluid.kubejs.assembly_molten_brass": "Aggregated Molten Brass",
+    "item.kubejs.assembly_molten_brass_bucket": "Aggregated Molten Brass Bucket",
+    "block.kubejs.assembly_molten_brass": "Aggregated Molten Brass",
+    "fluid.kubejs.assembly_molten_zinc": "Aggregated Molten Zinc",
+    "item.kubejs.assembly_molten_zinc_bucket": "Aggregated Molten Zinc Bucket",
+    "block.kubejs.assembly_molten_zinc": "Aggregated Molten Zinc",
+    "fluid.kubejs.assembly_molten_iron": "Aggregated Molten Iron",
+    "item.kubejs.assembly_molten_iron_bucket": "Aggregated Molten Iron Bucket",
+    "block.kubejs.assembly_molten_iron": "Aggregated Molten Iron",
+    "fluid.kubejs.assembly_molten_gold": "Aggregated Molten Gold",
+    "item.kubejs.assembly_molten_gold_bucket": "Aggregated Molten Gold Bucket",
+    "block.kubejs.assembly_molten_gold": "Aggregated Molten Gold",
+    "fluid.kubejs.assembly_molten_copper": "Aggregated Molten Copper",
+    "item.kubejs.assembly_molten_copper_bucket": "Aggregated Molten Copper Bucket",
+    "block.kubejs.assembly_molten_copper": "Aggregated Molten Copper",
+    "fluid.kubejs.assembly_molten_diamond": "Aggregated Molten Diamond",
+    "item.kubejs.assembly_molten_diamond_bucket": "Aggregated Molten Diamond Bucket",
+    "block.kubejs.assembly_molten_diamond": "Aggregated Molten Diamond",
+    "fluid.kubejs.assembly_molten_stone": "Aggregated Molten Stone",
+    "item.kubejs.assembly_molten_stone_bucket": "Aggregated Molten Stone Bucket",
+    "block.kubejs.assembly_molten_stone": "Aggregated Molten Stone",
+    
+    "item.kubejs.incomplete_aggregated_andesite_alloy_mechanism": "Aggregated Andesite Alloy Mechanism [Incomplete]",
+    "item.kubejs.incomplete_aggregated_brass_mechanism": "Aggregated Brass Mechanism [Incomplete]",
+    "item.kubejs.incomplete_aggregated_copper_mechanism": "Aggregated Copper Mechanism [Incomplete]",
+    "item.kubejs.incomplete_aggregated_diamond_mechanism": "Aggregated Diamond Mechanism [Incomplete]",
+    "item.kubejs.incomplete_aggregated_gold_mechanism": "Aggregated Gold Mechanism [Incomplete]",
+    "item.kubejs.incomplete_aggregated_iron_mechanism": "Aggregated Iron Mechanism [Incomplete]",
+    "item.kubejs.incomplete_aggregated_stone_mechanism": "Aggregated Stone Mechanism [Incomplete]",
+    "item.kubejs.incomplete_aggregated_zinc_mechanism": "Aggregated Zinc Mechanism [Incomplete]"
+}

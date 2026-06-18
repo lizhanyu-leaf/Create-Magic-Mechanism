@@ -1,0 +1,608 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3CF3A4776256B17D"
+	group: "271095BD78F19DAF"
+	icon: "create:package_frogport"
+	id: "3CF3A4776256B17D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2DEE8C530F99E29F"]
+			id: "3D52D07566A68A6A"
+			rewards: [{
+				count: 64
+				id: "2AEB14958E1EB5EB"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DE94AC37CBDC178"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2DEE8C530F99E29F"]
+			hide_dependent_lines: true
+			id: "58F49B48056E1E40"
+			rewards: [{
+				count: 128
+				id: "32589F00170E55C2"
+				item: "fluid:can_filler"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E51C7DA379E7B23"
+				item: "fluid:can_filler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DEE8C530F99E29F"]
+			hide_dependent_lines: true
+			id: "274EC2ED9EC6F28C"
+			rewards: [{
+				count: 128
+				id: "7577B240C0AA6455"
+				item: "create:packager"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A74BE5AC12EFA2B"
+				item: "create:packager"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DEE8C530F99E29F"]
+			id: "4116A68665BA35CE"
+			rewards: [{
+				count: 64
+				id: "291493837759198D"
+				item: "cmpackagecouriers:cardboard_plane_parts"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A5370CEF969DF74"
+				item: "cmpackagecouriers:cardboard_plane_parts"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "2DEE8C530F99E29F"
+			tasks: [{
+				id: "29793AF9D53530DD"
+				title: "{cmm.quests.long_distance_logistics}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.long_distance_logistics}"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			hide_dependent_lines: true
+			id: "286D2EBDDD73DD4F"
+			tasks: [{
+				id: "21E31A93F40832DB"
+				title: "{cmm.quests.item_logistics}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.item_logistics}"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "7E4709EDFCC0EF10"
+			tasks: [{
+				id: "3CDBCBA645173604"
+				title: "{cmm.quests.fluid_logistics}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.fluid_logistics}"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"286D2EBDDD73DD4F"
+				"274EC2ED9EC6F28C"
+				"13F133EF07BE987E"
+				"239135E18354E25F"
+			]
+			hide_dependent_lines: true
+			id: "2CB8D4ECF14A842B"
+			tasks: [{
+				id: "7881897FC37C8CF4"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"58F49B48056E1E40"
+				"7E4709EDFCC0EF10"
+				"239135E18354E25F"
+			]
+			id: "47D35F8405FD1796"
+			tasks: [{
+				id: "221AD5CEC3B306B4"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7E4709EDFCC0EF10"
+				"57E0A1ADFD2FD6B6"
+			]
+			id: "47966AACE576270E"
+			tasks: [{
+				id: "263D4BE760256D92"
+				item: "fluid:pipette"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"286D2EBDDD73DD4F"
+				"16FCD69938AFEEBB"
+				"13F133EF07BE987E"
+			]
+			id: "0FA32ABB84D5476E"
+			tasks: [{
+				id: "4567929EB7CE2337"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["286D2EBDDD73DD4F"]
+			id: "6C2789D8125A3380"
+			tasks: [{
+				id: "17CC337651E8AAED"
+				item: "create:weighted_ejector"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13F133EF07BE987E"]
+			hide_dependent_lines: true
+			id: "16FCD69938AFEEBB"
+			tasks: [{
+				id: "3E3627DC02A5A532"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"286D2EBDDD73DD4F"
+				"239135E18354E25F"
+			]
+			hide_dependent_lines: true
+			id: "13F133EF07BE987E"
+			tasks: [{
+				id: "1B86583E3D4759D7"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"286D2EBDDD73DD4F"
+				"2CB8D4ECF14A842B"
+				"239135E18354E25F"
+			]
+			hide_dependent_lines: true
+			id: "268B675D8B73CEF6"
+			tasks: [{
+				id: "014AD601145528AC"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["268B675D8B73CEF6"]
+			id: "62FBBDE2E1CB28AD"
+			tasks: [{
+				id: "49F34B4BBC1122B1"
+				item: "create:brass_tunnel"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E4709EDFCC0EF10"]
+			hide_dependent_lines: true
+			id: "20C965D45810DBD9"
+			tasks: [{
+				id: "1E61B0C37AB60983"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["20C965D45810DBD9"]
+			id: "063AF73098C00D81"
+			tasks: [{
+				id: "5452161A12269BDB"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20C965D45810DBD9"]
+			id: "64F8BCBA93A2EC57"
+			tasks: [{
+				id: "33E4839C54FBDCE8"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20C965D45810DBD9"]
+			hide_dependent_lines: true
+			id: "0A1694FCD4B78F41"
+			tasks: [{
+				id: "0B529814ABFD5FFC"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["70E041C762659BC7"]
+			id: "45413AEDBBE91F4D"
+			rewards: [{
+				count: 128
+				id: "1E5E90BF363CF2C6"
+				item: "create:factory_gauge"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5465EE888C075586"
+				item: "create:factory_gauge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"5DD91EDCF00A3FF4"
+				"071A1D32EC906136"
+			]
+			id: "77D9851AB18992FA"
+			rewards: [
+				{
+					id: "5241B1241876E3AD"
+					item: "create:blaze_burner"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "4012645A35CA41C1"
+					item: "cmpackagecouriers:portable_stock_ticker"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4BF964407E0B307A"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["77D9851AB18992FA"]
+			id: "70E041C762659BC7"
+			rewards: [{
+				count: 64
+				id: "10276F890650ECFB"
+				item: "create:stock_link"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C1C84B868FBECF0"
+				item: "create:stock_link"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7E4709EDFCC0EF10"]
+			id: "49033A34D7D2E8B9"
+			tasks: [{
+				id: "1669FBA32858900C"
+				item: "createendertransmission:fluid_transmitter"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["286D2EBDDD73DD4F"]
+			id: "79191BBDEBAA9BC0"
+			tasks: [{
+				id: "110B4A8241EF6F6D"
+				item: "createendertransmission:item_transmitter"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DD91EDCF00A3FF4"]
+			id: "5737DEF47A0C4DF9"
+			tasks: [{
+				id: "292ACC31F5F7BA42"
+				item: "create:item_hatch"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			hide_dependent_lines: true
+			id: "5DD91EDCF00A3FF4"
+			rewards: [{
+				count: 64
+				id: "54B2D96D4CFDF8F9"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			tasks: [{
+				id: "738AE31AD574CCC0"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7E4709EDFCC0EF10"]
+			id: "69FBF9B7F02F9680"
+			tasks: [{
+				id: "4DDBAB9C8081EE8A"
+				item: "fluid:copper_tap"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E4709EDFCC0EF10"]
+			id: "51D97ACAE9230C97"
+			tasks: [{
+				id: "14C897FF06ACA4DC"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:canister"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			id: "4B44A7E15A699CE3"
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "699C5B78AC26E73D"
+				item: "sfm:manager"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B44A7E15A699CE3"]
+			id: "6E6D8A315C6C7B1F"
+			tasks: [{
+				id: "3E97D8DB00A62EC0"
+				item: "sfm:cable"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4B44A7E15A699CE3"]
+			id: "26CA4EB8F6AF1A3B"
+			tasks: [{
+				id: "2A95FEE3116DE867"
+				item: {
+					Count: 1
+					id: "sfm:labelgun"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4B44A7E15A699CE3"]
+			id: "7E8559F3157B61B8"
+			tasks: [{
+				id: "4B9A92702E3FCAB9"
+				item: {
+					Count: 1
+					id: "sfm:disk"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "071A1D32EC906136"
+			rewards: [{
+				count: 64
+				id: "46045AEE1263B4D5"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			tasks: [{
+				id: "613A3E244A10A6DA"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["071A1D32EC906136"]
+			hide_dependent_lines: true
+			id: "57E0A1ADFD2FD6B6"
+			tasks: [{
+				id: "50941E409D7EA486"
+				item: "fluid:fluid_interface"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: [""]
+			id: "08842A6EB34E226B"
+			tasks: [{
+				id: "6861B97ACA8316C6"
+				item: "fluid:copper_sink"
+				type: "item"
+			}]
+			title: "{cmm.quests.copper_sink}"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0A1694FCD4B78F41"]
+			id: "4553BA4A5605ABEF"
+			tasks: [{
+				id: "7ED7B0468D1AE2A2"
+				item: "fluid:centrifugal_pump"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			id: "6190727B308ED5AE"
+			tasks: [{
+				id: "1269D11D6BB06989"
+				title: "{cmm.quests.dynamic_structure}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.dynamic_structure}"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6190727B308ED5AE"]
+			id: "12A699283F5AD41D"
+			tasks: [{
+				id: "173FC141B60719E7"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6190727B308ED5AE"]
+			id: "7B0CB08235855716"
+			tasks: [{
+				id: "62AA8AC41FA0E1B6"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2DEE8C530F99E29F"]
+			id: "0FC8657445BC8FD7"
+			rewards: [
+				{
+					count: 128
+					id: "1808B91B707E28C4"
+					item: "create:chain_conveyor"
+					type: "item"
+				}
+				{
+					count: 1024
+					id: "4B63444F38380462"
+					item: "minecraft:chain"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "167B52E3B538EC46"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0FC8657445BC8FD7"]
+			id: "1ECD766E6A3C6BB1"
+			rewards: [{
+				count: 128
+				id: "632FF971C7A53C4B"
+				item: "createendertransmission:energy_transmitter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A82615EEAE84193"
+				item: "createendertransmission:energy_transmitter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "{cmm.chapter.logistics}"
+}

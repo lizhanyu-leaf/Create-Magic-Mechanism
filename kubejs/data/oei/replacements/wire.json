@@ -1,0 +1,100 @@
+[
+    {
+        "matchItems": [
+            "vintageimprovements:aluminum_wire",
+            "unify:aluminum_wire"
+        ],
+        "resultItems": "unify:aluminum_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:bronze_wire",
+            "unify:bronze_wire"
+        ],
+        "resultItems": "unify:bronze_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:cast_iron_wire",
+            "unify:cast_iron_wire"
+        ],
+        "resultItems": "unify:cast_iron_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:constantan_wire",
+            "unify:constantan_wire"
+        ],
+        "resultItems": "unify:constantan_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:electrum_wire",
+            "unify:electrum_wire"
+        ],
+        "resultItems": "unify:electrum_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:invar_wire",
+            "unify:invar_wire"
+        ],
+        "resultItems": "unify:invar_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:lead_wire",
+            "unify:lead_wire"
+        ],
+        "resultItems": "unify:lead_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:nickel_wire",
+            "unify:nickel_wire"
+        ],
+        "resultItems": "unify:nickel_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:platinum_wire",
+            "unify:platinum_wire"
+        ],
+        "resultItems": "unify:platinum_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:silver_wire",
+            "unify:silver_wire"
+        ],
+        "resultItems": "unify:silver_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:steel_wire",
+            "unify:steel_wire"
+        ],
+        "resultItems": "unify:steel_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:tin_wire",
+            "unify:tin_wire"
+        ],
+        "resultItems": "unify:tin_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:tungsten_wire",
+            "unify:tungsten_wire"
+        ],
+        "resultItems": "unify:tungsten_wire"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:uranium_wire",
+            "unify:uranium_wire"
+        ],
+        "resultItems": "unify:uranium_wire"
+    }
+]

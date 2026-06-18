@@ -1,0 +1,11 @@
+{
+    "type": "flowing_block",
+    "flowing": "#kubejs:strange_potion",
+    "blocks_nearby": [
+        "kubejs:redstone_diluent"
+    ],
+    "result": {
+        "type": "block",
+        "block": "minecraft:redstone_block"
+    }
+}

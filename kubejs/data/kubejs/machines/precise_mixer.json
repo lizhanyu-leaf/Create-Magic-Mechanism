@@ -1,0 +1,208 @@
+{
+    "name": "kubejs.mechines.precise_mixer",
+    "appearance": {
+        "idle": {
+            "block": "kubejs:machines/precise_mixer_off"
+        },
+        "running": {
+            "lightlevel": 15,
+            "block": "kubejs:machines/precise_mixer_on"
+        },
+        "item": {
+            "item": "kubejs:machines/precise_mixer_off"
+        }
+    },
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "id": "input1",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input2",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input3",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input4",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input5",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input6",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input7",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input8",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "output",
+            "mode": "output",
+            "capacity": 64
+        },
+        {
+            "capacity": 80000,
+            "type": "custommachinery:energy"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "catalyst1",
+            "capacity": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "catalyst2",
+            "capacity": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "catalyst3",
+            "capacity": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "catalyst4",
+            "capacity": 1,
+            "mode": "input"
+        }
+    ],
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+
+        {
+            "type": "custommachinery:slot",
+            "x": 75,
+            "y": 27,
+            "id": "input1"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 93,
+            "y": 27,
+            "id": "input2"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 111,
+            "y": 27,
+            "id": "input3"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 129,
+            "y": 27,
+            "id": "input4"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 75,
+            "y": 45,
+            "id": "input5"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 93,
+            "y": 45,
+            "id": "input6"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 111,
+            "y": 45,
+            "id": "input7"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 129,
+            "y": 45,
+            "id": "input8"
+        },
+        {
+            "x": 95,
+            "y": 68,
+            "type":"custommachinery:slot",
+            "texture": "kubejs:textures/gui/catalyst_slot.png",
+            "id": "catalyst1"
+        },
+        {
+            "x": 113,
+            "y": 68,
+            "type":"custommachinery:slot",
+            "texture": "kubejs:textures/gui/catalyst_slot.png",
+            "id": "catalyst2"
+        },
+        {
+            "x": 131,
+            "y": 68,
+            "type":"custommachinery:slot",
+            "texture": "kubejs:textures/gui/catalyst_slot.png",
+            "id": "catalyst3"
+        },
+        {
+            "x": 149,
+            "y": 68,
+            "type":"custommachinery:slot",
+            "texture": "kubejs:textures/gui/catalyst_slot.png",
+            "id": "catalyst4"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 54,
+            "y": 24
+        },
+        {
+            "type": "custommachinery:progress",
+            "x": 155,
+            "y": 37
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 185,
+            "y": 36,
+            "id": "output"
+        },
+        {
+            "x": 47,
+            "y": 104,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        },
+        {
+            "text": "精密搅拌器",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        }
+    ]
+}

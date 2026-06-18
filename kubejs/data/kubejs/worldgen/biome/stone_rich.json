@@ -1,0 +1,33 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 9868950,
+    "fog_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 8421631,
+    "foliage_color": 8421631
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],[],[],[],[],[],
+    [
+      "kubejs:exposed_iron_ore",
+      "kubejs:internal_iron_ore",
+      "kubejs:exposed_gold_ore",
+      "kubejs:internal_gold_ore",
+      "kubejs:exposed_copper_ore",
+      "kubejs:internal_copper_ore",
+      "kubejs:exposed_redstone_ore",
+      "kubejs:internal_redstone_ore",
+      "kubejs:exposed_diamond_ore",
+      "kubejs:exposed_emerald_ore",
+      "kubejs:exposed_lapis_ore"
+    ],
+    [], [], [], []
+  ]
+}

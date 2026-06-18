@@ -1,0 +1,242 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a100512b"
+	group: "7B2A40D2841CC00E"
+	icon: "kubejs:coin_button"
+	id: "39A5BF037A50897D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			icon: "kubejs:coin_button"
+			id: "0E50F21B8061C1FB"
+			rewards: [{
+				id: "493DF84CE01DE5B3"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 270L
+					id: "77180462E9F94C8F"
+					item: { Count: 27, id: "minecraft:oak_button" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 152L
+					id: "118DC26CDD114E8B"
+					item: "minecraft:stone_button"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 555L
+					id: "0E2F0DDE566D4557"
+					item: "kubejs:precision_mechanism_1"
+					type: "item"
+				}
+			]
+			title: "神秘按钮兑换"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: "industrial_platform:industrial_platform"
+			id: "3F6A933AA6B87F89"
+			rewards: [{
+				count: 32
+				id: "743197F78F0EC719"
+				item: "industrial_platform:industrial_platform"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "6F903482F30B93EC"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "工业平台"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: "kubejs:pack_brass"
+			id: "40ED2B2D021AB854"
+			rewards: [
+				{
+					count: 4
+					id: "729F06A4610828D6"
+					item: "createcompression:compressed_andesite_alloy_4x"
+					team_reward: true
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					count: 4
+					id: "01EE0B0BAF1686DB"
+					item: "createcompression:compressed_copper_4x"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 4
+					id: "27F7D51CAE869735"
+					item: "createcompression:compressed_iron_4x"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 4
+					id: "458620A4925700E3"
+					item: "createcompression:compressed_gold_4x"
+					team_reward: true
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "09FD0F38A589B107"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "矿物礼包"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: "create:belt_connector"
+			id: "64A07DBEC0001954"
+			rewards: [{
+				count: 64
+				id: "74E5BA3DCE97FB76"
+				item: "create:belt_connector"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "54F6C9D219BC8667"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "传送带"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "create_sa:brass_jetpack_chestplate"
+				tag: { }
+			}
+			id: "7AA5DE69C2A67673"
+			rewards: [{
+				id: "2ADDFF7C7016BF7F"
+				item: {
+					Count: 1
+					id: "create_sa:brass_jetpack_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "709A534FE8FD676B"
+				item: { Count: 4, id: "kubejs:coin_button" }
+				type: "item"
+			}]
+			title: "黄铜喷气背包"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: "sophisticatedstorage:basic_to_diamond_tier_upgrade"
+			id: "6719A1609822ED5F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3EAC9612340F7E06"
+					table_id: 7836054949238328805L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3145F92E616AD77A"
+					table_id: 7836054949238328805L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "465A0061632AF60D"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "升级插件"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: "create:creative_motor"
+			id: "11FFBF56BD982A60"
+			rewards: [{
+				id: "0A9AF5F06BCE299F"
+				item: "create:creative_motor"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "533A12FDC47BFB24"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "创造马达"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: "createendertransmission:energy_transmitter"
+			id: "4C2F0C471613D40C"
+			rewards: [
+				{
+					count: 64
+					id: "716C9B43522DACEF"
+					item: "createendertransmission:energy_transmitter"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0F90FF22C47D6B0D"
+					item: "createendertransmission:chunk_loader"
+					team_reward: true
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "4EE6DA8D64CDA39B"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "远程应力传输"
+			x: -4.5d
+			y: -3.0d
+		}
+	]
+	title: "{cmm.chapter.shop1}"
+}

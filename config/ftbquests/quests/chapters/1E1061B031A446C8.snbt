@@ -1,0 +1,541 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1E1061B031A446C8"
+	group: ""
+	icon: "create:goggles"
+	id: "1E1061B031A446C8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				""
+				"你好！我是&aLeaf&r，因为一些原因，我们需要你来到这个&a充满魔法，不能用我们世界的科学说明的世界&r。"
+				""
+				"当然，我们不可能让你空手来到这个世界，我为你准备了一些&a初始物资&r。"
+			]
+			icon: "minecraft:grass_block"
+			id: "5735A6FF59ABCA22"
+			rewards: [{
+				id: "7180AE649AD58DB7"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54EB19F28FED2688"
+				title: "{cmm.quests.welcome}"
+				type: "checkmark"
+			}]
+			title: "这是哪里?"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5735A6FF59ABCA22"]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "419D42A145C23135"
+			rewards: [
+				{
+					id: "2F6D622371501571"
+					item: "sophisticatedbackpacks:netherite_backpack"
+					type: "item"
+				}
+				{
+					id: "6556E53F85D302D4"
+					item: "sophisticatedbackpacks:stonecutter_upgrade"
+					type: "item"
+				}
+				{
+					id: "1F2FAFAC6DEF50B1"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+				{
+					id: "40FB66C8A7A3D085"
+					item: "create:schematic_and_quill"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1B5C82EBE683FA9F"
+				title: "{cmm.quests.starter_pack}"
+				type: "checkmark"
+			}]
+			title: "基础物品"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5735A6FF59ABCA22"]
+			icon: "create:crafting_blueprint"
+			id: "572B3A85E9D0E092"
+			rewards: [
+				{
+					id: "62D510EE28F4AA76"
+					item: "create:schematicannon"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "056523E1A21F162C"
+					item: "create:schematic_table"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "45810C8A59792299"
+					item: "create:empty_schematic"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5FEA74E0109B7205"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "0889D20FC8549191"
+					item: "create:clipboard"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5C46078EA4BEB242"
+				title: "蓝图工程师"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.blueprint_kit}"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5735A6FF59ABCA22"]
+			description: [
+				"黄铜工具的级别为钻石级别"
+				"但是黄铜锭的获取在&4中期&r--见“红石工程师”章节。"
+				""
+				"不用担心，部分黄铜物品修改了配方，例如黄铜漏斗"
+			]
+			icon: "create:goggles"
+			id: "71C034D3E10D1A72"
+			rewards: [
+				{
+					id: "2CDCEC4317A3372F"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "3193E265D6DFB3AE"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "5816B281C6363757"
+					item: "create:brown_toolbox"
+					type: "item"
+				}
+				{
+					id: "07D512D3362A51C3"
+					item: {
+						Count: 1
+						id: "create_sa:brass_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56E3068D35C4ADB6"
+					item: {
+						Count: 1
+						id: "create_sa:brass_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "587787E3AFE76260"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "131CA8175C679BC9"
+				title: "{cmm.quests.engineer_s_tools}"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5735A6FF59ABCA22"]
+			icon: "minecraft:iron_ingot"
+			id: "75AEFA8871F9945A"
+			rewards: [
+				{
+					count: 128
+					id: "5ACF21716C3C0D45"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "7FD543B2FB6BFF59"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "03705343891DA202"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "073DE3D194413CC4"
+					item: "kubejs:precision_mechanism_3"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "07A8B543B0B72272"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "28BA6DBF7AF5DA07"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "05391A2FF4DC1F86"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "695EB8C268F38FA8"
+				title: "{cmm.quests.ore_pack}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.ore_pack}"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			icon: "minecraft:clock"
+			id: "2B1C15C267E58EDE"
+			rewards: [
+				{
+					command: "/gamerule doDaylightCycle false"
+					elevate_perms: true
+					id: "5BE5198CE5B0F1AF"
+					type: "command"
+				}
+				{
+					command: "/time set noon"
+					elevate_perms: true
+					id: "2A79C1D9E5BC8F96"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "111B16319DCB4BBE"
+				title: "{cmm.quests.disable_time_flow}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.disable_time_flow}"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:totem_of_undying"
+			id: "1E1CA2C8CA3CE373"
+			rewards: [{
+				command: "/gamerule keepInventory true"
+				elevate_perms: true
+				id: "1EC1C97B15A6E49F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1A7B4A42412884CB"
+				title: "{cmm.quests.keep_inventory}"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			description: ["{cmm.quests.waypoint.description}"]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:swiftness"
+				}
+			}
+			id: "7EF8E677258B3C43"
+			rewards: [{
+				id: "39E130C808AD7196"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:luck"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2555C7DD69E17D75"
+				title: "{cmm.quests.waypoint}"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [""]
+			icon: "minecraft:poppy"
+			id: "709142256DE3AF43"
+			rewards: [{
+				command: "/difficulty peaceful"
+				elevate_perms: true
+				id: "1FD8095E91D97B21"
+				type: "command"
+			}]
+			tasks: [{
+				id: "71FCA2F11ACB78EC"
+				title: "{cmm.quests.peaceful}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.peaceful}"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			description: ["{cmm.quests.ores.description}"]
+			icon: "minecraft:iron_ore"
+			id: "24D29410A19B14EC"
+			rewards: [{
+				id: "1E16B6620C4F1A84"
+				item: {
+					Count: 1
+					id: "create_sa:blazing_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "081392EBC1AFDD42"
+				title: "{cmm.quests.ores}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.ores}"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5735A6FF59ABCA22"]
+			description: ["如果基础物资在做出对应产线前耗尽，可以点击任务右上角的“应急物品”"]
+			icon: "minecraft:oak_sapling"
+			id: "66EC9CAB39D6E368"
+			rewards: [
+				{
+					id: "1EAF28FE9300385E"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 145
+					id: "6716826B13481A25"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "06300B78E3E25F15"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4F74309E1FC2CA46"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1D59210D65D1D752"
+				title: "{cmm.quests.sapling}"
+				type: "checkmark"
+			}]
+			title: "{cmm.quests.sapling}"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"更新日志："
+				""
+				"1.修改默认配置文件"
+				""
+				"2.更改1.1和1.2的流程"
+				""
+				"3.更改1.1、1.2、1.3的任务流程图"
+				""
+				"4.加入一些资源包"
+				""
+				"5.删除机械动力：无人机物流，并加入机械动力：纸飞机"
+			]
+			icon: "minecraft:oak_log"
+			id: "5C7486724111AEF5"
+			tasks: [{
+				id: "4ABDB1BD549EAEF6"
+				title: "{cmm.quests.changelog}"
+				type: "checkmark"
+			}]
+			title: "0.3.2更新日志"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:kubejs:textures/ftbquest/1.2/unlock_sfm_1.png width:185 height:78 align:center}"
+				"{image:kubejs:textures/ftbquest/1.2/unlock_sfm_2.png width:185 height:78 align:center}"
+			]
+			icon: "create_sa:brass_cube"
+			id: "07165831FFFED0D2"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "4255514F690CB694"
+				team_reward: true
+				title: "{cmm.tech.unlock_sfm}"
+				type: "custom"
+			}]
+			subtitle: "解锁后游戏难度将大幅下降"
+			tasks: [{
+				id: "54E2BD83FBA7A2FC"
+				title: "{cmm.tech.unlock_sfm}"
+				type: "checkmark"
+			}]
+			title: "{cmm.tech.unlock_sfm}"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			description: ["装载 Simple World Timer 模组获得最好体验"]
+			id: "357DFF5C6D586FAD"
+			subtitle: "冲！速通！"
+			tasks: [{
+				id: "10EDF7F90D1D2286"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "精密构件竞速！！！"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3D8C312D47ABD26A"
+				"1C0E1782FFB4AF3A"
+				"459E1E918D78B559"
+				"6D8E4F67FAC24E76"
+				"3E45D24BD2BC7902"
+				"18A88913C1458E38"
+				"4C5E80D1C707FAA5"
+				"1A92AC72B4670861"
+				"170F7B2EB81DF497"
+				"26F54DD57A2D5783"
+				"5735A6FF59ABCA22"
+			]
+			description: [
+				""
+				"&a工程集合&r是由工程师&aApertyotis&r发明的工具，在那个完全不存在锌元素的世界——也是许多工程师的飞船坠毁之地，这套工具被管饭运用。我将&aApertyotis&r的研究成果复制了一份，并成功将其添加到我们的世界。"
+				""
+				"对不起，在传输的过程中，初始的工作站损坏了，现在只有获取一部分资源后，才能修复工作站。不过不用担心，工程集合只需&a按照部署蓝图的方式放置&r就行了。"
+			]
+			icon: {
+				Count: 1
+				id: "createsimpleschematic:simple_schematic"
+				tag: {
+					File: "[预设结构] 简单工作站.nbt"
+				}
+			}
+			id: "17A9B5FC25D4B371"
+			rewards: [{
+				id: "25D6A3411287212A"
+				item: {
+					Count: 1
+					id: "createsimpleschematic:simple_schematic"
+					tag: {
+						File: "[预设结构] 简单工作站.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A8C2C0F0FC969E8"
+				title: "工程集合?"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				""
+				"&aJEI&r是&amezz&r发明的的&a信息显示工具&r。"
+				""
+				"打开&a任意界面&r，你会发现GUI右侧会&a出现一列或多列物品&r。"
+				"下方的输入框是搜索框，&a支持输入拼音和中文搜索&r。"
+				""
+				"对任意在GUI上的物品&8（收藏栏，GUI右侧物品和物品栏等）&r，对其按下&a[R]&r键，&a可查看其合成配方&r&8（上方的箭头可用来翻页配方类型，如果有多页请查看全部配方）&r；对其按下&a[U]&r键，&a可查看其用法&r&8（参与哪些配方）&r；对其按下&a[A]&r键，&a可收藏该物品&r，你会在物品栏或其他的GUI左侧看到你收藏的物品，此外，如果对JEI界面上的配方页的产物物品按&a[A]&r键，则会收藏该配方，而不是该物品。"
+				""
+				"对于单个配方，界面上可看到每个配方页右下方&8（不在配方页内部）&r有一个类似于书签的按钮，点击就可以&a收藏该配方&r，和对产出物品按&a[A]&r键的作用相同；在工作方块或机器的GUI中查看JEI配方时，你可能还会看到一个加号图标的按钮，点击该按钮&a即可对该机器填充配方材料&r。"
+			]
+			icon: "minecraft:apple"
+			id: "74C494238FFC58C0"
+			tasks: [{
+				id: "1C396402B3DE7272"
+				title: "确定"
+				type: "checkmark"
+			}]
+			title: "JEI物品管理器(Just Enough Items)"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				""
+				"&aFTB Quests &r是&aFTB团队&r发明的&a引导工具或是机制的表现形式&r。"
+				""
+				"&aFTB Quests&r 的UI非常符合直觉，基本不需要说明。"
+				""
+				"&a需要注意的是&r，任务页的任务标题下方左侧和右侧的箭头，点击可以&a查看该任务的前置和附属&r。"
+			]
+			icon: "ftbquests:book"
+			id: "6CAA31F160A398F9"
+			tasks: [{
+				id: "512E8731051182A0"
+				title: "确定"
+				type: "checkmark"
+			}]
+			title: "FTB 任务(FTB Quests)"
+			x: 1.5d
+			y: -0.5d
+		}
+	]
+	title: "{cmm.chapter.prologue}"
+}

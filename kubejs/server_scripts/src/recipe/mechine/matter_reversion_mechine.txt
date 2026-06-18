@@ -1,0 +1,14 @@
+ServerEvents.recipes(event => {
+
+    function matter_reversion_mechine(time, energy, input, output) {
+        event.recipes.custommachinery.custom_machine('kubejs:matter_reversion_machine', time)
+            .requireItem(input)
+            .produceItem(output)
+            .produceEnergy(energy)
+    }
+
+    matter_reversion_mechine(48, 5000, 'kubejs:ender_sheet', 'minecraft:ender_pearl')
+    matter_reversion_mechine(96, 20000, 'kubejs:bedrock_sheet', 'kubejs:bedrock_ingot')
+    matter_reversion_mechine(96, 0, 'storagedrawers:controller', 'kubejs:modern_mechanism')
+
+})

@@ -1,0 +1,6 @@
+{
+    "parent": "kubejs:item/pack",
+    "textures": {
+        "layer0": "kubejs:item/pack_open"
+    }
+}

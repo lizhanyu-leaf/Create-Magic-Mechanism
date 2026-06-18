@@ -1,0 +1,178 @@
+/**
+ * 物品合成配方辅助函数
+ * 支持单物品、多物品、多结果、概率合成等高级功能
+ * 
+ * 使用方法：
+ * 2. 在需要添加配方的地方调用 addCombineRecipe() 或它的便捷方法
+ * 3. 配方会自动添加到 global.combine_recipes
+ */
+
+// #region Function
+
+// 初始化全局配方对象
+if (!global.combine_recipes) {
+    global.combine_recipes = {}
+}
+
+/**
+ * 核心函数：添加物品合成配方
+ * @param {Array|string} inputs - 输入物品
+ * @param {Array|Object|string} outputs - 输出物品
+ * @param {Object} options - 可选配置（可选，不传则用空对象）
+ */
+function addCombineRecipe(inputs, outputs, options) {
+    // 处理 options 参数（手动实现默认值）
+    if (options === undefined) {
+        options = {}
+    }
+    
+    // 处理输入格式
+    var inputKey
+    if (Array.isArray(inputs)) {
+        inputKey = inputs.join('|')
+    } else if (typeof inputs === 'string') {
+        inputKey = inputs
+    } else {
+        console.error('❌ 输入格式错误，应为字符串或数组')
+        return null
+    }
+    
+    // 存储配方
+    global.combine_recipes[inputKey] = outputs
+    
+    console.log('✅ 添加配方: ' + inputKey + ' -> ' + JSON.stringify(outputs))
+    
+    return { inputKey: inputKey, recipeValue: outputs }
+}
+
+/**
+ * 便捷方法：添加简单的一对一合成
+ * @param {string} itemA - 物品A
+ * @param {string} itemB - 物品B
+ * @param {string} result - 结果物品
+ * @param {number} resultCount - 结果数量（默认1）
+ */
+function addSimpleCombine(itemA, itemB, result, resultCount) {
+    // 手动实现默认值
+    if (resultCount === undefined) {
+        resultCount = 1
+    }
+    
+    var resultStr = resultCount > 1 ? (resultCount + 'x ' + result) : result
+    return addCombineRecipe(itemA + '|' + itemB, resultStr)
+}
+
+/**
+ * 便捷方法：添加多物品合成
+ * @param {Array} items - 输入物品数组
+ * @param {string} result - 结果物品
+ * @param {number} resultCount - 结果数量（默认1）
+ */
+function addMultiCombine(items, result, resultCount) {
+    if (resultCount === undefined) {
+        resultCount = 1
+    }
+    
+    var resultStr = resultCount > 1 ? (resultCount + 'x ' + result) : result
+    return addCombineRecipe(items, resultStr)
+}
+
+/**
+ * 便捷方法：添加概率合成
+ * @param {Array|string} inputs - 输入物品
+ * @param {Array} outcomes - 可能的结果数组
+ */
+function addChanceCombine(inputs, outcomes) {
+    return addCombineRecipe(inputs, outcomes)
+}
+
+/**
+ * 便捷方法：添加带失败产物的合成
+ * @param {Array|string} inputs - 输入物品
+ * @param {string} successItem - 成功产物
+ * @param {number} successChance - 成功概率 (0-1)
+ * @param {string} failItem - 失败产物
+ * @param {number} failCount - 失败产物数量（默认1）
+ */
+function addFailCombine(inputs, successItem, successChance, failItem, failCount) {
+    if (failCount === undefined) {
+        failCount = 1
+    }
+    
+    return addCombineRecipe(inputs, {
+        result: { item: successItem, count: 1, chance: successChance },
+        failResult: { item: failItem, count: failCount }
+    })
+}
+
+/**
+ * 便捷方法：添加压缩合成
+ * @param {string} item - 物品ID
+ * @param {number} amount - 需要的数量
+ * @param {string} result - 结果物品（可选）
+ * @param {number} resultCount - 结果数量（默认1）
+ */
+function addCompressCombine(item, amount, result, resultCount) {
+    if (result === undefined) {
+        result = item + '_block'
+    }
+    if (resultCount === undefined) {
+        resultCount = 1
+    }
+    
+    var inputs = []
+    for (var i = 0; i < amount; i++) {
+        inputs.push(item)
+    }
+    
+    var resultStr = resultCount > 1 ? (resultCount + 'x ' + result) : result
+    return addCombineRecipe(inputs, resultStr)
+}
+
+/**
+ * 批量添加配方
+ * @param {Object} recipeMap - 配方映射表
+ */
+function addCombineRecipes(recipeMap) {
+    var count = 0
+    for (var key in recipeMap) {
+        if (recipeMap.hasOwnProperty(key)) {
+            addCombineRecipe(key, recipeMap[key])
+            count++
+        }
+    }
+    console.log('✅ 批量添加了 ' + count + ' 个配方')
+    return count
+}
+
+/**
+ * 移除配方
+ * @param {string} inputKey
+ */
+function removeCombineRecipe(inputKey) {
+    if (global.combine_recipes[inputKey]) {
+        delete global.combine_recipes[inputKey]
+        console.log('✅ 移除配方: ' + inputKey)
+        return true
+    }
+    console.warn('⚠️ 配方 ' + inputKey + ' 不存在')
+    return false
+}
+
+/**
+ * 获取所有配方
+ */
+function getAllCombineRecipes() {
+    return global.combine_recipes
+}
+
+/**
+ * 清空所有配方
+ */
+function clearAllCombineRecipes() {
+    global.combine_recipes = {}
+    console.log('✅ 已清空所有配方')
+}
+
+// #endregion
+

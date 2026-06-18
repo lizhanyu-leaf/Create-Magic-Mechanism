@@ -1,0 +1,110 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "196D031DD1EFBC1A"
+	group: "25C56CEF8E0E3373"
+	icon: "create:creative_blaze_cake"
+	id: "196D031DD1EFBC1A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4C4E16D586D9F6B8"]
+			id: "3776F837882F7450"
+			tasks: [{
+				id: "0C48FFE5874EB655"
+				type: "checkmark"
+			}]
+			title: "经过探索，你已经找到了创造的踪迹"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3776F837882F7450"]
+			id: "2F7FD6694C5BE116"
+			tasks: [{
+				id: "73592941DBA7A7E1"
+				type: "checkmark"
+			}]
+			title: "线索指向了四条不同的路线"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2F7FD6694C5BE116"]
+			icon: "createaddition:small_light_connector"
+			id: "71B781532703B49F"
+			tasks: [{
+				id: "26DC4A568CC43205"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			title: "外星科技"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2F7FD6694C5BE116"]
+			icon: {
+				Count: 1
+				id: "sfm:labelgun"
+				tag: { }
+			}
+			id: "5FFE118E779E6722"
+			tasks: [{
+				id: "63879C0006EA1FA0"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			title: "工厂管理"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2F7FD6694C5BE116"]
+			icon: "kubejs:pack_deepslate"
+			id: "5196FC0B0ABAB426"
+			tasks: [{
+				id: "06F5521BCD1B542E"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			title: "无尽聚合"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2F7FD6694C5BE116"]
+			icon: "ars_nouveau:arcane_pedestal"
+			id: "4CDAA0BE841DDA66"
+			tasks: [{
+				id: "671B9CB728980DC3"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			title: "炼金术"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "4C4E16D586D9F6B8"
+			tasks: [
+				{
+					id: "2BBB41E5A6D868A9"
+					title: "未完成"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 114514L
+					id: "568FE7A210BDC95F"
+					item: { Count: 114514, id: "create:handheld_worldshaper" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "创造的踪迹（未制作）"
+}

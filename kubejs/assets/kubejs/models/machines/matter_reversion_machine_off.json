@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+        "particle": "kubejs:block/machines/matter_reversion_machine_off_side",
+        "side": "kubejs:block/matter_reversion_machine_off_side",
+        "end": "kubejs:block/matter_reversion_machine_top"
+    }
+}

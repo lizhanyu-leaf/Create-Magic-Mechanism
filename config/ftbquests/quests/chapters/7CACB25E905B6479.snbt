@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7CACB25E905B6479"
+	group: "086847A01061ED23"
+	icon: "ars_nouveau:creative_spell_book"
+	id: "7CACB25E905B6479"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "{cmm.chapter.arcane_engineer}"
+}

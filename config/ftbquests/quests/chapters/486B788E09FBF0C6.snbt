@@ -1,0 +1,451 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "486B788E09FBF0C6"
+	group: "086847A01061ED23"
+	icon: "kubejs:pack"
+	id: "486B788E09FBF0C6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "32115E372B41CA1B"
+			rewards: [{
+				count: 32
+				id: "1BA264B818A4B065"
+				item: "kubejs:pack"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1ACBA0FA4BD19E3C"
+				item: "kubejs:pack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "7831C77558427605"
+			tasks: [{
+				id: "26AD9C9BABD96D06"
+				item: "kubejs:pack_stone"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "18A66E8965D25122"
+			tasks: [{
+				id: "3B0758A5BA2C6D69"
+				item: "kubejs:pack_netherrack"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "3DA8389EB62C9FF0"
+			tasks: [{
+				id: "0FC344E258B1A83F"
+				item: "kubejs:pack_stone_bricks"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "4AAFC9F4C578C76A"
+			tasks: [{
+				id: "53D304F7524AF4A3"
+				item: "kubejs:pack_gold"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "620AAB693BCF2227"
+			tasks: [{
+				id: "1ED1BB94CB83F311"
+				item: "kubejs:pack_copper"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "51AA1B3B2537B1F0"
+			tasks: [{
+				id: "568C29B207764DD5"
+				item: "kubejs:pack_diamond"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "7387B8410053BBA3"
+			tasks: [{
+				id: "4220FA77447C45FD"
+				item: "kubejs:pack_iron"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "550C53F95439E865"
+			tasks: [{
+				id: "1A90CAE94F483F78"
+				item: "kubejs:pack_andesite_alloy"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "0F2422B8A8F947FC"
+			tasks: [{
+				id: "335095B39F7819FE"
+				item: "kubejs:pack_zinc"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32115E372B41CA1B"]
+			id: "46EBBFBF01589879"
+			tasks: [{
+				id: "13BB2EE839968807"
+				item: "kubejs:pack_brass"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["550C53F95439E865"]
+			id: "69E3D0DE8D821D19"
+			tasks: [{
+				id: "649EF0332796CD75"
+				item: "kubejs:assembly_molten_andesite_alloy_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["46EBBFBF01589879"]
+			id: "40E41EF49519627C"
+			tasks: [{
+				id: "4D56A68F29CB565E"
+				item: "kubejs:assembly_molten_brass_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F2422B8A8F947FC"]
+			id: "5082161F8E5AAA3E"
+			tasks: [{
+				id: "77D8084227326D3B"
+				item: "kubejs:assembly_molten_zinc_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7387B8410053BBA3"]
+			id: "58292F9A15180E7C"
+			tasks: [{
+				id: "4E2A7E97C6A28B23"
+				item: "kubejs:assembly_molten_iron_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4AAFC9F4C578C76A"]
+			id: "032EF70823F22938"
+			tasks: [{
+				id: "7A1DE8E8DD6C71DA"
+				item: "kubejs:assembly_molten_gold_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["620AAB693BCF2227"]
+			id: "1C0C1F47FF7B98B8"
+			tasks: [{
+				id: "78558BEEDAEAF84B"
+				item: "kubejs:assembly_molten_copper_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["51AA1B3B2537B1F0"]
+			id: "3FBB3FD5F4F0E96F"
+			tasks: [{
+				id: "4663A4EEA5075A6B"
+				item: "kubejs:assembly_molten_diamond_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7831C77558427605"]
+			id: "76815D2EBF085C8B"
+			tasks: [{
+				id: "7732BE0E7F126523"
+				item: "kubejs:assembly_molten_stone_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1D52CE9387BB6497"]
+			hide_dependent_lines: true
+			id: "3E548DD410C3C305"
+			tasks: [{
+				id: "772C5764E1640D07"
+				item: "kubejs:pack_source_fluid"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D52CE9387BB6497"]
+			hide_dependent_lines: true
+			id: "7406F5D71B081AAD"
+			tasks: [{
+				id: "2163018625C12193"
+				item: "kubejs:pack_magic_potion"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["620AAB693BCF2227"]
+			id: "1D52CE9387BB6497"
+			tasks: [{
+				id: "045C9D6A6340211D"
+				item: "kubejs:pack_fluid_tank"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7406F5D71B081AAD"
+				"3E548DD410C3C305"
+			]
+			id: "36B7D6C5B7C547C5"
+			tasks: [{
+				id: "5C6FB26CA4ED7FE8"
+				item: "kubejs:pack_colorful_mechanism"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7406F5D71B081AAD"
+				"3E548DD410C3C305"
+			]
+			id: "0728D6F40BB22EAD"
+			tasks: [{
+				id: "3C4606FD4729CA85"
+				item: "kubejs:pack_experience_mechanism"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7406F5D71B081AAD"
+				"3E548DD410C3C305"
+			]
+			id: "06C1883813BDB669"
+			tasks: [{
+				id: "51F8B6EEC7A6430A"
+				item: "kubejs:pack_sturdy_mechanism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7406F5D71B081AAD"
+				"3E548DD410C3C305"
+			]
+			id: "0BF973704595E057"
+			tasks: [{
+				id: "60FF6307DCCBB98C"
+				item: "kubejs:pack_blaze_mechanism"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3FBB3FD5F4F0E96F"
+				"40E41EF49519627C"
+				"69E3D0DE8D821D19"
+				"58292F9A15180E7C"
+				"1C0C1F47FF7B98B8"
+				"5082161F8E5AAA3E"
+				"76815D2EBF085C8B"
+				"032EF70823F22938"
+			]
+			hide_dependent_lines: true
+			id: "1A8C283C3E5F93C1"
+			tasks: [{
+				id: "64D282E038DC3733"
+				item: "kubejs:assembly_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5082161F8E5AAA3E"
+				"1A8C283C3E5F93C1"
+			]
+			id: "5BBFB7F64DA8AA58"
+			tasks: [{
+				id: "62068982AD649064"
+				item: "kubejs:aggregated_zinc_mechanism"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"76815D2EBF085C8B"
+				"1A8C283C3E5F93C1"
+			]
+			id: "613301421CAB9AC7"
+			tasks: [{
+				id: "0977AA3E1DE954A1"
+				item: "kubejs:aggregated_stone_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"58292F9A15180E7C"
+				"1A8C283C3E5F93C1"
+			]
+			id: "601C08E49ADEE311"
+			tasks: [{
+				id: "7EFAC95D11D1A6B3"
+				item: "kubejs:aggregated_iron_mechanism"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"032EF70823F22938"
+				"1A8C283C3E5F93C1"
+			]
+			id: "7151BF1B3F1FE332"
+			tasks: [{
+				id: "2F27BC4825B5DBA4"
+				item: "kubejs:aggregated_gold_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"69E3D0DE8D821D19"
+				"1A8C283C3E5F93C1"
+			]
+			id: "660C792162CA6401"
+			tasks: [{
+				id: "75FE12ABDFAB0722"
+				item: "kubejs:aggregated_andesite_alloy_mechanism"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"40E41EF49519627C"
+				"1A8C283C3E5F93C1"
+			]
+			id: "02103ABE5A7729EB"
+			tasks: [{
+				id: "7B22E79C61209411"
+				item: "kubejs:aggregated_brass_mechanism"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"3FBB3FD5F4F0E96F"
+				"1A8C283C3E5F93C1"
+			]
+			id: "3838A9DE472C97BF"
+			tasks: [{
+				id: "49242DD7DD823B63"
+				item: "kubejs:aggregated_diamond_mechanism"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1C0C1F47FF7B98B8"
+				"1A8C283C3E5F93C1"
+			]
+			id: "634E6140DF1DA889"
+			tasks: [{
+				id: "654FAE08EF76EC3F"
+				item: "kubejs:aggregated_copper_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+	]
+	title: "{cmm.chapter.aggregation_engineer}"
+}

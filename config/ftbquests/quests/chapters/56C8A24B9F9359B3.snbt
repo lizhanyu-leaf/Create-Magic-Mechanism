@@ -1,0 +1,1917 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "56C8A24B9F9359B3"
+	group: "76AE7F0DD0D55C7E"
+	icon: "create:schematic_and_quill"
+	id: "56C8A24B9F9359B3"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["线路仅供参考，左侧为每个章节的量产任务"]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "5D8C760C4574362D"
+			rewards: [{
+				id: "769921691D07A433"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			shape: "square"
+			size: 3.0d
+			tasks: [{
+				id: "4E0B5876969FC582"
+				title: "工厂脉络"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			description: ["前期的坚固旋钮由黑曜石序列装配产出"]
+			id: "4ABB435ECE776CEC"
+			rewards: [{
+				id: "5E37E3437E6D27DE"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4E9E9D3068E37147"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4ABB435ECE776CEC"]
+			id: "3AAA1AB1B416CCD7"
+			rewards: [{
+				id: "7E094FFC6BA5F1C8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4CABF62B448C3810"
+				item: "create:powdered_obsidian"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3AAA1AB1B416CCD7"]
+			description: ["赠送的传送带不够用？可以在小卖部购买"]
+			id: "3003133DD3040A32"
+			rewards: [
+				{
+					count: 10
+					id: "52F656A68D405861"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "68C5A9FF7FE68EBA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "5686F34E874AA8D0"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"4ABB435ECE776CEC"
+				"3003133DD3040A32"
+			]
+			dependency_requirement: "one_completed"
+			id: "6FDEBE0C28BB954D"
+			rewards: [{
+				id: "6A72BE7D62F8FCA4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "48ADD229267C645A"
+				item: "kubejs:precision_mechanism_1"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"3003133DD3040A32"
+				"0EBF2C123E74D173"
+				"6970C782169D78B4"
+				"50E272F9D5B24150"
+				"409B4C20B6FD53C5"
+				"6FDEBE0C28BB954D"
+			]
+			dependency_requirement: "one_completed"
+			id: "7602811DE1698FC0"
+			rewards: [
+				{
+					id: "46C25EC8FA7CA188"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "726BA1288258DE29"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "127A0F94B5BBE984"
+				item: "kubejs:sturdy_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			id: "0EBF2C123E74D173"
+			rewards: [{
+				id: "13CD4401FF82FF5D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0365F529A34BD957"
+				item: "kubejs:strange_potion_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6970C782169D78B4"]
+			id: "50E272F9D5B24150"
+			rewards: [{
+				id: "66D5A5F40F59015C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3E36753154BED3C8"
+				item: "kubejs:bedrock_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7458879058EA2029"]
+			id: "6970C782169D78B4"
+			rewards: [{
+				id: "6B52D56399A9BD56"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5A3703BD94948B02"
+				item: "kubejs:bedrock_powder"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2447F70EBC04C3AD"]
+			id: "7458879058EA2029"
+			rewards: [{
+				id: "3C7E91141B689EC7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4C6D1C2FA73046DC"
+				item: "kubejs:raw_bedrock"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4EEC55AA5A685FD1"]
+			id: "40382DC83D44C12D"
+			rewards: [{
+				id: "18AD3E9450F69490"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3837C099279C5F49"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"7C9DFFBCE352DE92"
+				"40382DC83D44C12D"
+			]
+			id: "409B4C20B6FD53C5"
+			rewards: [{
+				id: "2EA0DB0FD8F4695E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "42A6958D224A8BD2"
+				item: "kubejs:slime_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["31DA6234C146AACB"]
+			id: "7C9DFFBCE352DE92"
+			rewards: [{
+				id: "0C50EE0ACA4113D2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "633F57A2B07BE0E3"
+				item: "createaddition:seed_oil_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"16B44519828D50FE"
+				"04DF6008B959E791"
+			]
+			id: "2447F70EBC04C3AD"
+			rewards: [{
+				id: "088DB85EF838ACD9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "43B5F7A0F5BDE9A4"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			description: ["可以使用火药稀释液作为超级燃烧的燃料"]
+			id: "16B44519828D50FE"
+			rewards: [
+				{
+					id: "77B1BFAADD5B7E17"
+					item: "kubejs:gunpowder_diluent_bucket"
+					type: "item"
+				}
+				{
+					id: "753804A15B89C223"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "24393E4469AB6213"
+				item: "minecraft:deepslate"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["04DF6008B959E791"]
+			id: "31DA6234C146AACB"
+			rewards: [{
+				id: "0AD4DEED62288B51"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "55D3513672F8B7B5"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			description: ["合成出第一桶奇异药水后，可以使用紫颂果进行循环增量"]
+			id: "04DF6008B959E791"
+			rewards: [{
+				count: 32
+				id: "3C2C5BE997E2A474"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D4F75FB3288E98C"
+				item: "kubejs:strange_potion_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"409B4C20B6FD53C5"
+				"6FDEBE0C28BB954D"
+			]
+			id: "38D991859100187D"
+			rewards: [{
+				id: "0D84D365F1A282E9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6868529602DC7BAF"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2153E5780AC3F214"]
+			id: "583A505AF4A737A2"
+			rewards: [{
+				id: "6CCCD8C527085586"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4F8A039B023C0215"
+				item: "kubejs:precision_mechanism_2"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04DF6008B959E791"]
+			id: "2153E5780AC3F214"
+			rewards: [{
+				id: "09099042E8090F00"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "604BB2B8EB1D373B"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"583A505AF4A737A2"
+				"5168EFB296073C21"
+				"38D991859100187D"
+			]
+			dependency_requirement: "one_completed"
+			id: "72F29C058D4C9495"
+			rewards: [
+				{
+					id: "18F79F05AA495587"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "3BA5A87861BDD11A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "4D9F4AB4E4097F8E"
+				item: "kubejs:redstone_precision_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["76F9DC27CB36104C"]
+			id: "5168EFB296073C21"
+			rewards: [{
+				id: "2E40A74392032540"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "70FE2504032444CF"
+				item: "kubejs:redstone_diluent_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2153E5780AC3F214"]
+			id: "76F9DC27CB36104C"
+			rewards: [{
+				id: "367E6EA164FB43DA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7575A45A98047057"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"38D991859100187D"
+				"72F29C058D4C9495"
+			]
+			dependency_requirement: "one_completed"
+			id: "4EFC1B9E728ED714"
+			rewards: [
+				{
+					id: "42B0129024932CEB"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "4072BDA1D5245B87"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "4D5B55066EDDE60D"
+				item: "kubejs:colorful_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3003133DD3040A32"]
+			id: "288648976A1698A1"
+			rewards: [{
+				id: "2F9EE7A6A6F5662E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "164593C3EDA46073"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4EFC1B9E728ED714"]
+			id: "6BAEFD229EAC596F"
+			rewards: [{
+				id: "6909AB4DA5174C6C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1D3485E1A78A6479"
+				item: "minecraft:white_dye"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6BAEFD229EAC596F"]
+			id: "7B73B7FE7F8F9CAE"
+			rewards: [{
+				id: "0CCDA05BBED7522F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "32D4E3E644D00AD3"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7B73B7FE7F8F9CAE"]
+			id: "1B2F76074800DB04"
+			rewards: [{
+				id: "22C7758AD9DAECA9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2819169C0556F622"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"72F29C058D4C9495"
+				"62D0C338EC65793A"
+				"36C25C5CC8AE769F"
+				"7045F513DF0C593A"
+				"289284A2BC4FF564"
+			]
+			dependency_requirement: "one_completed"
+			id: "637FB7B7BBE3348C"
+			rewards: [
+				{
+					id: "219C573DFAC5B5BD"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "5A613A6C00774206"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "67B3AB79B654CFD5"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"72F29C058D4C9495"
+				"7DACC0A041DC8A56"
+				"5C28219525517859"
+			]
+			dependency_requirement: "one_completed"
+			id: "7BEC75C0539A5BE1"
+			rewards: [
+				{
+					id: "4153CB91B0A9D502"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "7740BB22ACC284A8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "75AA33EAF0A2464F"
+				item: "kubejs:blaze_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5C28219525517859"
+				"3F1087B8C599903B"
+			]
+			dependency_requirement: "one_completed"
+			id: "7DACC0A041DC8A56"
+			rewards: [{
+				id: "0DA1B38AF9EBFF9E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1E6C2E89DAC74E93"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "5C28219525517859"
+			rewards: [{
+				id: "5D517D663ED67622"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2CAF91F398CFD5C9"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C28219525517859"]
+			id: "3F1087B8C599903B"
+			rewards: [{
+				id: "2AE8E7AE83A50E35"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "53A5C233918D111E"
+				item: "create:cinder_flour"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7BEC75C0539A5BE1"]
+			id: "36C25C5CC8AE769F"
+			rewards: [{
+				id: "10D7A0CB3AF02510"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1E09F06A2D162E49"
+				item: "kubejs:heat_lava_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["36C25C5CC8AE769F"]
+			id: "62D0C338EC65793A"
+			rewards: [{
+				id: "05AFCF51C94DA1DF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6590A76918E29898"
+				item: "kubejs:refrigerant_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6BAEFD229EAC596F"]
+			id: "42FD043D29E221D9"
+			rewards: [{
+				id: "6D0C9C8274E2D311"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "167470058B74726F"
+				item: "minecraft:lime_dye"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["42FD043D29E221D9"]
+			id: "66E547839FD3DE1D"
+			rewards: [{
+				id: "7DA2D8A7C693E3D2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7BCDC856899E6CC7"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["66E547839FD3DE1D"]
+			id: "289284A2BC4FF564"
+			rewards: [{
+				id: "445EAD8D43AAC64D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1BD67512289480B4"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E9DDF3B852C7F91"]
+			id: "7045F513DF0C593A"
+			rewards: [{
+				id: "467B9FC4CAC0CF25"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "69B8F5DF1503F788"
+				item: "kubejs:loose_precision_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			id: "5E9DDF3B852C7F91"
+			rewards: [{
+				id: "4E4A845A3DEAFA71"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "45CB96A86B707735"
+				item: "kubejs:precision_mechanism_substrate"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6BAEFD229EAC596F"]
+			id: "181220814082BF7D"
+			rewards: [{
+				id: "1EAA63F17277B260"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5C091F27AB88DF46"
+				item: "minecraft:light_blue_dye"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6BAEFD229EAC596F"]
+			id: "08D5B07C79A94C24"
+			rewards: [{
+				id: "5CEDB0F40BEF517C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2EA52A4E2904540A"
+				item: "minecraft:magenta_dye"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["62D0C338EC65793A"]
+			dependency_requirement: "one_completed"
+			id: "1539DB390A2B1850"
+			rewards: [
+				{
+					id: "2C080BB730DFCA72"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "29758E843576BB47"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "1D8A92B6EBEB3830"
+				item: "kubejs:experience_mechanism"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"181220814082BF7D"
+				"251693C886F8A201"
+			]
+			dependency_requirement: "one_completed"
+			description: ["使用淡蓝色染料进行序列装配或者使用钻石矿石进行循环增殖"]
+			id: "4A7344194DC39ED5"
+			rewards: [
+				{
+					id: "6FE0EAFF69039E69"
+					item: "minecraft:diamond_ore"
+					type: "item"
+				}
+				{
+					id: "635E545C01D21CE2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "003E05568BF1E5C4"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["08D5B07C79A94C24"]
+			id: "251693C886F8A201"
+			rewards: [{
+				id: "0477A4C79238B332"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "643CD08038D64EF5"
+				item: "kubejs:magenta_strange_potion_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"62D0C338EC65793A"
+				"02A235C90F0434A5"
+				"224428C661A01C94"
+			]
+			dependency_requirement: "one_completed"
+			id: "318EB591E1D0E6C8"
+			rewards: [
+				{
+					id: "7DBBFE5D83514594"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "74E92FC9DF27C8C8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "14B0898EC2712742"
+				item: "kubejs:ender_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1539DB390A2B1850"]
+			id: "60BEC760B06373C5"
+			rewards: [{
+				id: "4C6B07BA9A933BFD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "74576298EF6D6069"
+				item: "createdieselgenerators:ethanol_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["60BEC760B06373C5"]
+			id: "2157654AA53D5971"
+			rewards: [{
+				id: "03B878E6C26E72EF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "794347204D73ADFB"
+				item: "createdieselgenerators:biodiesel_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"2157654AA53D5971"
+				"251693C886F8A201"
+				"7ADCBA1C0D4E2CD8"
+				"1F79021E8B94F998"
+			]
+			id: "02A235C90F0434A5"
+			rewards: [{
+				id: "18637C8FF6E6F25E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1FED4C8131EB2C8D"
+				item: "kubejs:magic_potion_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["02A235C90F0434A5"]
+			id: "224428C661A01C94"
+			rewards: [{
+				id: "5B51ACAE4BC4E722"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "07BC0BC686572431"
+				item: "kubejs:ender_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"02A235C90F0434A5"
+				"4A7344194DC39ED5"
+				"74BCC92097440EB6"
+			]
+			dependency_requirement: "one_completed"
+			id: "5213392A2E735C68"
+			rewards: [
+				{
+					id: "3D2E27DFBA477256"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "3FA5659035177C49"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "6BD656C646954D5E"
+				item: "kubejs:magic_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0CDBF8B108B6EDEF"]
+			dependency_requirement: "one_completed"
+			id: "74BCC92097440EB6"
+			rewards: [
+				{
+					id: "4514A5F8294E0064"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+				{
+					id: "4DB03D821B1AE321"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "00D95D0974DC0760"
+				item: "kubejs:slime_mechanism"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 12.5d
+		}
+		{
+			id: "0CDBF8B108B6EDEF"
+			rewards: [{
+				id: "0F0BA3F94FE3B79C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6F0CC617061384FF"
+				item: "minecraft:slime_block"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 12.5d
+		}
+		{
+			id: "7ADCBA1C0D4E2CD8"
+			rewards: [{
+				id: "1281FCCF1BD85839"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0B069F81876EAED0"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"3F1087B8C599903B"
+				"47231373D58F0135"
+			]
+			id: "493A72FA09041FFF"
+			rewards: [{
+				id: "57E03D3ECBF1C84C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "45F7EEC107CEEC82"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["493A72FA09041FFF"]
+			id: "1F79021E8B94F998"
+			rewards: [{
+				id: "643EC99671AD9522"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "599CAFFB6F03BB89"
+				item: "kubejs:gunpowder_diluent_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2CD6FA7353A4C967"]
+			id: "47231373D58F0135"
+			rewards: [{
+				id: "7082DE1911EFB388"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "15717757F561F7AA"
+				item: "kubejs:gunpowder_catalyst_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["39ACB245CD34D436"]
+			id: "2CD6FA7353A4C967"
+			rewards: [{
+				id: "2326647FC4603816"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1F9F2B6E61833CCC"
+				item: "kubejs:redstone_catalyst_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			id: "39ACB245CD34D436"
+			rewards: [{
+				id: "3D528CAFB5B5F08E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "59BB922B8706BC13"
+				item: "minecraft:redstone_ore"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5D8C760C4574362D"]
+			hide_dependent_lines: true
+			id: "77ED1028D24DFAC9"
+			shape: "hexagon"
+			tasks: [{
+				id: "53C9851C5B76D6EB"
+				title: "1.1 新手工程师"
+				type: "checkmark"
+			}]
+			x: -13.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			id: "652C9750D4D1241D"
+			rewards: [{
+				id: "348746D82B24B50B"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "31A3AAA2AD01B1ED"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: -21.75d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5D8C760C4574362D"]
+			hide_dependent_lines: true
+			id: "56C1E685EB2AA0C1"
+			shape: "hexagon"
+			tasks: [{
+				id: "3910327E1AF01BC7"
+				title: "1.2 红石工程师"
+				type: "checkmark"
+			}]
+			x: -13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D8C760C4574362D"]
+			hide_dependent_lines: true
+			id: "5168990E0C35ED3E"
+			shape: "hexagon"
+			tasks: [{
+				id: "122472C5874EFF82"
+				title: "1.3 精密加工工程师"
+				type: "checkmark"
+			}]
+			x: -13.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			id: "6432DE0E583C2712"
+			rewards: [{
+				id: "1180E6303007CAD0"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "1269454C075F2200"
+				item: "kubejs:precision_mechanism_1"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			id: "78AA3006EE03D43F"
+			rewards: [{
+				id: "422BC119B855791A"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "29D10C0A0A8E4DF1"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "1092A44F06AC47CD"
+			rewards: [{
+				id: "594D2B6C8D658098"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "kubejs:strange_potion"
+				id: "09204FB5F2604FBE"
+				type: "fluid"
+			}]
+			x: -13.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			description: ["{\"extra\":[{\"text\":\"如何提交？ \"},{\"underlined\":true,\"text\":\"点击这里\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7EFD73147EDA8D62\" }}],\"text\":\"\"}"]
+			id: "2187C394DA77B6A6"
+			rewards: [{
+				id: "1697DB8FC7D719D1"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "createaddition:seed_oil"
+				id: "62AF152538E7A916"
+				type: "fluid"
+			}]
+			x: -13.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			description: ["{\"extra\":[{\"text\":\"如何提交？ \"},{\"underlined\":true,\"text\":\"点击这里\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7EFD73147EDA8D62\" }}],\"text\":\"\"}"]
+			id: "7D56508E308DE2AA"
+			rewards: [{
+				id: "359ADBDC61C22F0D"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "kubejs:slime"
+				id: "14112124594D6281"
+				type: "fluid"
+			}]
+			x: -11.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "3322F96A01299013"
+			rewards: [{
+				id: "4D0EB86B558385AB"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "250DAC0E5336C741"
+				item: "kubejs:precision_mechanism_2"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "7F6B4A7F06EE39B6"
+			rewards: [{
+				id: "24F204FFCECF6836"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 256L
+				id: "72C44C59E3F21B05"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "679B7BDA73300678"
+			rewards: [{
+				id: "323008FE1E3B388E"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "614E28A7BCC93EEB"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			description: ["{\"extra\":[{\"text\":\"如何提交？ \"},{\"underlined\":true,\"text\":\"点击这里\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7EFD73147EDA8D62\" }}],\"text\":\"\"}"]
+			id: "55CCC47A0F629E8A"
+			rewards: [{
+				id: "0F028BE6B5AC69CA"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 512000L
+				fluid: "minecraft:lava"
+				id: "196A782886E7070C"
+				type: "fluid"
+			}]
+			x: -14.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "610972C11C7F6CC1"
+			rewards: [{
+				id: "09026A6AA24D7342"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "kubejs:refrigerant"
+				id: "740EBDDB53BC1DE2"
+				type: "fluid"
+			}]
+			x: -14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "7BBCA04F8D7A307B"
+			rewards: [{
+				id: "1DC2FD13E7BA669C"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 512000L
+				fluid: "kubejs:redstone_diluent"
+				id: "5477C3F3FB0C7ADE"
+				type: "fluid"
+			}]
+			x: -11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "56C2D064E3454530"
+			rewards: [{
+				id: "44B028DB97966646"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "50FBF87A93317405"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56C1E685EB2AA0C1"]
+			id: "45011519933D4BFA"
+			rewards: [{
+				id: "361BBCE05FCB3278"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "kubejs:heat_lava"
+				id: "2FA2926514E52A35"
+				type: "fluid"
+			}]
+			x: -16.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5168990E0C35ED3E"]
+			id: "736AA1A2C3AAC5C5"
+			rewards: [{
+				id: "10AA061F8AB4232B"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "createdieselgenerators:ethanol"
+				id: "52B871E3E302B635"
+				type: "fluid"
+			}]
+			x: -11.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5168990E0C35ED3E"]
+			id: "0DD669156AEAB6B1"
+			rewards: [{
+				id: "7EEF195AFFA06A23"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "createdieselgenerators:biodiesel"
+				id: "6CAEEB2823E75066"
+				type: "fluid"
+			}]
+			x: -11.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5168990E0C35ED3E"]
+			id: "79716A2E2E7BD88D"
+			rewards: [{
+				id: "4845C76902E84B5F"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "kubejs:gunpowder_diluent"
+				id: "5DF6C9DCC72C45A8"
+				type: "fluid"
+			}]
+			x: -13.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5168990E0C35ED3E"]
+			id: "1B0C08B66364F919"
+			rewards: [{
+				id: "6C4391799116DF6D"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "5CE6947304AE1C71"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5168990E0C35ED3E"]
+			id: "554C8C4951C672AD"
+			rewards: [{
+				id: "43440A75E0C1BE85"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 512000L
+				fluid: "createdieselgenerators:crude_oil"
+				id: "00935708690B67AF"
+				type: "fluid"
+			}]
+			x: -13.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5168990E0C35ED3E"]
+			id: "5FFE346FEB28750A"
+			rewards: [{
+				id: "4C46C1B9B19208BE"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "kubejs:magenta_strange_potion"
+				id: "5BA9D7C76C807F91"
+				type: "fluid"
+			}]
+			x: -14.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5168990E0C35ED3E"]
+			id: "65C0027D26746D11"
+			rewards: [{
+				id: "257BCB12D0668297"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				amount: 256000L
+				fluid: "kubejs:magic_potion"
+				id: "1FAECC94241E9425"
+				type: "fluid"
+			}]
+			x: -16.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["04DF6008B959E791"]
+			id: "4EEC55AA5A685FD1"
+			rewards: [{
+				id: "2247289925E4660E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4876767E4B2603CF"
+				item: "minecraft:slime_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				"为了方便建造，我推荐你将一些建材实现自动化。"
+				"这就是超市"
+			]
+			hide_dependent_lines: true
+			id: "2A9BB01EF09DBBDF"
+			shape: "square"
+			size: 3.0d
+			tasks: [{
+				id: "2416BD9A05386682"
+				title: "超市"
+				type: "checkmark"
+			}]
+			x: -21.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			id: "4297C6541D557504"
+			rewards: [{
+				id: "6F4F293DE79F29CF"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 256L
+				id: "4CDD03C52CC65620"
+				item: "kubejs:precision_mechanism_3"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			id: "53B23D4726BE512D"
+			rewards: [{
+				id: "6F4A573B98920424"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "7249851017612E96"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -20.25d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			id: "50A8073D236162F2"
+			rewards: [{
+				id: "3F03E6A28A9CB7CC"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "59ABC04B4D669F5E"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: -21.75d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			id: "73F7E43A37EBBE09"
+			rewards: [{
+				id: "6F678A86D259A782"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "1D25717BFC0EBEA6"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: -20.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			hide_dependency_lines: true
+			id: "1233BF594A079D8E"
+			rewards: [{
+				id: "472E2A53F3BB38BB"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "0E1DDA7B05B27B94"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: -21.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			hide_dependency_lines: true
+			id: "5AC106380EC1BD30"
+			rewards: [{
+				auto: "disabled"
+				id: "2966074CDD1C9BC0"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "6CC994FCE32FF14A"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: -20.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			id: "27D05F8235C39908"
+			rewards: [{
+				id: "7CB3A9B9055BBD79"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "52F14C867C5AD552"
+				item: "kubejs:wood_set"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			id: "43A5C393183035AE"
+			rewards: [{
+				id: "649BD661D5F8104C"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					consume_items: true
+					count: 512L
+					id: "5780A6286C49D463"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 512L
+					id: "430D429ED6A34F7A"
+					item: { Count: 512, id: "create:large_cogwheel" }
+					type: "item"
+				}
+			]
+			x: -21.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2A9BB01EF09DBBDF"]
+			id: "4DCFD6E6E72022B7"
+			rewards: [{
+				id: "22F6B9EA4E08A1C6"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "478434538D5205BE"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: -20.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["77ED1028D24DFAC9"]
+			id: "741881F88EB1CC7F"
+			rewards: [{
+				id: "04E3F8DF6C9F92B9"
+				item: "kubejs:coin_button"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "696AA4DE5F44BC4A"
+				item: { Count: 512, id: "create:cardboard" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7471BEA8102B1FEE"]
+			id: "7B1FE08B5BFBE424"
+			tasks: [{
+				id: "0F7A0AE51A7835BB"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			id: "7471BEA8102B1FEE"
+			tasks: [{
+				id: "5585A56D6232F2C2"
+				item: "createaddition:iron_rod"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B1FE08B5BFBE424"]
+			id: "6C35C503D3BB6F1D"
+			tasks: [{
+				id: "6BCEFEF13BCD24B6"
+				item: "create:pulp"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6C35C503D3BB6F1D"]
+			id: "28CDF974F29253CD"
+			tasks: [{
+				id: "130CE26013F37AD8"
+				item: "create:cardboard"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+	]
+	title: "{cmm.chapter.factory_lines}"
+}

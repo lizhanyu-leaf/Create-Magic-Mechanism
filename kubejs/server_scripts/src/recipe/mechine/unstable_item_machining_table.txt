@@ -1,0 +1,52 @@
+ServerEvents.recipes(event => {
+    /**
+     * @param {number} time
+     * @param {number} energy
+     * @param {$InputItem$Type} input0
+     * @param {$InputItem$Type} input1
+     * @param {$InputItem$Type} input2
+     * @param {$InputFluid$Type} input_fluid
+     * @param {$OutputItem$Type} output
+     */
+    function unstable_item_machining_table(base, input1, input2, input_fluid, output, time, energy) {
+        let recipe = event.recipes.custommachinery.custom_machine('kubejs:unstable_item_machining_table', time)
+        recipe
+            .requireItem(base, 'input0')
+            .requireItem(input1)
+            .requireItem(input2)
+            .requireFluid(input_fluid, 'tank1')
+            .requireEnergy(energy)
+            .produceItem(output)
+    }
+
+    unstable_item_machining_table(
+        'kubejs:unstable_item',
+        'create:andesite_alloy',
+        'kubejs:redstone_sheet',
+        Fluid.of('kubejs:magic_potion', 100),
+        // 'kubejs:unstable_item{CustomModelData:1}',
+        Item.of('kubejs:unstable_item', {CustomModelData:1}).withName(Component.of('不稳定合金').italic(false)),
+        100,
+        100
+    )
+
+    unstable_item_machining_table(
+        Item.of('kubejs:unstable_item', {CustomModelData:1}),
+        'kubejs:blaze_mechanism',
+        'kubejs:colorful_mechanism',
+        Fluid.of('starbunclemania:source_fluid', 1000),
+        Item.of('kubejs:unstable_item', {CustomModelData:2}).withName(Component.of('不稳定溢彩合金').italic(false)),
+        100,
+        100
+    )
+
+    unstable_item_machining_table(
+        Item.of('kubejs:unstable_item', {CustomModelData:2}),
+        'kubejs:pack_andesite_alloy',
+        'kubejs:pack_brass',
+        Fluid.of('starbunclemania:source_fluid', 1000),
+        Item.of('kubejs:unstable_item', {CustomModelData:3}).withName(Component.of('不稳定合金包裹').italic(false)),
+        1000,
+        10000
+    )
+})

@@ -1,0 +1,10 @@
+{
+    "block.kubejs.andesite_input": "安山输入仓",
+    "block.kubejs.andesite_output": "安山输出仓",
+
+    "kubejs.automated_assembly_station": "装配站装配",
+    "block.kubejs.automated_assembly_station": "自动化装配站",
+
+    "kubejs.mechanical_furnace_recipe": "工业炉烧制",
+    "block.kubejs.mechanical_furnace": "工业炉"
+}

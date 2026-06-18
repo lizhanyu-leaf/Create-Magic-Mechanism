@@ -1,0 +1,879 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3DC3725BEB6DECAE"
+	group: "76AE7F0DD0D55C7E"
+	icon: "kubejs:precision_mechanism_2"
+	id: "3DC3725BEB6DECAE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2DC6CAAF4CFDA627"]
+			description: [""]
+			hide_dependent_lines: true
+			id: "5581BE6F7294F864"
+			rewards: [{
+				count: 128
+				id: "72D9477859EE06E8"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "1FF33F61C3815092"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			description: ["安山合金是一种最基础的资源."]
+			id: "2DC6CAAF4CFDA627"
+			rewards: [{
+				count: 256
+				id: "0362497A509DDE26"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3B19C9B6DE87DE0D"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"60D643EC7519B549"
+				"39096268D4595FA3"
+			]
+			id: "024531D15A7E1254"
+			tasks: [{
+				id: "59E8CF521EAE00BA"
+				item: "kubejs:incomplete_precision_mechanism_3"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"024531D15A7E1254"
+				"3076A78891A703C9"
+				"76ADED4C08ED80CD"
+			]
+			hide_dependent_lines: true
+			id: "2C76A464C3D0AF22"
+			rewards: [{
+				id: "090634E87E8A591D"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A3C1EEF7C02341D"
+				item: "kubejs:precision_mechanism_3"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2C76A464C3D0AF22"]
+			description: [
+				"循环配方16次"
+				"              ↓"
+				"循环配方4次"
+			]
+			icon: "create_sa:brass_cube"
+			icon_scale: 0.9d
+			id: "3D7CAE39866CF7DF"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "23C2C62A621EECCF"
+				team_reward: true
+				title: "{cmm.tech.simple_precision_mechanism_3_recipe}"
+				type: "custom"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "7F6ED579CC4B5BEC"
+				item: { Count: 256, id: "kubejs:precision_mechanism_3" }
+				type: "item"
+			}]
+			title: "{cmm.tech.simple_precision_mechanism_3_recipe}"
+			x: 9.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2C76A464C3D0AF22"]
+			description: ["{image:kubejs:textures/ftbquest/1.1/incomplete_precision_mechanism_3_cutting_recipe.png width:185 height:79 align:center}"]
+			icon: "create_sa:brass_cube"
+			icon_scale: 0.9d
+			id: "1997A8F9016F082B"
+			rewards: [{
+				icon: "create_sa:brass_cube"
+				id: "0CDE82D173261B8A"
+				team_reward: true
+				title: "{cmm.tech.incomplete_precision_mechanism_3_cutting_recipe}"
+				type: "custom"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: true
+				count: 256L
+				id: "75C65A1BDA92E857"
+				item: "kubejs:precision_mechanism_3"
+				type: "item"
+			}]
+			title: "{cmm.tech.incomplete_precision_mechanism_3_cutting_recipe}"
+			x: 6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2DC6CAAF4CFDA627"]
+			id: "554CD5A648CC358E"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "535BBB17DB0849DE"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"554CD5A648CC358E"
+				"58149E2163E21C5A"
+			]
+			hide_dependent_lines: true
+			id: "0830F2B18F837460"
+			rewards: [{
+				id: "7BFE08DF4BD08E58"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "487F67F8574830B6"
+				item: "kubejs:mechine_upgrade_smithing_template"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2DC6CAAF4CFDA627"]
+			description: ["在做出木制集合之前，你的木棍来自树叶掉落"]
+			hide_dependent_lines: true
+			id: "58149E2163E21C5A"
+			rewards: [{
+				id: "68E56C51486A05AF"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "59AD774B030FD8CA"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+			]
+			hide_dependent_lines: true
+			id: "170F7B2EB81DF497"
+			rewards: [
+				{
+					count: 32
+					id: "73508AD45E0D178B"
+					item: "create:mechanical_press"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "6FDECA2E52958AE9"
+					item: "minecraft:lava_bucket"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "7D5666D69E7FB7B8"
+					item: "create:blaze_cake_base"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6B7BED7A3B503130"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+				"00286EA3063D8C25"
+			]
+			hide_dependent_lines: true
+			id: "1A92AC72B4670861"
+			rewards: [
+				{
+					count: 32
+					id: "3D1125AE8D54FA7F"
+					item: "create:deployer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6DAED7B26041777C"
+					item: "minecraft:redstone_torch"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "6DA8FA37622DD6DD"
+					item: "kubejs:incomplete_precision_mechanism_3"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "3D3B7A5989150532"
+					item: "minecraft:lava_bucket"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "62AA16FD648CD1DE"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.2d
+		}
+		{
+			dependencies: [
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+			]
+			id: "77FAEE859BA942B2"
+			rewards: [
+				{
+					auto: "disabled"
+					count: 32
+					id: "4C950A1C6F5A1037"
+					item: "vintageimprovements:helve_hammer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1D9CDB83D19D59EB"
+					item: "kubejs:mechine_upgrade_smithing_template"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6095276FB281E065"
+				item: "vintageimprovements:helve_hammer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.4d
+		}
+		{
+			dependencies: [
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+				"6B21508FB81CBFF2"
+			]
+			id: "3E45D24BD2BC7902"
+			rewards: [
+				{
+					count: 32
+					id: "2BCE54D1B0BEFE58"
+					item: "create:mechanical_saw"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3B649489F3B1BFF4"
+					item: "kubejs:wood_set"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "0E99A3266005BBBB"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5999999999999996d
+		}
+		{
+			dependencies: [
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+			]
+			hide_dependent_lines: true
+			id: "459E1E918D78B559"
+			rewards: [
+				{
+					count: 32
+					id: "09ED52DFC371CE9A"
+					item: "createaddition:rolling_mill"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C7BB5991CC02245"
+					item: "kubejs:incomplete_precision_mechanism_3"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6A4F20B67F9C2854"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.8d
+		}
+		{
+			dependencies: [
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+				"10CE84431612C0B0"
+			]
+			id: "3D8C312D47ABD26A"
+			rewards: [
+				{
+					count: 32
+					id: "596F00C855C86314"
+					item: "create:mechanical_mixer"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4CCBFF5E6CC9A8F5"
+					item: "kubejs:wood_set"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6C1C3859E7E13B2F"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+				"57B51B57E1B5859B"
+			]
+			hide_dependent_lines: true
+			id: "6D8E4F67FAC24E76"
+			rewards: [
+				{
+					count: 32
+					id: "56850F177053BCE2"
+					item: "vintageimprovements:spring_coiling_machine"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 16
+					id: "530CFCAF91103CC8"
+					item: "vintageimprovements:iron_spring"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "72D1AF301FE5AC33"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.8d
+		}
+		{
+			dependencies: [
+				"6D8E4F67FAC24E76"
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+			]
+			id: "1C0E1782FFB4AF3A"
+			rewards: [
+				{
+					count: 32
+					id: "1645E3AF4B7573FC"
+					item: "vintageimprovements:vibrating_table"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "2301D1BC456AC094"
+					item: "create:fluid_pipe"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1140C6AB4E1F7FC2"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"170F7B2EB81DF497"
+				"0830F2B18F837460"
+				"5581BE6F7294F864"
+			]
+			id: "18A88913C1458E38"
+			rewards: [
+				{
+					count: 32
+					id: "2DB1FB1E893D50B5"
+					item: "vintageimprovements:curving_press"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0724599C90C93988"
+					item: "minecraft:obsidian"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "278A40CDDF0273C3"
+				item: "vintageimprovements:curving_press"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			id: "252B6EC6CC54F703"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "14AE41269B9619F2"
+					item: "kubejs:cogwheel_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "1662111A9EC6C403"
+					item: "kubejs:large_cogwheel_upgrade_smithing_template"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["252B6EC6CC54F703"]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "3076A78891A703C9"
+			rewards: [{
+				id: "019D5D91817C5CDF"
+				item: "create:creative_motor"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 4L
+					id: "7A6C495A20B701AE"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "56E9B23C7CB3BF49"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3076A78891A703C9"]
+			hide_dependent_lines: true
+			id: "4C5E80D1C707FAA5"
+			rewards: [
+				{
+					count: 32
+					id: "18F8B6CEB27D83E0"
+					item: "vintageimprovements:vacuum_chamber"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "575AFDF848DCD30F"
+					item: "minecraft:lava_bucket"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7C06768003300798"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.4d
+		}
+		{
+			dependencies: [
+				"1A92AC72B4670861"
+				"4C5E80D1C707FAA5"
+				"170F7B2EB81DF497"
+			]
+			id: "6E4DA079AB1E7DAF"
+			shape: "hexagon"
+			tasks: [{
+				id: "3F9A2ACB3BEDA9DE"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6E4DA079AB1E7DAF"
+				"63BC4506B9B36167"
+			]
+			hide_dependent_lines: true
+			id: "4AE2A26A061289B7"
+			shape: "hexagon"
+			tasks: [{
+				id: "4D18FF061E3F7E6F"
+				item: "kubejs:precision_mechanism_1"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4AE2A26A061289B7"]
+			hide_dependent_lines: true
+			id: "2210FE2A51098712"
+			rewards: [
+				{
+					count: 32
+					id: "40016DFFF3EE9591"
+					item: "create:spout"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 4
+					id: "338E36901613EEB1"
+					item: "create:blaze_cake"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "55E655E4A1F00DFD"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["2210FE2A51098712"]
+			id: "26F54DD57A2D5783"
+			rewards: [
+				{
+					count: 32
+					id: "3623986589D48C70"
+					item: "fluid:copper_tap"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0EE08D1615968CBF"
+					item: "kubejs:precision_mechanism_1"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2730834CA8414087"
+				item: "fluid:copper_tap"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"00286EA3063D8C25"
+				"170F7B2EB81DF497"
+			]
+			hide_dependent_lines: true
+			id: "57B51B57E1B5859B"
+			shape: "hexagon"
+			tasks: [{
+				id: "1B39765D6729ECE0"
+				item: "kubejs:precision_mechanism_2"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["58149E2163E21C5A"]
+			hide_dependent_lines: true
+			id: "00286EA3063D8C25"
+			shape: "hexagon"
+			tasks: [{
+				id: "7D4256DB86A570CB"
+				item: "create:golden_sheet"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58149E2163E21C5A"]
+			hide_dependent_lines: true
+			id: "6B21508FB81CBFF2"
+			shape: "hexagon"
+			tasks: [{
+				id: "3B7FCECB1B5F9C6B"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6B21508FB81CBFF2"]
+			hide_dependent_lines: true
+			id: "10CE84431612C0B0"
+			shape: "hexagon"
+			tasks: [{
+				id: "4EC3D4B526AEFC68"
+				item: "create:whisk"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"57B51B57E1B5859B"
+				"4AE2A26A061289B7"
+			]
+			description: ["用于自动提交任务，流体任务也可以通过它来提交"]
+			id: "7EFD73147EDA8D62"
+			rewards: [{
+				count: 16
+				id: "4422868B0C0F0DBE"
+				item: "kubejs:precision_mechanism_1"
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "提交流体任务！"
+			tasks: [{
+				id: "0F3A0CC434F7062F"
+				item: "ftbquests:screen_1"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -8.0d
+		}
+		{
+			id: "4329A752AE40D68E"
+			tasks: [{
+				id: "7B4582773CB88BE4"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4329A752AE40D68E"]
+			id: "1D682F6A584BEAA9"
+			rewards: [{
+				count: 32
+				id: "2673E98B568A40A1"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			subtitle: "物！流！"
+			tasks: [{
+				id: "62F0B5B65A9DCF3B"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"破坏后任然保持内部流体！"
+				""
+				"对工作盆右键也可收入和取出流体！"
+			]
+			id: "741E6D82A3A6ACD4"
+			rewards: [{
+				id: "22D550C692103B7A"
+				item: "fluid:copper_sink"
+				type: "item"
+			}]
+			subtitle: "每一种液体都要来一个吗！？"
+			tasks: [{
+				id: "6D10F5793CE1BDBC"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:canister"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: -8.0d
+		}
+		{
+			id: "476DCAEA5539F955"
+			shape: "hexagon"
+			tasks: [{
+				id: "552AD4AF26012C2B"
+				item: "create_dd:zinc_sheet"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3076A78891A703C9"
+				"476DCAEA5539F955"
+			]
+			id: "122EC502CFC4B1BC"
+			shape: "hexagon"
+			tasks: [{
+				id: "16CF05EE151D5595"
+				item: "create_dd:inductive_mechanism"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			id: "64C0EE536D6EB4E0"
+			tasks: [{
+				id: "772D908C873528AA"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["64C0EE536D6EB4E0"]
+			id: "536D9452712C327B"
+			tasks: [
+				{
+					id: "7A075607D19EEFE6"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					id: "48D4633372ABE235"
+					item: "createdieselgenerators:wood_chip"
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["536D9452712C327B"]
+			id: "26DB0973D5557302"
+			tasks: [
+				{
+					id: "3051EC372935245E"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "44F20445D1217F50"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -1.0d
+		}
+	]
+	title: "{cmm.chapter.novice_engineer}"
+}

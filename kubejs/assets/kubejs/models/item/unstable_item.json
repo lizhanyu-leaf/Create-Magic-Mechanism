@@ -1,0 +1,26 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kubejs:item/unstable_item"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 1.0
+            },
+            "model": "kubejs:item/unstable_item/unstable_alloy"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2.0
+            },
+            "model": "kubejs:item/unstable_item/unstable_colorful_alloy"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3.0
+            },
+            "model": "kubejs:item/unstable_item/unstable_alloy_pack"
+        }
+    ]
+}

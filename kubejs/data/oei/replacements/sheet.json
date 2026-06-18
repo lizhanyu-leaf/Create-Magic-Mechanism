@@ -1,0 +1,123 @@
+[
+    {
+        "matchItems": [
+            "vintageimprovements:andesite_sheet",
+            "create_dd:andesite_sheet"
+        ],
+        "resultItems": "create_dd:andesite_sheet"
+    },
+    {
+        "matchItems": [
+            "create_dd:zinc_sheet",
+            "createaddition:zinc_sheet",
+            "vintageimprovements:zinc_sheet"
+        ],
+        "resultItems": "create_dd:zinc_sheet"
+    },
+    {
+        "matchItems": [
+            "create_dd:tin_sheet",
+            "vintageimprovements:tin_sheet",
+            "unify:tin_sheet"
+        ],
+        "resultItems": "unify:tin_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:aluminum_sheet",
+            "unify:aluminum_sheet"
+        ],
+        "resultItems": "unify:aluminum_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:bronze_sheet",
+            "unify:bronze_sheet"
+        ],
+        "resultItems": "unify:bronze_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:cast_iron_sheet",
+            "unify:cast_iron_sheet"
+        ],
+        "resultItems": "unify:cast_iron_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:constantan_sheet",
+            "unify:constantan_sheet"
+        ],
+        "resultItems": "unify:constantan_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:electrum_sheet",
+            "unify:electrum_sheet"
+        ],
+        "resultItems": "unify:electrum_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:invar_sheet",
+            "unify:invar_sheet"
+        ],
+        "resultItems": "unify:invar_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:lead_sheet",
+            "unify:lead_sheet"
+        ],
+        "resultItems": "unify:lead_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:nickel_sheet",
+            "unify:nickel_sheet"
+        ],
+        "resultItems": "unify:nickel_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:platinum_sheet",
+            "unify:platinum_sheet"
+        ],
+        "resultItems": "unify:platinum_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:silver_sheet",
+            "unify:silver_sheet"
+        ],
+        "resultItems": "unify:silver_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:steel_sheet",
+            "unify:steel_sheet"
+        ],
+        "resultItems": "unify:steel_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:tungsten_sheet",
+            "unify:tungsten_sheet"
+        ],
+        "resultItems": "unify:tungsten_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:uranium_sheet",
+            "unify:uranium_sheet"
+        ],
+        "resultItems": "unify:uranium_sheet"
+    },
+    {
+        "matchItems": [
+            "create_dd:steel_sheet",
+            "unify:steel_sheet"
+        ],
+        "resultItems": "unify:steel_sheet"
+    }
+]

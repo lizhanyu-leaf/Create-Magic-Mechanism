@@ -1,0 +1,235 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4AAED610BE06B680"
+	group: "76AE7F0DD0D55C7E"
+	icon: "vintageimprovements:laser"
+	id: "4AAED610BE06B680"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6E4F01F01CE45F93"
+				"5AEF9146CA6A669D"
+			]
+			id: "66BE9984751DDB77"
+			tasks: [{
+				id: "49842F0E6B51755E"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "6E4F01F01CE45F93"
+			rewards: [{
+				count: 8
+				id: "506C4F63C94965F6"
+				item: "createaddition:capacitor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32348522DD1827FF"
+				item: "createaddition:capacitor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["024CFFF9CB569FE8"]
+			id: "5AEF9146CA6A669D"
+			tasks: [{
+				id: "4E7DA5C76040DB3F"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "366F69D90B9B81D3"
+			tasks: [{
+				id: "0685297F8B2A5167"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["366F69D90B9B81D3"]
+			id: "37C6ACB8B807392C"
+			tasks: [{
+				id: "67D5281205427C9C"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["37C6ACB8B807392C"]
+			id: "53F4E503326FAEE2"
+			tasks: [{
+				id: "24ED30506785B7A6"
+				item: "vintageimprovements:laser_item"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["37C6ACB8B807392C"]
+			id: "18374473115A68C6"
+			tasks: [
+				{
+					id: "0F3234D34429152D"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "44C8AEF0793E7CE2"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+				{
+					id: "58A16D902E99F116"
+					item: "createdieselgenerators:oil_scanner"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4072BCF748FAE178"]
+			hide_dependent_lines: true
+			id: "1D899AD8161A9CBE"
+			tasks: [{
+				id: "1E8095A63710EF76"
+				item: "kubejs:slime_mechanism"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1F87AC51BDEF7762"
+				"53F4E503326FAEE2"
+			]
+			hide_dependent_lines: true
+			id: "4072BCF748FAE178"
+			tasks: [{
+				id: "074391059A44D4DA"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"18374473115A68C6"
+				"1D899AD8161A9CBE"
+			]
+			id: "3540C1CB8E9D4373"
+			tasks: [{
+				id: "4DE2B36509630073"
+				item: "createdieselgenerators:pumpjack_bearing"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3540C1CB8E9D4373"]
+			id: "3904838F3BA662AA"
+			tasks: [{
+				id: "3C0098C22F0BD575"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0E1FE1256A63F52A"
+				"3904838F3BA662AA"
+				"719FDDECB0609505"
+			]
+			id: "633EF83CD20072F8"
+			tasks: [{
+				id: "5580547B1701A521"
+				item: "kubejs:magic_potion_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1D899AD8161A9CBE"]
+			id: "29B528C76D695422"
+			tasks: [{
+				id: "24DBB8CE9F6D41A1"
+				item: "kubejs:mechanical_core"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "024CFFF9CB569FE8"
+			tasks: [{
+				id: "45DAA1EA97BA9BF7"
+				item: "createaddition:spool"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"633EF83CD20072F8"
+				"1D899AD8161A9CBE"
+				"08D41D7725C535D7"
+				"4072BCF748FAE178"
+			]
+			id: "454045B7E6C1D906"
+			tasks: [{
+				id: "7CD6C0573807A243"
+				item: "kubejs:magic_mechanism"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4072BCF748FAE178"]
+			id: "0FACFB9F8FD322B8"
+			tasks: [{
+				id: "4C62580E5C970951"
+				item: "kubejs:experience_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E4F01F01CE45F93"]
+			id: "50A61FBCD2732C5A"
+			tasks: [{
+				id: "7D5A7CE69A33B46E"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+	]
+	title: "{cmm.chapter.precision_engineer}"
+}

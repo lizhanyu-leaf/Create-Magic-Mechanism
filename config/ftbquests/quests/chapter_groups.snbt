@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "76AE7F0DD0D55C7E", title: "{cmm.chapterGroup.the_age_of_transformation}" }
+		{ id: "086847A01061ED23", title: "{cmm.chapterGroup.in_search_of_create_s_footsteps}" }
+		{ id: "25C56CEF8E0E3373", title: "创世工厂" }
+		{ id: "271095BD78F19DAF", title: "{cmm.chapterGroup.miscellaneous}" }
+		{ id: "7B2A40D2841CC00E", title: "{cmm.chapterGroup.shop}" }
+	]
+}

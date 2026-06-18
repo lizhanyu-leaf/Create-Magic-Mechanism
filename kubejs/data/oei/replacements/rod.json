@@ -1,0 +1,100 @@
+[
+    {
+        "matchItems": [
+            "vintageimprovements:aluminum_rod",
+            "unify:aluminum_rod"
+        ],
+        "resultItems": "unify:aluminum_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:bronze_rod",
+            "unify:bronze_rod"
+        ],
+        "resultItems": "unify:bronze_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:cast_iron_rod",
+            "unify:cast_iron_rod"
+        ],
+        "resultItems": "unify:cast_iron_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:constantan_rod",
+            "unify:constantan_rod"
+        ],
+        "resultItems": "unify:constantan_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:electrum_rod",
+            "unify:electrum_rod"
+        ],
+        "resultItems": "unify:electrum_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:invar_rod",
+            "unify:invar_rod"
+        ],
+        "resultItems": "unify:invar_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:lead_rod",
+            "unify:lead_rod"
+        ],
+        "resultItems": "unify:lead_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:nickel_rod",
+            "unify:nickel_rod"
+        ],
+        "resultItems": "unify:nickel_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:platinum_rod",
+            "unify:platinum_rod"
+        ],
+        "resultItems": "unify:platinum_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:silver_rod",
+            "unify:silver_rod"
+        ],
+        "resultItems": "unify:silver_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:steel_rod",
+            "unify:steel_rod"
+        ],
+        "resultItems": "unify:steel_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:tin_rod",
+            "unify:tin_rod"
+        ],
+        "resultItems": "unify:tin_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:tungsten_rod",
+            "unify:tungsten_rod"
+        ],
+        "resultItems": "unify:tungsten_rod"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:uranium_rod",
+            "unify:uranium_rod"
+        ],
+        "resultItems": "unify:uranium_rod"
+    }
+]
