@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
                 vintageimprovements.vibrating(
                     ['kubejs:incomplete_andesite_mechine', Item.of('minecraft:redstone', 0.75)], 'kubejs:incomplete_andesite_mechine')
             ],
-            'kubejs:incomplete_andesite_mechine', 12
+            'kubejs:incomplete_andesite_mechine', 8
         ).id('kubejs:sequenced_assembly/redstone_tech_pack')
     }
 

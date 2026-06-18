@@ -725,6 +725,16 @@ ServerEvents.recipes(event => {
     event.remove({id: 'create_dd:mixing/bronze_ingot'})
 
     event.remove({type: 'minecraft:crafting_shaped', output: 'create:andesite_alloy'})
+    event.remove({type: 'create:mixing', output: 'create:andesite_alloy'})
+    cmm.item_combine(
+        [
+            'create:andesite_alloy'
+        ],
+        [
+            'minecraft:cobblestone',
+            'minecraft:iron_ingot'
+        ]
+    )
     event.remove({input: 'unify:wrought_iron_ingot'})
     event.remove({output: 'unify:wrought_iron_ingot'})
 
@@ -768,4 +778,6 @@ ServerEvents.recipes(event => {
     event.remove({mod: 'unify', type: 'create:splashing'})
     event.remove({type: 'create_dd:superheating'})
     event.remove({type: 'create_dd:freezing'})
+
+    event.remove({output: 'create_dd:steel_ingot'})
 })
