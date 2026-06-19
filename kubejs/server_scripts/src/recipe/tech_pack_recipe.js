@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     // #region Tech Pack
 
     // mechancal_tech_pack
-    if(global.technology.get_technology('mechancal_tech_pack')) {
+    if(TechnologyTools.isActive('mechancal_tech_pack')) {
         create.sequenced_assembly(
             'minecraft:brown_wool',
             'create:andesite_casing',
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     }
 
     // steel_tech_pack
-    if (global.technology.get_technology('steel_tech_pack')) {
+    if (TechnologyTools.isActive('steel_tech_pack')) {
         create.sequenced_assembly(
             ['minecraft:light_gray_wool'],
             ['unify:cast_iron_block'],
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
     }
 
     // redstone_tech_pack
-    if (global.technology.get_technology('redstone_tech_pack')) {
+    if (TechnologyTools.isActive('redstone_tech_pack')) {
         create.sequenced_assembly(
             ['minecraft:red_wool'],
             ['minecraft:redstone_block'],
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     }
 
     // mechancal_tech_pack_advanced
-    if (global.technology.get_technology('mechancal_tech_pack_advanced')) {
+    if (TechnologyTools.isActive('mechancal_tech_pack_advanced')) {
         kubejs.automated_assembly_station()
             .id('kubejs:automated_assembly_station/mechancal_tech_pack')
             .duration(160)
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
     }
 
     // redstone_tech_pack_advanced
-    if (global.technology.get_technology('redstone_tech_pack_advanced')) {
+    if (TechnologyTools.isActive('redstone_tech_pack_advanced')) {
         kubejs.automated_assembly_station()
             .id('kubejs:automated_assembly_station/redstone_tech_pack')
             .duration(160)
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
     // #region Mechanism
 
     // mechanical_mechanism
-    if (global.technology.get_technology('mechanical_mechanism')) {
+    if (TechnologyTools.isActive('mechanical_mechanism')) {
         create.sequenced_assembly(
             ['kubejs:mechanical_mechanism'],
             ['create_dd:inductive_mechanism'],
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
     }
 
     // redstone_precision_mechanism
-    if (global.technology.get_technology('redstone_precision_mechanism')) {
+    if (TechnologyTools.isActive('redstone_precision_mechanism')) {
         create.sequenced_assembly(
             'kubejs:redstone_precision_mechanism',
             'kubejs:redstone_sheet',

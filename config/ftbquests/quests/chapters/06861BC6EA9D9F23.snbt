@@ -316,7 +316,7 @@
 			tasks: [{
 				count: 128L
 				id: "2F469925247E7492"
-				item: { Count: 128, id: "create_dd:steel_ingot" }
+				item: "unify:steel_ingot"
 				type: "item"
 			}]
 			title: "钢材科技包"
@@ -944,8 +944,8 @@
 				}
 				{
 					count: 64L
-					id: "488EEBB0535FBDDD"
-					item: "minecraft:light_gray_wool"
+					id: "58376575AEB185C0"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
 					type: "item"
 				}
 			]
@@ -1008,14 +1008,14 @@
 			tasks: [
 				{
 					count: 64L
-					id: "1E43B6291B08794D"
-					item: "minecraft:brown_wool"
+					id: "65C19D0AB2C4A697"
+					item: { Count: 64, id: "minecraft:brown_wool" }
 					type: "item"
 				}
 				{
 					count: 64L
-					id: "4321D28F3A09E339"
-					item: "minecraft:red_wool"
+					id: "646BAB69D29E6233"
+					item: { Count: 64, id: "minecraft:red_wool" }
 					type: "item"
 				}
 			]

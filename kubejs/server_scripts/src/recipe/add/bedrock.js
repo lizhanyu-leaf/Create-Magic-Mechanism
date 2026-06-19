@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
 
     // 深板岩应用基岩粉末
     // bedrock_advanced
-    if (global.technology.get_technology('bedrock_advanced')) {
+    if (TechnologyTools.isActive('bedrock_advanced')) {
         event.custom(
             {
                 type: 'create:item_application',

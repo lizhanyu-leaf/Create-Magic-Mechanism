@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 
     // #region Use
     
-    if (!global.technology.get_technology('strange_potion')) return;
+    if (!TechnologyTools.isActive('strange_potion')) return;
 
     // #endregion
 

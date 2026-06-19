@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
         vintageimprovements, minecraft, kubejs} = event.recipes
 
     // unlock_sturdy_knob
-    if (global.technology.get_technology('unlock_sturdy_knob')) {
+    if (TechnologyTools.isActive('unlock_sturdy_knob')) {
         event.replaceInput(
             { input: 'minecraft:dried_kelp'},
             'minecraft:dried_kelp',
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     }
     
     // basic_logistics
-    if (global.technology.get_technology('basic_logistics')) {
+    if (TechnologyTools.isActive('basic_logistics')) {
         minecraft.crafting_shaped(
             'create:belt_connector',
             [
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
     }
 
     // basic_storage
-    if (global.technology.get_technology('basic_storage')) {
+    if (TechnologyTools.isActive('basic_storage')) {
         event.replaceInput(
             {mod: 'sophisticatedstorage', input: 'minecraft:lever'},
             'minecraft:lever',
@@ -46,14 +46,14 @@ ServerEvents.recipes(event => {
     }
 
     // basic_storage_upgrade
-    if (!global.technology.get_technology('basic_storage_upgrade')) {
+    if (!TechnologyTools.isActive('basic_storage_upgrade')) {
         event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1'})
         event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1_plus'})
         event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_2'})
     }
 
     // industrial_iron_smelting
-    if (global.technology.get_technology('industrial_iron_smelting')){
+    if (TechnologyTools.isActive('industrial_iron_smelting')){
         create.compacting(
             [
                 '2x create_dd:industrial_iron_ingot'
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
 
     // sturdy_sheet_smithing
     event.remove({id: 'create:sequenced_assembly/sturdy_sheet'})
-    if (global.technology.get_technology('sturdy_sheet_smithing'))
+    if (TechnologyTools.isActive('sturdy_sheet_smithing'))
         create.compacting(
             '2x create:sturdy_sheet',
             [
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         ).superheated().id('kubejs:compacting/sturdy_sheet_smithing')
 
     // mb_mechanical_furnace
-    if (!global.technology.get_technology('mb_mechanical_furnace'))
+    if (!TechnologyTools.isActive('mb_mechanical_furnace'))
         event.remove({type: 'kubejs:mechanical_furnace_recipe'})
     else {
         create.deploying(
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
             .outputItems('10x create:andesite_alloy')
 
         // Tin
-        if (global.technology.get_technology('tin_smelting')) {
+        if (TechnologyTools.isActive('tin_smelting')) {
             kubejs.mechanical_furnace_recipe()
                 .id('kubejs:mechanical_furnace_recipe/tin_smelting')
                 .inputItems('5x unify:raw_tin')
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         }
 
         // Silver
-        if (global.technology.get_technology('silver_smelting')) {
+        if (TechnologyTools.isActive('silver_smelting')) {
             kubejs.mechanical_furnace_recipe()
                 .id('kubejs:mechanical_furnace_recipe/silver_smelting')
                 .inputItems('5x unify:raw_silver')
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
         }
 
         // Zinc
-        if (global.technology.get_technology('zinc_smelting')) {
+        if (TechnologyTools.isActive('zinc_smelting')) {
             kubejs.mechanical_furnace_recipe()
                 .id('kubejs:mechanical_furnace_recipe/zinc_smelting')
                 .inputItems('5x create:raw_zinc')
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
         }
 
         // obsidian
-        if (global.technology.get_technology('obsidian_smelting')) {
+        if (TechnologyTools.isActive('obsidian_smelting')) {
             kubejs.mechanical_furnace_recipe()
                 .id('kubejs:mechanical_furnace_recipe/obsidian_smelting/1')
                 .inputFluids('minecraft:lava 2000', 'minecraft:water 2000')
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
     }
 
     // steel_smelting
-    if (global.technology.get_technology('steel_smelting')) {
+    if (TechnologyTools.isActive('steel_smelting')) {
         create.compacting(
             [
                 '3x kubejs:incomplete_steel'
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
     }
 
     // redstone_circuit
-    if (global.technology.get_technology('redstone_circuit')) {
+    if (TechnologyTools.isActive('redstone_circuit')) {
         create.sequenced_assembly(
             'kubejs:redstone_sheet',
             'kubejs:charging_iron_sheet',
@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
 
     // inductive_mechanism
     event.remove({output: 'create_dd:inductive_mechanism'})
-    if (global.technology.get_technology('inductive_mechanism')) {
+    if (TechnologyTools.isActive('inductive_mechanism')) {
         create.sequenced_assembly(
             ['create_dd:inductive_mechanism'],
             ['create_dd:andesite_sheet'],
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
 
     //basic_chain_transmission
     event.remove({output: 'minecraft:chain'})
-    if (global.technology.get_technology('basic_chain_transmission')) {
+    if (TechnologyTools.isActive('basic_chain_transmission')) {
         create.sequenced_assembly(
             'create:chain_conveyor',
             'create:large_cogwheel',
@@ -254,7 +254,7 @@ ServerEvents.recipes(event => {
     }
 
     // strange_potion
-    if (global.technology.get_technology('strange_potion')) {
+    if (TechnologyTools.isActive('strange_potion')) {
         // 奇异药水混合
         create.mixing(
             [
@@ -294,7 +294,7 @@ ServerEvents.recipes(event => {
     }
 
     // andesite_input_and_output
-    if (global.technology.get_technology('andesite_input_and_output')) {
+    if (TechnologyTools.isActive('andesite_input_and_output')) {
         create.sequenced_assembly(
             ['kubejs:andesite_input'],
             ['create:andesite_casing'],
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
     }
 
     // mb_automated_assembly_station
-    if (global.technology.get_technology('mb_automated_assembly_station')) {
+    if (TechnologyTools.isActive('mb_automated_assembly_station')) {
         create.sequenced_assembly(
             ['kubejs:automated_assembly_station'],
             ['create:andesite_casing'],
@@ -372,7 +372,7 @@ ServerEvents.recipes(event => {
     }
 
     // set_tray
-    if (global.technology.get_technology('set_tray')) {
+    if (TechnologyTools.isActive('set_tray')) {
         create.sequenced_assembly(
             [Item.of('kubejs:set_tray').withChance(0.7), 
                 Item.of('create_dd:industrial_iron_ingot').withChance(0.25),
@@ -405,7 +405,7 @@ ServerEvents.recipes(event => {
     }
 
     // incomplete_precision_mechanism_3
-    if (global.technology.get_technology('incomplete_precision_mechanism_3')) {
+    if (TechnologyTools.isActive('incomplete_precision_mechanism_3')) {
         create.sequenced_assembly(
             'kubejs:incomplete_precision_mechanism_3',
             'create:cogwheel',
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
     }
 
     // precision_mechanism_3
-    if (global.technology.get_technology('precision_mechanism_3')) {
+    if (TechnologyTools.isActive('precision_mechanism_3')) {
         create.sequenced_assembly(
             'kubejs:precision_mechanism_3',
             'kubejs:incomplete_precision_mechanism_3',
@@ -452,12 +452,12 @@ ServerEvents.recipes(event => {
                 create.cutting('kubejs:incomplete_andesite_mechine', 'kubejs:incomplete_andesite_mechine')
             ],
             'kubejs:incomplete_andesite_mechine',
-            global.technology.get_technology('simple_precision_mechanism_3_recipe') ? 4 : 16
+            TechnologyTools.isActive('simple_precision_mechanism_3_recipe') ? 4 : 16
         ).id('kubejs:sequenced_assembly/precision_mechanism_3')
     }
 
     // bronze_smelting
-    if (global.technology.get_technology('bronze_smelting')) {
+    if (TechnologyTools.isActive('bronze_smelting')) {
         create.compacting(
             'unify:bronze_ingot',
             [
@@ -468,7 +468,7 @@ ServerEvents.recipes(event => {
     }
 
     // smart_logistics
-    if (global.technology.get_technology('smart_logistics')) {
+    if (TechnologyTools.isActive('smart_logistics')) {
         event.shaped(
             'create:brass_funnel',
             [
@@ -502,7 +502,7 @@ ServerEvents.recipes(event => {
     }
 
     // seed_oil
-    if (global.technology.get_technology('seed_oil')) {
+    if (TechnologyTools.isActive('seed_oil')) {
         vintageimprovements.pressurizing(
             [
                 Fluid.of('createaddition:seed_oil', 500)
@@ -524,7 +524,7 @@ ServerEvents.recipes(event => {
     }
 
     // electron_tube
-    if (global.technology.get_technology('electron_tube')) {
+    if (TechnologyTools.isActive('electron_tube')) {
         create.sequenced_assembly(
             '6x create:electron_tube',
             'kubejs:electron_tube_substrate',
@@ -544,7 +544,7 @@ ServerEvents.recipes(event => {
     }
 
     // intermediate_storage_upgrade
-    if (global.technology.get_technology('intermediate_storage_upgrade')) {
+    if (TechnologyTools.isActive('intermediate_storage_upgrade')) {
         event.replaceInput(
             { id: 'sophisticatedstorage:stack_upgrade_tier_3' },
             '#forge:storage_blocks/gold',
@@ -588,7 +588,7 @@ ServerEvents.recipes(event => {
     }
 
     // smart_storage
-    if (!global.technology.get_technology('smart_storage')) {
+    if (!TechnologyTools.isActive('smart_storage')) {
         event.remove({ output: 'sophisticatedstorage:storage_output' })
         event.remove({ output: 'sophisticatedstorage:storage_input' })
         event.remove({ output: 'sophisticatedstorage:storage_io' })

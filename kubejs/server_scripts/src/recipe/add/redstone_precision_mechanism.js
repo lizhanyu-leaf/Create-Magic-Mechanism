@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
     // ).id('kubejs:redstone/modern_mechanism')
 
     //redstone_precision_mechanism_laser_cutting_recipe
-    if (global.technology.get_technology('redstone_precision_mechanism_laser_cutting_recipe')) {
+    if (TechnologyTools.isActive('redstone_precision_mechanism_laser_cutting_recipe')) {
         vintageimprovements.laser_cutting(
             'kubejs:redstone_precision_mechanism',
             'kubejs:redstone_sheet',
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         ).id('kubejs:redstone/redstone_precision_mechanism_laser_cutting')
     }
 
-    if (global.technology.get_technology('redstone_sheet_advanced')) {
+    if (TechnologyTools.isActive('redstone_sheet_advanced')) {
         create.sequenced_assembly(
             'kubejs:redstone_sheet',
             'create:iron_sheet',

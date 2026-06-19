@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_substrate')
     var incomplete_2 = 'kubejs:incomplete_precision_mechanism_1'
     // 精密机制1装配（现在添加.id()）
-    if (global.technology.get_technology('unlock_sturdy_knob')){
+    if (TechnologyTools.isActive('unlock_sturdy_knob')){
         create.sequenced_assembly(
             '6x kubejs:precision_mechanism_1',
             'create:sturdy_sheet',
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
 
     var incomplete_7 = 'kubejs:incomplete_precision_mechanism_1'
     // 精密机制1装配2（现在添加.id()）
-    if (global.technology.get_technology('unlock_sturdy_knob')){    
+    if (TechnologyTools.isActive('unlock_sturdy_knob')){    
             create.sequenced_assembly(
             [
                 Item.of('kubejs:precision_mechanism_1').withChance(0.65),
@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
             'kubejs:blaze_mechanism'
         ]
     ).keepHeldItem().id('kubejs:deploying/precision_mechanism/precision_mechanism_4')
-    if (global.technology.get_technology('precision_mechanism_2_advanced')) {
+    if (TechnologyTools.isActive('precision_mechanism_2_advanced')) {
         create.sequenced_assembly(
             'kubejs:precision_mechanism_2',
             'create:golden_sheet',
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
     ).heated().id('kubejs:mixing/precision_mechanism/rose_quartz')
 
     // 精密机制1激光切割
-    if (global.technology.get_technology('unlock_sturdy_knob')){
+    if (TechnologyTools.isActive('unlock_sturdy_knob')){
         event.recipes.vintageimprovements.laser_cutting(
             '3x kubejs:precision_mechanism_1',
             'create:sturdy_sheet',

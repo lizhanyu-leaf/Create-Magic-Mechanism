@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
             event.remove({output: vertical_box})
 
             // basic_transmission
-            if (!global.technology.get_technology('basic_transmission')) return
+            if (!TechnologyTools.isActive('basic_transmission')) return
 
             create.mixing(
                 [
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
         event.remove({output: output_box})
 
         // basic_transmission
-        if (!global.technology.get_technology('basic_transmission')) return create_vertical
+        if (!TechnologyTools.isActive('basic_transmission')) return create_vertical
 
         create.compacting(
             [

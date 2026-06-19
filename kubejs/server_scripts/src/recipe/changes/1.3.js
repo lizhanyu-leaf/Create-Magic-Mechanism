@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
 
     // electron_tube_advanced
 
-    if (global.technology.get_technology('electron_tube_advanced')) {
+    if (TechnologyTools.isActive('electron_tube_advanced')) {
         create.sequenced_assembly(
             '3x create:electron_tube',
             'create:polished_rose_quartz',

@@ -1,7 +1,7 @@
 {
   "configVersion": 4,
-  "enabled": false,
-  "modHash": -5862179011710046920,
+  "enabled": true,
+  "modHash": -3681360106730813318,
   "registryHash": 7304977323597295669,
   "isolatedScopes": true,
   "complete": false,
