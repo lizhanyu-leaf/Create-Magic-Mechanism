@@ -1,0 +1,24 @@
+{
+    "temperature": 0.5,
+    "downfall": 0.5,
+    "has_precipitation": false,
+    "effects": {
+        "sky_color": 16728642,
+        "fog_color": 16728642,
+        "water_color": 16728642,
+        "water_fog_color": 16728642,
+        "grass_color": 16728642,
+        "foliage_color": 16728642
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": {},
+    "features": [
+        [],[],[],[],[],[],
+        [
+            "kubejs:ore_quartz",
+            "kubejs:ore_amethyst"
+        ],
+        [], [], [], []
+    ]
+}

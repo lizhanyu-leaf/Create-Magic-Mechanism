@@ -85,9 +85,7 @@
           "type": "minecraft:y_above",
           "anchor": { "above_bottom": 63 },
           "surface_depth_multiplier": 0,
-          "add_stone_depth": false,
-          "add_surface_depth": false,
-          "add_surface_secondary_depth": false
+          "add_stone_depth": false
         },
         "then_run": {
           "type": "minecraft:block",

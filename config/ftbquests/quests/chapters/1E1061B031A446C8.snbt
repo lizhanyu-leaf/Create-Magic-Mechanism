@@ -11,7 +11,13 @@
 		{
 			description: [
 				""
-				"你好！我是&aLeaf&r，因为一些原因，我们需要你来到这个&a充满魔法，不能用我们世界的科学说明的世界&r。"
+				"你好！我是&aLeaf&r，因为一些原因，我们需要你来到这个世界。"
+				""
+				"这不是&a你认识的那个世界&r。"
+				""
+				"这里的法则，由这个世界的意志书写。&a你所知的规则，在这里尽是谬误&r。"
+				""
+				"你的目标是在这里&a建立工业化体系&r，并且&a不停科研直至做出创造物品&r来彻底解决我们的世界的资源匮乏"
 				""
 				"当然，我们不可能让你空手来到这个世界，我为你准备了一些&a初始物资&r。"
 			]
@@ -22,6 +28,8 @@
 				item: "kubejs:coin_button"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "54EB19F28FED2688"
 				title: "{cmm.quests.welcome}"
@@ -54,6 +62,16 @@
 				{
 					id: "40FB66C8A7A3D085"
 					item: "create:schematic_and_quill"
+					type: "item"
+				}
+				{
+					id: "76E005F13D3F4663"
+					item: "sophisticatedbackpacks:smithing_upgrade"
+					type: "item"
+				}
+				{
+					id: "148F851906173CE6"
+					item: "sophisticatedbackpacks:stack_upgrade_omega_tier"
 					type: "item"
 				}
 			]
@@ -230,6 +248,7 @@
 			y: -2.0d
 		}
 		{
+			can_repeat: true
 			icon: "minecraft:clock"
 			id: "2B1C15C267E58EDE"
 			rewards: [
@@ -252,13 +271,14 @@
 				type: "checkmark"
 			}]
 			title: "{cmm.quests.disable_time_flow}"
-			x: -4.0d
-			y: 1.5d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			icon: "minecraft:totem_of_undying"
 			id: "1E1CA2C8CA3CE373"
 			rewards: [{
+				auto: "enabled"
 				command: "/gamerule keepInventory true"
 				elevate_perms: true
 				id: "1EC1C97B15A6E49F"
@@ -269,7 +289,7 @@
 				title: "{cmm.quests.keep_inventory}"
 				type: "checkmark"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 2.5d
 		}
 		{
@@ -298,15 +318,15 @@
 				title: "{cmm.quests.waypoint}"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
-			can_repeat: true
 			description: [""]
 			icon: "minecraft:poppy"
 			id: "709142256DE3AF43"
 			rewards: [{
+				auto: "enabled"
 				command: "/difficulty peaceful"
 				elevate_perms: true
 				id: "1FD8095E91D97B21"
@@ -318,7 +338,7 @@
 				type: "checkmark"
 			}]
 			title: "{cmm.quests.peaceful}"
-			x: -3.0d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
@@ -342,8 +362,8 @@
 				type: "checkmark"
 			}]
 			title: "{cmm.quests.ores}"
-			x: 4.0d
-			y: 1.5d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5735A6FF59ABCA22"]
@@ -396,6 +416,10 @@
 				"4.加入一些资源包"
 				""
 				"5.删除机械动力：无人机物流，并加入机械动力：纸飞机"
+				""
+				"6.加入科技树"
+				""
+				"7.加入核心模组"
 			]
 			icon: "minecraft:oak_log"
 			id: "5C7486724111AEF5"
@@ -405,18 +429,19 @@
 				type: "checkmark"
 			}]
 			title: "0.3.2更新日志"
-			x: 5.0d
-			y: 0.0d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			description: [
 				"{image:kubejs:textures/ftbquest/1.2/unlock_sfm_1.png width:185 height:78 align:center}"
 				"{image:kubejs:textures/ftbquest/1.2/unlock_sfm_2.png width:185 height:78 align:center}"
 			]
-			icon: "create_sa:brass_cube"
+			icon: "sfm:manager"
 			id: "07165831FFFED0D2"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				auto: "enabled"
+				icon: "sfm:manager"
 				id: "4255514F690CB694"
 				team_reward: true
 				title: "{cmm.tech.unlock_sfm}"
@@ -429,11 +454,11 @@
 				type: "checkmark"
 			}]
 			title: "{cmm.tech.unlock_sfm}"
-			x: -1.0d
-			y: 3.5d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
-			description: ["装载 Simple World Timer 模组获得最好体验"]
+			description: ["装载或外接计时器 获得最好体验"]
 			id: "357DFF5C6D586FAD"
 			subtitle: "冲！速通！"
 			tasks: [{
@@ -442,7 +467,7 @@
 				type: "item"
 			}]
 			title: "精密构件竞速！！！"
-			x: 1.0d
+			x: 0.0d
 			y: 3.5d
 		}
 		{
@@ -535,6 +560,92 @@
 			title: "FTB 任务(FTB Quests)"
 			x: 1.5d
 			y: -0.5d
+		}
+		{
+			icon: "minecraft:barrier"
+			id: "30EC960B7688BA38"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/weather clear"
+					elevate_perms: true
+					id: "185DF9E7EBD2AF18"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/gamerule doWeatherCycle false"
+					elevate_perms: true
+					id: "438FD8AC24E4BAE0"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "372411EDCC9CCD4D"
+				title: "无雨了..."
+				type: "checkmark"
+			}]
+			title: "天气锁定晴天"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				""
+				"这个世界与你印象中的世界不同。"
+				""
+				"在这个世界，你可以肆意地&a飞行&r。"
+			]
+			icon: "minecraft:feather"
+			id: "1485841DEA30BD36"
+			rewards: [{
+				id: "540E833D9B177812"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BB9720A1739AFEA"
+				title: "飞行"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:recovery_compass"
+			id: "39F91C8AC627AEC2"
+			rewards: [{
+				command: "/gamerule doDaylightCycle true"
+				elevate_perms: true
+				id: "55010B88377B7512"
+				type: "command"
+			}]
+			tasks: [{
+				id: "05906C8BE512E6EA"
+				title: "黑夜"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			icon: "minecraft:grass_block"
+			id: "6D5537337C833CD6"
+			tasks: [{
+				id: "66008BAE68D6A964"
+				title: "地形"
+				type: "checkmark"
+			}]
+			title: "地势平坦"
+			x: 2.0d
+			y: -3.5d
 		}
 	]
 	title: "{cmm.chapter.prologue}"

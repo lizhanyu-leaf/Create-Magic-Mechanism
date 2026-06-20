@@ -563,94 +563,6 @@ ServerEvents.recipes(event => {
         'create:copper_sheet'
     )
 
-    create.sequenced_assembly(
-        [
-            Item.of('kubejs:iron_and_gold_set').withChance(0.9),
-            Item.of('minecraft:iron_nugget').withChance(0.05),
-            Item.of('minecraft:gold_nugget').withChance(0.05)
-        ],
-        ['kubejs:set_tray'],
-        [
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'createaddition:iron_rod'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'vintageimprovements:iron_spring'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'createaddition:gold_rod'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'vintageimprovements:golden_spring'
-                ]
-            )
-        ],
-        'kubejs:set_tray', 4
-    ).id('kubejs:sequenced_assembly/andesite_changes/iron_and_gold_set')
-
-    create.sequenced_assembly(
-        [
-            Item.of('kubejs:redstone_and_copper_set').withChance(0.9),
-            Item.of('create:copper_nugget').withChance(0.05),
-            Item.of('minecraft:redstone').withChance(0.05)
-        ],
-        ['kubejs:set_tray'],
-        [
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'createaddition:copper_rod'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'vintageimprovements:copper_spring'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'redstone_block'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'minecraft:redstone_torch'
-                ]
-            )
-        ],
-        'kubejs:set_tray', 4
-    ).id('kubejs:sequenced_assembly/andesite_changes/redstone_and_copper_set')
-
-    create.compacting(
-        ['kubejs:basic_ore_set'],
-        [
-            'kubejs:iron_and_gold_set', 'kubejs:redstone_and_copper_set',
-            Fluid.of('lava', 500),
-        ]
-    ).id('kubejs:compacting/andesite_changes/basic_ore_set')
-
     event.remove({id: 'industrial_platform:platform'})
     event.remove({id: 'industrial_platform:platform_2'})
 
@@ -780,4 +692,11 @@ ServerEvents.recipes(event => {
     event.remove({type: 'create_dd:freezing'})
 
     event.remove({output: 'create_dd:steel_ingot'})
+
+    create.compacting(
+        ['minecraft:ice'],
+        [
+            Fluid.of('minecraft:water', 250)
+        ]
+    ).id('compacting/andesite_changes/ice')
 })

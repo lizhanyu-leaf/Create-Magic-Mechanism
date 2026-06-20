@@ -104,190 +104,6 @@ ServerEvents.recipes(event => {
         ]
     ).processingTime(90).secondaryFluidInput(0).secondaryFluidOutput(0).id('kubejs:pressurizing/dyes/white_dye_with_colorful_mechanism')
 
-    let dyes = ['red_dye', 'orange_dye', 'yellow_dye', 'green_dye', 'lime_dye', 'cyan_dye', 'light_blue_dye', 'blue_dye', 'purple_dye', 'magenta_dye', 'pink_dye', 'black_dye', 'gray_dye', 'light_gray_dye', 'white_dye', 'brown_dye']
-
-    dyes.forEach(dye => {
-        create.mixing(
-            [
-                Fluid.of(`kubejs:${dye}_diluent`, 250)
-            ],
-            [
-                dye,
-                Fluid.of('minecraft:water', 250)
-            ]
-        ).processingTime(125).id(`kubejs:mixing/redstone_changes/${dye}_diluent`)
-
-        create.mixing(
-            [
-                'kubejs:colorful_mechanism',
-                Fluid.of(`kubejs:${dye}_diluent`, 1000)
-            ],
-            [
-                'kubejs:colorful_mechanism',
-                dye,
-                Fluid.of('minecraft:water', 250)
-            ]
-        ).processingTime(125).id(`kubejs:mixing/redstone_changes/${dye}_diluent_1000`)
-
-        vintageimprovements.vacuumizing(
-            [
-                Fluid.of(`kubejs:${dye}_concentrate`, 250),
-                Item.of(dye).withChance(0.25)
-            ],
-            [
-                Fluid.of(`kubejs:${dye}_diluent`, 550),
-                Fluid.of('kubejs:iridescent_concentrate', 50)
-            ]
-        ).processingTime(90).secondaryFluidInput(1).id(`kubejs:vacuumizing/redstone_changes/${dye}_concentrate`)
-
-        vintageimprovements.pressurizing(
-            [
-                Fluid.of(`kubejs:refined_${dye}_solution`, 95),
-                Fluid.of('minecraft:water', 250)
-            ],
-            [
-                Fluid.of(`kubejs:${dye}_concentrate`, 100),
-                Fluid.of('createaddition:seed_oil', 950),
-                Fluid.of('kubejs:iridescent_concentrate', 20)
-            ]
-        ).processingTime(90).heated().secondaryFluidInput(1).secondaryFluidOutput(0).heated().id(`kubejs:pressurizing/redstone_changes/refined_${dye}_solution`)
-
-        vintageimprovements.pressurizing(
-            [
-                'kubejs:colorful_mechanism',
-                Fluid.of(`kubejs:refined_${dye}_solution`, 95)
-            ],
-            [
-                'kubejs:colorful_mechanism',
-                Fluid.of(`kubejs:${dye}_concentrate`, 100),
-                Fluid.of('createaddition:seed_oil', 950),
-                Fluid.of('kubejs:iridescent_concentrate', 20)
-            ]
-        ).processingTime(60).heated().secondaryFluidInput(1).secondaryFluidOutput(0).heated().id(`kubejs:pressurizing/redstone_changes/refined_${dye}_solution_with_colorful_mechanism`)
-
-        vintageimprovements.pressurizing(
-            [
-                `kubejs:refined_${dye}`,
-                'kubejs:colorful_mechanism',
-                Fluid.of('minecraft:water', 100)
-            ],
-            [
-                dye,
-                'kubejs:colorful_mechanism',
-                Fluid.of(`kubejs:refined_${dye}_solution`, 140),
-                Fluid.of(`kubejs:${dye}_diluent`, 500)
-            ]
-        ).processingTime(156).secondaryFluidInput(0).secondaryFluidOutput(0).id(`kubejs:pressurizing/redstone_changes/refined_${dye}_with_colorful_mechanism`)
-
-        create.mixing(
-            [
-                Fluid.of(`kubejs:refined_${dye}_solution`, 140)
-            ],
-            [
-                `kubejs:refined_${dye}`,
-                Fluid.of('minecraft:water', 120),
-                Fluid.of('kubejs:iridescent_concentrate', 20)
-            ]
-        ).heated().id(`kubejs:mixing/redstone_changes/${dye}_solution`)
-
-        if (dye != 'white_dye') {
-            create.filling(
-                `kubejs:refined_${dye}`,
-                [
-                    'kubejs:refined_white_dye',
-                    Fluid.of(`kubejs:refined_${dye}_solution`, 120)
-                ]
-            ).id(`kubejs:filling/redstone_changes/refined_${dye}_with_refined_white_dye`)
-        }
-
-        create.sequenced_assembly(
-            `kubejs:charged_${dye}`,
-            `kubejs:refined_${dye}`,
-            [
-                create.filling(dye, [dye, Fluid.of(`kubejs:refined_${dye}_solution`, 120)]),
-                vintageimprovements.vibrating(dye, dye, 150),
-                create.filling(dye, [dye, Fluid.of('kubejs:redstone_diluent', 1000)]),
-                create.deploying(dye, [dye, 'minecraft:redstone_block']),
-                vintageimprovements.pressurizing(dye, [dye, Fluid.of('kubejs:iridescent_concentrate', 200)]),
-                vintageimprovements.vacuumizing(dye, [dye, Fluid.of('kubejs:strange_potion', 200)]).superheated()
-            ],
-            dye, 3
-        ).id(`kubejs:sequenced_assembly/redstone_changes/charged_${dye}`)
-
-        create.mixing(
-            [
-                'kubejs:redstone_precision_mechanism',
-                '2x minecraft:redstone_block',
-                Fluid.of(`kubejs:charged_${dye}_solution`, 400)
-            ],
-            [
-                `kubejs:charged_${dye}`,
-                'kubejs:redstone_precision_mechanism',
-                Fluid.of(`kubejs:refined_${dye}_solution`, 300),
-                Fluid.of('kubejs:iridescent_concentrate', 500)
-            ]
-        ).superheated().id(`kubejs:mixing/redstone_changes/charged_${dye}_solution`)
-
-        if (dye != 'white_dye') {
-            create.filling(
-                dye,
-                [
-                    'minecraft:white_dye',
-                    Fluid.of(`kubejs:charged_${dye}_solution`, 5)
-                ]
-            ).id(`kubejs:filling/redstone_changes/white_dye_with_charged_${dye}`)
-
-            create.filling(
-                dye,
-                [
-                    'minecraft:white_dye',
-                    Fluid.of(`kubejs:refined_${dye}_solution`, 95)
-                ]
-            ).id(`kubejs:filling/redstone_changes/white_dye_with_refined_${dye}`)
-        }
-
-    //     event.custom({
-    //     type: 'createaddition:liquid_burning',
-    //     input: {
-    //         fluidTag: 'kubejs:gunpowder_diluent',
-    //         amount: 1000
-    //     },
-    //     burnTime: 6000,
-    //     superheated: true
-    // }).id('kubejs:strange_potion/custom_liquid_burning_gunpowder_diluent')
-
-        // event.custom({
-        //     type: 'createaddition:liquid_burning',
-        //     input: {
-        //         fluid: `kubejs:${dye}_diluent`,
-        //         amount: 1000
-        //     },
-        //     burnTime: 6000,
-        //     superheated: true
-        // }).id(`kubejs:strange_potion/custom_liquid_burning_${dye}_diluent`)
-
-        // event.custom({
-        //     type: 'createaddition:liquid_burning',
-        //     input: {
-        //         fluid: `kubejs:refined_${dye}_solution`,
-        //         amount: 1000
-        //     },
-        //     burnTime: 36000,
-        //     superheated: true
-        // }).id(`kubejs:strange_potion/custom_liquid_burning_refined_${dye}_solution`)
-
-
-        // event.custom({
-        //     type: 'createaddition:liquid_burning',
-        //     input: {
-        //         fluid: `kubejs:charged_${dye}_solution`,
-        //         amount: 1000
-        //     },
-        //     burnTime: 144000,
-        //     superheated: true
-        // }).id(`kubejs:strange_potion/custom_liquid_burning_charged_${dye}_solution`)
-    })
-
     event.custom({
         type: 'createaddition:liquid_burning',
         input: {
@@ -359,182 +175,16 @@ ServerEvents.recipes(event => {
         superheated: true
     }).id(`kubejs:strange_potion/custom_liquid_burning_charged_blue_dye_solution`)
 
-    // #region 
     event.remove({id: 'createaddition:compacting/seed_oil'})
 
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x minecraft:iron_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:iron_block',
-            Fluid.of('kubejs:charged_white_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_white_dye_solution_with_iron_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x minecraft:netherite_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:diamond_block',
-            'minecraft:diamond_block',
-            'minecraft:diamond_block',
-            'minecraft:diamond_block',
-            'minecraft:diamond_block',
-            'minecraft:netherite_block',
-            Fluid.of('kubejs:charged_black_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_black_dye_solution_with_netherite_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x minecraft:gold_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:gold_block',
-            Fluid.of('kubejs:charged_yellow_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_yellow_dye_solution_with_gold_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x minecraft:copper_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:copper_block',
-            Fluid.of('kubejs:charged_orange_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_orange_dye_solution_with_copper_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x minecraft:emerald_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:emerald_block',
-            Fluid.of('kubejs:charged_lime_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_lime_dye_solution_with_emerald_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x minecraft:diamond_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:diamond_block',
-            Fluid.of('kubejs:charged_light_blue_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_light_blue_dye_solution_with_diamond_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '11x minecraft:diamond_block',
-            Fluid.of('kubejs:iridescent_concentrate', 500),
-            Fluid.of('kubejs:charged_black_dye_solution', 100)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:diamond_block',
-            'minecraft:netherite_block',
-            'minecraft:netherite_block',
-            Fluid.of('kubejs:charged_light_blue_dye_solution', 500)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_light_blue_dye_solution_with_diamond_block_and_black_dye_solution`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '21x minecraft:redstone_block',
-            Fluid.of('kubejs:iridescent_concentrate', 1000)
-        ],
-        [
-            'kubejs:ore_set',
-            'minecraft:redstone_block',
-            Fluid.of('kubejs:charged_red_dye_solution', 1000)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_red_dye_solution_with_redstone_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x create:andesite_alloy_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'create:andesite_alloy_block',
-            Fluid.of('kubejs:charged_green_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_green_dye_solution_with_andesite_alloy_block`)
-
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x create:zinc_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'create:andesite_alloy_block',
-            'create:andesite_alloy_block',
-            'create:andesite_alloy_block',
-            'create:andesite_alloy_block',
-            'create:andesite_alloy_block',
-            'create:zinc_block',
-            Fluid.of('kubejs:charged_cyan_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_cyan_dye_solution_with_zinc_block`)
-    
-    vintageimprovements.pressurizing(
-        [
-            'kubejs:ore_set',
-            '6x create_dd:tin_block',
-            Fluid.of('kubejs:iridescent_concentrate', 250)
-        ],
-        [
-            'kubejs:ore_set',
-            'create_dd:tin_block',
-            Fluid.of('kubejs:charged_light_gray_dye_solution', 250)
-        ]
-    ).processingTime(187).secondaryFluidInput(0).superheated().id(`kubejs:pressurizing/redstone_changes/charged_light_gray_dye_solution_with_tin_block`)
-    
-    // endregion
+    let dyes = ['red_dye', 'orange_dye', 'yellow_dye', 'green_dye', 'lime_dye', 'cyan_dye', 'light_blue_dye', 'blue_dye', 'purple_dye', 'magenta_dye', 'pink_dye', 'black_dye', 'gray_dye', 'light_gray_dye', 'white_dye', 'brown_dye']
 
     create.sequenced_assembly(
         'kubejs:iridescent_alloy',
         'create:andesite_alloy',
-        // [
-        //     vintageimprovements.pressurizing(
-        //         'create:andesite_alloy',
-        //         [
-        //             Fluid.of('kubejs:assembly_molten_zinc', 5),
-        //             'create:andesite_alloy'
-        //         ]
-        //     ),
-        // ],
         [vintageimprovements.pressurizing('create:andesite_alloy',[Fluid.of('kubejs:assembly_molten_gold', 5),'create:andesite_alloy'])].concat(
             dyes.map(dye => {
-               return create.filling('create:andesite_alloy', ['create:andesite_alloy', Fluid.of(`kubejs:charged_${dye}_solution`, 125)])})),
+                return create.filling('create:andesite_alloy', ['create:andesite_alloy', Fluid.of(`kubejs:charged_${dye}_solution`, 125)])})),
         'create:andesite_alloy',
         1
     ).id('kubejs:sequenced_assembly/redstone_changes/iridescent_alloy_from_andesite')
@@ -587,49 +237,49 @@ ServerEvents.recipes(event => {
         ]
     ).id('kubejs:deploying/milk_bucket')
 
-    create.sequenced_assembly(
-        ['kubejs:ore_set'],
-        ['kubejs:basic_ore_set'],
-        [
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_cobblestone_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_gravel_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_iron_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_gold_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_copper_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_redstone_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_andesite_alloy_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_diamond_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_amethyst_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_netherite_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_brass_2x']),
-            create.deploying('kubejs:incomplete_iron_products', [
-                'kubejs:incomplete_iron_products', 'createcompression:compressed_experience_2x']),
-        ],
-        'kubejs:incomplete_iron_products', 1
-    ).id('kubejs:sequenced_assembly/redstone_changes/ore_set')
+    vintageimprovements.hammering(
+        'kubejs:obsidian_sheet',
+        'kubejs:obsidian_ingot', 10
+    ).id('kubejs:hammering/obsidian_sheet')
 
-    create.compacting(
+    create.cutting(
+        '2x kubejs:obsidian_rod',
+        'kubejs:obsidian_ingot'
+    ).id('kubejs:cutting/obsidian_rod')
+
+    create.cutting(
+        '2x kubejs:obsidian_wire',
+        'kubejs:obsidian_sheet'
+    ).id('kubejs:cutting/obsidian_wire')
+
+    event.shaped(
+        'kubejs:obsidian_ingot',
         [
-            'kubejs:ore_set',
-            '56x kubejs:basic_ore_set'
+            'nnn',
+            'nnn',
+            'nnn'
+        ],
+        {
+            n: 'kubejs:obsidian_nugget'
+        }
+    )
+
+    event.shapeless(
+        '9x kubejs:obsidian_nugget',
+        [
+            'kubejs:obsidian_ingot'
+        ]
+    )
+
+    event.remove({id: 'unify:tarnished_gold'})
+    create.mixing(
+        [
+            '2x unify:tarnished_gold'
         ],
         [
-            'kubejs:ore_set',
-            'createcompression:compressed_copper_1x',
-            'createcompression:compressed_redstone_1x',
-            'createcompression:compressed_gold_1x',
-            'createcompression:compressed_iron_2x'
+            'minecraft:copper_ingot',
+            '3x minecraft:gold_ingot',
+            'minecraft:quartz'
         ]
-    ).id('kubejs:compacting/redstone_changes/basic_ore_set_with_ore_set')
+    )
 })

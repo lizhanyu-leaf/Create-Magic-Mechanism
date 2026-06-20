@@ -133,33 +133,6 @@
 			y: 1.5d
 		}
 		{
-			icon: {
-				Count: 1
-				id: "create_sa:brass_jetpack_chestplate"
-				tag: { }
-			}
-			id: "7AA5DE69C2A67673"
-			rewards: [{
-				id: "2ADDFF7C7016BF7F"
-				item: {
-					Count: 1
-					id: "create_sa:brass_jetpack_chestplate"
-					tag: { }
-				}
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 4L
-				id: "709A534FE8FD676B"
-				item: { Count: 4, id: "kubejs:coin_button" }
-				type: "item"
-			}]
-			title: "黄铜喷气背包"
-			x: -3.0d
-			y: -1.5d
-		}
-		{
 			can_repeat: true
 			icon: "sophisticatedstorage:basic_to_diamond_tier_upgrade"
 			id: "6719A1609822ED5F"
@@ -234,8 +207,66 @@
 				type: "item"
 			}]
 			title: "远程应力传输"
-			x: -4.5d
-			y: -3.0d
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1B0EA8C65D242CE1"]
+			icon: "kubejs:automated_assembly_station"
+			id: "57893A8BCC892ED0"
+			rewards: [{
+				auto: "enabled"
+				count: 16
+				id: "3CD9878C80DA680B"
+				item: {
+					Count: 1
+					id: "createsimpleschematic:simple_schematic"
+					tag: {
+						File: "[多方块机器] 自动化装配站.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "14E2A163A6675D5C"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "自动化装配站-工程集合"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7F95EFB07391F2CD"]
+			icon: "kubejs:mechanical_furnace"
+			id: "77E5D76CDE2C3C4E"
+			rewards: [{
+				auto: "enabled"
+				count: 16
+				id: "3CCE02A44E88254C"
+				item: {
+					Count: 1
+					id: "createsimpleschematic:simple_schematic"
+					tag: {
+						File: "[多方块机器] 工业炉.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "6FC3D096BCA710B2"
+				item: "kubejs:coin_button"
+				type: "item"
+			}]
+			title: "工业炉-工程集合"
+			x: 4.5d
+			y: 0.0d
 		}
 	]
 	title: "{cmm.chapter.shop1}"
