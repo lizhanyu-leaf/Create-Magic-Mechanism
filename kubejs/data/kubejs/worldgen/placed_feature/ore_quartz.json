@@ -1,5 +1,5 @@
 {
-  "feature": "kubejs:ore_amethyst",
+  "feature": "kubejs:ore_quartz",
   "placement": [
     {
       "type": "minecraft:count",
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": -20
+          "absolute": 43
         },
         "max_inclusive": {
-          "absolute": 0
+          "absolute": 64
         }
       }
     },

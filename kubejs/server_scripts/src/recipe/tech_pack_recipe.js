@@ -10,15 +10,15 @@ ServerEvents.recipes(event => {
         'create:andesite_casing',
         [
             create.deploying('kubejs:incomplete_andesite_mechine',
-                ['kubejs:incomplete_andesite_mechine', 'create:mechanical_press']),
+                ['kubejs:incomplete_andesite_mechine', 'create:cogwheel']),
 
             create.deploying('kubejs:incomplete_andesite_mechine',
-                ['kubejs:incomplete_andesite_mechine', 'create:deployer']),
+                ['kubejs:incomplete_andesite_mechine', 'create:large_cogwheel']),
 
             create.deploying('kubejs:incomplete_andesite_mechine',
-                ['kubejs:incomplete_andesite_mechine', 'vintageimprovements:vacuum_chamber'])
+                ['kubejs:incomplete_andesite_mechine', 'create:mechanical_pump'])
         ],
-        'kubejs:incomplete_andesite_mechine', 2
+        'kubejs:incomplete_andesite_mechine', 4
     ).id('kubejs:sequenced_assembly/mechancal_tech_pack')
     .technology('mechancal_tech_pack')
 

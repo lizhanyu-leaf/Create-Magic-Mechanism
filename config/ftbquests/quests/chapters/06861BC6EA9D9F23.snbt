@@ -264,7 +264,6 @@
 				""
 				"这个世界的钢不是我们世界的钢，更像是&a黑曜石和工业铁的合金&r。在这个世界的规则下，这样的材料才能保证钢的性能。"
 			]
-			hide_until_deps_complete: true
 			icon: "unify:steel_ingot"
 			id: "29C4C734F7CEC029"
 			rewards: [{
@@ -442,7 +441,6 @@
 		}
 		{
 			dependencies: ["7AC4FD9044C6BD8D"]
-			hide_until_deps_complete: true
 			icon: "kubejs:redstone_sheet"
 			id: "3BEFDC66E64CB24A"
 			rewards: [{
@@ -611,6 +609,7 @@
 				"64B476FF6749A8D3"
 				"6A7C85AA51CC74C2"
 			]
+			hide_dependent_lines: true
 			icon: "create:deployer"
 			id: "1B0EA8C65D242CE1"
 			rewards: [
@@ -1503,7 +1502,10 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["109B163A1E29D33D"]
+			dependencies: [
+				"109B163A1E29D33D"
+				"1B0EA8C65D242CE1"
+			]
 			description: [
 				""
 				"锟斤拷锟斤拷烫烫烫烫烫烫烫烫烫"
