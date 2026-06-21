@@ -21,4 +21,4 @@ kubejs/*/jsconfig.json
 minecraftinstance.json
 user-prefs.json
 usercache.json
-usermamecache.json
+usernamecache.json

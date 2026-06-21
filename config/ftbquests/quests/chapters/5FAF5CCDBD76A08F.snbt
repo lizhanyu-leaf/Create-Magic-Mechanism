@@ -2304,9 +2304,10 @@
 			hide_dependent_lines: true
 			id: "76FD69B427A4DE09"
 			tasks: [{
-				id: "11D7F19E073F0256"
-				item: "kubejs:heat_lava_bucket"
-				type: "item"
+				amount: 1000L
+				fluid: "kubejs:heat_lava"
+				id: "53E84EC6FCD79684"
+				type: "fluid"
 			}]
 			x: 9.0d
 			y: 0.0d

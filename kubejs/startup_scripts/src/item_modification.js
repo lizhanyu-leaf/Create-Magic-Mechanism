@@ -1,10 +1,18 @@
 ItemEvents.modification(event => {
-    event.modify('create_sa:brass_pickaxe', item => {
+    event.modify('minecraft:diamond_pickaxe', item => {
         item.maxDamage = 10000000
     })
 
-    event.modify('create_sa:brass_axe', item => {
+    event.modify('minecraft:diamond_axe', item => {
         item.maxDamage = 10000000
+    })
+
+    event.modify('minecraft:netherite_pickaxe', item => {
+        item.maxDamage = 100000000
+    })
+
+    event.modify('minecraft:netherite_axe', item => {
+        item.maxDamage = 100000000
     })
 
     // event.modify('minecraft:iron_ingot', item => {

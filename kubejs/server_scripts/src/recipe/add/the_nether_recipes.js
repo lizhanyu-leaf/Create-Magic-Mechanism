@@ -62,4 +62,12 @@ ServerEvents.recipes(event => {
         .technology('the_nether_recipes')
         .id('kubejs:mechanical_furnace_recipe/the_nether_recipes/precision_mechanism_4')
 
+    kubejs.automated_assembly_station()
+        .inputItems('5x diamond', 'netherrack')
+        .outputItems('netherite_upgrade_smithing_template')
+        .dimension('minecraft:the_nether')
+        .duration(160)
+        .technology('the_nether_recipes')
+        .id('kubejs:automated_assembly_station/the_nether_recipes/netherite_upgrade_smithing_template')
+
 })

@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
         Item.of('create:wrench').enchant('minecraft:sharpness', 127),
         [
             'create:wrench',
-            'create_sa:brass_sword'
+            'minecraft:netherite_sword'
         ]
     )
 

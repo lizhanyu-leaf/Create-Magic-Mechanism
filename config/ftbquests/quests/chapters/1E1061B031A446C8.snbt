@@ -154,31 +154,39 @@
 					type: "item"
 				}
 				{
-					id: "07D512D3362A51C3"
-					item: {
-						Count: 1
-						id: "create_sa:brass_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "56E3068D35C4ADB6"
-					item: {
-						Count: 1
-						id: "create_sa:brass_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					count: 2
 					id: "587787E3AFE76260"
 					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "45493E02C25B0448"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "efficiency"
+								lvl: 255
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "34BFCF72A6D83D63"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_axe"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "efficiency"
+								lvl: 255
+							}]
+						}
+					}
 					type: "item"
 				}
 			]
