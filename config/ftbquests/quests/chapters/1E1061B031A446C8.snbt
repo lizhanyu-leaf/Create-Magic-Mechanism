@@ -353,17 +353,6 @@
 			description: ["{cmm.quests.ores.description}"]
 			icon: "minecraft:iron_ore"
 			id: "24D29410A19B14EC"
-			rewards: [{
-				id: "1E16B6620C4F1A84"
-				item: {
-					Count: 1
-					id: "create_sa:blazing_pickaxe"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "081392EBC1AFDD42"
 				title: "{cmm.quests.ores}"
