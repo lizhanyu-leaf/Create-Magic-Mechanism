@@ -2,598 +2,645 @@ ServerEvents.recipes(event => {
     const {create, createoreexcavation, 
         vintageimprovements, minecraft, kubejs} = event.recipes
 
-    // unlock_sturdy_knob
-    if (TechnologyTools.isActive('unlock_sturdy_knob')) {
-        event.replaceInput(
-            { input: 'minecraft:dried_kelp'},
-            'minecraft:dried_kelp',
-            'kubejs:precision_mechanism_1'
-        )
-    } else {
-        event.remove(
-            { input: 'minecraft:dried_kelp'}
-        )
-    }
-    
     // basic_logistics
-    if (TechnologyTools.isActive('basic_logistics')) {
-        minecraft.crafting_shaped(
-            'create:belt_connector',
-            [
-                'aaa',
-                'bbb'
-            ],
-            {
-                a: 'create:sturdy_sheet',
-                b: 'createcompression:compressed_obsidian_1x'
-            }
-        )
-    } else {
-        event.remove({id: 'create:crafting/logistics/andesite_funnel'})
-        event.remove({id: 'create:crafting/logistics/andesite_tunnel'})
-    }
 
-    // basic_storage
-    if (TechnologyTools.isActive('basic_storage')) {
-        event.replaceInput(
-            {mod: 'sophisticatedstorage', input: 'minecraft:lever'},
-            'minecraft:lever',
-            'kubejs:precision_mechanism_1'
-        )
-    } else {
-        event.remove({mod: 'sophisticatedstorage', input: 'minecraft:lever'})
-        event.remove({type: 'sophisticatedstorage:generic_wood_storage'})
-    }
+    minecraft.crafting_shaped(
+        'create:belt_connector',
+        [
+            'aaa',
+            'bbb'
+        ],
+        {
+            a: 'create:sturdy_sheet',
+            b: 'createcompression:compressed_obsidian_1x'
+        }
+    ).technology('basic_logistics')
 
     // basic_storage_upgrade
-    if (!TechnologyTools.isActive('basic_storage_upgrade')) {
-        event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1'})
-        event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1_plus'})
-        event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_2'})
-    }
+    event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1'})
+    event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1_plus'})
+    event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_2'})
+
+    event.shaped(
+        'sophisticatedstorage:stack_upgrade_tier_1',
+        [
+            'aaa',
+            'aba',
+            'aaa'
+        ],
+        {
+            a: 'kubejs:wood_set',
+            b: 'sophisticatedstorage:upgrade_base'
+        }
+    ).technology('basic_storage_upgrade')
+
+    event.shaped(
+        'sophisticatedstorage:stack_upgrade_tier_1_plus',
+        [
+            'aaa',
+            'aba',
+            'aaa'
+        ],
+        {
+            a: 'minecraft:copper_block',
+            b: 'sophisticatedstorage:stack_upgrade_tier_1'
+        }
+    ).technology('basic_storage_upgrade')
+
+    event.shaped(
+        'sophisticatedstorage:stack_upgrade_tier_2',
+        [
+            'aaa',
+            'aba',
+            'aaa'
+        ],
+        {
+            a: 'unify:steel_block',
+            b: 'sophisticatedstorage:stack_upgrade_tier_1_plus'
+        }
+    ).technology('basic_storage_upgrade')
 
     // industrial_iron_smelting
-    if (TechnologyTools.isActive('industrial_iron_smelting')){
-        create.compacting(
-            [
-                '2x create_dd:industrial_iron_ingot'
-            ],
-            [
-                Fluid.of('minecraft:lava', 250),
-                '2x minecraft:iron_ingot',
-                'minecraft:redstone_block'
-            ]
-        ).superheated()
-        .id('kubejs:compacting/industrial_iron_smelting')
-    }
+    create.compacting(
+        [
+            '2x create_dd:industrial_iron_ingot'
+        ],
+        [
+            Fluid.of('minecraft:lava', 250),
+            '2x minecraft:iron_ingot',
+            'minecraft:redstone_block'
+        ]
+    ).superheated()
+    .technology('industrial_iron_smelting')
+    .id('kubejs:compacting/industrial_iron_smelting')
 
     // sturdy_sheet_smithing
-    event.remove({id: 'create:sequenced_assembly/sturdy_sheet'})
-    if (TechnologyTools.isActive('sturdy_sheet_smithing'))
-        create.compacting(
-            '2x create:sturdy_sheet',
-            [
-                'minecraft:obsidian',
-                Fluid.of('minecraft:lava', 250)
-            ]
-        ).superheated().id('kubejs:compacting/sturdy_sheet_smithing')
+    create.compacting(
+        '2x create:sturdy_sheet',
+        [
+            'minecraft:obsidian',
+            Fluid.of('minecraft:lava', 250)
+        ]
+    ).superheated().technology('sturdy_sheet_smithing').id('kubejs:compacting/sturdy_sheet_smithing')
 
     // mb_mechanical_furnace
-    if (!TechnologyTools.isActive('mb_mechanical_furnace'))
-        event.remove({type: 'kubejs:mechanical_furnace_recipe'})
-    else {
-        create.deploying(
-            'kubejs:mechanical_furnace',
-            [
-                'minecraft:iron_block',
-                'create:sturdy_sheet'
-            ]
-        )
-        kubejs.mechanical_furnace_recipe()
-            .id('kubejs:mechanical_furnace_recipe/mb_mechanical_furnace/1')
-            .inputItems('5x minecraft:iron_ingot')
-            .inputFluids('minecraft:lava 2500')
-            .outputItems('10x create:andesite_alloy')
+    create.deploying(
+        'kubejs:mechanical_furnace',
+        [
+            'minecraft:iron_block',
+            'create:sturdy_sheet'
+        ]
+    ).technology('mb_mechanical_furnace')
+    kubejs.mechanical_furnace_recipe()
+        .inputItems('5x minecraft:iron_ingot')
+        .inputFluids('minecraft:lava 2500')
+        .outputItems('10x create:andesite_alloy')
+        .technology('mb_mechanical_furnace')
+        .id('kubejs:mechanical_furnace_recipe/mb_mechanical_furnace/1')
 
-        // Tin
-        if (TechnologyTools.isActive('tin_smelting')) {
-            kubejs.mechanical_furnace_recipe()
-                .id('kubejs:mechanical_furnace_recipe/tin_smelting')
-                .inputItems('5x unify:raw_tin')
-                .inputFluids('kubejs:strange_potion 1000')
-                .outputItems('2x unify:tin_ingot')
-        }
+    // Tin
+    kubejs.mechanical_furnace_recipe()
+        .id('kubejs:mechanical_furnace_recipe/tin_smelting')
+        .inputItems('5x unify:raw_tin')
+        .inputFluids('kubejs:strange_potion 1000')
+        .outputItems('2x unify:tin_ingot')
+        .technology('tin_smelting')
+    
 
-        // Silver
-        if (TechnologyTools.isActive('silver_smelting')) {
-            kubejs.mechanical_furnace_recipe()
-                .id('kubejs:mechanical_furnace_recipe/silver_smelting')
-                .inputItems('5x unify:raw_silver')
-                .inputFluids('kubejs:strange_potion 1000')
-                .outputItems('2x unify:silver_ingot')
-        }
+    // Silver
+    kubejs.mechanical_furnace_recipe()
+        .id('kubejs:mechanical_furnace_recipe/silver_smelting')
+        .inputItems('5x unify:raw_silver')
+        .inputFluids('kubejs:strange_potion 1000')
+        .outputItems('2x unify:silver_ingot')
+        .technology('silver_smelting')
 
-        // Zinc
-        if (TechnologyTools.isActive('zinc_smelting')) {
-            kubejs.mechanical_furnace_recipe()
-                .id('kubejs:mechanical_furnace_recipe/zinc_smelting')
-                .inputItems('5x create:raw_zinc')
-                .inputFluids('kubejs:strange_potion 1000')
-                .outputItems('2x create:zinc_ingot')
-        }
+    // Zinc
+    kubejs.mechanical_furnace_recipe()
+        .id('kubejs:mechanical_furnace_recipe/zinc_smelting')
+        .inputItems('5x create:raw_zinc')
+        .inputFluids('kubejs:strange_potion 1000')
+        .outputItems('2x create:zinc_ingot')
+        .technology('zinc_smelting')
+    
 
-        // obsidian
-        if (TechnologyTools.isActive('obsidian_smelting')) {
-            kubejs.mechanical_furnace_recipe()
-                .id('kubejs:mechanical_furnace_recipe/obsidian_smelting/1')
-                .inputFluids('minecraft:lava 2000', 'minecraft:water 2000')
-                .outputItems('2x minecraft:obsidian')
+    // obsidian
+    kubejs.mechanical_furnace_recipe()
+        .id('kubejs:mechanical_furnace_recipe/obsidian_smelting/1')
+        .inputFluids('minecraft:lava 2000', 'minecraft:water 2000')
+        .outputItems('2x minecraft:obsidian')
+        .technology('obsidian_smelting')
 
-            kubejs.mechanical_furnace_recipe()
-                .id('kubejs:mechanical_furnace_recipe/obsidian_smelting/2')
-                .inputItems('5x minecraft:obsidian')
-                .inputFluids('kubejs:strange_potion 1000')
-                .outputItems('2x kubejs:obsidian_ingot')
-        }
-    }
+    kubejs.mechanical_furnace_recipe()
+        .id('kubejs:mechanical_furnace_recipe/obsidian_smelting/2')
+        .inputItems('5x minecraft:obsidian')
+        .inputFluids('kubejs:strange_potion 1000')
+        .outputItems('2x kubejs:obsidian_ingot')
+        .technology('obsidian_smelting')
+    
 
     // steel_smelting
-    if (TechnologyTools.isActive('steel_smelting')) {
-        create.compacting(
-            [
-                '3x kubejs:incomplete_steel'
-            ],
-            [
-                '2x create:sturdy_sheet',
-                '4x create_dd:industrial_iron_ingot'
-            ]
-        ).superheated()
-        .id('kubejs:compacting/steel_smelting/1')
+    create.compacting(
+        [
+            '3x kubejs:incomplete_steel'
+        ],
+        [
+            '2x create:sturdy_sheet',
+            '4x create_dd:industrial_iron_ingot'
+        ]
+    ).superheated().technology('steel_smelting')
+    .id('kubejs:compacting/steel_smelting/1')
 
-        kubejs.mechanical_furnace_recipe()
-            .id('kubejs:mechanical_furnace_recipe/steel_smelting/2')
-            .inputItems('5x kubejs:incomplete_steel')
-            .inputFluids('kubejs:redstone_diluent 2500', 'kubejs:strange_potion 1000')
-            .outputItems('unify:steel_ingot')
-    }
+    kubejs.mechanical_furnace_recipe()
+        .id('kubejs:mechanical_furnace_recipe/steel_smelting/2')
+        .inputItems('5x kubejs:incomplete_steel')
+        .inputFluids('kubejs:redstone_diluent 2500', 'kubejs:strange_potion 1000')
+        .outputItems('unify:steel_ingot')
+        .technology('steel_smelting')
 
     // redstone_circuit
-    if (TechnologyTools.isActive('redstone_circuit')) {
-        create.sequenced_assembly(
-            'kubejs:redstone_sheet',
-            'kubejs:charging_iron_sheet',
-            [
-                create.cutting('kubejs:incomplete_redstone_sheet', 'kubejs:incomplete_redstone_sheet'),
-                create.deploying('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', 'kubejs:precision_mechanism_2']),
-                create.deploying('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', 'minecraft:redstone_block']),
-                create.filling('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', Fluid.of('kubejs:redstone_diluent', 250)]),
-                create.pressing('kubejs:incomplete_redstone_sheet', 'kubejs:incomplete_redstone_sheet'),
-                create.deploying('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', 'minecraft:redstone'])
-            ],
-            'kubejs:incomplete_redstone_sheet', 5
-        ).id('kubejs:sequenced_assembly/redstone_circuit')
+    create.sequenced_assembly(
+        'kubejs:redstone_sheet',
+        'kubejs:charging_iron_sheet',
+        [
+            create.cutting('kubejs:incomplete_redstone_sheet', 'kubejs:incomplete_redstone_sheet'),
+            create.deploying('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', 'kubejs:precision_mechanism_2']),
+            create.deploying('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', 'minecraft:redstone_block']),
+            create.filling('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', Fluid.of('kubejs:redstone_diluent', 250)]),
+            create.pressing('kubejs:incomplete_redstone_sheet', 'kubejs:incomplete_redstone_sheet'),
+            create.deploying('kubejs:incomplete_redstone_sheet', ['kubejs:incomplete_redstone_sheet', 'minecraft:redstone'])
+        ],
+        'kubejs:incomplete_redstone_sheet', 5
+    ).technology('redstone_circuit').id('kubejs:sequenced_assembly/redstone_circuit')
 
-        vintageimprovements.vibrating(
-            'vintageimprovements:redstone_module',
-            'kubejs:redstone_sheet'
-        ).id('kubejs:vibrating/redstone_circuit')
-    }
+    vintageimprovements.vibrating(
+        'vintageimprovements:redstone_module',
+        'kubejs:redstone_sheet'
+    ).technology('redstone_circuit').id('kubejs:vibrating/redstone_circuit')
 
     // inductive_mechanism
     event.remove({output: 'create_dd:inductive_mechanism'})
-    if (TechnologyTools.isActive('inductive_mechanism')) {
-        create.sequenced_assembly(
-            ['create_dd:inductive_mechanism'],
-            ['create_dd:andesite_sheet'],
-            [
-                create.deploying('create_dd:incomplete_inductive_mechanism',
-                    ['create_dd:incomplete_inductive_mechanism', 'create:cogwheel']),
+    create.sequenced_assembly(
+        ['create_dd:inductive_mechanism'],
+        ['create_dd:andesite_sheet'],
+        [
+            create.deploying('create_dd:incomplete_inductive_mechanism',
+                ['create_dd:incomplete_inductive_mechanism', 'create:cogwheel']),
 
-                create.deploying('create_dd:incomplete_inductive_mechanism',
-                    ['create_dd:incomplete_inductive_mechanism', 'create:large_cogwheel']),
+            create.deploying('create_dd:incomplete_inductive_mechanism',
+                ['create_dd:incomplete_inductive_mechanism', 'create:large_cogwheel']),
 
-                create.deploying('create_dd:incomplete_inductive_mechanism',
-                    ['create_dd:incomplete_inductive_mechanism', 'create:andesite_alloy']),
+            create.deploying('create_dd:incomplete_inductive_mechanism',
+                ['create_dd:incomplete_inductive_mechanism', 'create:andesite_alloy']),
 
-                create.deploying('create_dd:incomplete_inductive_mechanism',
-                    ['create_dd:incomplete_inductive_mechanism', 'unify:steel_rod']),
+            create.deploying('create_dd:incomplete_inductive_mechanism',
+                ['create_dd:incomplete_inductive_mechanism', 'unify:steel_rod']),
 
-                create.deploying('create_dd:incomplete_inductive_mechanism',
-                    ['create_dd:incomplete_inductive_mechanism', 'kubejs:precision_mechanism_1']),
+            create.deploying('create_dd:incomplete_inductive_mechanism',
+                ['create_dd:incomplete_inductive_mechanism', 'kubejs:precision_mechanism_1']),
 
-                create.deploying('create_dd:incomplete_inductive_mechanism',
-                    ['create_dd:incomplete_inductive_mechanism', 'createoreexcavation:drill']).keepHeldItem(),
-            ],
-            'create_dd:incomplete_inductive_mechanism', 8
-        ).id('kubejs:sequenced_assembly/inductive_mechanism')
-    }
+            create.deploying('create_dd:incomplete_inductive_mechanism',
+                ['create_dd:incomplete_inductive_mechanism', 'createoreexcavation:drill']).keepHeldItem(),
+        ],
+        'create_dd:incomplete_inductive_mechanism', 8
+    ).technology('inductive_mechanism').id('kubejs:sequenced_assembly/inductive_mechanism')
+    
 
     //basic_chain_transmission
     event.remove({output: 'minecraft:chain'})
-    if (TechnologyTools.isActive('basic_chain_transmission')) {
-        create.sequenced_assembly(
-            'create:chain_conveyor',
-            'create:large_cogwheel',
-            [
-                create.deploying(
+    create.sequenced_assembly(
+        'create:chain_conveyor',
+        'create:large_cogwheel',
+        [
+            create.deploying(
+                'kubejs:incomplete_andesite_mechine',
+                [
                     'kubejs:incomplete_andesite_mechine',
-                    [
-                        'kubejs:incomplete_andesite_mechine',
-                        'create:andesite_casing'
-                    ]
-                ),
-                create.deploying(
+                    'create:andesite_casing'
+                ]
+            ),
+            create.deploying(
+                'kubejs:incomplete_andesite_mechine',
+                [
                     'kubejs:incomplete_andesite_mechine',
-                    [
-                        'kubejs:incomplete_andesite_mechine',
-                        'create_dd:inductive_mechanism'
-                    ]
-                ),
-                create.deploying(
+                    'create_dd:inductive_mechanism'
+                ]
+            ),
+            create.deploying(
+                'kubejs:incomplete_andesite_mechine',
+                [
                     'kubejs:incomplete_andesite_mechine',
-                    [
-                        'kubejs:incomplete_andesite_mechine',
-                        'unify:steel_sheet'
-                    ]
-                )
-            ],
-            'kubejs:incomplete_andesite_mechine', 4
-        ).id('kubejs:sequenced_assembly/basic_chain_transmission')
-        minecraft.crafting_shaped(
-            'minecraft:chain',
-            [
-                'n',
-                'i',
-                'n'
-            ],
-            {
-                n: 'unify:steel_nugget',
-                i: 'unify:steel_ingot'
-            }
-        )
-    }
+                    'unify:steel_sheet'
+                ]
+            )
+        ],
+        'kubejs:incomplete_andesite_mechine', 4
+    ).technology('basic_chain_transmission').id('kubejs:sequenced_assembly/basic_chain_transmission')
+    minecraft.crafting_shaped(
+        'minecraft:chain',
+        [
+            'n',
+            'i',
+            'n'
+        ],
+        {
+            n: 'unify:steel_nugget',
+            i: 'unify:steel_ingot'
+        }
+    ).technology('basic_chain_transmission')
 
     // strange_potion
-    if (TechnologyTools.isActive('strange_potion')) {
-        // 奇异药水混合
-        create.mixing(
-            [
-                Fluid.of('kubejs:strange_potion', 100)
-            ],
-            [
-                Fluid.of('kubejs:redstone_diluent', 250),
-                Fluid.of('minecraft:water', 250),
-                'kubejs:redstone_sheet',
-                'purple_dye'
-            ],
-            500
-        ).id('kubejs:mixing/strange_potion/strange_potion_base')
+    create.mixing(
+        [
+            Fluid.of('kubejs:strange_potion', 100)
+        ],
+        [
+            Fluid.of('kubejs:redstone_diluent', 250),
+            Fluid.of('minecraft:water', 250),
+            'kubejs:redstone_sheet',
+            'purple_dye'
+        ],
+        500
+    ).technology('strange_potion')
+    .id('kubejs:mixing/strange_potion/strange_potion_base')
 
-        // 紫颂果奇异药水混合
-        create.mixing(
-            Fluid.of('kubejs:strange_potion', 500),
-            [
-                Fluid.of('minecraft:water', 500),
-                'minecraft:chorus_fruit'
-            ]
-        ).id('kubejs:mixing/strange_potion/strange_potion_from_chorus_fruit')
+    create.mixing(
+        Fluid.of('kubejs:strange_potion', 500),
+        [
+            Fluid.of('minecraft:water', 500),
+            'minecraft:chorus_fruit'
+        ]
+    ).technology('strange_potion')
+    .id('kubejs:mixing/strange_potion/strange_potion_from_chorus_fruit')
 
-        // 紫颂果加压
-        event.recipes.vintageimprovements.pressurizing(
-            [
-                Item.of('minecraft:chorus_fruit', 5),
-                Item.of('minecraft:chorus_fruit', 1).withChance(0.5),
-                Item.of('minecraft:chorus_fruit', 1).withChance(0.2),
-                Item.of('minecraft:chorus_fruit', 1).withChance(0.2),
-                Item.of('minecraft:chorus_fruit').withChance(0.1),
-            ],
-            [
-                Fluid.of('kubejs:strange_potion', 1000),
-            ]
-        ).id('kubejs:pressurizing/strange_potion/chorus_fruit')
-    }
+    event.recipes.vintageimprovements.pressurizing(
+        [
+            Item.of('minecraft:chorus_fruit', 5),
+            Item.of('minecraft:chorus_fruit', 1).withChance(0.5),
+            Item.of('minecraft:chorus_fruit', 1).withChance(0.2),
+            Item.of('minecraft:chorus_fruit', 1).withChance(0.2),
+            Item.of('minecraft:chorus_fruit').withChance(0.1),
+        ],
+        [
+            Fluid.of('kubejs:strange_potion', 1000),
+        ]
+    ).technology('strange_potion')
+    .id('kubejs:pressurizing/strange_potion/chorus_fruit')
 
     // andesite_input_and_output
-    if (TechnologyTools.isActive('andesite_input_and_output')) {
-        create.sequenced_assembly(
-            ['kubejs:andesite_input'],
-            ['create:andesite_casing'],
-            [
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'minecraft:emerald']),
+    create.sequenced_assembly(
+        ['kubejs:andesite_input'],
+        ['create:andesite_casing'],
+        [
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'minecraft:emerald']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'kubejs:redstone_sheet']),
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'kubejs:redstone_sheet']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'unify:steel_sheet']),
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'unify:steel_sheet']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'create_dd:andesite_sheet']),
-            ],
-            'kubejs:incomplete_andesite_mechine', 8
-        ).id('kubejs:sequenced_assembly/andesite_input_and_output/andesite_input')
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'create_dd:andesite_sheet']),
+        ],
+        'kubejs:incomplete_andesite_mechine', 8
+    ).technology('andesite_input_and_output')
+    .id('kubejs:sequenced_assembly/andesite_input_and_output/andesite_input')
 
-        create.sequenced_assembly(
-            ['kubejs:andesite_output'],
-            ['create:andesite_casing'],
-            [
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'minecraft:redstone']),
+    create.sequenced_assembly(
+        ['kubejs:andesite_output'],
+        ['create:andesite_casing'],
+        [
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'minecraft:redstone']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'kubejs:redstone_sheet']),
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'kubejs:redstone_sheet']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'unify:steel_sheet']),
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'unify:steel_sheet']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'create_dd:andesite_sheet']),
-            ],
-            'kubejs:incomplete_andesite_mechine', 8
-        ).id('kubejs:sequenced_assembly/andesite_input_and_output/andesite_output')
-    }
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'create_dd:andesite_sheet']),
+        ],
+        'kubejs:incomplete_andesite_mechine', 8
+    ).technology('andesite_input_and_output')
+    .id('kubejs:sequenced_assembly/andesite_input_and_output/andesite_output')
 
     // mb_automated_assembly_station
-    if (TechnologyTools.isActive('mb_automated_assembly_station')) {
-        create.sequenced_assembly(
-            ['kubejs:automated_assembly_station'],
-            ['create:andesite_casing'],
-            [
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'create:belt_connector']),
+    create.sequenced_assembly(
+        ['kubejs:automated_assembly_station'],
+        ['create:andesite_casing'],
+        [
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'create:belt_connector']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'kubejs:redstone_sheet']),
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'kubejs:redstone_sheet']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine',
-                    ['kubejs:incomplete_andesite_mechine', 'unify:steel_sheet']),
-            ],
-            'kubejs:incomplete_andesite_mechine', 4
-        ).id('kubejs:sequenced_assembly/mb_automated_assembly_station/automated_assembly_station')
+            create.deploying('kubejs:incomplete_andesite_mechine',
+                ['kubejs:incomplete_andesite_mechine', 'unify:steel_sheet']),
+        ],
+        'kubejs:incomplete_andesite_mechine', 4
+    ).technology('mb_automated_assembly_station')
+    .id('kubejs:sequenced_assembly/mb_automated_assembly_station/automated_assembly_station')
 
-        kubejs.automated_assembly_station()
-            .id('kubejs:automated_assembly_station/belt')
-            .duration(20)
-            .inputItems(Item.of('create:sturdy_sheet', 5), Item.of('kubejs:precision_mechanism_1', 10))
-            .outputItems(Item.of('create:belt_connector'))
+    kubejs.automated_assembly_station()
+        .id('kubejs:automated_assembly_station/belt')
+        .duration(20)
+        .inputItems(Item.of('create:sturdy_sheet', 5), Item.of('kubejs:precision_mechanism_1', 10))
+        .outputItems(Item.of('create:belt_connector'))
+        .technology('mb_automated_assembly_station')
 
-        kubejs.automated_assembly_station()
-            .id('kubejs:automated_assembly_station/simple_schematic/mechanical_furnace')
-            .duration(20)
-            .inputItems(Item.of('kubejs:mechanical_furnace'), Item.of('create:industrial_iron_block', 16), Item.of('create:blaze_burner', 10))
-            .outputItems(Item.of('createsimpleschematic:simple_schematic', {File: "[多方块机器] 工业炉.nbt"}).strongNBT())
-        
-        kubejs.automated_assembly_station()
-            .id('kubejs:automated_assembly_station/simple_schematic/automated_assembly_station')
-            .duration(20)
-            .inputItems(Item.of('kubejs:automated_assembly_station'), Item.of('create:andesite_casing', 32), Item.of('kubejs:andesite_input'), Item.of('kubejs:andesite_output'))
-            .outputItems(Item.of('createsimpleschematic:simple_schematic', {File: "[多方块机器] 自动化装配站.nbt"}).strongNBT())
-    }
+    kubejs.automated_assembly_station()
+        .id('kubejs:automated_assembly_station/simple_schematic/mechanical_furnace')
+        .duration(20)
+        .inputItems(Item.of('kubejs:mechanical_furnace'), Item.of('create:industrial_iron_block', 16), Item.of('create:blaze_burner', 10))
+        .outputItems(Item.of('createsimpleschematic:simple_schematic', {File: "[多方块机器] 工业炉.nbt"}).strongNBT())
+        .technology('mb_automated_assembly_station')
+    
+    kubejs.automated_assembly_station()
+        .id('kubejs:automated_assembly_station/simple_schematic/automated_assembly_station')
+        .duration(20)
+        .inputItems(Item.of('kubejs:automated_assembly_station'), Item.of('create:andesite_casing', 32), Item.of('kubejs:andesite_input'), Item.of('kubejs:andesite_output'))
+        .outputItems(Item.of('createsimpleschematic:simple_schematic', {File: "[多方块机器] 自动化装配站.nbt"}).strongNBT())
+        .technology('mb_automated_assembly_station')
+    
 
     // set_tray
-    if (TechnologyTools.isActive('set_tray')) {
-        create.sequenced_assembly(
-            [Item.of('kubejs:set_tray').withChance(0.7), 
-                Item.of('create_dd:industrial_iron_ingot').withChance(0.25),
-                Item.of('5x white_dye').withChance(0.05)],
-            ['create_dd:industrial_iron_sheet'],
-            [
-                create.deploying(
+    create.sequenced_assembly(
+        [Item.of('kubejs:set_tray').withChance(0.7), 
+            Item.of('create_dd:industrial_iron_ingot').withChance(0.25),
+            Item.of('5x white_dye').withChance(0.05)],
+        ['create_dd:industrial_iron_sheet'],
+        [
+            create.deploying(
+                'kubejs:incomplete_iron_products',
+                [
                     'kubejs:incomplete_iron_products',
-                    [
-                        'kubejs:incomplete_iron_products',
-                        'kubejs:precision_mechanism_2'
-                    ]
-                ),
+                    'kubejs:precision_mechanism_2'
+                ]
+            ),
 
-                create.filling(
+            create.filling(
+                'kubejs:incomplete_iron_products',
+                [
                     'kubejs:incomplete_iron_products',
-                    [
-                        'kubejs:incomplete_iron_products',
-                        Fluid.of('kubejs:white_dye_diluent', 250)
-                    ]
-                ),
+                    Fluid.of('kubejs:white_dye_diluent', 250)
+                ]
+            ),
 
-                vintageimprovements.vibrating(
-                    'kubejs:incomplete_iron_products',
-                    'kubejs:incomplete_iron_products'
-                ).processingTime(90)
-            ],
-            'kubejs:incomplete_iron_products', 2
-        ).id('kubejs:sequenced_assembly/set_tray')
-    }
+            vintageimprovements.vibrating(
+                'kubejs:incomplete_iron_products',
+                'kubejs:incomplete_iron_products'
+            ).processingTime(90)
+        ],
+        'kubejs:incomplete_iron_products', 2
+    ).technology('set_tray')
+    .id('kubejs:sequenced_assembly/set_tray')
+    
 
     // incomplete_precision_mechanism_3
-    if (TechnologyTools.isActive('incomplete_precision_mechanism_3')) {
-        create.sequenced_assembly(
-            'kubejs:incomplete_precision_mechanism_3',
-            'create:cogwheel',
-            [
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create:gearbox']),
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create:gearshift']),
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create_connected:encased_chain_cogwheel']),
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create:encased_chain_drive']),
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create_connected:parallel_gearbox']),
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create_connected:six_way_gearbox']),
+    create.sequenced_assembly(
+        'kubejs:incomplete_precision_mechanism_3',
+        'create:cogwheel',
+        [
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create:gearbox']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create:gearshift']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create_connected:encased_chain_cogwheel']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create:encased_chain_drive']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create_connected:parallel_gearbox']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create_connected:six_way_gearbox']),
 
-            ],
-            'kubejs:incomplete_andesite_mechine', 1
-        ).id('kubejs:sequenced_assembly/incomplete_precision_mechanism_3')
-    }
+        ],
+        'kubejs:incomplete_andesite_mechine', 1
+    ).technology('incomplete_precision_mechanism_3').id('kubejs:sequenced_assembly/incomplete_precision_mechanism_3')
 
     // precision_mechanism_3
-    if (TechnologyTools.isActive('precision_mechanism_3')) {
-        create.sequenced_assembly(
-            'kubejs:precision_mechanism_3',
-            'kubejs:incomplete_precision_mechanism_3',
-            [
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create_dd:andesite_sheet']),
+    create.sequenced_assembly(
+        'kubejs:precision_mechanism_3',
+        'kubejs:incomplete_precision_mechanism_3',
+        [
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create_dd:andesite_sheet']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'unify:steel_rod']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'unify:steel_rod']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'unify:steel_wire']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'unify:steel_wire']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create:cogwheel']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create:cogwheel']),
 
-                create.deploying('kubejs:incomplete_andesite_mechine', 
-                    ['kubejs:incomplete_andesite_mechine', 'create:large_cogwheel']),
+            create.deploying('kubejs:incomplete_andesite_mechine', 
+                ['kubejs:incomplete_andesite_mechine', 'create:large_cogwheel']),
 
-                create.cutting('kubejs:incomplete_andesite_mechine', 'kubejs:incomplete_andesite_mechine')
-            ],
-            'kubejs:incomplete_andesite_mechine',
-            TechnologyTools.isActive('simple_precision_mechanism_3_recipe') ? 4 : 16
-        ).id('kubejs:sequenced_assembly/precision_mechanism_3')
-    }
+            create.cutting('kubejs:incomplete_andesite_mechine', 'kubejs:incomplete_andesite_mechine')
+        ],
+        'kubejs:incomplete_andesite_mechine',
+        TechnologyTools.isActive('simple_precision_mechanism_3_recipe') ? 4 : 16
+    ).technology('precision_mechanism_3').id('kubejs:sequenced_assembly/precision_mechanism_3')
 
     // bronze_smelting
-    if (TechnologyTools.isActive('bronze_smelting')) {
-        create.compacting(
-            'unify:bronze_ingot',
-            [
-                'unify:tin_ingot',
-                'minecraft:copper_ingot'
-            ]
-        ).heated().id('kubejs:compacting/bronze_ingot')
-    }
+    create.compacting(
+        'unify:bronze_ingot',
+        [
+            'unify:tin_ingot',
+            'minecraft:copper_ingot'
+        ]
+    ).heated().technology('bronze_smelting').id('kubejs:compacting/bronze_ingot')
 
     // smart_logistics
-    if (TechnologyTools.isActive('smart_logistics')) {
-        event.shaped(
-            'create:brass_funnel',
-            [
-                'a',
-                'b',
-                'c'
-            ],
-            {
-                a: 'create_dd:inductive_mechanism',
-                b: 'unify:bronze_ingot',
-                c: 'kubejs:precision_mechanism_1'
-            }
-        ).id('kubejs:andesite_changes/shaped_brass_funnel_from_precison_mechanisms')
+    event.shaped(
+        'create:brass_funnel',
+        [
+            'a',
+            'b',
+            'c'
+        ],
+        {
+            a: 'create_dd:inductive_mechanism',
+            b: 'unify:bronze_ingot',
+            c: 'kubejs:precision_mechanism_1'
+        }
+    ).technology('smart_logistics')
+    .id('kubejs:andesite_changes/shaped_brass_funnel_from_precison_mechanisms')
 
-        event.shaped(
-            'create:brass_tunnel',
-            [
-                'a ',
-                'bb',
-                'cc'
-            ],
-            {
-                a: 'create_dd:inductive_mechanism',
-                b: 'unify:bronze_ingot',
-                c: 'kubejs:precision_mechanism_1'
-            }
-        ).id('kubejs:andesite_changes/shaped_brass_tunnel_from_precison_mechanisms')
-    } else {
-        event.remove({ output: 'create:brass_funnel' })
-        event.remove({ output: 'create:brass_tunnel' })
-    }
+    event.shaped(
+        'create:brass_tunnel',
+        [
+            'a ',
+            'bb',
+            'cc'
+        ],
+        {
+            a: 'create_dd:inductive_mechanism',
+            b: 'unify:bronze_ingot',
+            c: 'kubejs:precision_mechanism_1'
+        }
+    ).technology('smart_logistics')
+    .id('kubejs:andesite_changes/shaped_brass_tunnel_from_precison_mechanisms')
 
     // seed_oil
-    if (TechnologyTools.isActive('seed_oil')) {
-        vintageimprovements.pressurizing(
-            [
-                Fluid.of('createaddition:seed_oil', 500)
-            ],
-            [
-                'wheat_seeds',
-                'wheat_seeds'
-            ]
-        ).processingTime(60).heated().id('kubejs:pressurizing/seed_oil/seed_oil')
+    vintageimprovements.pressurizing(
+        [
+            Fluid.of('createaddition:seed_oil', 500)
+        ],
+        [
+            'wheat_seeds',
+            'wheat_seeds'
+        ]
+    ).processingTime(60).heated().technology('seed_oil')
+    .id('kubejs:pressurizing/seed_oil/seed_oil')
 
-        vintageimprovements.vacuumizing(
-            Fluid.of('kubejs:slime', 100),
-            [
-                Fluid.of('createaddition:seed_oil', 100),
-                'minecraft:slime_ball',
-                Fluid.of('minecraft:water', 500)
-            ]
-        ).secondaryFluidInput(1).id('kubejs:vacuumizing/seed_oil/slime')
-    }
+    vintageimprovements.vacuumizing(
+        Fluid.of('kubejs:slime', 100),
+        [
+            Fluid.of('createaddition:seed_oil', 100),
+            'minecraft:slime_ball',
+            Fluid.of('minecraft:water', 500)
+        ]
+    ).secondaryFluidInput(1).technology('seed_oil')
+    .id('kubejs:vacuumizing/seed_oil/slime')
 
     // electron_tube
-    if (TechnologyTools.isActive('electron_tube')) {
-        create.sequenced_assembly(
-            '6x create:electron_tube',
-            'kubejs:electron_tube_substrate',
-            [
-                create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'unify:steel_sheet']),
-                create.filling('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', Fluid.of('kubejs:slime', 100)]),
-                create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'create:polished_rose_quartz']),
-                vintageimprovements.vibrating(
-                    'kubejs:electron_tube_substrate',
-                    'kubejs:electron_tube_substrate'
-                ),
-                create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'kubejs:precision_mechanism_1']),
-                create.cutting('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'kubejs:electron_tube_substrate'])
-            ],
-            'kubejs:electron_tube_substrate', 8
-        ).id('kubejs:sequenced_assembly/electron_tube')
-    }
+    create.sequenced_assembly(
+        '6x create:electron_tube',
+        'kubejs:electron_tube_substrate',
+        [
+            create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'unify:steel_sheet']),
+            create.filling('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', Fluid.of('kubejs:slime', 100)]),
+            create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'create:polished_rose_quartz']),
+            vintageimprovements.vibrating(
+                'kubejs:electron_tube_substrate',
+                'kubejs:electron_tube_substrate'
+            ),
+            create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'kubejs:precision_mechanism_1']),
+            create.cutting('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'kubejs:electron_tube_substrate'])
+        ],
+        'kubejs:electron_tube_substrate', 8
+    ).technology('electron_tube')
+    .id('kubejs:sequenced_assembly/electron_tube')
 
-    // intermediate_storage_upgrade
-    if (TechnologyTools.isActive('intermediate_storage_upgrade')) {
-        event.replaceInput(
-            { id: 'sophisticatedstorage:stack_upgrade_tier_3' },
-            '#forge:storage_blocks/gold',
-            'unify:bronze_block'
-        )
-        event.replaceInput(
-            { id: 'sophisticatedstorage:stack_upgrade_tier_3' },
-            '#forge:ingots/gold',
-            'unify:bronze_ingot'
-        )
+    event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_3' })
+    event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_4' })
+    event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_5' })
+    event.remove({ output: 'sophisticatedstorage:stack_upgrade_omega_tier' })
 
-        event.replaceInput(
-            { id: 'sophisticatedstorage:stack_upgrade_tier_4' },
-            '#forge:storage_blocks/diamond',
-            'unify:silver_block'
-        )
+    event.shaped(
+        'sophisticatedstorage:stack_upgrade_tier_3',
+        [
+            'aaa',
+            'aba',
+            'aaa'
+        ],
+        {
+            a: 'unify:bronze_block',
+            b: 'sophisticatedstorage:stack_upgrade_tier_2'
+        }
+    ).technology('intermediate_storage_upgrade')
 
-        event.replaceInput(
-            { id: 'sophisticatedstorage:stack_upgrade_tier_4' },
-            '#forge:gems/diamond',
-            'unify:silver_ingot'
-        )
+    event.shaped(
+        'sophisticatedstorage:stack_upgrade_tier_4',
+        [
+            'aaa',
+            'aba',
+            'aaa'
+        ],
+        {
+            a: 'unify:silver_block',
+            b: 'sophisticatedstorage:stack_upgrade_tier_3'
+        }
+    ).technology('intermediate_storage_upgrade')
 
-        event.replaceInput(
-            { id: 'sophisticatedstorage:stack_upgrade_tier_5' },
-            '#forge:storage_blocks/netherite',
-            'kubejs:obsidian_ingot'
-        )
-
-        event.replaceInput(
-            { id: 'sophisticatedstorage:stack_upgrade_tier_5' },
-            '#forge:ingots/netherite',
-            'create:sturdy_sheet'
-        )
-
-    } else {
-        event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_3' })
-        event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_4' })
-        event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_5' })
-        event.remove({ output: 'sophisticatedstorage:stack_upgrade_omega_tier' })
-    }
+    event.shaped(
+        'sophisticatedstorage:stack_upgrade_tier_5',
+        [
+            'aaa',
+            'aba',
+            'aaa'
+        ],
+        {
+            a: 'kubejs:obsidian_sheet',
+            b: 'sophisticatedstorage:stack_upgrade_tier_4'
+        }
+    ).technology('intermediate_storage_upgrade')
 
     // smart_storage
-    if (!TechnologyTools.isActive('smart_storage')) {
-        event.remove({ output: 'sophisticatedstorage:storage_output' })
-        event.remove({ output: 'sophisticatedstorage:storage_input' })
-        event.remove({ output: 'sophisticatedstorage:storage_io' })
-        event.remove({ output: 'sophisticatedstorage:controller' })
-    }
+    event.remove({ output: 'sophisticatedstorage:storage_output' })
+    event.remove({ output: 'sophisticatedstorage:storage_input' })
+    event.remove({ output: 'sophisticatedstorage:storage_io' })
+    event.remove({ output: 'sophisticatedstorage:controller' })
+
+    event.shaped(
+        'sophisticatedstorage:controller',
+        [
+            'oso',
+            'wcw',
+            'oso'
+        ],
+        {
+            o: 'kubejs:precision_mechanism_1',
+            s: 'kubejs:redstone_sheet',
+            w: 'kubejs:wood_set',
+            c: 'minecraft:barrel'
+        }
+    ).technology('smart_storage')
+
+    event.shaped(
+        'sophisticatedstorage:storage_io',
+        [
+            'owo',
+            'scs',
+            'owo'
+        ],
+        {
+            o: 'kubejs:precision_mechanism_1',
+            s: 'kubejs:redstone_sheet',
+            w: 'kubejs:wood_set',
+            c: 'minecraft:barrel'
+        }
+    ).technology('smart_storage')
+
+    event.shaped(
+        'sophisticatedstorage:storage_input',
+        [
+            'owo',
+            'scm',
+            'owo'
+        ],
+        {
+            o: 'kubejs:precision_mechanism_1',
+            s: 'kubejs:redstone_sheet',
+            w: 'kubejs:wood_set',
+            c: 'minecraft:barrel',
+            m: 'kubejs:mechanical_mechanism'
+        }
+    ).technology('smart_storage')
+
+    event.shaped(
+        'sophisticatedstorage:storage_output',
+        [
+            'owo',
+            'mcs',
+            'owo'
+        ],
+        {
+            o: 'kubejs:precision_mechanism_1',
+            s: 'kubejs:redstone_sheet',
+            w: 'kubejs:wood_set',
+            c: 'minecraft:barrel',
+            m: 'kubejs:mechanical_mechanism'
+        }
+    ).technology('smart_storage')
 
     // Dyes
     let dyes = ['red_dye', 'orange_dye', 'yellow_dye', 'green_dye', 'lime_dye', 'cyan_dye', 'light_blue_dye', 'blue_dye', 'purple_dye', 'magenta_dye', 'pink_dye', 'black_dye', 'gray_dye', 'light_gray_dye', 'white_dye', 'brown_dye']

@@ -2,6 +2,23 @@ ServerEvents.recipes(event => {
 
     const { create, vintageimprovements, cmm, minecraft } = event.recipes
 
+    event.replaceInput(
+        { input: 'minecraft:dried_kelp'},
+        'minecraft:dried_kelp',
+        'kubejs:precision_mechanism_1'
+    )
+
+    event.remove({id: 'create:sequenced_assembly/sturdy_sheet'})
+
+    event.remove({ output: 'create:brass_funnel' })
+    event.remove({ output: 'create:brass_tunnel' })
+
+    event.replaceInput(
+        {input: '#forge:string'},
+        '#forge:string',
+        'createaddition:iron_wire'
+    )
+
     /**
      * 
      * @param {Internal.Ingredient_} mechine_id 

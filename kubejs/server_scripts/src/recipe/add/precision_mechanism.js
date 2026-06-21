@@ -75,25 +75,24 @@ ServerEvents.recipes(event => {
     // ).superheated().id('kubejs:precision_mechanism/compacting_precision_mechanism_from_loose')
 
     var incomplete_7 = 'kubejs:incomplete_precision_mechanism_1'
-    // 精密机制1装配2（现在添加.id()）
-    if (TechnologyTools.isActive('unlock_sturdy_knob')){    
-            create.sequenced_assembly(
-            [
-                Item.of('kubejs:precision_mechanism_1').withChance(0.65),
-                Item.of('create:sturdy_sheet').withChance(0.05),
-                Item.of('minecraft:obsidian').withChance(0.3)
-            ],
-            'minecraft:obsidian',
-            [
-                create.pressing(incomplete_7, incomplete_7),
-                create.pressing(incomplete_7, incomplete_7),
-                create.pressing(incomplete_7, incomplete_7),
-                vintageimprovements.curving(incomplete_7, incomplete_7).head('create:blaze_cake')
-            ],
-            incomplete_7,
-            2
-        ).id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_1_from_obsidian')
-    }
+    // 精密机制1装配2（现在添加.id()）    
+    create.sequenced_assembly(
+        [
+            Item.of('kubejs:precision_mechanism_1').withChance(0.65),
+            Item.of('create:sturdy_sheet').withChance(0.05),
+            Item.of('minecraft:obsidian').withChance(0.3)
+        ],
+        'minecraft:obsidian',
+        [
+            create.pressing(incomplete_7, incomplete_7),
+            create.pressing(incomplete_7, incomplete_7),
+            create.pressing(incomplete_7, incomplete_7),
+            vintageimprovements.curving(incomplete_7, incomplete_7).head('create:blaze_cake')
+        ],
+        incomplete_7,
+        2
+    ).technology('unlock_sturdy_knob')
+    .id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_1_from_obsidian')
     // 精密机制4部署
     create.deploying(
         '10x kubejs:precision_mechanism_4',

@@ -89,11 +89,11 @@
 		}
 		{
 			dependencies: ["63BC4506B9B36167"]
-			icon: "create:andesite_funnel"
+			icon: "create:belt_connector"
 			id: "239135E18354E25F"
 			rewards: [{
 				auto: "enabled"
-				icon: "create:andesite_funnel"
+				icon: "create:belt_connector"
 				id: "390C7AF447438BB1"
 				team_reward: true
 				title: "科技: 基础物流"
@@ -165,27 +165,13 @@
 				}
 			}
 			id: "0CD39A4DE031D8EC"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					Count: 1
-					id: "sophisticatedstorage:limited_iron_barrel_1"
-					tag: {
-						woodType: "spruce"
-					}
-				}
-				id: "464E0B98AE369468"
-				team_reward: true
-				title: "科技: 基础存储"
-				type: "custom"
-			}]
 			tasks: [{
 				count: 16L
 				id: "538983134E01855E"
 				item: "minecraft:brown_wool"
 				type: "item"
 			}]
-			title: "基础存储"
+			title: "存储学"
 			x: 3.5d
 			y: -4.5d
 		}
