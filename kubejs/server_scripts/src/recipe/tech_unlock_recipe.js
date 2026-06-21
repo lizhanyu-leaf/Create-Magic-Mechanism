@@ -1139,24 +1139,145 @@ ServerEvents.recipes(event => {
         20
     ).technology('bedrock').id('kubejs:hammering/bedrock/bedrock_sheet')
 
-    create.sequenced_assembly(
-        'kubejs:sturdy_mechanism',
-        'kubejs:bedrock_sheet',
+    event.custom(
+        {
+            type: 'create:item_application',
+            ingredients: [
+                {
+                    item: 'create:empty_blaze_burner'
+                },
+                {
+                    item: 'kubejs:blaze_mechanism'
+                }
+            ],
+            results: [
+                {
+                    item: 'create:blaze_burner'
+                }
+            ]
+        }
+    ).technology('blaze_mechanism')
+    .id('kubejs:blaze/item_application_blaze_burner_with_mechanism')
+
+    create.mixing(
+        [Fluid.of('kubejs:charged_orange_dye_solution', 125)],
         [
-            create.deploying('kubejs:incomplete_sturdy_mechanism', 
-                ['kubejs:incomplete_sturdy_mechanism', 'unify:steel_sheet']),
-            create.deploying('kubejs:incomplete_sturdy_mechanism', 
-                ['kubejs:incomplete_sturdy_mechanism', 'kubejs:precision_mechanism_1']),
-            vintageimprovements.pressurizing(
-                'kubejs:incomplete_sturdy_mechanism',
-                ['kubejs:incomplete_sturdy_mechanism',
-                    Fluid.of('kubejs:strange_potion', 500)]).heated(),
-            create.deploying('kubejs:incomplete_sturdy_mechanism', 
-                ['kubejs:incomplete_sturdy_mechanism', 'kubejs:obsidian_nugget']),
-            create.deploying('kubejs:incomplete_sturdy_mechanism', 
-                ['kubejs:incomplete_sturdy_mechanism', 'kubejs:obsidian_sheet']),
+            'create_dd:blaze_gold',
+            Fluid.of('kubejs:heat_lava', 1000)
+        ]
+    ).processingTime(90).superheated().technology('blaze_mechanism')
+    .id('kubejs:mixing/blaze_mechanism/blaze_gold_to_charged_orange_dye_solution')
+
+    create.mixing(
+        [
+            'kubejs:sturdy_mechanism',
+            'kubejs:blaze_mechanism',
+            'create:brass_ingot'
         ],
-        'kubejs:incomplete_sturdy_mechanism',
-        1
-    ).technology('sturdy_mechanism').id('kubejs:bedrock/sequenced_assembly_sturdy_mechanism')
+        [
+            'kubejs:sturdy_mechanism',
+            'kubejs:blaze_mechanism',
+            'kubejs:precision_mechanism_4',
+            'minecraft:copper_ingot',
+            'create:zinc_ingot',
+            Fluid.of('kubejs:charged_brown_dye_solution', 125),
+            Fluid.of('kubejs:charged_light_gray_dye_solution', 125)
+        ]
+    ).technology('brass').id('kubejs:mixing/brass_tech')
+
+    create.sequenced_assembly(
+        'kubejs:ice_powder',
+        'minecraft:quartz',
+        [
+            vintageimprovements.pressurizing(
+                'kubejs:incomplete_ice_powder',
+                [
+                    'kubejs:incomplete_ice_powder',
+                    Fluid.of('kubejs:soul_lava', 500)
+                ]
+            ),
+
+            create.filling(
+                'kubejs:incomplete_ice_powder',
+                [
+                    'kubejs:incomplete_ice_powder',
+                    Fluid.of('minecraft:water', 250)
+                ]
+            ),
+
+
+            create.filling(
+                'kubejs:incomplete_ice_powder',
+                [
+                    'kubejs:incomplete_ice_powder',
+                    Fluid.of('kubejs:charged_light_blue_dye_solution', 250)
+                ]
+            ),
+
+            create.deploying(
+                ['kubejs:incomplete_ice_powder'],
+                ['kubejs:incomplete_ice_powder', 'minecraft:blue_ice']
+            )
+        ],
+        'kubejs:incomplete_ice_powder', 4
+    ).technology('refrigerant').id('kubejs:sequenced_assembly/ice_powder')
+
+    create.mixing(
+        Fluid.of('kubejs:refrigerant', 1000),
+        [
+            'kubejs:ice_powder',
+            Fluid.of('minecraft:water', 1000)
+        ]
+    ).technology('refrigerant').superheated().id('kubejs:mixing/refrigerant')
+
+    create.sequenced_assembly(
+        [
+            '2x create:precision_mechanism',
+            '3x create:precision_mechanism'
+        ],
+        'kubejs:loose_precision_mechanism',
+        [
+            create.filling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', Fluid.of('kubejs:heat_lava', 250)]),
+            create.filling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', Fluid.of('kubejs:charged_yellow_dye_solution', 125)]),
+            vintageimprovements.curving(
+                'create:incomplete_precision_mechanism',
+                'create:incomplete_precision_mechanism',
+            ).head('kubejs:sturdy_mechanism'),
+            create.pressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
+            vintageimprovements.vibrating('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
+            create.pressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
+            create.pressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
+            create.filling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', Fluid.of('kubejs:refrigerant', 250)]),
+        ],
+        'create:incomplete_precision_mechanism',
+        2
+    ).technology('precision_mechanism')
+    .id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_from_loose')
+
+    vintageimprovements.vibrating(
+        'kubejs:loose_precision_mechanism',
+        'create:precision_mechanism', 500
+    ).technology('precision_mechanism')
+    .id('kubejs:vibrating/precision_mechanism/loose_precision_mechanism')
+
+    create.sequenced_assembly(
+        Item.of('kubejs:loose_precision_mechanism'),
+        Item.of('kubejs:precision_mechanism_substrate'),
+        [
+            create.cutting('create:incomplete_precision_mechanism',
+                'create:incomplete_precision_mechanism'),
+            create.deploying('create:incomplete_precision_mechanism', 
+                ['create:incomplete_precision_mechanism', 'kubejs:mechanical_mechanism']),
+            create.deploying('create:incomplete_precision_mechanism', 
+                ['create:incomplete_precision_mechanism', 'kubejs:redstone_precision_mechanism']),
+            create.deploying('create:incomplete_precision_mechanism', 
+                ['create:incomplete_precision_mechanism', 'kubejs:sturdy_mechanism']),
+                create.deploying('create:incomplete_precision_mechanism', 
+                ['create:incomplete_precision_mechanism', 'kubejs:blaze_mechanism']),
+            create.deploying('create:incomplete_precision_mechanism', 
+                ['create:incomplete_precision_mechanism', 'create:brass_ingot'])
+        ],
+        'create:incomplete_precision_mechanism', 2
+    ).technology('precision_mechanism')
+    .id('kubejs:sequenced_assembly/precision_mechanism/loose_precision_mechanism')
 })

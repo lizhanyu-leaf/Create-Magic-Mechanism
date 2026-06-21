@@ -7,23 +7,6 @@ ServerEvents.recipes(event => {
         return create.deploying(incomplete, [incomplete, input])
     }
 
-    var incomplete = 'create:incomplete_precision_mechanism'
-    // 精密机制装配1（现在添加.id()）
-    create.sequenced_assembly(
-        Item.of('kubejs:loose_precision_mechanism'),
-        Item.of('kubejs:precision_mechanism_substrate'),
-        [
-            create.cutting(incomplete, incomplete),
-            create.deploying(incomplete, [incomplete, 'kubejs:precision_mechanism_1']),
-            create.deploying(incomplete, [incomplete, 'kubejs:redstone_precision_mechanism']),
-            create.deploying(incomplete, [incomplete, 'kubejs:precision_mechanism_3']),
-            create.deploying(incomplete, [incomplete, 'create:brass_ingot']),
-            vintageimprovements.curving(incomplete, incomplete).head('kubejs:blaze_mechanism')
-        ],
-        incomplete,
-        1
-    ).id('kubejs:sequenced_assembly/precision_mechanism/loose_precision_mechanism')
-
     var incomplete_1 = 'create:golden_sheet'
     // 精密机制基材装配（现在添加.id()）
     create.sequenced_assembly(
@@ -64,18 +47,18 @@ ServerEvents.recipes(event => {
         incomplete_3,
         3
     ).id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_2')
-    var incomplete_6 = 'create:copper_nugget'
-    // 精密机制4装配（现在添加.id()）
-    create.sequenced_assembly(
-        'kubejs:precision_mechanism_4',
-        'create:copper_nugget',
-        [
-            deploying(incomplete_6, 'minecraft:blaze_powder'),
-            create.filling(incomplete_6, [incomplete_6, Fluid.of('minecraft:lava', 1000)])
-        ],
-        incomplete_6,
-        5
-    ).id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_4')
+    // var incomplete_6 = 'create:copper_nugget'
+    // // 精密机制4装配（现在添加.id()）
+    // create.sequenced_assembly(
+    //     'kubejs:precision_mechanism_4',
+    //     'create:copper_nugget',
+    //     [
+    //         deploying(incomplete_6, 'minecraft:blaze_powder'),
+    //         create.filling(incomplete_6, [incomplete_6, Fluid.of('minecraft:lava', 1000)])
+    //     ],
+    //     incomplete_6,
+    //     5
+    // ).id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_4')
 
     // 精密机制压缩
     // create.compacting(
@@ -90,34 +73,6 @@ ServerEvents.recipes(event => {
     //         'kubejs:sturdy_mechanism'
     //     ]
     // ).superheated().id('kubejs:precision_mechanism/compacting_precision_mechanism_from_loose')
-
-    create.sequenced_assembly(
-        [
-            '2x create:precision_mechanism',
-            '3x create:precision_mechanism'
-        ],
-        'kubejs:loose_precision_mechanism',
-        [
-            create.filling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', Fluid.of('kubejs:heat_lava', 250)]),
-            create.filling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', Fluid.of('kubejs:charged_yellow_dye_solution', 125)]),
-            vintageimprovements.curving(
-                'create:incomplete_precision_mechanism',
-                'create:incomplete_precision_mechanism',
-            ).head('kubejs:sturdy_mechanism'),
-            create.pressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
-            vintageimprovements.vibrating('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
-            create.pressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
-            create.pressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
-            create.filling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', Fluid.of('kubejs:refrigerant', 250)]),
-        ],
-        'create:incomplete_precision_mechanism',
-        2
-    ).id('kubejs:sequenced_assembly/precision_mechanism/precision_mechanism_from_loose')
-
-    vintageimprovements.vibrating(
-        'kubejs:loose_precision_mechanism',
-        'create:precision_mechanism', 500
-    ).id('kubejs:vibrating/precision_mechanism/loose_precision_mechanism')
 
     var incomplete_7 = 'kubejs:incomplete_precision_mechanism_1'
     // 精密机制1装配2（现在添加.id()）

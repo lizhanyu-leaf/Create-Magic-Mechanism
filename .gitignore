@@ -17,3 +17,8 @@ kubejs/technology/*
 kubejs/warp/*
 kubejs/jsconfig.json
 kubejs/*/jsconfig.json
+
+minecraftinstance.json
+user-prefs.json
+usercache.json
+usermamecache.json

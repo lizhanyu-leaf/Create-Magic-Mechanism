@@ -12,8 +12,8 @@ StartupEvents.registry('fluid', event => {
     event.create('magenta_strange_potion').thinTexture(0xd33f8c)
     event.create('magic_potion').thinTexture(0x8f34ff)
 
-    event.create('heat_lava').thickTexture(0xe65120)
-    event.create('soul_lava').thickTexture(0x01a7ac)
+    event.create('heat_lava').thickTexture(0xe65120).noBucket()
+    event.create('soul_lava').thickTexture(0x01a7ac).noBucket()
 
     event.create('refrigerant').thinTexture(0x9afcff)
 

@@ -1548,9 +1548,18 @@
 			dependencies: [
 				"2845B3F023D6638D"
 				"3B1CFDFB4E3CD635"
+				"656BF85A3B688FE7"
 			]
 			icon: "kubejs:blaze_mechanism"
 			id: "70BC55DAB55C0121"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:blaze_mechanism"
+				id: "5B743D3A613EB9E3"
+				team_reward: true
+				title: "科技: 烈焰构件"
+				type: "custom"
+			}]
 			tasks: [
 				{
 					count: 768L
@@ -1579,7 +1588,7 @@
 			]
 			title: "烈焰构件"
 			x: -0.5d
-			y: -16.5d
+			y: -18.0d
 		}
 		{
 			dependencies: [
@@ -1590,6 +1599,14 @@
 			]
 			icon: "create:brass_ingot"
 			id: "575831FA26901E1F"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:brass_ingot"
+				id: "159C5A07C94E9EE0"
+				team_reward: true
+				title: "科技: 黄铜"
+				type: "custom"
+			}]
 			tasks: [
 				{
 					count: 1024L
@@ -1618,7 +1635,7 @@
 			]
 			title: "黄铜"
 			x: -2.0d
-			y: -18.0d
+			y: -19.5d
 		}
 		{
 			dependencies: [
@@ -1629,6 +1646,14 @@
 			]
 			icon: "create:precision_mechanism"
 			id: "53C77B70898F5C5E"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:precision_mechanism"
+				id: "66145A80A1D2F4B1"
+				team_reward: true
+				title: "科技: 精密构件"
+				type: "custom"
+			}]
 			shape: "gear"
 			size: 4.0d
 			tasks: [
@@ -1659,12 +1684,20 @@
 			]
 			title: "精密构件"
 			x: -0.5d
-			y: -22.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["70BC55DAB55C0121"]
 			icon: "kubejs:ice_powder"
 			id: "385F3F59D67E27A1"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:ice_powder"
+				id: "3F870D185F44400E"
+				team_reward: true
+				title: "科技: 冷冻剂"
+				type: "custom"
+			}]
 			tasks: [
 				{
 					count: 1024L
@@ -1693,7 +1726,7 @@
 			]
 			title: "极炎与极寒"
 			x: 1.0d
-			y: -18.0d
+			y: -19.5d
 		}
 		{
 			dependencies: ["4CE51AD5C345E2EC"]
@@ -1791,6 +1824,27 @@
 			}]
 			title: "钢材科技包简化"
 			x: 5.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["2845B3F023D6638D"]
+			id: "656BF85A3B688FE7"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:blaze_burner"
+				id: "24FEC15FC1C76B17"
+				team_reward: true
+				title: "科技: 地狱工业"
+				type: "custom"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "create:empty_blaze_burner"
+				id: "18FBD1397D221529"
+				title: "造访地狱"
+				type: "dimension"
+			}]
+			x: -0.5d
 			y: -16.5d
 		}
 	]

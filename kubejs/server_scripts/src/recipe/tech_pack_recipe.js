@@ -67,6 +67,15 @@ ServerEvents.recipes(event => {
         'kubejs:incomplete_andesite_mechine', 4
     ).id('kubejs:sequenced_assembly/redstone_tech_pack')
     .technology('redstone_tech_pack')
+
+    // blaze_tech_pack
+    kubejs.automated_assembly_station()
+        .id('kubejs:automated_assembly_station/blaze_tech_pack')
+        .duration(640)
+        .inputItems('64x magma_block', Item.of('minecraft:blaze_powder', 24), '2x create:blaze_cake')
+        .outputItems('minecraft:orange_wool')
+        .dimension('minecraft:the_nether')
+        .technology('blaze_tech_pack')
     
 
     // mechancal_tech_pack_advanced
@@ -138,6 +147,46 @@ ServerEvents.recipes(event => {
         'kubejs:incomplete_redstone_precision_mechanism', 4
     ).id('kubejs:redstone/redstone_precision_mechanism')
     .technology('redstone_precision_mechanism')
+
+    // sturdy_mechanism
+    create.sequenced_assembly(
+        'kubejs:sturdy_mechanism',
+        'kubejs:bedrock_sheet',
+        [
+            create.deploying('kubejs:incomplete_sturdy_mechanism', 
+                ['kubejs:incomplete_sturdy_mechanism', 'unify:steel_sheet']),
+            create.deploying('kubejs:incomplete_sturdy_mechanism', 
+                ['kubejs:incomplete_sturdy_mechanism', 'kubejs:precision_mechanism_1']),
+            vintageimprovements.pressurizing(
+                'kubejs:incomplete_sturdy_mechanism',
+                ['kubejs:incomplete_sturdy_mechanism',
+                    Fluid.of('kubejs:strange_potion', 500)]).heated(),
+            create.deploying('kubejs:incomplete_sturdy_mechanism', 
+                ['kubejs:incomplete_sturdy_mechanism', 'kubejs:obsidian_nugget']),
+            create.deploying('kubejs:incomplete_sturdy_mechanism', 
+                ['kubejs:incomplete_sturdy_mechanism', 'kubejs:obsidian_sheet']),
+        ],
+        'kubejs:incomplete_sturdy_mechanism',
+        1
+    ).technology('sturdy_mechanism').id('kubejs:sequenced_assembly/sturdy_mechanism')
+
+    // blaze_mechanism
+    create.sequenced_assembly(
+        'kubejs:blaze_mechanism',
+        [
+            'create_dd:blaze_gold'
+        ],
+        [
+            create.filling('kubejs:incomplete_blaze_mechanism', [Fluid.of('kubejs:charged_orange_dye_solution', 125), 'kubejs:incomplete_blaze_mechanism']),
+            create.filling('kubejs:incomplete_blaze_mechanism', [Fluid.of('kubejs:heat_lava', 250), 'kubejs:incomplete_blaze_mechanism']),
+            create.deploying('kubejs:incomplete_blaze_mechanism', ['kubejs:incomplete_blaze_mechanism', 'kubejs:precision_mechanism_1']),
+            create.deploying('kubejs:incomplete_blaze_mechanism', ['kubejs:incomplete_blaze_mechanism', 'create:sturdy_sheet']),
+            create.deploying('kubejs:incomplete_blaze_mechanism', ['kubejs:incomplete_blaze_mechanism', 'create:blaze_cake']),
+            create.deploying('kubejs:incomplete_blaze_mechanism', ['kubejs:incomplete_blaze_mechanism', 'kubejs:precision_mechanism_4']),
+        ],
+        'kubejs:incomplete_blaze_mechanism', 4
+    ).technology('blaze_mechanism')
+    .id('kubejs:sequenced_assembly/blaze_mechanism')
 
     // #endregion
 })
