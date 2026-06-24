@@ -177,9 +177,6 @@ ServerEvents.recipes(event => {
         function create_vertical(vertical_box) {
             event.remove({output: vertical_box})
 
-            // basic_transmission
-            if (!TechnologyTools.isActive('basic_transmission')) return
-
             create.mixing(
                 [
                     vertical_box,
@@ -189,13 +186,11 @@ ServerEvents.recipes(event => {
                     'create:andesite_casing',
                     'kubejs:precision_mechanism_1'
                 ])
-            ).id(`kubejs:andesite_changes/mixing_${output_box.replace(':', '_')}_from_casing`)
+            ).technology('basic_transmission')
+            .id(`kubejs:andesite_changes/mixing_${output_box.replace(':', '_')}_from_casing`)
         }
 
         event.remove({output: output_box})
-
-        // basic_transmission
-        if (!TechnologyTools.isActive('basic_transmission')) return create_vertical
 
         create.compacting(
             [
@@ -206,7 +201,8 @@ ServerEvents.recipes(event => {
                 'create:andesite_casing',
                 'kubejs:precision_mechanism_1'
             ])
-        ).id(`kubejs:andesite_changes/compacting_${output_box.replace(':', '_')}_from_casing`)
+        ).technology('basic_transmission')
+        .id(`kubejs:andesite_changes/compacting_${output_box.replace(':', '_')}_from_casing`)
         
         
         return create_vertical

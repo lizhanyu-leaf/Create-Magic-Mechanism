@@ -20,6 +20,11 @@ ServerEvents.recipes(event => {
     event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1'})
     event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1_plus'})
     event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_2'})
+    event.replaceInput(
+        {input: 'lever', mod: 'sophisticatedstorage'},
+        'lever',
+        'kubejs:precision_mechanism_1'
+    )
 
     event.shaped(
         'sophisticatedstorage:stack_upgrade_tier_1',
