@@ -1,0 +1,5 @@
+
+[common]
+	#The players can fly in survival
+	always_fly = true
+
