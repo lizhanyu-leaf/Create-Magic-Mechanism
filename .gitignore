@@ -17,3 +17,5 @@ kubejs/technology/*
 kubejs/warp/*
 kubejs/jsconfig.json
 kubejs/*/jsconfig.json
+
+minecraftinstance.json
