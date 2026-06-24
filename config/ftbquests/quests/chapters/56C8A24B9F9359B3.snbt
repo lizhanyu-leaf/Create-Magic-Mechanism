@@ -665,9 +665,10 @@
 				xp: 100
 			}]
 			tasks: [{
-				id: "1E09F06A2D162E49"
-				item: "kubejs:heat_lava_bucket"
-				type: "item"
+				amount: 1000L
+				fluid: "kubejs:heat_lava"
+				id: "22E4D14C37230333"
+				type: "fluid"
 			}]
 			x: 2.5d
 			y: 3.0d

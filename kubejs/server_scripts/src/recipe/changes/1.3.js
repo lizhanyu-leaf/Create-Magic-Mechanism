@@ -3,23 +3,6 @@ ServerEvents.recipes(event => {
     const { create, vintageimprovements } = event.recipes
 
     event.remove({ id: 'create:mixing/brass_ingot' })
-    // 黄铜锭混合
-    create.mixing(
-        [
-            'kubejs:sturdy_mechanism',
-            'kubejs:blaze_mechanism',
-            'create:brass_ingot'
-        ],
-        [
-            'kubejs:sturdy_mechanism',
-            'kubejs:blaze_mechanism',
-            'kubejs:precision_mechanism_4',
-            'minecraft:copper_ingot',
-            'create:zinc_ingot',
-            Fluid.of('kubejs:charged_brown_dye_solution', 125),
-            Fluid.of('kubejs:charged_light_gray_dye_solution', 125)
-        ]
-    ).id('kubejs:brass_changes/mixing_brass_ingot_from_precison_mechanisms')
 
     event.remove({id:'create:crafting/materials/electron_tube'})
     // event.shaped('create:electron_tube', [
@@ -80,45 +63,6 @@ ServerEvents.recipes(event => {
         2
     ).id('kubejs:brass_changes/sequenced_assembly_mechanical_crafter_from_brass_casing')
 
-    // // 精密机制激光切割
-    // vintageimprovements.laser_cutting(
-    //     'create:precision_mechanism',
-    //     'create:golden_sheet',
-    //     5000,
-    //     250
-    // ).id('kubejs:brass_changes/laser_cutting_precision_mechanism_from_golden_sheet')
-
-    create.sequenced_assembly(
-        [
-            Item.of('create:precision_mechanism').withChance(0.2),
-            Item.of('kubejs:loose_precision_mechanism').withChance(0.5),
-            Item.of('create:brass_ingot', 2).withChance(0.15),
-            Item.of('kubejs:precision_mechanism_3').withChance(0.05),
-            Item.of('create:sturdy_sheet').withChance(0.05),
-            Item.of('kubejs:precision_mechanism_1').withChance(0.05)
-        ],
-        'create:brass_sheet',
-        [
-            vintageimprovements.laser_cutting(
-                'create:incomplete_precision_mechanism',
-                'create:incomplete_precision_mechanism',
-                100000,
-                2500
-            ),
-            create.filling('create:incomplete_precision_mechanism', [Fluid.of('kubejs:heat_lava', 250), 'create:incomplete_precision_mechanism']),
-            create.filling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', Fluid.of('kubejs:slime', 250)]),
-            create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:sturdy_sheet']),
-            create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'kubejs:precision_mechanism_3']),
-            vintageimprovements.polishing(
-                'create:incomplete_precision_mechanism',
-                'create:incomplete_precision_mechanism',
-            ).speedLimits(2),
-            create.filling('create:incomplete_precision_mechanism', [Fluid.of('kubejs:refrigerant', 250), 'create:incomplete_precision_mechanism']),
-        ],
-        'create:incomplete_precision_mechanism',
-        2
-    ).id('kubejs:brass_changes/sequenced_assembly_precision_mechanism_from_brass_sheet')
-
     // 电子管激光切割
     // vintageimprovements.laser_cutting(
     //     '5x create:electron_tube',
@@ -129,7 +73,7 @@ ServerEvents.recipes(event => {
 
     // electron_tube_advanced
 
-    if (global.technology.get_technology('electron_tube_advanced')) {
+    if (TechnologyTools.isActive('electron_tube_advanced')) {
         create.sequenced_assembly(
             '3x create:electron_tube',
             'create:polished_rose_quartz',
@@ -308,7 +252,7 @@ ServerEvents.recipes(event => {
         Item.of('create:wrench').enchant('minecraft:sharpness', 127),
         [
             'create:wrench',
-            'create_sa:brass_sword'
+            'minecraft:netherite_sword'
         ]
     )
 

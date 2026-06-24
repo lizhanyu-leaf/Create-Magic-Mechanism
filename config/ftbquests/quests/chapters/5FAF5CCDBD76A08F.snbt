@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2ABE1E1C548DB18A"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "5FAF5CCDBD76A08F"
@@ -525,6 +526,14 @@
 			width: 1.5d
 			x: 16.5d
 			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 16.5d
+			y: 5.0d
 		}
 	]
 	order_index: 1
@@ -2295,9 +2304,10 @@
 			hide_dependent_lines: true
 			id: "76FD69B427A4DE09"
 			tasks: [{
-				id: "11D7F19E073F0256"
-				item: "kubejs:heat_lava_bucket"
-				type: "item"
+				amount: 1000L
+				fluid: "kubejs:heat_lava"
+				id: "53E84EC6FCD79684"
+				type: "fluid"
 			}]
 			x: 9.0d
 			y: 0.0d
@@ -2466,7 +2476,7 @@
 			id: "728143DE4EC782C9"
 			tasks: [{
 				id: "46D22559FE420D1A"
-				item: "create_dd:tin_block"
+				item: "unify:tin_block"
 				type: "item"
 			}]
 			x: 18.0d
@@ -2491,6 +2501,16 @@
 			}]
 			x: 18.0d
 			y: 15.0d
+		}
+		{
+			id: "30DE26DE301282CD"
+			tasks: [{
+				id: "501464648217B607"
+				item: "unify:silver_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 5.0d
 		}
 	]
 	title: "{cmm.chapter.redstone_engineer}"

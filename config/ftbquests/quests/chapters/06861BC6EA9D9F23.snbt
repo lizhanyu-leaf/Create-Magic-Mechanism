@@ -19,8 +19,8 @@
 				type: "checkmark"
 			}]
 			title: "科技树"
-			x: 0.0d
-			y: 0.0d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -39,20 +39,23 @@
 			icon: "minecraft:brown_wool"
 			id: "4A9F9318880D3EB6"
 			rewards: [{
+				auto: "enabled"
 				icon: "minecraft:brown_wool"
 				id: "126AD2B383950322"
 				team_reward: true
 				title: "科技: 机械科技包"
 				type: "custom"
 			}]
+			shape: "gear"
+			size: 4.0d
 			subtitle: "你的第一个科技包！"
 			tasks: [{
 				id: "601FD08EE813CAF8"
 				type: "checkmark"
 			}]
 			title: "机械科技包"
-			x: 0.0d
-			y: -1.5d
+			x: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -67,6 +70,7 @@
 			icon: "kubejs:precision_mechanism_1"
 			id: "63BC4506B9B36167"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:incomplete_precision_mechanism_1"
 				id: "6A892AC95A4BA891"
 				team_reward: true
@@ -80,15 +84,16 @@
 				type: "item"
 			}]
 			title: "坚固旋钮"
-			x: 2.5d
+			x: 4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["63BC4506B9B36167"]
-			icon: "create:andesite_funnel"
+			icon: "create:belt_connector"
 			id: "239135E18354E25F"
 			rewards: [{
-				icon: "create:andesite_funnel"
+				auto: "enabled"
+				icon: "create:belt_connector"
 				id: "390C7AF447438BB1"
 				team_reward: true
 				title: "科技: 基础物流"
@@ -101,7 +106,7 @@
 				type: "item"
 			}]
 			title: "基础物流"
-			x: 3.5d
+			x: 5.5d
 			y: -4.5d
 		}
 		{
@@ -111,6 +116,7 @@
 			]
 			id: "0F697EE7DF6F80A7"
 			rewards: [{
+				auto: "enabled"
 				icon: "minecraft:brown_wool"
 				id: "72F1E3A9705C0530"
 				team_reward: true
@@ -118,13 +124,13 @@
 				type: "custom"
 			}]
 			tasks: [{
-				count: 128L
-				id: "652A4C7E381F3421"
-				item: { Count: 128, id: "minecraft:brown_wool" }
+				count: 256L
+				id: "0CA27A4E5AE8AC6D"
+				item: { Count: 256, id: "minecraft:brown_wool" }
 				type: "item"
 			}]
 			title: "机械科技包简化"
-			x: 3.5d
+			x: 5.5d
 			y: -13.5d
 		}
 		{
@@ -132,6 +138,7 @@
 			icon: "create:gearbox"
 			id: "60D643EC7519B549"
 			rewards: [{
+				auto: "enabled"
 				icon: "create:gearbox"
 				id: "5709CC9EDE7AE5A8"
 				team_reward: true
@@ -145,7 +152,7 @@
 				type: "item"
 			}]
 			title: "基础传动"
-			x: 2.5d
+			x: 4.5d
 			y: -4.5d
 		}
 		{
@@ -158,27 +165,14 @@
 				}
 			}
 			id: "0CD39A4DE031D8EC"
-			rewards: [{
-				icon: {
-					Count: 1
-					id: "sophisticatedstorage:limited_iron_barrel_1"
-					tag: {
-						woodType: "spruce"
-					}
-				}
-				id: "464E0B98AE369468"
-				team_reward: true
-				title: "科技: 基础存储"
-				type: "custom"
-			}]
 			tasks: [{
 				count: 16L
 				id: "538983134E01855E"
 				item: "minecraft:brown_wool"
 				type: "item"
 			}]
-			title: "基础存储"
-			x: 1.5d
+			title: "存储学"
+			x: 3.5d
 			y: -4.5d
 		}
 		{
@@ -194,9 +188,11 @@
 				""
 				"似乎与一个&a材料硬度高的材料&r结合就可以解决材料硬度低的问题（？"
 			]
+			hide_dependent_lines: true
 			icon: "create_dd:industrial_iron_ingot"
 			id: "076AE8C608D0C610"
 			rewards: [{
+				auto: "enabled"
 				icon: "create_dd:industrial_iron_ingot"
 				id: "7AB0037B0257999F"
 				team_reward: true
@@ -210,7 +206,7 @@
 				type: "item"
 			}]
 			title: "工业铁熔炼"
-			x: -2.5d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -222,9 +218,11 @@
 				""
 				"似乎与&a高韧性的材料&r结合就能解决质地脆的问题（？"
 			]
+			hide_dependent_lines: true
 			icon: "create:sturdy_sheet"
 			id: "175B1AC5B98EE416"
 			rewards: [{
+				auto: "enabled"
 				icon: "create:sturdy_sheet"
 				id: "568B1B86743CCEDA"
 				team_reward: true
@@ -238,7 +236,7 @@
 				type: "item"
 			}]
 			title: "锻造坚固板"
-			x: -1.0d
+			x: 1.0d
 			y: -3.0d
 		}
 		{
@@ -252,45 +250,68 @@
 				""
 				"这个世界的钢不是我们世界的钢，更像是&a黑曜石和工业铁的合金&r。在这个世界的规则下，这样的材料才能保证钢的性能。"
 			]
-			hide_until_deps_complete: true
 			icon: "unify:steel_ingot"
 			id: "29C4C734F7CEC029"
 			rewards: [{
+				auto: "enabled"
 				icon: "unify:steel_ingot"
 				id: "34805123630A1887"
 				team_reward: true
 				title: "科技: 炼钢"
 				type: "custom"
 			}]
-			tasks: [{
-				count: 64L
-				id: "5C7D12151AE1675D"
-				item: { Count: 64, id: "minecraft:brown_wool" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 48L
+					id: "5C7D12151AE1675D"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "50EC928295AEA4AD"
+					item: "minecraft:red_wool"
+					type: "item"
+				}
+			]
 			title: "炼钢"
-			x: -2.5d
+			x: -0.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["076AE8C608D0C610"]
 			icon: "kubejs:mechanical_furnace"
 			id: "7F95EFB07391F2CD"
-			rewards: [{
-				icon: "kubejs:mechanical_furnace"
-				id: "79DC8A8639827E8E"
-				team_reward: true
-				title: "多方块机器: 工业熔炉"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "kubejs:mechanical_furnace"
+					id: "79DC8A8639827E8E"
+					team_reward: true
+					title: "多方块机器: 工业熔炉"
+					type: "custom"
+				}
+				{
+					count: 32
+					id: "1F90788C3C7BF64A"
+					item: {
+						Count: 1
+						id: "createsimpleschematic:simple_schematic"
+						tag: {
+							File: "[多方块机器] 工业炉.nbt"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 32L
 				id: "05A3E9E359A331CE"
 				item: { Count: 32, id: "minecraft:brown_wool" }
 				type: "item"
 			}]
-			title: "多方块机器: 工业熔炉"
-			x: -2.5d
+			title: "多方块机器: 工业炉"
+			x: -0.5d
 			y: -4.5d
 		}
 		{
@@ -299,6 +320,7 @@
 			icon: "minecraft:light_gray_wool"
 			id: "1550E269692BAB18"
 			rewards: [{
+				auto: "enabled"
 				icon: "minecraft:light_gray_wool"
 				id: "2CAC2744B9E58FA7"
 				team_reward: true
@@ -308,11 +330,11 @@
 			tasks: [{
 				count: 128L
 				id: "2F469925247E7492"
-				item: { Count: 128, id: "create_dd:steel_ingot" }
+				item: "unify:steel_ingot"
 				type: "item"
 			}]
 			title: "钢材科技包"
-			x: -2.5d
+			x: -0.5d
 			y: -9.0d
 		}
 		{
@@ -323,6 +345,7 @@
 			icon: "sophisticatedstorage:stack_upgrade_tier_2"
 			id: "2E63A73EDA17ACDE"
 			rewards: [{
+				auto: "enabled"
 				icon: "sophisticatedstorage:stack_upgrade_tier_2"
 				id: "475ED2278BE4C9A0"
 				team_reward: true
@@ -331,20 +354,20 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 32L
 					id: "01C3AA6513BF178E"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 32L
 					id: "0A8947163D5614E8"
-					item: { Count: 128, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "基础存储升级"
-			x: 1.5d
+			x: 3.5d
 			y: -9.0d
 		}
 		{
@@ -355,6 +378,7 @@
 			icon: "kubejs:incomplete_precision_mechanism_3"
 			id: "39096268D4595FA3"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:incomplete_precision_mechanism_3"
 				id: "34F2DD88E65E6AC0"
 				team_reward: true
@@ -363,20 +387,20 @@
 			}]
 			tasks: [
 				{
-					count: 256L
+					count: 128L
 					id: "3F0F4498C4FEA290"
-					item: { Count: 256, id: "create:cogwheel" }
+					item: "create:cogwheel"
 					type: "item"
 				}
 				{
-					count: 256L
+					count: 128L
 					id: "61D11BC950357661"
-					item: { Count: 256, id: "create:large_cogwheel" }
+					item: "create:large_cogwheel"
 					type: "item"
 				}
 			]
 			title: "传动集合"
-			x: 2.5d
+			x: 4.5d
 			y: -9.0d
 		}
 		{
@@ -385,9 +409,9 @@
 			id: "7AC4FD9044C6BD8D"
 			tasks: [
 				{
-					count: 32L
+					count: 8L
 					id: "03A8452C895C0B84"
-					item: { Count: 32, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
@@ -398,15 +422,15 @@
 				}
 			]
 			title: "红石学"
-			x: -5.0d
+			x: -5.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7AC4FD9044C6BD8D"]
-			hide_until_deps_complete: true
 			icon: "kubejs:redstone_sheet"
 			id: "3BEFDC66E64CB24A"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:redstone_sheet"
 				id: "7AE6FF3538712355"
 				team_reward: true
@@ -420,7 +444,7 @@
 				type: "item"
 			}]
 			title: "红石电路板"
-			x: -5.0d
+			x: -5.5d
 			y: -4.5d
 		}
 		{
@@ -429,6 +453,7 @@
 			icon: "minecraft:red_wool"
 			id: "64B476FF6749A8D3"
 			rewards: [{
+				auto: "enabled"
 				icon: "minecraft:red_wool"
 				id: "4E4CAD3282BC6770"
 				team_reward: true
@@ -443,14 +468,14 @@
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 32L
 					id: "28A78B503F997962"
-					item: { Count: 128, id: "kubejs:redstone_sheet" }
+					item: "kubejs:redstone_sheet"
 					type: "item"
 				}
 			]
 			title: "红石科技包"
-			x: -5.0d
+			x: -5.5d
 			y: -6.0d
 		}
 		{
@@ -466,6 +491,7 @@
 			icon: "kubejs:set_tray"
 			id: "4CE51AD5C345E2EC"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:set_tray"
 				id: "58CECCCCF0CA9E9D"
 				team_reward: true
@@ -487,8 +513,8 @@
 				}
 			]
 			title: "集合托盘"
-			x: -6.5d
-			y: -7.5d
+			x: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -498,6 +524,7 @@
 			icon: "create:chain_conveyor"
 			id: "5BD26377E8CD8C72"
 			rewards: [{
+				auto: "enabled"
 				icon: "create:chain_conveyor"
 				id: "2B85DA3999DD5CEE"
 				team_reward: true
@@ -506,20 +533,20 @@
 			}]
 			tasks: [
 				{
-					count: 64L
+					count: 32L
 					id: "3B9BA505F8531931"
-					item: { Count: 64, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 64L
+					count: 32L
 					id: "038451CAF1442703"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "初级锁链传输"
-			x: 4.5d
+			x: 6.5d
 			y: -12.0d
 		}
 		{
@@ -532,6 +559,7 @@
 			icon: "kubejs:andesite_input"
 			id: "6A7C85AA51CC74C2"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:andesite_input"
 				id: "48C8FB124199A9CC"
 				team_reward: true
@@ -540,26 +568,26 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "77A4C30613F0B618"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "044080E579C0B5C5"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "1958521B820FB1DD"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "安山输入/输出仓"
-			x: 3.5d
+			x: 5.5d
 			y: -10.5d
 		}
 		{
@@ -567,37 +595,53 @@
 				"64B476FF6749A8D3"
 				"6A7C85AA51CC74C2"
 			]
+			hide_dependent_lines: true
 			icon: "create:deployer"
 			id: "1B0EA8C65D242CE1"
-			rewards: [{
-				icon: "kubejs:automated_assembly_station"
-				id: "18376A47FEF46130"
-				team_reward: true
-				title: "多方快机器: 自动化组装机"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "kubejs:automated_assembly_station"
+					id: "18376A47FEF46130"
+					team_reward: true
+					title: "多方快机器: 自动化组装机"
+					type: "custom"
+				}
+				{
+					count: 32
+					id: "0726FE7D57B6F0EA"
+					item: {
+						Count: 1
+						id: "createsimpleschematic:simple_schematic"
+						tag: {
+							File: "[多方块机器] 自动化装配站.nbt"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "43042017ED3E6C2F"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "47AC6108A8309629"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "1E949B7E741B8441"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "多方快机器: 自动化组装机"
-			x: 3.5d
+			x: 5.5d
 			y: -12.0d
 		}
 		{
@@ -609,6 +653,7 @@
 			icon: "create_dd:inductive_mechanism"
 			id: "00E1C5F1F3A68287"
 			rewards: [{
+				auto: "enabled"
 				icon: "create_dd:inductive_mechanism"
 				id: "3AF27BE31F90D519"
 				team_reward: true
@@ -617,20 +662,20 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 32L
 					id: "00F4B5BB765A312B"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 32L
 					id: "2E6C7F4A8C836D98"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "物流构件"
-			x: 3.5d
+			x: 5.5d
 			y: -9.0d
 		}
 		{
@@ -647,26 +692,26 @@
 			id: "40E52ADBE64FC444"
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "5C0F7965202FAFBD"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "4C980C122A2402B1"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "1FA2F24237F9BEB8"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "高级金属熔炼"
-			x: -2.5d
+			x: -0.5d
 			y: -10.5d
 		}
 		{
@@ -675,6 +720,7 @@
 			icon: "create:zinc_ingot"
 			id: "580B6D3CD6BC5A57"
 			rewards: [{
+				auto: "enabled"
 				icon: "create:zinc_ingot"
 				id: "4912670762F698A3"
 				team_reward: true
@@ -683,26 +729,26 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "78205452B8DD1082"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "1E5C37FE11CD25BC"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "0427AE1517792FCE"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "金属熔炼: 锌"
-			x: -1.0d
+			x: 1.0d
 			y: -12.0d
 		}
 		{
@@ -711,6 +757,7 @@
 			icon: "unify:tin_ingot"
 			id: "19D367A5E5A8F109"
 			rewards: [{
+				auto: "enabled"
 				icon: "unify:tin_ingot"
 				id: "6687632FA947A3A9"
 				team_reward: true
@@ -719,26 +766,26 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "723F4E8ABBC4AC27"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "54C4C4FF1116763F"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "5B6EB7E469A512AE"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "金属熔炼: 锡"
-			x: -2.5d
+			x: -0.5d
 			y: -12.0d
 		}
 		{
@@ -747,6 +794,7 @@
 			icon: "unify:bronze_ingot"
 			id: "109B163A1E29D33D"
 			rewards: [{
+				auto: "enabled"
 				icon: "unify:bronze_ingot"
 				id: "3B5E9874C5D8DDF7"
 				team_reward: true
@@ -755,26 +803,26 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "13CA2611DE8D83D6"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "04AA5C7A4544EEB0"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "727579209E44A9B3"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "合金: 青铜"
-			x: -2.5d
+			x: -0.5d
 			y: -13.5d
 		}
 		{
@@ -787,6 +835,7 @@
 			icon: "kubejs:obsidian_ingot"
 			id: "74C30C66C453C230"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:obsidian_ingot"
 				id: "4885D6D9DCEA610E"
 				team_reward: true
@@ -795,26 +844,26 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "1AC4B75E9DB962C1"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "1E3B72D9E1006D4E"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "1D2516A1531BEAAF"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "金属熔炼: 黑曜石?"
-			x: -1.0d
+			x: 1.0d
 			y: -10.5d
 		}
 		{
@@ -826,20 +875,29 @@
 			icon: "create:brass_funnel"
 			id: "3584E3F6D57898B7"
 			rewards: [{
+				auto: "enabled"
 				icon: "create:brass_funnel"
 				id: "4272AC09BD8CDB92"
 				team_reward: true
 				title: "科技: 智能物流"
 				type: "custom"
 			}]
-			tasks: [{
-				count: 512L
-				id: "2C85B410984EAAFC"
-				item: { Count: 64, id: "minecraft:brown_wool" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 64L
+					id: "2C85B410984EAAFC"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2D37A8F84768F6D8"
+					item: { Count: 64, id: "unify:bronze_ingot" }
+					type: "item"
+				}
+			]
 			title: "智能物流"
-			x: 4.5d
+			x: 6.5d
 			y: -13.5d
 		}
 		{
@@ -850,6 +908,7 @@
 			icon: "kubejs:precision_mechanism_3"
 			id: "76ADED4C08ED80CD"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:precision_mechanism_3"
 				id: "0683FC52720655D1"
 				team_reward: true
@@ -858,20 +917,20 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 48L
 					id: "1A320ABD03F9019B"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 48L
 					id: "7FB8018D18B3EF6A"
-					item: { Count: 128, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "精密齿轮组"
-			x: 2.5d
+			x: 4.5d
 			y: -10.5d
 		}
 		{
@@ -881,6 +940,7 @@
 			icon: "kubejs:strange_potion_bucket"
 			id: "2BAC57CBA3EE5DC0"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:strange_potion_bucket"
 				id: "4F2AF909630B45BC"
 				team_reward: true
@@ -902,7 +962,7 @@
 				}
 			]
 			title: "奇异药水"
-			x: -5.0d
+			x: -5.5d
 			y: -7.5d
 		}
 		{
@@ -913,6 +973,7 @@
 			icon: "kubejs:mechanical_mechanism"
 			id: "275F39771F606B44"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:mechanical_mechanism"
 				id: "78E5AC7A6397F5EE"
 				team_reward: true
@@ -921,20 +982,20 @@
 			}]
 			tasks: [
 				{
-					count: 256L
+					count: 64L
 					id: "50A136283ED83AA1"
 					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 256L
-					id: "488EEBB0535FBDDD"
-					item: "minecraft:light_gray_wool"
+					count: 64L
+					id: "58376575AEB185C0"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
 					type: "item"
 				}
 			]
 			title: "机械构件"
-			x: 2.5d
+			x: 4.5d
 			y: -12.0d
 		}
 		{
@@ -943,6 +1004,7 @@
 			icon: "unify:silver_ingot"
 			id: "62C267A5944FA598"
 			rewards: [{
+				auto: "enabled"
 				icon: "unify:silver_ingot"
 				id: "316F4532E34A9DD2"
 				team_reward: true
@@ -951,27 +1013,27 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 64L
 					id: "66352D3DE85589C6"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "511C95A09947B888"
-					item: { Count: 128, id: "minecraft:red_wool" }
+					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 64L
 					id: "09C063071B9F8440"
-					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "金属熔炼: 银"
-			x: 0.5d
-			y: -12.0d
+			x: 1.0d
+			y: -13.5d
 		}
 		{
 			dependencies: [
@@ -983,6 +1045,7 @@
 			icon: "kubejs:redstone_precision_mechanism"
 			id: "10B2CDE84C825FDE"
 			rewards: [{
+				auto: "enabled"
 				icon: "kubejs:redstone_precision_mechanism"
 				id: "6866BB2C5AD3AB26"
 				team_reward: true
@@ -991,20 +1054,20 @@
 			}]
 			tasks: [
 				{
-					count: 256L
-					id: "1E43B6291B08794D"
-					item: "minecraft:brown_wool"
+					count: 64L
+					id: "65C19D0AB2C4A697"
+					item: { Count: 64, id: "minecraft:brown_wool" }
 					type: "item"
 				}
 				{
-					count: 256L
-					id: "4321D28F3A09E339"
-					item: "minecraft:red_wool"
+					count: 64L
+					id: "646BAB69D29E6233"
+					item: { Count: 64, id: "minecraft:red_wool" }
 					type: "item"
 				}
 			]
 			title: "红石电路构件"
-			x: -5.0d
+			x: -5.5d
 			y: -13.5d
 		}
 		{
@@ -1015,6 +1078,7 @@
 			icon: "create:electron_tube"
 			id: "204CDA6085003C1A"
 			rewards: [{
+				auto: "enabled"
 				icon: "create:electron_tube"
 				id: "3C3A58936BD29FB8"
 				team_reward: true
@@ -1036,7 +1100,7 @@
 				}
 			]
 			title: "电子管"
-			x: -5.0d
+			x: -5.5d
 			y: -12.0d
 		}
 		{
@@ -1047,6 +1111,7 @@
 			icon: "createaddition:seed_oil_bucket"
 			id: "5850816BC4219B8F"
 			rewards: [{
+				auto: "enabled"
 				icon: "createaddition:seed_oil_bucket"
 				id: "47C4D179EBDD3121"
 				team_reward: true
@@ -1074,7 +1139,7 @@
 				}
 			]
 			title: "种子油/黏液"
-			x: -5.0d
+			x: -5.5d
 			y: -10.5d
 		}
 		{
@@ -1084,6 +1149,7 @@
 			]
 			id: "2696D4EC112D783E"
 			rewards: [{
+				auto: "enabled"
 				icon: "minecraft:red_wool"
 				id: "4E0641617894D284"
 				team_reward: true
@@ -1091,13 +1157,13 @@
 				type: "custom"
 			}]
 			tasks: [{
-				count: 128L
-				id: "290382E3BCFEA3FC"
-				item: "minecraft:red_wool"
+				count: 384L
+				id: "01F79F27A9BCFA45"
+				item: { Count: 384, id: "minecraft:red_wool" }
 				type: "item"
 			}]
 			title: "红石科技包简化"
-			x: 3.5d
+			x: 5.5d
 			y: -15.0d
 		}
 		{
@@ -1113,6 +1179,7 @@
 			icon: "sophisticatedstorage:stack_upgrade_tier_5"
 			id: "41E1FD29F4E4B8BA"
 			rewards: [{
+				auto: "enabled"
 				icon: "sophisticatedstorage:stack_upgrade_tier_5"
 				id: "1ACEC55FCD7286EF"
 				team_reward: true
@@ -1121,20 +1188,20 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 96L
 					id: "0A240BCEAEB2348E"
-					item: { Count: 128, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 96L
 					id: "53A93D9BD74C59CF"
-					item: { Count: 128, id: "minecraft:light_gray_wool" }
+					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "中级存储升级"
-			x: 1.5d
+			x: 3.5d
 			y: -13.5d
 		}
 		{
@@ -1145,6 +1212,7 @@
 			icon: "sophisticatedstorage:controller"
 			id: "2356975FCF8C4116"
 			rewards: [{
+				auto: "enabled"
 				icon: "sophisticatedstorage:controller"
 				id: "417940508E6701E2"
 				team_reward: true
@@ -1153,27 +1221,625 @@
 			}]
 			tasks: [
 				{
-					count: 128L
+					count: 96L
 					id: "7A441F8842DA4FD0"
-					item: { Count: 64, id: "minecraft:brown_wool" }
+					item: "minecraft:brown_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 96L
 					id: "5E4ACB63D46BC734"
 					item: "minecraft:red_wool"
 					type: "item"
 				}
 				{
-					count: 128L
+					count: 96L
 					id: "0D75653D3E8A15A2"
 					item: "minecraft:light_gray_wool"
 					type: "item"
 				}
 			]
 			title: "智能物流"
-			x: 1.5d
+			x: 3.5d
 			y: -15.0d
+		}
+		{
+			dependencies: ["64B476FF6749A8D3"]
+			icon: "minecraft:white_dye"
+			id: "0DE97B2932545431"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:white_dye"
+				id: "6985FC413962E0DC"
+				team_reward: true
+				title: "科技: 染料稀释"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "3BDE64E779FE046D"
+					item: { Count: 64, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "008D433EA5351254"
+					item: { Count: 64, id: "minecraft:red_wool" }
+					type: "item"
+				}
+			]
+			title: "染料稀释"
+			x: -7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"0DE97B2932545431"
+				"10B2CDE84C825FDE"
+			]
+			description: [
+				""
+				"不是所有的构件都有对应的科技包和简化科技."
+			]
+			icon: "kubejs:colorful_mechanism"
+			id: "37A737C3211F3BAB"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:colorful_mechanism"
+				id: "1413B17179915BF6"
+				team_reward: true
+				title: "科技: 溢彩构件"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 16L
+				id: "2602ED4062F7EDC1"
+				item: { Count: 16, id: "kubejs:redstone_precision_mechanism" }
+				type: "item"
+			}]
+			title: "溢彩构件"
+			x: -7.0d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"64B476FF6749A8D3"
+				"1550E269692BAB18"
+			]
+			description: [
+				""
+				"这个世界的基岩是一种非常坚硬的材料，以至于玩家徒手无法挖掘。"
+			]
+			icon: "minecraft:bedrock"
+			id: "592E4FC24F83AAAC"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:bedrock"
+				id: "7D106801A6BE6AFD"
+				team_reward: true
+				title: "科技: 基岩处理"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "18AEF856C74279BA"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0340941F3716193F"
+					item: "minecraft:red_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6174E061EB9A00B5"
+					item: "minecraft:light_gray_wool"
+					type: "item"
+				}
+			]
+			title: "基岩处理"
+			x: -2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"592E4FC24F83AAAC"
+				"74C30C66C453C230"
+			]
+			description: [
+				""
+				"不是所有的构件都有对应的科技包和简化科技."
+			]
+			hide_dependent_lines: true
+			icon: "kubejs:sturdy_mechanism"
+			id: "54F1D2F0FDD4F0C9"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:sturdy_mechanism"
+				id: "583AEB5ECAF51C1A"
+				team_reward: true
+				title: "科技: 坚固构件"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 256L
+					id: "18584016EFE81BB9"
+					item: { Count: 256, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "0467BBED97808930"
+					item: { Count: 256, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "149F2520129E7801"
+					item: { Count: 256, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "坚固构件"
+			x: -2.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["37A737C3211F3BAB"]
+			icon: "kubejs:refined_white_dye"
+			id: "76F30D676986FBB3"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:refined_white_dye"
+				id: "1F9007C5ADF3A4F9"
+				team_reward: true
+				title: "科技: 精炼染料"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 256L
+					id: "1D51F054487C4160"
+					item: { Count: 256, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "5039A931CE21939B"
+					item: { Count: 256, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "050D94934F8E6D9C"
+					item: { Count: 256, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "精炼染料"
+			x: -7.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["76F30D676986FBB3"]
+			hide_dependent_lines: true
+			icon: "kubejs:charged_white_dye"
+			id: "3B1CFDFB4E3CD635"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:charged_white_dye"
+				id: "406DF6FB5A9EBC38"
+				team_reward: true
+				title: "科技: 染料充能"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 1024L
+				id: "3702A141C54EF514"
+				item: { Count: 1024, id: "minecraft:red_wool" }
+				type: "item"
+			}]
+			title: "染料充能"
+			x: -7.0d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"3B1CFDFB4E3CD635"
+				"5F249761FA76BE6E"
+			]
+			icon: "minecraft:iron_block"
+			id: "5B12382F91714E97"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:iron_block"
+				id: "51DA66C1D411D7E7"
+				team_reward: true
+				title: "科技: 矿物块染色"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 512L
+					id: "6C28EEC344ECAB8D"
+					item: { Count: 512, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "2A0016B52A9459BA"
+					item: { Count: 512, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "6A1C74B60144B199"
+					item: { Count: 512, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "矿物块染色"
+			x: -7.0d
+			y: -18.0d
+		}
+		{
+			dependencies: [
+				"109B163A1E29D33D"
+				"1B0EA8C65D242CE1"
+			]
+			description: [
+				""
+				"锟斤拷锟斤拷烫烫烫烫烫烫烫烫烫"
+			]
+			icon: "minecraft:orange_wool"
+			id: "2845B3F023D6638D"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:orange_wool"
+				id: "47FCA7B99AB70653"
+				team_reward: true
+				title: "科技: 烈焰科技包"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 512L
+					id: "016439241AC85FB5"
+					item: { Count: 512, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "28E1D9C097D2F8C0"
+					item: { Count: 512, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "2EB76EB913F1E93C"
+					item: { Count: 512, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "烈焰科技包"
+			x: -0.5d
+			y: -15.0d
+		}
+		{
+			dependencies: [
+				"2845B3F023D6638D"
+				"3B1CFDFB4E3CD635"
+				"656BF85A3B688FE7"
+			]
+			icon: "kubejs:blaze_mechanism"
+			id: "70BC55DAB55C0121"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:blaze_mechanism"
+				id: "5B743D3A613EB9E3"
+				team_reward: true
+				title: "科技: 烈焰构件"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 768L
+					id: "61040C9EED217DE4"
+					item: { Count: 768, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 768L
+					id: "5B9F4D54755CDFDF"
+					item: { Count: 768, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 768L
+					id: "260950EE912E9E09"
+					item: { Count: 768, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+				{
+					count: 768L
+					id: "544F6B3E784A171C"
+					item: { Count: 768, id: "minecraft:orange_wool" }
+					type: "item"
+				}
+			]
+			title: "烈焰构件"
+			x: -0.5d
+			y: -18.0d
+		}
+		{
+			dependencies: [
+				"70BC55DAB55C0121"
+				"54F1D2F0FDD4F0C9"
+				"3B1CFDFB4E3CD635"
+				"580B6D3CD6BC5A57"
+			]
+			icon: "create:brass_ingot"
+			id: "575831FA26901E1F"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:brass_ingot"
+				id: "159C5A07C94E9EE0"
+				team_reward: true
+				title: "科技: 黄铜"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 1024L
+					id: "28E1978497A496E6"
+					item: { Count: 1024, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "21282E253032A77C"
+					item: { Count: 1024, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "6FD4D35117127D1A"
+					item: { Count: 1024, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "1424090F168D54E8"
+					item: { Count: 1024, id: "minecraft:orange_wool" }
+					type: "item"
+				}
+			]
+			title: "黄铜"
+			x: -2.0d
+			y: -19.5d
+		}
+		{
+			dependencies: [
+				"70BC55DAB55C0121"
+				"575831FA26901E1F"
+				"3B1CFDFB4E3CD635"
+				"385F3F59D67E27A1"
+			]
+			icon: "create:precision_mechanism"
+			id: "53C77B70898F5C5E"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:precision_mechanism"
+				id: "66145A80A1D2F4B1"
+				team_reward: true
+				title: "科技: 精密构件"
+				type: "custom"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [
+				{
+					count: 1536L
+					id: "640DF169C0FCF4CF"
+					item: { Count: 1536, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 1536L
+					id: "288FC94527AB9D05"
+					item: { Count: 1536, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 1536L
+					id: "02E7E918BB6F69A9"
+					item: { Count: 1536, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+				{
+					count: 1536L
+					id: "4DB2C94B5D6E6973"
+					item: { Count: 1536, id: "minecraft:orange_wool" }
+					type: "item"
+				}
+			]
+			title: "精密构件"
+			x: -0.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["70BC55DAB55C0121"]
+			icon: "kubejs:ice_powder"
+			id: "385F3F59D67E27A1"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:ice_powder"
+				id: "3F870D185F44400E"
+				team_reward: true
+				title: "科技: 冷冻剂"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 1024L
+					id: "7569E7CA4BFBF092"
+					item: { Count: 1024, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "2E1D4B61A41CDEB8"
+					item: { Count: 1024, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "5C96EF8A111D33FA"
+					item: { Count: 1024, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "06C67FD5705FAD04"
+					item: { Count: 1024, id: "minecraft:orange_wool" }
+					type: "item"
+				}
+			]
+			title: "极炎与极寒"
+			x: 1.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["4CE51AD5C345E2EC"]
+			icon: "kubejs:basic_ore_set"
+			id: "790BFD34A71B8CCD"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:basic_ore_set"
+				id: "3FD02CF23E941EFE"
+				team_reward: true
+				title: "科技: 初级矿物集合"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "764D24A236BD9875"
+					item: { Count: 64, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1A6E8DCA5F9CC382"
+					item: { Count: 64, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2A88B953FB2F5F0B"
+					item: { Count: 64, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "初级矿物集合"
+			x: -4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["790BFD34A71B8CCD"]
+			hide_dependent_lines: true
+			icon: "kubejs:ore_set"
+			id: "5F249761FA76BE6E"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:ore_set"
+				id: "22248AB92CA56254"
+				team_reward: true
+				title: "科技: 中级矿物集合"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "37B45010FA4025EF"
+					item: { Count: 128, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "319B7812AA00A85B"
+					item: { Count: 128, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "6639C03FAE93A84B"
+					item: { Count: 128, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+			]
+			title: "中级矿物集合"
+			x: -4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"2696D4EC112D783E"
+				"54F1D2F0FDD4F0C9"
+			]
+			icon: "minecraft:light_gray_wool"
+			id: "544E811AF7BDA4B5"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:light_gray_wool"
+				id: "56BA880366492A76"
+				team_reward: true
+				title: "科技: 钢材科技包简化"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 512L
+				id: "1B82BEFE5E65BBDA"
+				item: "minecraft:light_gray_wool"
+				type: "item"
+			}]
+			title: "钢材科技包简化"
+			x: 5.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["2845B3F023D6638D"]
+			description: [
+				""
+				"这里的地狱，地表之下是岩浆，高温岩浆和灵魂岩浆三层。"
+				""
+				"高温岩浆和灵魂岩浆&a无法使用桶盛载&r，但可以通过注液器注入密封储罐。"
+				""
+				"如何抽取高温岩浆？进入地狱后可解锁软管滑轮配方。"
+			]
+			id: "656BF85A3B688FE7"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:blaze_burner"
+				id: "24FEC15FC1C76B17"
+				team_reward: true
+				title: "科技: 地狱工业"
+				type: "custom"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "create:empty_blaze_burner"
+				id: "18FBD1397D221529"
+				title: "造访地狱"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: -16.5d
 		}
 	]
 	title: "科技树"

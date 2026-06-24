@@ -2,6 +2,23 @@ ServerEvents.recipes(event => {
 
     const { create, vintageimprovements, cmm, minecraft } = event.recipes
 
+    event.replaceInput(
+        { input: 'minecraft:dried_kelp'},
+        'minecraft:dried_kelp',
+        'kubejs:precision_mechanism_1'
+    )
+
+    event.remove({id: 'create:sequenced_assembly/sturdy_sheet'})
+
+    event.remove({ output: 'create:brass_funnel' })
+    event.remove({ output: 'create:brass_tunnel' })
+
+    event.replaceInput(
+        {input: '#forge:string'},
+        '#forge:string',
+        'createaddition:iron_wire'
+    )
+
     /**
      * 
      * @param {Internal.Ingredient_} mechine_id 
@@ -160,9 +177,6 @@ ServerEvents.recipes(event => {
         function create_vertical(vertical_box) {
             event.remove({output: vertical_box})
 
-            // basic_transmission
-            if (!global.technology.get_technology('basic_transmission')) return
-
             create.mixing(
                 [
                     vertical_box,
@@ -172,13 +186,11 @@ ServerEvents.recipes(event => {
                     'create:andesite_casing',
                     'kubejs:precision_mechanism_1'
                 ])
-            ).id(`kubejs:andesite_changes/mixing_${output_box.replace(':', '_')}_from_casing`)
+            ).technology('basic_transmission')
+            .id(`kubejs:andesite_changes/mixing_${output_box.replace(':', '_')}_from_casing`)
         }
 
         event.remove({output: output_box})
-
-        // basic_transmission
-        if (!global.technology.get_technology('basic_transmission')) return create_vertical
 
         create.compacting(
             [
@@ -189,7 +201,8 @@ ServerEvents.recipes(event => {
                 'create:andesite_casing',
                 'kubejs:precision_mechanism_1'
             ])
-        ).id(`kubejs:andesite_changes/compacting_${output_box.replace(':', '_')}_from_casing`)
+        ).technology('basic_transmission')
+        .id(`kubejs:andesite_changes/compacting_${output_box.replace(':', '_')}_from_casing`)
         
         
         return create_vertical
@@ -563,94 +576,6 @@ ServerEvents.recipes(event => {
         'create:copper_sheet'
     )
 
-    create.sequenced_assembly(
-        [
-            Item.of('kubejs:iron_and_gold_set').withChance(0.9),
-            Item.of('minecraft:iron_nugget').withChance(0.05),
-            Item.of('minecraft:gold_nugget').withChance(0.05)
-        ],
-        ['kubejs:set_tray'],
-        [
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'createaddition:iron_rod'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'vintageimprovements:iron_spring'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'createaddition:gold_rod'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'vintageimprovements:golden_spring'
-                ]
-            )
-        ],
-        'kubejs:set_tray', 4
-    ).id('kubejs:sequenced_assembly/andesite_changes/iron_and_gold_set')
-
-    create.sequenced_assembly(
-        [
-            Item.of('kubejs:redstone_and_copper_set').withChance(0.9),
-            Item.of('create:copper_nugget').withChance(0.05),
-            Item.of('minecraft:redstone').withChance(0.05)
-        ],
-        ['kubejs:set_tray'],
-        [
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'createaddition:copper_rod'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'vintageimprovements:copper_spring'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'redstone_block'
-                ]
-            ),
-            create.deploying(
-                'kubejs:set_tray',
-                [
-                    'kubejs:set_tray',
-                    'minecraft:redstone_torch'
-                ]
-            )
-        ],
-        'kubejs:set_tray', 4
-    ).id('kubejs:sequenced_assembly/andesite_changes/redstone_and_copper_set')
-
-    create.compacting(
-        ['kubejs:basic_ore_set'],
-        [
-            'kubejs:iron_and_gold_set', 'kubejs:redstone_and_copper_set',
-            Fluid.of('lava', 500),
-        ]
-    ).id('kubejs:compacting/andesite_changes/basic_ore_set')
-
     event.remove({id: 'industrial_platform:platform'})
     event.remove({id: 'industrial_platform:platform_2'})
 
@@ -725,6 +650,16 @@ ServerEvents.recipes(event => {
     event.remove({id: 'create_dd:mixing/bronze_ingot'})
 
     event.remove({type: 'minecraft:crafting_shaped', output: 'create:andesite_alloy'})
+    event.remove({type: 'create:mixing', output: 'create:andesite_alloy'})
+    cmm.item_combine(
+        [
+            'create:andesite_alloy'
+        ],
+        [
+            'minecraft:cobblestone',
+            'minecraft:iron_ingot'
+        ]
+    )
     event.remove({input: 'unify:wrought_iron_ingot'})
     event.remove({output: 'unify:wrought_iron_ingot'})
 
@@ -768,4 +703,13 @@ ServerEvents.recipes(event => {
     event.remove({mod: 'unify', type: 'create:splashing'})
     event.remove({type: 'create_dd:superheating'})
     event.remove({type: 'create_dd:freezing'})
+
+    event.remove({output: 'create_dd:steel_ingot'})
+
+    create.compacting(
+        ['minecraft:ice'],
+        [
+            Fluid.of('minecraft:water', 250)
+        ]
+    ).id('compacting/andesite_changes/ice')
 })

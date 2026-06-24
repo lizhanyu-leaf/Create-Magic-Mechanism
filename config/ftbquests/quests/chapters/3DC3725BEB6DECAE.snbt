@@ -90,11 +90,11 @@
 				"              ↓"
 				"循环配方4次"
 			]
-			icon: "create_sa:brass_cube"
+			icon: "kubejs:technology_mechanism"
 			icon_scale: 0.9d
 			id: "3D7CAE39866CF7DF"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "23C2C62A621EECCF"
 				team_reward: true
 				title: "{cmm.tech.simple_precision_mechanism_3_recipe}"
@@ -116,11 +116,11 @@
 		{
 			dependencies: ["2C76A464C3D0AF22"]
 			description: ["{image:kubejs:textures/ftbquest/1.1/incomplete_precision_mechanism_3_cutting_recipe.png width:185 height:79 align:center}"]
-			icon: "create_sa:brass_cube"
+			icon: "kubejs:technology_mechanism"
 			icon_scale: 0.9d
 			id: "1997A8F9016F082B"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "0CDE82D173261B8A"
 				team_reward: true
 				title: "{cmm.tech.incomplete_precision_mechanism_3_cutting_recipe}"
@@ -159,11 +159,6 @@
 			]
 			hide_dependent_lines: true
 			id: "0830F2B18F837460"
-			rewards: [{
-				id: "7BFE08DF4BD08E58"
-				item: "minecraft:smithing_table"
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
@@ -817,6 +812,7 @@
 			dependencies: [
 				"3076A78891A703C9"
 				"476DCAEA5539F955"
+				"00E1C5F1F3A68287"
 			]
 			id: "122EC502CFC4B1BC"
 			shape: "hexagon"

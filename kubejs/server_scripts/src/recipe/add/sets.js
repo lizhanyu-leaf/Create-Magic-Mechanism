@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
             '16x create:large_cogwheel'
         ]
     )
-    if (global.technology.get_technology('incomplete_precision_mechanism_3_cutting_recipe')) {
+    if (TechnologyTools.isActive('incomplete_precision_mechanism_3_cutting_recipe')) {
         setcutting(
             'kubejs:incomplete_precision_mechanism_3',
             [

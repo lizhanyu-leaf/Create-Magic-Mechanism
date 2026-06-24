@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "38D664C4D54C0E9D"
 	group: "76AE7F0DD0D55C7E"
-	icon: "create_sa:brass_cube"
+	icon: "kubejs:technology_mechanism"
 	id: "38D664C4D54C0E9D"
 	order_index: 4
 	quest_links: [ ]
@@ -13,7 +13,7 @@
 			icon: "kubejs:redstone_sheet"
 			id: "2530ECE605F54677"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "6AF8F852B10CC475"
 				team_reward: true
 				title: "{cmm.tech.redstone_sheet_advanced}"
@@ -51,7 +51,7 @@
 			icon: "kubejs:precision_mechanism_2"
 			id: "088BA9AFE55F81AC"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "53EA3419BC932A84"
 				team_reward: true
 				title: "{cmm.tech.precision_mechanism_2_advanced}"
@@ -89,7 +89,7 @@
 			icon: "kubejs:redstone_precision_mechanism"
 			id: "2950D9299BDC4B79"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "6EE640CE65C5D1D3"
 				team_reward: true
 				title: "{cmm.tech.redstone_precision_mechanism_laser_cutting_recipe}"
@@ -154,7 +154,7 @@
 			icon: "create:sturdy_sheet"
 			id: "05C93068EAEBD4A9"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "06B0A75BEB9D8C9E"
 				team_reward: true
 				title: "{cmm.tech.sturdy_sheet_simple_recipe}"
@@ -192,7 +192,7 @@
 			icon: "create:electron_tube"
 			id: "1853584FF67511A7"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "5CBFA5EEFE60F599"
 				team_reward: true
 				title: "{cmm.tech.electron_tube_advanced}"
@@ -233,7 +233,7 @@
 			icon: "minecraft:bedrock"
 			id: "23758CC2F209D105"
 			rewards: [{
-				icon: "create_sa:brass_cube"
+				icon: "kubejs:technology_mechanism"
 				id: "5E7E166F164836B6"
 				team_reward: true
 				title: "{cmm.tech.bedrock_advanced}"

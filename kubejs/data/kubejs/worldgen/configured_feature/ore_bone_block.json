@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:soul_sand"
+        },
+        "state": {
+          "Name": "minecraft:bone_block"
+        }
+      }
+    ],
+    "size": 30,
+    "discard_chance_on_air_exposure": 0.5
+  }
+}

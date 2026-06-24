@@ -5,7 +5,7 @@
 	group: "271095BD78F19DAF"
 	icon: "create:package_frogport"
 	id: "3CF3A4776256B17D"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

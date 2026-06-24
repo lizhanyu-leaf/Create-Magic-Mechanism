@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
     event.remove({mod: 'sfm'})
 
-    if (global.technology.get_technology('unlock_sfm')) {
+    if (TechnologyTools.isActive('unlock_sfm')) {
         event.stonecutting(
             'sfm:manager',
             'minecraft:iron_block'

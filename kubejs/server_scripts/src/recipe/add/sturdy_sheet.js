@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     // 坚固板材加压
     //sturdy_sheet_simple_recipe
 
-    if (global.technology.get_technology('sturdy_sheet_simple_recipe')) {event.recipes.vintageimprovements.pressurizing(
+    if (TechnologyTools.isActive('sturdy_sheet_simple_recipe')) {event.recipes.vintageimprovements.pressurizing(
             [
                 'create:sturdy_sheet',
                 'kubejs:sturdy_mechanism'
