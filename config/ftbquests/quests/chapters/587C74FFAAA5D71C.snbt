@@ -152,7 +152,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["085337ABBB62218F"]
 			description: [""]
 			id: "645000E1E160CF97"
 			tasks: [{
@@ -164,7 +163,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["7654A3D540A44957"]
 			id: "6059290B525B045E"
 			tasks: [{
 				id: "115340A2C046D9F5"
@@ -175,7 +173,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["31616DB4DA4BA674"]
 			id: "19E4F397A08A7993"
 			tasks: [{
 				id: "3822975BCBAD611E"
@@ -208,7 +205,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["665B354E2D213BCC"]
 			id: "304E368460218BB3"
 			tasks: [{
 				id: "78222E8421466348"
@@ -228,93 +224,6 @@
 			}]
 			x: -2.0d
 			y: -3.0d
-		}
-		{
-			description: ["{image:kubejs:textures/ftbquest/struggle0929/compression_upgrade.png width:150 height:75 align:center}"]
-			icon: "kubejs:technology_mechanism"
-			id: "7654A3D540A44957"
-			rewards: [{
-				icon: "kubejs:technology_mechanism"
-				id: "2F3B27E9643AD4E7"
-				team_reward: true
-				title: "{cmm.tech.unlock_upgrade}"
-				type: "custom"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "2261BF2A1ACD98EC"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			title: "{cmm.tech.unlock_upgrade}"
-			x: -2.5d
-			y: -1.0d
-		}
-		{
-			description: ["{image:kubejs:textures/ftbquest/struggle0929/compacting_upgrade.png width:150 height:75 align:center}"]
-			icon: "kubejs:technology_mechanism"
-			id: "665B354E2D213BCC"
-			rewards: [{
-				icon: "kubejs:technology_mechanism"
-				id: "247614AEF454880F"
-				team_reward: true
-				title: "{cmm.tech.unlock_upgrade}"
-				type: "custom"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "0D8BE503674F67B5"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			title: "{cmm.tech.unlock_upgrade}"
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			description: ["{image:kubejs:textures/ftbquest/struggle0929/hopper_upgrade.png width:150 height:75 align:center}"]
-			icon: "kubejs:technology_mechanism"
-			id: "085337ABBB62218F"
-			rewards: [{
-				icon: "kubejs:technology_mechanism"
-				id: "1D88DA67CDE5FDDF"
-				team_reward: true
-				title: "{cmm.tech.unlock_upgrade}"
-				type: "custom"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "77263DC6DD97F1A7"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			title: "{cmm.tech.unlock_upgrade}"
-			x: -0.5d
-			y: -1.0d
-		}
-		{
-			description: [
-				""
-				"{image:kubejs:textures/ftbquest/struggle0929/magnet_upgrade.png width:150 height:75 align:center}"
-			]
-			icon: "kubejs:technology_mechanism"
-			id: "31616DB4DA4BA674"
-			rewards: [{
-				icon: "kubejs:technology_mechanism"
-				id: "56EBB4E08F3CC44B"
-				team_reward: true
-				title: "{cmm.tech.unlock_upgrade}"
-				type: "custom"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "6F0BC1CB02F0D748"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			title: "{cmm.tech.unlock_upgrade}"
-			x: 0.5d
-			y: -1.0d
 		}
 		{
 			id: "67A28DFC912E1CBB"

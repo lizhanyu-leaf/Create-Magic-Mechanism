@@ -2,20 +2,6 @@ ServerEvents.recipes(event => {
     const {create, createoreexcavation, 
         vintageimprovements, minecraft, kubejs} = event.recipes
 
-    // basic_logistics
-
-    minecraft.crafting_shaped(
-        'create:belt_connector',
-        [
-            'aaa',
-            'bbb'
-        ],
-        {
-            a: 'create:sturdy_sheet',
-            b: 'createcompression:compressed_obsidian_1x'
-        }
-    ).technology('basic_logistics')
-
     // basic_storage_upgrade
     event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1'})
     event.remove({output: 'sophisticatedstorage:stack_upgrade_tier_1_plus'})
@@ -193,7 +179,7 @@ ServerEvents.recipes(event => {
                 ['create_dd:incomplete_inductive_mechanism', 'create:cogwheel']),
 
             create.deploying('create_dd:incomplete_inductive_mechanism',
-                ['create_dd:incomplete_inductive_mechanism', 'create:large_cogwheel']),
+                ['create_dd:incomplete_inductive_mechanism', 'create:chain_conveyor']),
 
             create.deploying('create_dd:incomplete_inductive_mechanism',
                 ['create_dd:incomplete_inductive_mechanism', 'create:andesite_alloy']),
@@ -211,8 +197,62 @@ ServerEvents.recipes(event => {
     ).technology('inductive_mechanism').id('kubejs:sequenced_assembly/inductive_mechanism')
     
 
-    //basic_chain_transmission
+    // package_system
+    event.remove({output: 'createadditionallogistics:package_editor'})
+    event.remove({output: 'createadditionallogistics:package_accelerator'})
+    event.remove({output: 'fluid:can_filler'})
+    event.remove({output: 'create:packager'})
+
+    event.shaped(
+        'create:packager',
+        [
+            ' i ',
+            'ibi',
+            'sis'
+        ],
+        {
+            i: 'minecraft:iron_ingot',
+            b: 'minecraft:iron_block',
+            s: 'minecraft:redstone'
+        }
+    ).technology('package_system')
+
+    event.shapeless(
+        'createadditionallogistics:package_editor',
+        'create:packager'
+    ).technology('package_system')
+
+    event.shapeless(
+        'create:packager',
+        'createadditionallogistics:package_editor'
+    ).technology('package_system')
+
+    event.shapeless(
+        'createadditionallogistics:package_accelerator',
+        'create:packager'
+    ).technology('package_system')
+
+    event.shapeless(
+        'create:packager',
+        'createadditionallogistics:package_accelerator'
+    ).technology('package_system')
+
+    event.shapeless(
+        'fluid:can_filler',
+        'create:packager'
+    ).technology('package_system')
+
+    event.shapeless(
+        'create:packager',
+        'fluid:can_filler'
+    ).technology('package_system')
+
+
+    // chain_logistics
     event.remove({output: 'minecraft:chain'})
+    event.remove({output: 'create:transmitter'})
+    event.remove({id:'create:crafting/kinetics/chain_conveyor'})
+    event.remove({id:'create:crafting/logistics/package_frogport'})
     create.sequenced_assembly(
         'create:chain_conveyor',
         'create:large_cogwheel',
@@ -228,7 +268,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_andesite_mechine',
                 [
                     'kubejs:incomplete_andesite_mechine',
-                    'create_dd:inductive_mechanism'
+                    'unify:steel_steel'
                 ]
             ),
             create.deploying(
@@ -240,7 +280,29 @@ ServerEvents.recipes(event => {
             )
         ],
         'kubejs:incomplete_andesite_mechine', 4
-    ).technology('basic_chain_transmission').id('kubejs:sequenced_assembly/basic_chain_transmission')
+    ).technology('chain_logistics').id('kubejs:sequenced_assembly/chain_logistics')
+    create.sequenced_assembly(
+        'create:package_frogport',
+        'create:item_vault', 
+        [
+            create.deploying(
+                'kubejs:incomplete_andesite_mechine',
+                [
+                    'kubejs:incomplete_andesite_mechine',
+                    'minecraft:slime_ball'
+                ]
+            ),
+
+            create.deploying(
+                'kubejs:incomplete_andesite_mechine',
+                [
+                    'kubejs:incomplete_andesite_mechine',
+                    'create_dd:andesite_sheet'
+                ]
+            )
+        ],
+        'kubejs:incomplete_andesite_mechine', 1
+    ).technology('chain_logistics').id('kubejs:sequenced_assembly/chain_logistics/package_frogport')
     minecraft.crafting_shaped(
         'minecraft:chain',
         [
@@ -252,7 +314,22 @@ ServerEvents.recipes(event => {
             n: 'unify:steel_nugget',
             i: 'unify:steel_ingot'
         }
-    ).technology('basic_chain_transmission')
+    ).technology('chain_logistics')
+    create.sequenced_assembly(
+        'create:transmitter',
+        'create:copper_sheet',
+        [
+            create.deploying('kubejs:incomplete_copper_products', 
+                ['kubejs:incomplete_copper_products', 'createaddition:copper_rod']),
+
+            create.deploying('kubejs:incomplete_copper_products', 
+                ['kubejs:incomplete_copper_products', 'createaddition:copper_wire']),
+
+            create.deploying('kubejs:incomplete_copper_products',
+                ['kubejs:incomplete_copper_products', 'minecraft:redstone_block'])
+        ],
+        'kubejs:incomplete_copper_products', 2
+    ).technology('chain_logistics').id('kubejs:sequenced_assembly/chain_logistics/transmitter')
 
     // strange_potion
     create.mixing(
@@ -462,37 +539,6 @@ ServerEvents.recipes(event => {
             'minecraft:copper_ingot'
         ]
     ).heated().technology('bronze_smelting').id('kubejs:compacting/bronze_ingot')
-
-    // smart_logistics
-    event.shaped(
-        'create:brass_funnel',
-        [
-            'a',
-            'b',
-            'c'
-        ],
-        {
-            a: 'create_dd:inductive_mechanism',
-            b: 'unify:bronze_ingot',
-            c: 'kubejs:precision_mechanism_1'
-        }
-    ).technology('smart_logistics')
-    .id('kubejs:andesite_changes/shaped_brass_funnel_from_precison_mechanisms')
-
-    event.shaped(
-        'create:brass_tunnel',
-        [
-            'a ',
-            'bb',
-            'cc'
-        ],
-        {
-            a: 'create_dd:inductive_mechanism',
-            b: 'unify:bronze_ingot',
-            c: 'kubejs:precision_mechanism_1'
-        }
-    ).technology('smart_logistics')
-    .id('kubejs:andesite_changes/shaped_brass_tunnel_from_precison_mechanisms')
 
     // seed_oil
     vintageimprovements.pressurizing(

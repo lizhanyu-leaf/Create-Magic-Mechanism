@@ -430,31 +430,6 @@
 			y: 1.5d
 		}
 		{
-			description: [
-				"{image:kubejs:textures/ftbquest/1.2/unlock_sfm_1.png width:185 height:78 align:center}"
-				"{image:kubejs:textures/ftbquest/1.2/unlock_sfm_2.png width:185 height:78 align:center}"
-			]
-			icon: "sfm:manager"
-			id: "07165831FFFED0D2"
-			rewards: [{
-				auto: "enabled"
-				icon: "sfm:manager"
-				id: "4255514F690CB694"
-				team_reward: true
-				title: "{cmm.tech.unlock_sfm}"
-				type: "custom"
-			}]
-			subtitle: "解锁后游戏难度将大幅下降"
-			tasks: [{
-				id: "54E2BD83FBA7A2FC"
-				title: "{cmm.tech.unlock_sfm}"
-				type: "checkmark"
-			}]
-			title: "{cmm.tech.unlock_sfm}"
-			x: 0.0d
-			y: -4.5d
-		}
-		{
 			description: ["装载或外接计时器 获得最好体验"]
 			id: "357DFF5C6D586FAD"
 			subtitle: "冲！速通！"
@@ -644,6 +619,20 @@
 			title: "地势平坦"
 			x: 2.0d
 			y: -3.5d
+		}
+		{
+			description: [
+				""
+				"这个世界的科技和你所熟悉的世界的科技完全不同，你可以通过&a科技树章节&r解锁新的科技，推进主线。"
+			]
+			id: "01892EBE44AF014A"
+			tasks: [{
+				id: "08C22C9B6D629795"
+				title: "我的配方呢?"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.5d
 		}
 	]
 	title: "{cmm.chapter.prologue}"

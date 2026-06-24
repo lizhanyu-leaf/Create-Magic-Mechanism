@@ -91,21 +91,14 @@
 			dependencies: ["63BC4506B9B36167"]
 			icon: "create:belt_connector"
 			id: "239135E18354E25F"
-			rewards: [{
-				auto: "enabled"
-				icon: "create:belt_connector"
-				id: "390C7AF447438BB1"
-				team_reward: true
-				title: "科技: 基础物流"
-				type: "custom"
-			}]
+			subtitle: "无解锁配方"
 			tasks: [{
 				count: 16L
 				id: "5CC95B97820597BA"
 				item: "minecraft:brown_wool"
 				type: "item"
 			}]
-			title: "基础物流"
+			title: "物流学"
 			x: 5.5d
 			y: -4.5d
 		}
@@ -165,6 +158,7 @@
 				}
 			}
 			id: "0CD39A4DE031D8EC"
+			subtitle: "无解锁配方"
 			tasks: [{
 				count: 16L
 				id: "538983134E01855E"
@@ -250,6 +244,7 @@
 				""
 				"这个世界的钢不是我们世界的钢，更像是&a黑曜石和工业铁的合金&r。在这个世界的规则下，这样的材料才能保证钢的性能。"
 			]
+			hide_dependent_lines: true
 			icon: "unify:steel_ingot"
 			id: "29C4C734F7CEC029"
 			rewards: [{
@@ -407,6 +402,7 @@
 			dependencies: ["4A9F9318880D3EB6"]
 			icon: "minecraft:redstone_block"
 			id: "7AC4FD9044C6BD8D"
+			subtitle: "无解锁配方"
 			tasks: [
 				{
 					count: 8L
@@ -518,8 +514,8 @@
 		}
 		{
 			dependencies: [
-				"1550E269692BAB18"
-				"00E1C5F1F3A68287"
+				"29C4C734F7CEC029"
+				"1EA72171F1CBA2BE"
 			]
 			icon: "create:chain_conveyor"
 			id: "5BD26377E8CD8C72"
@@ -545,13 +541,12 @@
 					type: "item"
 				}
 			]
-			title: "初级锁链传输"
-			x: 6.5d
-			y: -12.0d
+			title: "锁链物流"
+			x: 5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
-				"239135E18354E25F"
 				"64B476FF6749A8D3"
 				"1550E269692BAB18"
 				"00E1C5F1F3A68287"
@@ -646,8 +641,8 @@
 		}
 		{
 			dependencies: [
-				"239135E18354E25F"
 				"1550E269692BAB18"
+				"5BD26377E8CD8C72"
 			]
 			hide_dependent_lines: true
 			icon: "create_dd:inductive_mechanism"
@@ -690,6 +685,7 @@
 			hide_dependent_lines: true
 			icon: "create:blaze_burner"
 			id: "40E52ADBE64FC444"
+			subtitle: "无解锁配方"
 			tasks: [
 				{
 					count: 64L
@@ -865,40 +861,6 @@
 			title: "金属熔炼: 黑曜石?"
 			x: 1.0d
 			y: -10.5d
-		}
-		{
-			dependencies: [
-				"00E1C5F1F3A68287"
-				"109B163A1E29D33D"
-			]
-			hide_dependent_lines: true
-			icon: "create:brass_funnel"
-			id: "3584E3F6D57898B7"
-			rewards: [{
-				auto: "enabled"
-				icon: "create:brass_funnel"
-				id: "4272AC09BD8CDB92"
-				team_reward: true
-				title: "科技: 智能物流"
-				type: "custom"
-			}]
-			tasks: [
-				{
-					count: 64L
-					id: "2C85B410984EAAFC"
-					item: "minecraft:brown_wool"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "2D37A8F84768F6D8"
-					item: { Count: 64, id: "unify:bronze_ingot" }
-					type: "item"
-				}
-			]
-			title: "智能物流"
-			x: 6.5d
-			y: -13.5d
 		}
 		{
 			dependencies: [
@@ -1176,14 +1138,14 @@
 				"580B6D3CD6BC5A57"
 			]
 			hide_dependent_lines: true
-			icon: "sophisticatedstorage:stack_upgrade_tier_5"
+			icon: "sophisticatedstorage:advanced_magnet_upgrade"
 			id: "41E1FD29F4E4B8BA"
 			rewards: [{
 				auto: "enabled"
-				icon: "sophisticatedstorage:stack_upgrade_tier_5"
+				icon: "sophisticatedstorage:advanced_magnet_upgrade"
 				id: "1ACEC55FCD7286EF"
 				team_reward: true
-				title: "科技: 中级存储升级"
+				title: "科技: 高级存储升级"
 				type: "custom"
 			}]
 			tasks: [
@@ -1200,15 +1162,12 @@
 					type: "item"
 				}
 			]
-			title: "中级存储升级"
+			title: "高级存储升级"
 			x: 3.5d
 			y: -13.5d
 		}
 		{
-			dependencies: [
-				"41E1FD29F4E4B8BA"
-				"3584E3F6D57898B7"
-			]
+			dependencies: ["41E1FD29F4E4B8BA"]
 			icon: "sophisticatedstorage:controller"
 			id: "2356975FCF8C4116"
 			rewards: [{
@@ -1349,10 +1308,6 @@
 			dependencies: [
 				"592E4FC24F83AAAC"
 				"74C30C66C453C230"
-			]
-			description: [
-				""
-				"不是所有的构件都有对应的科技包和简化科技."
 			]
 			hide_dependent_lines: true
 			icon: "kubejs:sturdy_mechanism"
@@ -1840,6 +1795,28 @@
 			}]
 			x: -0.5d
 			y: -16.5d
+		}
+		{
+			dependencies: ["239135E18354E25F"]
+			icon: "create:packager"
+			id: "1EA72171F1CBA2BE"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:packager"
+				id: "20F17924021D9EBE"
+				team_reward: true
+				title: "科技: 包裹系统"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 32L
+				id: "5DF0702902363E4F"
+				item: { Count: 32, id: "minecraft:brown_wool" }
+				type: "item"
+			}]
+			title: "包裹系统"
+			x: 5.5d
+			y: -6.0d
 		}
 	]
 	title: "科技树"

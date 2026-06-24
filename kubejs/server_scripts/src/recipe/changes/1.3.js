@@ -394,16 +394,4 @@ ServerEvents.recipes(event => {
         ],
         'create_dd:incomplete_integrated_circuit', 2
     ).id('kubejs:sequenced_assembly/brass_changes/integrated_circuit')
-
-    event.replaceInput(
-        {id:'create:crafting/materials/transmitter'},
-        'minecraft:redstone',
-        'create_dd:integrated_circuit'
-    )
-
-    event.replaceInput(
-        {id:'create:crafting/materials/transmitter'},
-        'minecraft:lightning_rod',
-        'kubejs:redstone_precision_mechanism'
-    )
 })

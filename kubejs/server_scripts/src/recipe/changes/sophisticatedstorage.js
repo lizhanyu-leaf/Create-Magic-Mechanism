@@ -2,7 +2,13 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         {mod: 'sophisticatedstorage'},
         'minecraft:redstone',
-        'kubejs:redstone_precision_mechanism'
+        'kubejs:redstone_sheet'
+    )
+
+    event.replaceInput(
+        {mod: 'sophisticatedstorage'},
+        '#forge:dusts/redstone',
+        'kubejs:redstone_sheet'
     )
 
     event.replaceInput(
@@ -13,14 +19,14 @@ ServerEvents.recipes(event => {
 
     event.replaceInput(
         {mod: 'sophisticatedstorage'},
-        'minecraft:stick',
-        'kubejs:wood_set'
+        'minecraft:piston',
+        'create:mechanical_press'
     )
 
     event.replaceInput(
         {mod: 'sophisticatedstorage'},
-        'minecraft:iron_ingot',
-        'create:iron_sheet'
+        'minecraft:stick',
+        'kubejs:wood_set'
     )
 
     event.replaceInput(

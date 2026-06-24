@@ -1,10 +1,10 @@
 {
   "configVersion": 4,
-  "enabled": false,
-  "modHash": 4419116393818894203,
-  "registryHash": -7040669364226336369,
+  "enabled": true,
+  "modHash": -332899398223369513,
+  "registryHash": -4474995632765144533,
   "isolatedScopes": true,
-  "complete": false,
+  "complete": true,
   "publicClassOnly": false,
   "Mods with forced Full Scanning": [
     "minecraft"

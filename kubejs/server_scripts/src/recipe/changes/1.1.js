@@ -2,22 +2,52 @@ ServerEvents.recipes(event => {
 
     const { create, vintageimprovements, cmm, minecraft } = event.recipes
 
+    event.remove({mod: 'sfm'})
+
     event.replaceInput(
         { input: 'minecraft:dried_kelp'},
         'minecraft:dried_kelp',
         'kubejs:precision_mechanism_1'
     )
 
-    event.remove({id: 'create:sequenced_assembly/sturdy_sheet'})
+    minecraft.crafting_shaped(
+        'create:belt_connector',
+        [
+            'aaa',
+            'bbb'
+        ],
+        {
+            a: 'create:sturdy_sheet',
+            b: 'createcompression:compressed_obsidian_1x'
+        }
+    )
 
-    event.remove({ output: 'create:brass_funnel' })
-    event.remove({ output: 'create:brass_tunnel' })
+    event.remove({id: 'create:sequenced_assembly/sturdy_sheet'})
 
     event.replaceInput(
         {input: '#forge:string'},
         '#forge:string',
         'createaddition:iron_wire'
     )
+
+    event.remove({ output: 'create:brass_funnel' })
+    event.remove({ output: 'create:brass_tunnel' })
+    
+    create.deploying(
+        ['create:brass_funnel'],
+        [
+            'create:andesite_funnel',
+            'minecraft:yellow_dye'
+        ]
+    ).id('kubejs:deploying/andesite_changes/brass_funnel_from_andesite_funnel')
+
+    create.deploying(
+        ['create:brass_tunnel'],
+        [
+            'create:andesite_tunnel',
+            'minecraft:yellow_dye'
+        ]
+    ).id('kubejs:deploying/andesite_changes/brass_tunnel_from_andesite_tunnel')
 
     /**
      * 
