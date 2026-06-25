@@ -11,14 +11,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: "create:large_cogwheel"
 			id: "587A893DCCA16E37"
+			shape: "diamond"
 			subtitle: "此章必选，否则进度无法推进"
 			tasks: [{
 				id: "603C6883766CA18D"
-				title: "？！科技？！"
 				type: "checkmark"
 			}]
-			title: "科技树"
+			title: "阶段 Ⅰ - 机械革命"
 			x: -0.5d
 			y: 3.0d
 		}
@@ -1817,6 +1818,186 @@
 			title: "包裹系统"
 			x: 5.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["53C77B70898F5C5E"]
+			icon: "create:content_observer"
+			id: "2F1DD3A6450F41F2"
+			shape: "diamond"
+			tasks: [{
+				id: "0EB0A259826F5808"
+				type: "checkmark"
+			}]
+			title: "阶段 Ⅱ - 智能化"
+			x: -0.5d
+			y: -26.5d
+		}
+		{
+			dependencies: ["2F1DD3A6450F41F2"]
+			icon: "create:mechanical_crafter"
+			id: "1670A510349332E0"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:mechanical_crafter"
+				id: "77895B6EF80772C0"
+				team_reward: true
+				title: "科技: 智能机器"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 512L
+				id: "322B2A0B404BE56C"
+				item: { Count: 512, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "精密机器"
+			x: -0.5d
+			y: -28.0d
+		}
+		{
+			dependencies: ["2F1DD3A6450F41F2"]
+			icon: "create:pulse_repeater"
+			id: "0F4542B101D41085"
+			rewards: [{
+				auto: "enabled"
+				icon: "create:pulse_repeater"
+				id: "2EB1CCB4ED558534"
+				team_reward: true
+				title: "科技: 智能红石控件"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 512L
+				id: "182BEF562C759EC2"
+				item: { Count: 512, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "智能红石控件"
+			x: -2.0d
+			y: -28.0d
+		}
+		{
+			dependencies: ["1670A510349332E0"]
+			icon: "createdieselgenerators:crude_oil_bucket"
+			id: "09CBEC2AF647A189"
+			rewards: [{
+				auto: "enabled"
+				icon: "createdieselgenerators:crude_oil_bucket"
+				id: "0227B7D230B92710"
+				team_reward: true
+				title: "原油处理"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "2D49F65FC0AD62C9"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5AEB267743423426"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "7B97CB87182418A6"
+					item: { Count: 2, id: "createdieselgenerators:pumpjack_bearing" }
+					type: "item"
+				}
+			]
+			title: "原油处理"
+			x: -0.5d
+			y: -29.5d
+		}
+		{
+			dependencies: ["09CBEC2AF647A189"]
+			icon: "kubejs:slime_mechanism"
+			id: "5CCE3C1E19C48AA3"
+			tasks: [{
+				count: 512L
+				id: "63F9EC2616219E2D"
+				item: { Count: 512, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "黏液构件"
+			x: -0.5d
+			y: -31.0d
+		}
+		{
+			dependencies: ["5CCE3C1E19C48AA3"]
+			icon: "kubejs:magic_mechanism"
+			id: "5C31CE0EF630635C"
+			tasks: [{
+				count: 512L
+				id: "1C3C8A576F29EE77"
+				item: { Count: 512, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "魔法构件"
+			x: -0.5d
+			y: -32.5d
+		}
+		{
+			dependencies: ["1670A510349332E0"]
+			icon: "create_dd:integrated_circuit"
+			id: "6930E5CEFFA195A1"
+			tasks: [{
+				count: 512L
+				id: "7B6788824E34E8F5"
+				item: { Count: 512, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "集成电路"
+			x: -2.0d
+			y: -29.5d
+		}
+		{
+			dependencies: ["1670A510349332E0"]
+			icon: "create_dd:experience_ingot"
+			id: "284A9B11B91F2601"
+			rewards: [{
+				auto: "enabled"
+				icon: "create_dd:experience_ingot"
+				id: "515062DAD8254199"
+				team_reward: true
+				title: "科技: 经验处理"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 512L
+				id: "309E36E966E1E564"
+				item: { Count: 512, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "经验处理"
+			x: 1.0d
+			y: -29.5d
+		}
+		{
+			dependencies: ["284A9B11B91F2601"]
+			icon: "kubejs:experience_mechanism"
+			id: "2BF5A32F50405316"
+			rewards: [{
+				auto: "enabled"
+				icon: "kubejs:experience_mechanism"
+				id: "73A190B7FEE8F39B"
+				team_reward: true
+				title: "科技: 经验构件"
+				type: "custom"
+			}]
+			tasks: [{
+				count: 512L
+				id: "6453E54FD603B1F1"
+				item: { Count: 512, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "经验构件"
+			x: 1.0d
+			y: -31.0d
 		}
 	]
 	title: "科技树"

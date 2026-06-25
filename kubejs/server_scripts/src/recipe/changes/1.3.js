@@ -394,4 +394,10 @@ ServerEvents.recipes(event => {
         ],
         'create_dd:incomplete_integrated_circuit', 2
     ).id('kubejs:sequenced_assembly/brass_changes/integrated_circuit')
+
+    event.replaceInput(
+        {id: 'createdieselgenerators:crafting/pumpjack_bearing'},
+        'create:mechanical_bearing',
+        'minecraft:slime_block'
+    )
 })
