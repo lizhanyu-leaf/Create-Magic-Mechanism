@@ -1,16 +1,7 @@
-#If true, game time and day time, will not advance if no players are online. This can break anything that relies on game time
-"Enable Time stop no player online" = false
 #Various fixes and improvements
 "Enable Fixes" = true
-
 #If true, game time and day time, will not advance if no players are online. This can break anything that relies on game time
-["Time stop no player online"]
-	#If true, also prevents weather from advancing if no players are online. This needs to be disabled in order to allow to set the gamerule again.
-	"Also weather" = true
-	#If true, also prevents game time from advancing if no players are online with Time Control installed. This needs to be disabled in order to allow to set the gamerule again.
-	"Time control integration" = true
-	#If true, also prevents seasons from advancing if no players are online with Serene Seasons installed. This needs to be disabled in order to allow to set the gamerule again.
-	"Serene seasons integration" = true
+"Enable Time stop no player online" = false
 
 #Various fixes and improvements
 [Fixes]
@@ -22,6 +13,15 @@
 	"Fix jump movement factor" = true
 	#The fix for Jump Movement Factor is applied only when the player is slowed down. If false, the player will jump really farther when going faster.
 	"Fix jump movement factor slowdown only" = true
+
+#If true, game time and day time, will not advance if no players are online. This can break anything that relies on game time
+["Time stop no player online"]
+	#If true, also prevents weather from advancing if no players are online. This needs to be disabled in order to allow to set the gamerule again.
+	"Also weather" = true
+	#If true, also prevents game time from advancing if no players are online with Time Control installed. This needs to be disabled in order to allow to set the gamerule again.
+	"Time control integration" = true
+	#If true, also prevents seasons from advancing if no players are online with Serene Seasons installed. This needs to be disabled in order to allow to set the gamerule again.
+	"Serene seasons integration" = true
 
 #Changes the behaviour of Falling Blocks to be smarter by preventing them from getting stuck when landing on a block but their center has air below, or try to stack or move them when inside a block.
 ["Better falling blocks"]

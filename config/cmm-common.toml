@@ -1,5 +1,14 @@
 
-[common]
+[player]
 	#The players can fly in survival
 	always_fly = true
+
+[redprint]
+	#The redprint blacklist
+	redprint_blacklist = []
+	#The redprint will let block be updated
+	redprint_block_update = false
+	#The max blocks can be removed by redprint
+	#Range: > 1
+	redprint_max_remove_blocks = 256
 

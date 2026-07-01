@@ -23,11 +23,19 @@
 			]
 			icon: "minecraft:grass_block"
 			id: "5735A6FF59ABCA22"
-			rewards: [{
-				id: "7180AE649AD58DB7"
-				item: "kubejs:coin_button"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6F8C3E2270C68F0A"
+					item: "fluid:copper_sink"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5FA911EB8EFBE970"
+					item: "kubejs:coin_button"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -516,7 +524,7 @@
 		{
 			description: [
 				""
-				"&aFTB Quests &r是&aFTB团队&r发明的&a引导工具或是机制的表现形式&r。"
+				"&aFTB Quests &r是&aFTB团队&r发明的&a指引方式&r。"
 				""
 				"&aFTB Quests&r 的UI非常符合直觉，基本不需要说明。"
 				""
@@ -633,6 +641,86 @@
 			}]
 			x: 0.0d
 			y: -4.5d
+		}
+		{
+			description: [
+				""
+				"但是，为什么这个世界的原木&a不能分解木板&r？"
+			]
+			id: "1F045B20D656FFEC"
+			tasks: [{
+				id: "4F758E830167A605"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "要致富，先撸树"
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"1F045B20D656FFEC"
+				"0336BEA0BE825D37"
+			]
+			description: [
+				""
+				"将原木去皮，对其使用&a安山合金&r即可制作&a安山机壳&r"
+			]
+			id: "5E512B7A693614B0"
+			tasks: [{
+				id: "037E17B0B854FE28"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			id: "0336BEA0BE825D37"
+			shape: "circle"
+			size: 0.75d
+			tasks: [{
+				id: "3514D4F4E08D2228"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -0.375d
+			y: -8.25d
+		}
+		{
+			dependencies: ["5E512B7A693614B0"]
+			description: [
+				""
+				"自动化的辊压。"
+				""
+				"另外，辊压机可以将任何原木转化成&a木制集合&r。&a木制集合&r可以用切石机切割出大部分的木制品&8（包括木板，木棍等）&r。"
+			]
+			id: "655E87EBA9D04BF2"
+			tasks: [{
+				id: "10D0D9D0AE311A3F"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				""
+				"在新手工程师的机器任务中，你会陆续获得&a三桶熔岩&r。"
+				""
+				"你需要先放出一桶熔岩并丢入木棍或木屑用于获取&a烈焰粉&r。"
+				""
+				"把熔岩盛回来，并用三桶熔岩制作&a烈焰蛋糕&r，剩下半桶熔岩可用于增殖。"
+			]
+			id: "0F4D9F39780FADED"
+			tasks: [{
+				id: "40FBCB4E8A68D65D"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
 		}
 	]
 	title: "{cmm.chapter.prologue}"

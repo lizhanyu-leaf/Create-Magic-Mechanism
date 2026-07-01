@@ -59,10 +59,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"4A9F9318880D3EB6"
-				"6E4DA079AB1E7DAF"
-			]
+			dependencies: ["4A9F9318880D3EB6"]
 			description: [
 				"通过多次辊压，成功将一块黑曜石铸成圆柱状。"
 				""
@@ -87,21 +84,6 @@
 			title: "坚固旋钮"
 			x: 4.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["63BC4506B9B36167"]
-			icon: "create:belt_connector"
-			id: "239135E18354E25F"
-			subtitle: "无解锁配方"
-			tasks: [{
-				count: 16L
-				id: "5CC95B97820597BA"
-				item: "minecraft:brown_wool"
-				type: "item"
-			}]
-			title: "物流学"
-			x: 5.5d
-			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -147,27 +129,6 @@
 			}]
 			title: "基础传动"
 			x: 4.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["63BC4506B9B36167"]
-			icon: {
-				Count: 1
-				id: "sophisticatedstorage:limited_iron_barrel_1"
-				tag: {
-					woodType: "spruce"
-				}
-			}
-			id: "0CD39A4DE031D8EC"
-			subtitle: "无解锁配方"
-			tasks: [{
-				count: 16L
-				id: "538983134E01855E"
-				item: "minecraft:brown_wool"
-				type: "item"
-			}]
-			title: "存储学"
-			x: 3.5d
 			y: -4.5d
 		}
 		{
@@ -334,10 +295,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"0CD39A4DE031D8EC"
-				"1550E269692BAB18"
-			]
+			dependencies: ["1550E269692BAB18"]
 			icon: "sophisticatedstorage:stack_upgrade_tier_2"
 			id: "2E63A73EDA17ACDE"
 			rewards: [{
@@ -1798,7 +1756,7 @@
 			y: -16.5d
 		}
 		{
-			dependencies: ["239135E18354E25F"]
+			dependencies: ["4A9F9318880D3EB6"]
 			icon: "create:packager"
 			id: "1EA72171F1CBA2BE"
 			rewards: [{
@@ -1817,7 +1775,7 @@
 			}]
 			title: "包裹系统"
 			x: 5.5d
-			y: -6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["53C77B70898F5C5E"]
@@ -1828,7 +1786,7 @@
 				id: "0EB0A259826F5808"
 				type: "checkmark"
 			}]
-			title: "阶段 Ⅱ - 智能化"
+			title: "阶段 Ⅱ - 智能化 (未制作)"
 			x: -0.5d
 			y: -26.5d
 		}
@@ -1873,7 +1831,7 @@
 				type: "item"
 			}]
 			title: "智能红石控件"
-			x: -2.0d
+			x: -2.5d
 			y: -28.0d
 		}
 		{
@@ -1942,7 +1900,10 @@
 			y: -32.5d
 		}
 		{
-			dependencies: ["1670A510349332E0"]
+			dependencies: [
+				"1670A510349332E0"
+				"0F4542B101D41085"
+			]
 			icon: "create_dd:integrated_circuit"
 			id: "6930E5CEFFA195A1"
 			tasks: [{
@@ -1952,7 +1913,7 @@
 				type: "item"
 			}]
 			title: "集成电路"
-			x: -2.0d
+			x: -2.5d
 			y: -29.5d
 		}
 		{
@@ -1974,11 +1935,11 @@
 				type: "item"
 			}]
 			title: "经验处理"
-			x: 1.0d
+			x: 1.5d
 			y: -29.5d
 		}
 		{
-			dependencies: ["284A9B11B91F2601"]
+			dependencies: ["7A5F9DE528C3114D"]
 			icon: "kubejs:experience_mechanism"
 			id: "2BF5A32F50405316"
 			rewards: [{
@@ -1996,8 +1957,51 @@
 				type: "item"
 			}]
 			title: "经验构件"
-			x: 1.0d
+			x: 1.5d
+			y: -32.5d
+		}
+		{
+			dependencies: ["6930E5CEFFA195A1"]
+			icon: "minecraft:yellow_wool"
+			id: "17C043EBF7445EC2"
+			tasks: [{
+				count: 32L
+				id: "2DD6964A78705AB6"
+				item: { Count: 32, id: "create_dd:integrated_circuit" }
+				type: "item"
+			}]
+			title: "智能科技包"
+			x: -2.5d
 			y: -31.0d
+		}
+		{
+			dependencies: ["284A9B11B91F2601"]
+			icon: "minecraft:lime_wool"
+			id: "7A5F9DE528C3114D"
+			tasks: [{
+				count: 128L
+				id: "757B791BED55FF38"
+				item: { Count: 128, id: "create_dd:experience_ingot" }
+				type: "item"
+			}]
+			title: "经验科技包"
+			x: 1.5d
+			y: -31.0d
+		}
+		{
+			dependencies: ["17C043EBF7445EC2"]
+			description: [""]
+			icon: "sfm:manager"
+			id: "4A69E355B1F5D212"
+			tasks: [{
+				count: 4196L
+				id: "1D97D976BF4DB4C8"
+				item: { Count: 4196, id: "minecraft:yellow_wool" }
+				type: "item"
+			}]
+			title: "超级工厂管理器 (Super Factory Manager)"
+			x: -2.5d
+			y: -32.5d
 		}
 	]
 	title: "科技树"

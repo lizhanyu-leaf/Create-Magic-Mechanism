@@ -1,0 +1,189 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6FEDFBA96C651D28"
+	group: "271095BD78F19DAF"
+	icon: "create:wrench"
+	id: "6FEDFBA96C651D28"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["76EF443A75B2C73C"]
+			id: "7C6729C77431F6E6"
+			tasks: [{
+				id: "5CEB0B1EF26B2754"
+				item: "cmm:redprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["76EF443A75B2C73C"]
+			id: "2DF02D55479FBCA1"
+			tasks: [{
+				id: "785CA25CB720AAA5"
+				item: "createsimpleschematic:simple_packer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6867C2B674C0B691"]
+			id: "215EA07AAF10D1E2"
+			tasks: [{
+				id: "69AE960AED17EBCF"
+				item: "kubejs:wood_set"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["76EF443A75B2C73C"]
+			id: "0145FD5E9D1DFDC4"
+			tasks: [{
+				id: "63E5C0E16F5BB795"
+				item: "create:schematic_and_quill"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76EF443A75B2C73C"]
+			id: "0E3DF74097A4F872"
+			tasks: [{
+				id: "0C5F0996B105C9CF"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6867C2B674C0B691"]
+			id: "21062FEAD76061A0"
+			tasks: [{
+				id: "00D01A129EF71FC0"
+				item: "kubejs:incomplete_precision_mechanism_3"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["76EF443A75B2C73C"]
+			id: "1C0333AE8B6797FF"
+			tasks: [{
+				id: "2EB7108F5A299F4F"
+				item: "createsimpleschematic:simple_schematic"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76EF443A75B2C73C"]
+			id: "18FB8EE72B61D528"
+			tasks: [{
+				id: "4B75605956519C0B"
+				item: "create:schematic_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "create:empty_schematic"
+			id: "76EF443A75B2C73C"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "5CFD713B6DA4DDA6"
+				title: "蓝图类"
+				type: "checkmark"
+			}]
+			x: 0.75d
+			y: -3.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "create:mechanical_saw"
+			id: "6867C2B674C0B691"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "37BE5A1DFB4C3C1D"
+				title: "集合类"
+				type: "checkmark"
+			}]
+			title: "集合类"
+			x: 6.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["126AD01B13DD1F03"]
+			id: "177C12809F8DC4C8"
+			tasks: [{
+				id: "617218C3D77AE1CA"
+				item: "fluid:fluid_atomizer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "create:wrench"
+			id: "126AD01B13DD1F03"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "1EBF606CDAB2BA10"
+				title: "机械类"
+				type: "checkmark"
+			}]
+			title: "机械类"
+			x: -4.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["126AD01B13DD1F03"]
+			id: "0CFF5B0726ABEEF8"
+			tasks: [{
+				id: "4C56817B724AB4F6"
+				item: "createadditionallogistics:package_accelerator"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["126AD01B13DD1F03"]
+			id: "6BB138F5807275D0"
+			tasks: [{
+				id: "58ED3C60C957688E"
+				item: "create_connected:brass_chute"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["126AD01B13DD1F03"]
+			id: "70D08EABF0C30CD1"
+			tasks: [{
+				id: "2C226205DDD9FB77"
+				item: "ftbquests:screen_1"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+	]
+	title: "实用工具"
+}
