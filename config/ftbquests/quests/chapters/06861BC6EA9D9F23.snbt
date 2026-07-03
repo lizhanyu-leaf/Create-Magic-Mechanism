@@ -1831,7 +1831,7 @@
 				type: "item"
 			}]
 			title: "智能红石控件"
-			x: -2.5d
+			x: -4.5d
 			y: -28.0d
 		}
 		{
@@ -1913,7 +1913,7 @@
 				type: "item"
 			}]
 			title: "集成电路"
-			x: -2.5d
+			x: -4.5d
 			y: -29.5d
 		}
 		{
@@ -1935,7 +1935,7 @@
 				type: "item"
 			}]
 			title: "经验处理"
-			x: 1.5d
+			x: 3.5d
 			y: -29.5d
 		}
 		{
@@ -1957,7 +1957,7 @@
 				type: "item"
 			}]
 			title: "经验构件"
-			x: 1.5d
+			x: 3.5d
 			y: -32.5d
 		}
 		{
@@ -1971,7 +1971,7 @@
 				type: "item"
 			}]
 			title: "智能科技包"
-			x: -2.5d
+			x: -4.5d
 			y: -31.0d
 		}
 		{
@@ -1985,23 +1985,8 @@
 				type: "item"
 			}]
 			title: "经验科技包"
-			x: 1.5d
+			x: 3.5d
 			y: -31.0d
-		}
-		{
-			dependencies: ["17C043EBF7445EC2"]
-			description: [""]
-			icon: "sfm:manager"
-			id: "4A69E355B1F5D212"
-			tasks: [{
-				count: 4196L
-				id: "1D97D976BF4DB4C8"
-				item: { Count: 4196, id: "minecraft:yellow_wool" }
-				type: "item"
-			}]
-			title: "超级工厂管理器 (Super Factory Manager)"
-			x: -2.5d
-			y: -32.5d
 		}
 	]
 	title: "科技树"

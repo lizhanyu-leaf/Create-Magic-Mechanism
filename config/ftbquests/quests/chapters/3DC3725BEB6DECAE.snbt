@@ -10,7 +10,14 @@
 	quests: [
 		{
 			dependencies: ["2DC6CAAF4CFDA627"]
-			description: [""]
+			description: [
+				""
+				"现在你会接触到一种新的配方类型——&a手工加工&r，我愿称之为手搓。"
+				""
+				"在按键设置中可以调整手工加工的按键，默认是 &a[Tab]&r 。"
+				""
+				"长按该键，按照JEI中的主手和副手的位置正确拿取，就会出现粒子效果和进度条。"
+			]
 			hide_dependent_lines: true
 			id: "5581BE6F7294F864"
 			rewards: [{
@@ -412,7 +419,6 @@
 		}
 		{
 			dependencies: [
-				"170F7B2EB81DF497"
 				"5581BE6F7294F864"
 				"49D561AAA7ADE425"
 			]
@@ -668,6 +674,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["170F7B2EB81DF497"]
 			hide_dependent_lines: true
 			id: "49D561AAA7ADE425"
 			shape: "circle"

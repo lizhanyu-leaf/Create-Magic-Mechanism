@@ -241,32 +241,6 @@
 				item: "create_dd:integrated_circuit"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["03984EA1F9EECB15"]
-			id: "425D3F47449450A1"
-			tasks: [{
-				id: "7F24357A781EE2E1"
-				item: {
-					Count: 1
-					id: "sfm:disk"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["425D3F47449450A1"]
-			id: "279C470B5FABCE97"
-			tasks: [{
-				id: "5891D12EAF7E2B9B"
-				item: "sfm:manager"
-				type: "item"
-			}]
 			x: 12.0d
 			y: 0.0d
 		}

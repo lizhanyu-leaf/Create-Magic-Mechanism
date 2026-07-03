@@ -78,244 +78,223 @@ ServerEvents.recipes(event => {
     remove_mechine_crafting_recipe('vintageimprovements:centrifuge')
     remove_mechine_crafting_recipe('vintageimprovements:helve_hammer')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'minecraft:iron_ingot'
-            }
-        ],
-        results: [
-            {
-                item: 'create:mechanical_press'
-            }
+    create.deploying(
+        'create:mechanical_press',
+        [
+            'create:andesite_casing',
+            'minecraft:iron_ingot'
         ]
-    }).id('kubejs:item_application/1.1/mechanical_press')
+    ).id('kubejs:deploying/1.1/mechanical_press')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'create:whisk'
-            }
-        ],
-        results: [
-            {
-                item: 'create:mechanical_mixer'
-            }
+    create.deploying(
+        'create:mechanical_mixer',
+        [
+            'create:andesite_casing',
+            'create:whisk'
         ]
-    }).id('kubejs:item_application/1.1/mechanical_mixer')
-
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'create:iron_sheet'
-            }
-        ],
-        results: [
-            {
-                item: 'create:mechanical_saw'
-            }
-        ]
-    }).id('kubejs:item_application/1.1/mechanical_saw')
-
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'minecraft:iron_nugget'
-            }
-        ],
-        results: [
-            {
-                item: 'create:mechanical_drill'
-            }
-        ]
-    }).id('kubejs:item_application/1.1/mechanical_drill')
-
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'create:golden_sheet'
-            }
-        ],
-        results: [
-            {
-                item: 'create:deployer'
-            }
-        ]
-    }).id('kubejs:item_application/1.1/deployer')
+    ).id('kubejs:deploying/1.1/mechanical_mixer')
     
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'create:mechanical_pump'
-            }
-        ],
-        results: [
-            {
-                item: 'vintageimprovements:vacuum_chamber'
-            }
-        ]
-    }).id('kubejs:item_application/1.1/vacuum_chamber')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'vintageimprovements:andesite_spring'
-            }
-        ],
-        results: [
-            {
-                item: 'vintageimprovements:vibrating_table'
-            }
+    create.deploying(
+        'create:mechanical_drill',
+        [
+            'create:andesite_casing',
+            'minecraft:iron_nugget'
         ]
-    }).id('kubejs:item_application/1.1/vibrating_table')
+    ).id('kubejs:deploying/1.1/mechanical_drill')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'create:shaft'
-            }
-        ],
-        results: [
-            {
-                item: 'createaddition:rolling_mill'
-            }
+    create.deploying(
+        'create:deployer',
+        [
+            'create:andesite_casing',
+            'create:golden_sheet'
         ]
-    }).id('kubejs:item_application/1.1/rolling_mill')
+    ).id('kubejs:deploying/1.1/deployer')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'kubejs:precision_mechanism_2'
-            }
-        ],
-        results: [
-            {
-                item: 'vintageimprovements:spring_coiling_machine'
-            }
+    create.deploying(
+        'vintageimprovements:vacuum_chamber',
+        [
+            'create:andesite_casing',
+            'create:mechanical_pump'
         ]
-    }).id('kubejs:item_application/1.1/spring_coiling_machine')
+    ).id('kubejs:deploying/1.1/vacuum_chamber')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'vintageimprovements:andesite_sheet'
-            }
-        ],
-        results: [
-            {
-                item: 'vintageimprovements:curving_press'
-            }
+    create.deploying(
+        'vintageimprovements:vibrating_table',
+        [
+            'create:andesite_casing',
+            'vintageimprovements:andesite_spring'
         ]
-    }).id('kubejs:item_application/1.1/curving_press')
+    ).id('kubejs:deploying/1.1/vibrating_table')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:copper_casing'
-            },
-            {
-                item: 'kubejs:precision_mechanism_1'
-            }
-        ],
-        results: [
-            {
-                item: 'create:spout'
-            }
+    create.deploying(
+        'createaddition:rolling_mill',
+        [
+            'create:andesite_casing',
+            'create:shaft'
         ]
-    }).id('kubejs:item_application/1.1/spout')
+    ).id('kubejs:deploying/1.1/rolling_mill')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:spout'
-            },
-            {
-                item: 'create:copper_sheet'
-            }
-        ],
-        results: [
-            {
-                item: 'fluid:copper_tap'
-            }
+    create.deploying(
+        'vintageimprovements:spring_coiling_machine',
+        [
+            'create:andesite_casing',
+            'kubejs:precision_mechanism_2'
         ]
-    }).id('kubejs:item_application/1.1/copper_tap')
+    ).id('kubejs:deploying/1.1/spring_coiling_machine')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'kubejs:cardboard_mechanism'
-            }
-        ],
-        results: [
-            {
-                item: 'vintageimprovements:belt_grinder'
-            }
+    create.deploying(
+        'vintageimprovements:curving_press',
+        [
+            'create:andesite_casing',
+            'vintageimprovements:andesite_sheet'
         ]
-    }).id('kubejs:item_application/1.1/belt_grinder')
+    ).id('kubejs:deploying/1.1/curving_press')
 
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            {
-                item: 'create:andesite_casing'
-            },
-            {
-                item: 'createdieselgenerators:hammer'
-            }
-        ],
-        results: [
-            {
-                item: 'vintageimprovements:helve_hammer'
-            }
+    create.deploying(
+        'create:spout',
+        [
+            'create:copper_casing',
+            'kubejs:precision_mechanism_1'
         ]
-    }).id('kubejs:item_application/1.1/helve_hammer')
+    ).id('kubejs:deploying/1.1/spout')
 
+    create.deploying(
+        'fluid:copper_tap',
+        [
+            'create:spout',
+            'create:copper_sheet'
+        ]
+    ).id('kubejs:deploying/1.1/copper_tap')
+
+    create.deploying(
+        'vintageimprovements:belt_grinder',
+        [
+            'create:andesite_casing',
+            'kubejs:cardboard_mechanism'
+        ]
+    ).id('kubejs:deploying/1.1/belt_grinder')
+
+    create.deploying(
+        'vintageimprovements:helve_hammer',
+        [
+            'create:andesite_casing',
+            'createdieselgenerators:hammer'
+        ]
+    ).id('kubejs:deploying/1.1/helve_hammer')
+
+    cmm.synthesis(
+        'create:mechanical_press',
+        [
+            'create:andesite_casing',
+            'minecraft:iron_ingot'
+        ], 120
+    ).id('kubejs:synthesis/1.1/mechanical_press')
+
+    cmm.synthesis(
+        'create:mechanical_mixer',
+        [
+            'create:andesite_casing',
+            'create:whisk'
+        ], 120
+    ).id('kubejs:synthesis/1.1/mechanical_mixer')
+
+    cmm.synthesis(
+        'create:mechanical_saw',
+        [
+            'create:andesite_casing',
+            'create:iron_sheet'
+        ], 120
+    ).id('kubejs:synthesis/1.1/mechanical_saw')
+
+    cmm.synthesis(
+        'create:mechanical_drill',
+        [
+            'create:andesite_casing',
+            'minecraft:iron_nugget'
+        ], 120
+    ).id('kubejs:synthesis/1.1/mechanical_drill')
+
+    cmm.synthesis(
+        'create:deployer',
+        [
+            'create:andesite_casing',
+            'create:golden_sheet'
+        ], 120
+    ).id('kubejs:synthesis/1.1/deployer')
+
+    cmm.synthesis(
+        'vintageimprovements:vacuum_chamber',
+        [
+            'create:andesite_casing',
+            'create:mechanical_pump'
+        ], 120
+    ).id('kubejs:synthesis/1.1/vacuum_chamber')
+
+    cmm.synthesis(
+        'vintageimprovements:vibrating_table',
+        [
+            'create:andesite_casing',
+            'vintageimprovements:andesite_spring'
+        ], 120
+    ).id('kubejs:synthesis/1.1/vibrating_table')
+
+    cmm.synthesis(
+        'createaddition:rolling_mill',
+        [
+            'create:andesite_casing',
+            'create:shaft'
+        ], 120
+    ).id('kubejs:synthesis/1.1/rolling_mill')
+
+    cmm.synthesis(
+        'vintageimprovements:spring_coiling_machine',
+        [
+            'create:andesite_casing',
+            'kubejs:precision_mechanism_2'
+        ], 120
+    ).id('kubejs:synthesis/1.1/spring_coiling_machine')
+
+    cmm.synthesis(
+        'vintageimprovements:curving_press',
+        [
+            'create:andesite_casing',
+            'vintageimprovements:andesite_sheet'
+        ], 120
+    ).id('kubejs:synthesis/1.1/curving_press')
+
+    cmm.synthesis(
+        'create:spout',
+        [
+            'create:copper_casing',
+            'kubejs:precision_mechanism_1'
+        ], 120
+    ).id('kubejs:synthesis/1.1/spout')
+
+    cmm.synthesis(
+        'fluid:copper_tap',
+        [
+            'create:spout',
+            'create:copper_sheet'
+        ], 120
+    ).id('kubejs:synthesis/1.1/copper_tap')
+
+    cmm.synthesis(
+        'vintageimprovements:belt_grinder',
+        [
+            'create:andesite_casing',
+            'kubejs:cardboard_mechanism'
+        ], 120
+    ).id('kubejs:synthesis/1.1/belt_grinder')
+
+    cmm.synthesis(
+        'vintageimprovements:helve_hammer',
+        [
+            'create:andesite_casing',
+            'createdieselgenerators:hammer'
+        ], 120
+    ).id('kubejs:synthesis/1.1/helve_hammer')
+    
 
     /**
      * 

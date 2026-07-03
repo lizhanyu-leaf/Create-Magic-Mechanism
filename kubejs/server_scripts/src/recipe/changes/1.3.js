@@ -2,6 +2,8 @@ ServerEvents.recipes(event => {
 
     const { create, vintageimprovements } = event.recipes
 
+    event.remove({mod: 'ae2'})
+
     event.remove({ id: 'create:mixing/brass_ingot' })
 
     event.remove({id:'create:crafting/materials/electron_tube'})

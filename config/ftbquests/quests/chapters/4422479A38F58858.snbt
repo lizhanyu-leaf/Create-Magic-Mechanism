@@ -3,10 +3,93 @@
 	default_quest_shape: ""
 	filename: "4422479A38F58858"
 	group: "086847A01061ED23"
-	icon: "createaddition:festive_spool"
+	icon: "ae2:mysterious_cube"
 	id: "4422479A38F58858"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "68692A1DFBD4627F"
+			rewards: [
+				{
+					count: 1024
+					id: "6B1B77793932126D"
+					item: "ae2:cable_interface"
+					type: "item"
+				}
+				{
+					count: 1024
+					id: "116E33534D3F2C4C"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					count: 1024
+					id: "11399798DBE90D00"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+				{
+					count: 1024
+					id: "3823F9EBB6FE10D0"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+				{
+					count: 1024
+					id: "47C943477AD04265"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+				{
+					count: 2048
+					id: "54516FF70C8CE846"
+					item: "ae2:interface"
+					type: "item"
+				}
+				{
+					count: 1024
+					id: "04EC0BD7A2440F3C"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					count: 2048
+					id: "682B72C2F063E0CA"
+					item: "ae2:quartz_fiber"
+					type: "item"
+				}
+				{
+					count: 4196
+					id: "00332456FD612217"
+					item: "ae2:fluix_smart_cable"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "236E961B8C93A0C7"
+				title: "早期测试"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68692A1DFBD4627F"]
+			id: "6765911F5B5DC123"
+			rewards: [{
+				id: "7085758CA3BA06D1"
+				item: "createaddition:creative_energy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4691FCA7AE22EF87"
+				title: "无限发电"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "外星科技工程师"
 }

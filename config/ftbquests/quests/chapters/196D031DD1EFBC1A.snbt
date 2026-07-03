@@ -40,24 +40,7 @@
 				type: "item"
 			}]
 			title: "外星科技"
-			x: 3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["2F7FD6694C5BE116"]
-			icon: {
-				Count: 1
-				id: "sfm:labelgun"
-				tag: { }
-			}
-			id: "5FFE118E779E6722"
-			tasks: [{
-				id: "63879C0006EA1FA0"
-				item: "create:creative_motor"
-				type: "item"
-			}]
-			title: "工厂管理"
-			x: 1.0d
+			x: 2.5d
 			y: -3.0d
 		}
 		{
@@ -70,7 +53,7 @@
 				type: "item"
 			}]
 			title: "无尽聚合"
-			x: -1.0d
+			x: 0.0d
 			y: -3.0d
 		}
 		{
@@ -83,7 +66,7 @@
 				type: "item"
 			}]
 			title: "炼金术"
-			x: -3.0d
+			x: -2.5d
 			y: -3.0d
 		}
 		{
