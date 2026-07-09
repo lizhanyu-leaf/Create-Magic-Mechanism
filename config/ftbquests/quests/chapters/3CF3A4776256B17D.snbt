@@ -418,59 +418,6 @@
 			y: -1.5d
 		}
 		{
-			id: "4B44A7E15A699CE3"
-			shape: "hexagon"
-			size: 3.0d
-			tasks: [{
-				id: "699C5B78AC26E73D"
-				item: "sfm:manager"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["4B44A7E15A699CE3"]
-			id: "6E6D8A315C6C7B1F"
-			tasks: [{
-				id: "3E97D8DB00A62EC0"
-				item: "sfm:cable"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["4B44A7E15A699CE3"]
-			id: "26CA4EB8F6AF1A3B"
-			tasks: [{
-				id: "2A95FEE3116DE867"
-				item: {
-					Count: 1
-					id: "sfm:labelgun"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -2.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["4B44A7E15A699CE3"]
-			id: "7E8559F3157B61B8"
-			tasks: [{
-				id: "4B9A92702E3FCAB9"
-				item: {
-					Count: 1
-					id: "sfm:disk"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 2.0d
-			y: 6.0d
-		}
-		{
 			hide_dependent_lines: true
 			id: "071A1D32EC906136"
 			rewards: [{

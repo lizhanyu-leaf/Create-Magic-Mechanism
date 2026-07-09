@@ -1,0 +1,8 @@
+#科技系统重启延迟（毫秒）
+#Range: 50 ~ 9223372036854775807
+restartDelay = 2000
+#是否启用科技系统命令
+enableCommands = true
+#是否启用科技系统命令提示
+enableCommandsTips = true
+

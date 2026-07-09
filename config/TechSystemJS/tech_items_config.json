@@ -1,0 +1,10 @@
+{
+  "cmm:mechancal_tech_pack": {
+    "item_id": "mechancal_tech_pack_unlocker",
+    "icon": "minecraft:brown_wool"
+  },
+  "cmm:steel_tech_pack": {
+    "item_id": "steel_tech_pack_unlocker",
+    "icon": "minecraft:light_gray_wool"
+  }
+}

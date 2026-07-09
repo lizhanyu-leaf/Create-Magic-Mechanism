@@ -41,11 +41,10 @@
 			id: "4A9F9318880D3EB6"
 			rewards: [{
 				auto: "enabled"
-				icon: "minecraft:brown_wool"
-				id: "126AD2B383950322"
+				id: "501F2D39187E1E72"
+				item: "techjs:mechancal_tech_pack_unlocker"
 				team_reward: true
-				title: "科技: 机械科技包"
-				type: "custom"
+				type: "item"
 			}]
 			shape: "gear"
 			size: 4.0d

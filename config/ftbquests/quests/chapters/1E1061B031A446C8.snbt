@@ -309,7 +309,15 @@
 			y: 2.5d
 		}
 		{
-			description: ["{cmm.quests.waypoint.description}"]
+			description: [
+				"可以使用"
+				""
+				" /setwarp 和 /warp （需要OP2级）"
+				""
+				"或"
+				""
+				"/sethome 和 /home （不需要OP，但只能设一个）"
+			]
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -466,7 +474,7 @@
 			]
 			description: [
 				""
-				"&a工程集合&r是由工程师&aApertyotis&r发明的工具，在那个完全不存在锌元素的世界——也是许多工程师的飞船坠毁之地，这套工具被管饭运用。我将&aApertyotis&r的研究成果复制了一份，并成功将其添加到我们的世界。"
+				"&a工程集合&r是由工程师&aApertyotis&r发明的工具，在那个完全不存在锌元素的世界——也是许多工程师的飞船坠毁之地，这套工具被广泛运用。我将&aApertyotis&r的研究成果复制了一份，并成功将其添加到我们的世界。"
 				""
 				"对不起，在传输的过程中，初始的工作站损坏了，现在只有获取一部分资源后，才能修复工作站。不过不用担心，工程集合只需&a按照部署蓝图的方式放置&r就行了。"
 			]
