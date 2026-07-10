@@ -1,4 +1,6 @@
-ServerEvents.recipes(event => { 
+// ==================== 1.3版本配方更改 ====================
+
+ServerEvents.recipes(event => {
 
     const { create, vintageimprovements } = event.recipes
 
@@ -7,24 +9,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:mixing/brass_ingot' })
 
     event.remove({id:'create:crafting/materials/electron_tube'})
-    // event.shaped('create:electron_tube', [
-    //     'a',
-    //     'b',
-    //     'c'
-    // ],
-    // {
-    //     a: 'create:polished_rose_quartz',
-    //     b: 'create:brass_sheet',
-    //     c: 'create:precision_mechanism'
-    // })
     event.stonecutting(
         'kubejs:electron_tube_substrate',
         'create:iron_sheet'
     ).id('kubejs:brass_changes/stonecutting_electron_tube_substrate_from_iron_sheet')
-    
+
     event.replaceInput(
         {or: [
-            {id: 'minecraft:repeater'}, 
+            {id: 'minecraft:repeater'},
             {id: 'minecraft:comparator'}
         ]},
         'minecraft:stone',
@@ -44,14 +36,13 @@ ServerEvents.recipes(event => {
         'kubejs:redstone_precision_mechanism'
     )
 
-    // event.remove({id: 'create:item_application/railway_casing'})
     event.replaceInput(
         {id: 'create:item_application/railway_casing'},
         'create:sturdy_sheet',
         'kubejs:sturdy_mechanism'
     )
     event.remove({id: 'create:crafting/kinetics/mechanical_crafter'})
-    // 机械制造台装配（现在添加.id()）
+    // 机械制造台装配
     create.sequenced_assembly(
         '5x create:mechanical_crafter',
         'create:brass_casing',
@@ -59,39 +50,11 @@ ServerEvents.recipes(event => {
             create.deploying('kubejs:incomplete_brass_mechine', ['kubejs:incomplete_brass_mechine', 'create:andesite_alloy']),
             create.deploying('kubejs:incomplete_brass_mechine', ['kubejs:incomplete_brass_mechine', 'create:electron_tube']),
             create.deploying('kubejs:incomplete_brass_mechine', ['kubejs:incomplete_brass_mechine', 'create:electron_tube']),
-            create.deploying('kubejs:incomplete_brass_mechine', ['kubejs:incomplete_brass_mechine', 'kubejs:colorful_mechanism'])
+            create.deploying('kubejs:incomplete_brass_mechine', ['kubejs:incomplete_brass_mechine', 'kubejs:iridescent_mechanism'])
         ],
         'kubejs:incomplete_brass_mechine',
         2
     ).id('kubejs:brass_changes/sequenced_assembly_mechanical_crafter_from_brass_casing')
-
-    // 电子管激光切割
-    // vintageimprovements.laser_cutting(
-    //     '5x create:electron_tube',
-    //     'create:polished_rose_quartz',
-    //     5000,
-    //     250
-    // ).id('kubejs:brass_changes/laser_cutting_electron_tube_from_rose_quartz')
-
-    // electron_tube_advanced
-
-    if (TechnologyTools.isActive('electron_tube_advanced')) {
-        create.sequenced_assembly(
-            '3x create:electron_tube',
-            'create:polished_rose_quartz',
-            [
-                create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'kubejs:precision_mechanism_1']),
-                vintageimprovements.laser_cutting(
-                    'kubejs:electron_tube_substrate',
-                    'kubejs:electron_tube_substrate',
-                    5000,
-                    250
-                )
-            ],
-            'kubejs:electron_tube_substrate',
-            1
-        )
-    }
 
     function replaceSlimeBall(id) {
         event.replaceInput(
@@ -102,7 +65,7 @@ ServerEvents.recipes(event => {
     }
 
     replaceSlimeBall('create:crafting/kinetics/sticky_mechanical_piston')
-    replaceSlimeBall('create:crafting/kinetics/sticker')    
+    replaceSlimeBall('create:crafting/kinetics/sticker')
     replaceSlimeBall('createaddition:crafting/large_connector_gold')
     replaceSlimeBall('createaddition:crafting/large_connector_electrum')
     replaceSlimeBall('create_sa:slime_boots_recipe')
@@ -124,7 +87,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         {id: 'vintageimprovements:mechanical_crafting/laser'},
         'minecraft:glowstone_dust',
-        'kubejs:colorful_mechanism'
+        'kubejs:iridescent_mechanism'
     )
 
     event.replaceInput(
@@ -144,14 +107,6 @@ ServerEvents.recipes(event => {
         'create:cogwheel',
         'createaddition:capacitor'
     )
-
-    // // 石英激光切割
-    // vintageimprovements.laser_cutting(
-    //     Item.of('minecraft:quartz'),
-    //     'minecraft:white_dye',
-    //     2000,
-    //     200
-    // ).id('kubejs:brass_changes/laser_cutting_quartz_from_white_dye')
 
     create.filling(
         'minecraft:quartz',
@@ -178,14 +133,6 @@ ServerEvents.recipes(event => {
             'minecraft:chorus_fruit'
         ]
     ).id('kubejs:brass_changes/deploying_chorium_ingot_from_electrum_and_chorus_fruit')
-
-    // create.deploying(
-    //     'createcasing:creative_casing',
-    //     [
-    //         'create:industrial_iron_block',
-    //         'createcasing:chorium_ingot'
-    //     ]
-    // )
 
     // 自定义应用配方 - 创造外壳
     event.custom(
@@ -349,7 +296,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         {id: 'vintageimprovements:craft/belt_grinder'},
         'vintageimprovements:grinder_belt',
-        'kubejs:cardboard_mechanism'
+        'kubejs:paper_mechanism'
     )
 
     event.remove({id: 'create_dd:compacting/industrial_iron_ingot'})
@@ -402,4 +349,26 @@ ServerEvents.recipes(event => {
         'create:mechanical_bearing',
         'minecraft:slime_block'
     )
+})
+
+// ==================== 科技解锁配方 ====================
+
+TechSystemEvents.onTechLoad('cmm:electron_tube_advanced', event => {
+    const { create, vintageimprovements } = event.recipes
+
+    create.sequenced_assembly(
+        '3x create:electron_tube',
+        'create:polished_rose_quartz',
+        [
+            create.deploying('kubejs:electron_tube_substrate', ['kubejs:electron_tube_substrate', 'kubejs:sturdy_knob']),
+            vintageimprovements.laser_cutting(
+                'kubejs:electron_tube_substrate',
+                'kubejs:electron_tube_substrate',
+                5000,
+                250
+            )
+        ],
+        'kubejs:electron_tube_substrate',
+        1
+    ).id('kubejs:electron_tube_advanced/sequenced_assembly')
 })

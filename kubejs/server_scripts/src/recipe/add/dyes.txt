@@ -5,12 +5,12 @@ ServerEvents.recipes(event => {
         create.mixing(
             [
                 output_dye,
-                'kubejs:colorful_mechanism'
+                'kubejs:iridescent_mechanism'
             ],
             [
                 dye,
                 Fluid.of('minecraft:water', 200),
-                'kubejs:colorful_mechanism'
+                'kubejs:iridescent_mechanism'
             ]
         ).heated().id(`kubejs:dyes/mixing_${dye.split(':')[1]}_to_${output_dye.split(':')[1]}`)
 
@@ -71,11 +71,11 @@ ServerEvents.recipes(event => {
     vintageimprovements.pressurizing(
         [
             'minecraft:white_dye',
-            'kubejs:colorful_mechanism'
+            'kubejs:iridescent_mechanism'
         ],
         [
             Fluid.of('minecraft:water', 200),
-            'kubejs:colorful_mechanism'
+            'kubejs:iridescent_mechanism'
         ]
-    ).secondaryFluidInput(0).id('kubejs:dyes/pressurizing_white_dye_with_colorful_mechanism')
+    ).secondaryFluidInput(0).id('kubejs:dyes/pressurizing_white_dye_with_iridescent_mechanism')
 })

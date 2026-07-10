@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
                 [Fluid.of('minecraft:lava', 250), 'create:blaze_cake_base']),
 
             create.filling('create:blaze_cake_base',
-                [Fluid.of('kubejs:heat_lava', 250), 'create:blaze_cake_base']),
+                [Fluid.of('kubejs:high_temperature_magma', 250), 'create:blaze_cake_base']),
 
             create.deploying('create:blaze_cake_base',
                 ['create:blaze_cake_base', 'minecraft:blaze_powder'])
@@ -55,12 +55,12 @@ ServerEvents.recipes(event => {
 
     kubejs.mechanical_furnace_recipe()
         .inputItems('minecraft:blaze_powder')
-        .inputFluids('minecraft:lava 2500', 'kubejs:heat_lava 2500')
-        .outputItems('kubejs:precision_mechanism_4')
+        .inputFluids('minecraft:lava 2500', 'kubejs:high_temperature_magma 2500')
+        .outputItems('kubejs:solar_particle')
         .dimension('minecraft:the_nether')
         .duration(80)
         .technology('the_nether_recipes')
-        .id('kubejs:mechanical_furnace_recipe/the_nether_recipes/precision_mechanism_4')
+        .id('kubejs:mechanical_furnace_recipe/the_nether_recipes/solar_particle')
 
     kubejs.automated_assembly_station()
         .inputItems('5x diamond', 'netherrack')

@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_ender_mechanism',
                 [
                     'kubejs:incomplete_ender_mechanism',
-                    Fluid.of('kubejs:refrigerant', 250)
+                    Fluid.of('kubejs:coolant', 250)
                 ]
             )
         ],

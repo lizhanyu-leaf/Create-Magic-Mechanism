@@ -12,19 +12,19 @@ StartupEvents.registry('fluid', event => {
     event.create('magenta_strange_potion').thinTexture(0xd33f8c)
     event.create('magic_potion').thinTexture(0x8f34ff)
 
-    event.create('heat_lava').thickTexture(0xe65120).noBucket()
-    event.create('soul_lava').thickTexture(0x01a7ac).noBucket()
+    event.create('high_temperature_magma').thickTexture(0xe65120).noBucket()
+    event.create('soul_magma').thickTexture(0x01a7ac).noBucket()
 
-    event.create('refrigerant').thinTexture(0x9afcff)
+    event.create('coolant').thinTexture(0x9afcff)
 
-    event.create('assembly_molten_andesite_alloy').thickTexture(0x829789)
-    event.create('assembly_molten_brass').thickTexture(0xfbcc68)
-    event.create('assembly_molten_zinc').thickTexture(0xb9e9c1)
-    event.create('assembly_molten_iron').thickTexture(0xaf8e77)
-    event.create('assembly_molten_gold').thickTexture(0xfdff76)
-    event.create('assembly_molten_copper').thickTexture(0xeb7e56)
-    event.create('assembly_molten_diamond').thickTexture(0x5bf3e0)
-    event.create('assembly_molten_stone').thickTexture(0xb5b5b5)
+    event.create('aggregated_molten_andesite_alloy').thickTexture(0x829789)
+    event.create('aggregated_molten_brass').thickTexture(0xfbcc68)
+    event.create('aggregated_molten_zinc').thickTexture(0xb9e9c1)
+    event.create('aggregated_molten_iron').thickTexture(0xaf8e77)
+    event.create('aggregated_molten_gold').thickTexture(0xfdff76)
+    event.create('aggregated_molten_copper').thickTexture(0xeb7e56)
+    event.create('aggregated_molten_diamond').thickTexture(0x5bf3e0)
+    event.create('aggregated_molten_stone').thickTexture(0xb5b5b5)
 
     // 特殊贴图
     event.create('charged_essence').translucent()

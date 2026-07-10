@@ -159,8 +159,8 @@ ServerEvents.recipes(event => {
     )
 
     mechanism_pack(
-        'kubejs:colorful_mechanism',
-        'kubejs:pack_colorful_mechanism',
+        'kubejs:iridescent_mechanism',
+        'kubejs:pack_iridescent_mechanism',
         32
     )
 

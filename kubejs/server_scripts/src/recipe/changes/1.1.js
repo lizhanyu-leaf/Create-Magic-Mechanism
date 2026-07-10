@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { input: 'minecraft:dried_kelp'},
         'minecraft:dried_kelp',
-        'kubejs:precision_mechanism_1'
+        'kubejs:sturdy_knob'
     )
 
     minecraft.crafting_shaped(
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
         'vintageimprovements:spring_coiling_machine',
         [
             'create:andesite_casing',
-            'kubejs:precision_mechanism_2'
+            'kubejs:precision_redstone'
         ]
     ).id('kubejs:deploying/1.1/spring_coiling_machine')
 
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         'create:spout',
         [
             'create:copper_casing',
-            'kubejs:precision_mechanism_1'
+            'kubejs:sturdy_knob'
         ]
     ).id('kubejs:deploying/1.1/spout')
 
@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
         'vintageimprovements:belt_grinder',
         [
             'create:andesite_casing',
-            'kubejs:cardboard_mechanism'
+            'kubejs:paper_mechanism'
         ]
     ).id('kubejs:deploying/1.1/belt_grinder')
 
@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
         'vintageimprovements:spring_coiling_machine',
         [
             'create:andesite_casing',
-            'kubejs:precision_mechanism_2'
+            'kubejs:precision_redstone'
         ], 120
     ).id('kubejs:synthesis/1.1/spring_coiling_machine')
 
@@ -267,7 +267,7 @@ ServerEvents.recipes(event => {
         'create:spout',
         [
             'create:copper_casing',
-            'kubejs:precision_mechanism_1'
+            'kubejs:sturdy_knob'
         ], 120
     ).id('kubejs:synthesis/1.1/spout')
 
@@ -283,7 +283,7 @@ ServerEvents.recipes(event => {
         'vintageimprovements:belt_grinder',
         [
             'create:andesite_casing',
-            'kubejs:cardboard_mechanism'
+            'kubejs:paper_mechanism'
         ], 120
     ).id('kubejs:synthesis/1.1/belt_grinder')
 
@@ -317,7 +317,7 @@ ServerEvents.recipes(event => {
                 ],
                 inputs.concat([
                     'create:andesite_casing',
-                    'kubejs:precision_mechanism_1'
+                    'kubejs:sturdy_knob'
                 ])
             ).technology('basic_transmission')
             .id(`kubejs:1.1/mixing_${output_box.replace(':', '_')}_from_casing`)
@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
             ],
             inputs.concat([
                 'create:andesite_casing',
-                'kubejs:precision_mechanism_1'
+                'kubejs:sturdy_knob'
             ])
         ).technology('basic_transmission')
         .id(`kubejs:1.1/compacting_${output_box.replace(':', '_')}_from_casing`)
@@ -457,7 +457,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { id: 'create:crafting/kinetics/smart_fluid_pipe'},
         'create:electron_tube',
-        'kubejs:precision_mechanism_2'
+        'kubejs:precision_redstone'
     )
 
     event.replaceInput(
@@ -480,8 +480,8 @@ ServerEvents.recipes(event => {
             'aaa'
         ],
         {
-            a: 'kubejs:precision_mechanism_1',
-            b: 'kubejs:precision_mechanism_2'
+            a: 'kubejs:sturdy_knob',
+            b: 'kubejs:precision_redstone'
         }
     ).id('kubejs:1.1/shaped_ftb_screen_1_from_precison_mechanisms')
 
@@ -521,12 +521,12 @@ ServerEvents.recipes(event => {
     ).id('kubejs:1.1/deploying_redstone_torch_from_redstone_and_stick')
 
     create.compacting(
-        Item.of('kubejs:precision_mechanism_2').withChance(0.75),
+        Item.of('kubejs:precision_redstone').withChance(0.75),
         [
             '2x minecraft:redstone_block',
             'create:golden_sheet'
         ]
-    ).id('kubejs:compacting/1.1/precision_mechanism_2_from_redstone_blocks')
+    ).id('kubejs:compacting/1.1/precision_redstone_from_redstone_blocks')
 
     event.replaceInput(
         {id: 'create:crafting/kinetics/mechanical_press'},
@@ -661,19 +661,19 @@ ServerEvents.recipes(event => {
         processingTime: 100,
         results: [
             {
-                fluid: 'kubejs:assembly_molten_andesite_alloy',
+                fluid: 'kubejs:aggregated_molten_andesite_alloy',
                 amount: 5
             },
             {
-                fluid: 'kubejs:assembly_molten_iron',
+                fluid: 'kubejs:aggregated_molten_iron',
                 amount: 5
             },
             {
-                fluid: 'kubejs:assembly_molten_copper',
+                fluid: 'kubejs:aggregated_molten_copper',
                 amount: 5
             },
             {
-                fluid: 'kubejs:assembly_molten_gold',
+                fluid: 'kubejs:aggregated_molten_gold',
                 amount: 5
             },
             {

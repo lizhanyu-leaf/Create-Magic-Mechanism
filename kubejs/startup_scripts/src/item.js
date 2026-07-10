@@ -13,22 +13,22 @@ StartupEvents.registry('item', event => {
     event.create('precision_mechanism_substrate')
         .texture('kubejs:item/precision_mechanism_substrate')
 
-    // 精密构建 第一部分
-    event.create('precision_mechanism_1')
+    // 精密构建 第一部分 - 坚固旋钮
+    event.create('sturdy_knob')
         .texture('kubejs:item/precision_mechanism_1')
 
-    // 精密构建 第二部分
-    event.create('precision_mechanism_2')
+    // 精密构建 第二部分 - 精密红石
+    event.create('precision_redstone')
         .texture('kubejs:item/precision_mechanism_2')
 
-    // 精密构建 第三部分（涵盖未完成）
-    event.create('incomplete_precision_mechanism_3')
+    // 精密构建 第三部分（涵盖未完成） - 精密齿轮组
+    event.create('incomplete_precision_gear_set')
         .texture('kubejs:item/incomplete_precision_mechanism_3')
-    event.create('precision_mechanism_3')
+    event.create('precision_gear_set')
         .texture('kubejs:item/precision_mechanism_3')
 
-    // 精密构建 第四部分
-    event.create('precision_mechanism_4')
+    // 精密构建 第四部分 - 太阳粒子
+    event.create('solar_particle')
         .texture('kubejs:item/precision_mechanism_4')
 
     event.create('loose_precision_mechanism')
@@ -53,10 +53,10 @@ StartupEvents.registry('item', event => {
     event.create('electron_tube_substrate')
         .texture('kubejs:item/electron_tube_substrate')
 
-    event.create('colorful_mechanism')
+    event.create('iridescent_mechanism')
         .texture('kubejs:item/colorful_mechanism')
 
-    event.create('incomplete_colorful_mechanism', 'create:sequenced_assembly')
+    event.create('incomplete_iridescent_mechanism', 'create:sequenced_assembly')
         .texture('kubejs:item/incomplete_colorful_mechanism')
 
     event.create('mechanical_core')
@@ -65,10 +65,10 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_mechanical_core', 'create:sequenced_assembly')
         .texture('kubejs:item/incomplete_mechanical_core')
 
-    event.create('incomplete_precision_mechanism_1')
+    event.create('incomplete_sturdy_knob')
         .texture('kubejs:item/incomplete_precision_mechanism_1')
 
-    event.create('incomplete_precision_mechanism_2')
+    event.create('incomplete_precision_redstone')
         .texture('kubejs:item/incomplete_precision_mechanism_2')
 
     event.create('incomplete_redstone_precision_mechanism', 'create:sequenced_assembly')
@@ -83,7 +83,7 @@ StartupEvents.registry('item', event => {
     event.create('bedrock_powder')
         .texture('kubejs:item/bedrock_powder')
 
-    event.create('raw_bedrock')
+    event.create('unshaped_bedrock')
         .texture('kubejs:item/raw_bedrock')
 
     event.create('bedrock_ingot')
@@ -132,32 +132,32 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_magic_mechanism', 'create:sequenced_assembly')
         .texture('kubejs:item/incomplete_magic_mechanism')
 
-    event.create('assembly_block')
+    event.create('mineral_aggregate_block')
         .texture('kubejs:item/assembly_block')
 
-    event.create('incomplete_assembly_block')
+    event.create('incomplete_mineral_aggregate_block')
         .texture('kubejs:item/incomplete_assembly_block')
 
-    event.create('base_catalyst')
+    event.create('catalyst_pedestal')
         .texture('kubejs:item/base_catalyst')
 
-    event.create('incomplete_base_catalyst')
+    event.create('incomplete_catalyst_pedestal')
         .texture('kubejs:item/incomplete_base_catalyst')
 
     event.create('catalyst_blaze')
         .maxDamage(50)
         .texture('kubejs:item/catalyst_blaze')
 
-    event.create('ice_powder')
+    event.create('cryogenic_powder')
         .texture('kubejs:item/ice_powder')
 
-    event.create('incomplete_ice_powder')
+    event.create('incomplete_cryogenic_powder')
         .texture('kubejs:item/incomplete_ice_powder')
 
     event.create('pack')
     event.create('pack_open')
 
-    event.create('cardboard_mechanism')
+    event.create('paper_mechanism')
         .texture('kubejs:item/cardboard_mechanism')
 
     event.create('pack_stone')
@@ -222,7 +222,7 @@ StartupEvents.registry('item', event => {
     event.create('pack_magic_potion')
         .texture('kubejs:item/pack_magic_potion')
 
-    event.create('pack_colorful_mechanism')
+    event.create('pack_iridescent_mechanism')
         .texture('kubejs:item/pack_colorful_mechanism')
 
     event.create('pack_blaze_mechanism')

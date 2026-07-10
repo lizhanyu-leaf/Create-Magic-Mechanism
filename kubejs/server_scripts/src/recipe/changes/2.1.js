@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     create.mixing(
         Fluid.of('kubejs:blaze_essence', 250),
         [
-            Fluid.of('kubejs:heat_lava', 1000),
+            Fluid.of('kubejs:high_temperature_magma', 1000),
             Fluid.of('starbunclemania:source_fluid', 250),
             'kubejs:pack_blaze_mechanism'
         ]

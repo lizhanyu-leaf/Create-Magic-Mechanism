@@ -3,24 +3,24 @@ ServerEvents.recipes(event => {
     const { create, vintageimprovements } = event.recipes
 
     create.sequenced_assembly(
-        'kubejs:base_catalyst',
+        'kubejs:catalyst_pedestal',
         'kubejs:bedrock_sheet',
         [
-            vintageimprovements.curving('kubejs:incomplete_base_catalyst', 'kubejs:incomplete_base_catalyst')
+            vintageimprovements.curving('kubejs:incomplete_catalyst_pedestal', 'kubejs:incomplete_catalyst_pedestal')
                 .head('create:blaze_cake'),
 
-            create.deploying('kubejs:incomplete_base_catalyst', ['kubejs:incomplete_base_catalyst', 'kubejs:ice_powder']),
+            create.deploying('kubejs:incomplete_catalyst_pedestal', ['kubejs:incomplete_catalyst_pedestal', 'kubejs:cryogenic_powder']),
 
-            vintageimprovements.laser_cutting('kubejs:incomplete_base_catalyst', 'kubejs:incomplete_base_catalyst', 1000000, 10000)
+            vintageimprovements.laser_cutting('kubejs:incomplete_catalyst_pedestal', 'kubejs:incomplete_catalyst_pedestal', 1000000, 10000)
         ],
-        'kubejs:incomplete_base_catalyst', 1
-    ).id('kubejs:catalyst/base_catalyst')
+        'kubejs:incomplete_catalyst_pedestal', 1
+    ).id('kubejs:catalyst/catalyst_pedestal')
 
     function to_catalyst(mechanism, catalyst) {
         create.deploying(
             catalyst,
             [
-                'kubejs:base_catalyst',
+                'kubejs:catalyst_pedestal',
                 mechanism
             ]
         ).id('kubejs:to_catalyst/' + mechanism.split(':')[1])

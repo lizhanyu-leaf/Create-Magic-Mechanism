@@ -6,5 +6,193 @@
   "cmm:steel_tech_pack": {
     "item_id": "steel_tech_pack_unlocker",
     "icon": "minecraft:light_gray_wool"
+  },
+  "cmm:precision_gear_set": {
+    "item_id": "precision_gear_set_unlocker",
+    "icon": "kubejs:precision_gear_set"
+  },
+  "cmm:seed_oil": {
+    "item_id": "seed_oil_unlocker",
+    "icon": "createaddition:seed_oil"
+  },
+  "cmm:steel_smelting": {
+    "item_id": "steel_smelting_unlocker",
+    "icon": "create:scorching_bedrock_rule"
+  },
+  "cmm:steel_tech_pack_advanced": {
+    "item_id": "steel_tech_pack_advanced_unlocker",
+    "icon": "minecraft:light_gray_wool"
+  },
+  "cmm:dye_dilution": {
+    "item_id": "dye_dilution_unlocker",
+    "icon": "minecraft:water_bucket"
+  },
+  "cmm:inductive_mechanism": {
+    "item_id": "inductive_mechanism_unlocker",
+    "icon": "create_dd:inductive_mechanism"
+  },
+  "cmm:intermediate_storage_upgrade": {
+    "item_id": "intermediate_storage_upgrade_unlocker",
+    "icon": "create:brass_crate"
+  },
+  "cmm:basic_ore_set": {
+    "item_id": "basic_ore_set_unlocker",
+    "icon": "kubejs:basic_ore_set"
+  },
+  "cmm:incomplete_precision_gear_set": {
+    "item_id": "incomplete_precision_gear_set_unlocker",
+    "icon": "kubejs:incomplete_precision_gear_set"
+  },
+  "cmm:package_system": {
+    "item_id": "package_system_unlocker",
+    "icon": "kubejs:pack"
+  },
+  "cmm:iridescent_mechanism": {
+    "item_id": "iridescent_mechanism_unlocker",
+    "icon": "kubejs:iridescent_mechanism"
+  },
+  "cmm:mechancal_tech_pack_advanced": {
+    "item_id": "mechancal_tech_pack_advanced_unlocker",
+    "icon": "minecraft:brown_wool"
+  },
+  "cmm:redstone_precision_mechanism": {
+    "item_id": "redstone_precision_mechanism_unlocker",
+    "icon": "kubejs:redstone_precision_mechanism"
+  },
+  "cmm:smart_storage": {
+    "item_id": "smart_storage_unlocker",
+    "icon": "create:creative_crates"
+  },
+  "cmm:basic_storage_upgrade": {
+    "item_id": "basic_storage_upgrade_unlocker",
+    "icon": "create:reinforced_crate"
+  },
+  "cmm:basic_transmission": {
+    "item_id": "basic_transmission_unlocker",
+    "icon": "create:shaft"
+  },
+  "cmm:mineral_block_dyeing": {
+    "item_id": "mineral_block_dyeing_unlocker",
+    "icon": "minecraft:white_dye"
+  },
+  "cmm:blaze_tech_pack": {
+    "item_id": "blaze_tech_pack_unlocker",
+    "icon": "minecraft:orange_wool"
+  },
+  "cmm:zinc_smelting": {
+    "item_id": "zinc_smelting_unlocker",
+    "icon": "create:zinc_ingot"
+  },
+  "cmm:electron_tube": {
+    "item_id": "electron_tube_unlocker",
+    "icon": "create:electron_tube"
+  },
+  "cmm:ore_set": {
+    "item_id": "ore_set_unlocker",
+    "icon": "kubejs:ore_set"
+  },
+  "cmm:mb_mechanical_furnace": {
+    "item_id": "mb_mechanical_furnace_unlocker",
+    "icon": "create:mechanical_furnace"
+  },
+  "cmm:silver_smelting": {
+    "item_id": "silver_smelting_unlocker",
+    "icon": "minecraft:silver_ingot"
+  },
+  "cmm:mechanical_mechanism": {
+    "item_id": "mechanical_mechanism_unlocker",
+    "icon": "create:precision_mechanism"
+  },
+  "cmm:bedrock": {
+    "item_id": "bedrock_unlocker",
+    "icon": "kubejs:bedrock_ingot"
+  },
+  "cmm:the_nether_recipes": {
+    "item_id": "the_nether_recipes_unlocker",
+    "icon": "minecraft:netherrack"
+  },
+  "cmm:dye_refining": {
+    "item_id": "dye_refining_unlocker",
+    "icon": "create:spout"
+  },
+  "cmm:redstone_circuit": {
+    "item_id": "redstone_circuit_unlocker",
+    "icon": "kubejs:redstone_sheet"
+  },
+  "cmm:brass": {
+    "item_id": "brass_unlocker",
+    "icon": "create:brass_ingot"
+  },
+  "cmm:tin_smelting": {
+    "item_id": "tin_smelting_unlocker",
+    "icon": "minecraft:tin_ingot"
+  },
+  "cmm:industrial_iron_smelting": {
+    "item_id": "industrial_iron_smelting_unlocker",
+    "icon": "minecraft:blast_furnace"
+  },
+  "cmm:coolant": {
+    "item_id": "coolant_unlocker",
+    "icon": "kubejs:coolant_bucket"
+  },
+  "cmm:obsidian_smelting": {
+    "item_id": "obsidian_smelting_unlocker",
+    "icon": "minecraft:obsidian"
+  },
+  "cmm:blaze_mechanism": {
+    "item_id": "blaze_mechanism_unlocker",
+    "icon": "kubejs:blaze_mechanism"
+  },
+  "cmm:dye_charging": {
+    "item_id": "dye_charging_unlocker",
+    "icon": "create:millstone"
+  },
+  "cmm:sturdy_mechanism": {
+    "item_id": "sturdy_mechanism_unlocker",
+    "icon": "kubejs:sturdy_mechanism"
+  },
+  "cmm:redstone_tech_pack": {
+    "item_id": "redstone_tech_pack_unlocker",
+    "icon": "minecraft:red_wool"
+  },
+  "cmm:andesite_input_and_output": {
+    "item_id": "andesite_input_and_output_unlocker",
+    "icon": "create:andesite_funnel"
+  },
+  "cmm:chain_logistics": {
+    "item_id": "chain_logistics_unlocker",
+    "icon": "create:mechanical_arm"
+  },
+  "cmm:bronze_smelting": {
+    "item_id": "bronze_smelting_unlocker",
+    "icon": "unify:bronze_ingot"
+  },
+  "cmm:precision_mechanism": {
+    "item_id": "precision_mechanism_unlocker",
+    "icon": "create:precision_mechanism"
+  },
+  "cmm:mb_automated_assembly_station": {
+    "item_id": "mb_automated_assembly_station_unlocker",
+    "icon": "kubejs:automated_assembly_station"
+  },
+  "cmm:strange_potion": {
+    "item_id": "strange_potion_unlocker",
+    "icon": "kubejs:strange_potion_bucket"
+  },
+  "cmm:sturdy_sheet_smithing": {
+    "item_id": "sturdy_sheet_smithing_unlocker",
+    "icon": "minecraft:smithing_table"
+  },
+  "cmm:redstone_tech_pack_advanced": {
+    "item_id": "redstone_tech_pack_advanced_unlocker",
+    "icon": "minecraft:red_wool"
+  },
+  "cmm:unlock_sturdy_knob": {
+    "item_id": "unlock_sturdy_knob_unlocker",
+    "icon": "kubejs:sturdy_knob"
+  },
+  "cmm:set_tray": {
+    "item_id": "set_tray_unlocker",
+    "icon": "kubejs:set_tray"
   }
 }

@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { input: 'vintageimprovements:spring_coiling_machine_wheel' },
         'vintageimprovements:spring_coiling_machine_wheel',
-        'kubejs:precision_mechanism_2'
+        'kubejs:precision_redstone'
     )
 
     event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
@@ -94,15 +94,15 @@ ServerEvents.recipes(event => {
     vintageimprovements.pressurizing(
         [
             'minecraft:white_dye',
-            'kubejs:colorful_mechanism',
+            'kubejs:iridescent_mechanism',
             Fluid.of('kubejs:iridescent_concentrate', 125)
         ],
         [
             Fluid.of('minecraft:water', 200),
             Fluid.of('kubejs:strange_potion', 1000),
-            'kubejs:colorful_mechanism'
+            'kubejs:iridescent_mechanism'
         ]
-    ).processingTime(90).secondaryFluidInput(0).secondaryFluidOutput(0).id('kubejs:pressurizing/dyes/white_dye_with_colorful_mechanism')
+    ).processingTime(90).secondaryFluidInput(0).secondaryFluidOutput(0).id('kubejs:pressurizing/dyes/white_dye_with_iridescent_mechanism')
 
     event.custom({
         type: 'createaddition:liquid_burning',
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
     create.sequenced_assembly(
         'kubejs:iridescent_alloy',
         'create:andesite_alloy',
-        [vintageimprovements.pressurizing('create:andesite_alloy',[Fluid.of('kubejs:assembly_molten_gold', 5),'create:andesite_alloy'])].concat(
+        [vintageimprovements.pressurizing('create:andesite_alloy',[Fluid.of('kubejs:aggregated_molten_gold', 5),'create:andesite_alloy'])].concat(
             dyes.map(dye => {
                 return create.filling('create:andesite_alloy', ['create:andesite_alloy', Fluid.of(`kubejs:charged_${dye}_solution`, 125)])})),
         'create:andesite_alloy',
@@ -193,11 +193,11 @@ ServerEvents.recipes(event => {
     vintageimprovements.pressurizing(
         [
             'create_dd:chromatic_compound',
-            'kubejs:colorful_mechanism',
+            'kubejs:iridescent_mechanism',
             Fluid.of('minecraft:water', 1000)
         ],
         [
-            'kubejs:colorful_mechanism',
+            'kubejs:iridescent_mechanism',
             '16x create:powdered_obsidian',
             'create:polished_rose_quartz',
             'kubejs:iridescent_alloy',

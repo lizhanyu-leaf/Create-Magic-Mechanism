@@ -10,11 +10,11 @@ function customRewardGetTechnology(id, technology_id) {
 }
 
 // 1.1
-customRewardGetTechnology('23C2C62A621EECCF', 'simple_precision_mechanism_3_recipe')
-customRewardGetTechnology('0CDE82D173261B8A', 'incomplete_precision_mechanism_3_cutting_recipe')
+customRewardGetTechnology('23C2C62A621EECCF', 'simple_precision_gear_set_recipe')
+customRewardGetTechnology('0CDE82D173261B8A', 'incomplete_precision_gear_set_cutting_recipe')
 // 1
 customRewardGetTechnology('6AF8F852B10CC475', 'redstone_sheet_advanced')
-customRewardGetTechnology('53EA3419BC932A84', 'precision_mechanism_2_advanced')
+customRewardGetTechnology('53EA3419BC932A84', 'precision_redstone_advanced')
 customRewardGetTechnology('6EE640CE65C5D1D3', 'redstone_precision_mechanism_laser_cutting_recipe')
 customRewardGetTechnology('06B0A75BEB9D8C9E', 'sturdy_sheet_simple_recipe')
 customRewardGetTechnology('5CBFA5EEFE60F599', 'electron_tube_advanced')

@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             vintageimprovements.vibrating('kubejs:incomplete_slime_mechanism', 'kubejs:incomplete_slime_mechanism'),
             vintageimprovements.laser_cutting('kubejs:incomplete_slime_mechanism', 'kubejs:incomplete_slime_mechanism', 200, 10),
             create.deploying('kubejs:incomplete_slime_mechanism', ['kubejs:incomplete_slime_mechanism', 'minecraft:slime_ball']),
-            vintageimprovements.vacuumizing('kubejs:incomplete_slime_mechanism', ['kubejs:incomplete_slime_mechanism', Fluid.of('kubejs:refrigerant', 1000)]),
+            vintageimprovements.vacuumizing('kubejs:incomplete_slime_mechanism', ['kubejs:incomplete_slime_mechanism', Fluid.of('kubejs:coolant', 1000)]),
             create.filling('kubejs:incomplete_slime_mechanism', ['kubejs:incomplete_slime_mechanism', Fluid.of('kubejs:charged_lime_dye_solution', 125)])
         ],
         'kubejs:incomplete_slime_mechanism',

@@ -1,8 +1,9 @@
-ServerEvents.recipes(event => { 
+// ==================== 基础坚固板配方 ====================
 
+ServerEvents.recipes(event => {
     const { create } = event.recipes
 
-    // 黑曜石装配（现在添加.id()）
+    // 黑曜石装配
     create.sequenced_assembly(
         'minecraft:obsidian',
         'create:powdered_obsidian',
@@ -31,21 +32,20 @@ ServerEvents.recipes(event => {
             'minecraft:magma_block'
         ]
     ).id('kubejs:sturdy_sheet/filling_obsidian_from_magma_block')
+})
 
-    // 坚固板材加压
-    //sturdy_sheet_simple_recipe
+// ==================== 科技解锁配方 ====================
 
-    if (TechnologyTools.isActive('sturdy_sheet_simple_recipe')) {event.recipes.vintageimprovements.pressurizing(
-            [
-                'create:sturdy_sheet',
-                'kubejs:sturdy_mechanism'
-            ],
-            [
-                Fluid.of('minecraft:lava', 250),
-                'kubejs:precision_mechanism_1',
-                'kubejs:sturdy_mechanism'
-            ]
-        ).id('kubejs:sturdy_sheet/pressurizing_sturdy_sheet_with_mechanism')
-    }
-
+TechSystemEvents.onTechLoad('cmm:sturdy_sheet_simple_recipe', event => {
+    event.recipes.vintageimprovements.pressurizing(
+        [
+            'create:sturdy_sheet',
+            'kubejs:sturdy_mechanism'
+        ],
+        [
+            Fluid.of('minecraft:lava', 250),
+            'kubejs:sturdy_knob',
+            'kubejs:sturdy_mechanism'
+        ]
+    ).id('kubejs:sturdy_sheet/pressurizing_sturdy_sheet_with_mechanism')
 })

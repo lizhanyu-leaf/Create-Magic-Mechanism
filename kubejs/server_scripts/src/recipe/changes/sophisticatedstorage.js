@@ -44,6 +44,6 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         {mod: 'sophisticatedstorage'},
         '#forge:stone',
-        'kubejs:precision_mechanism_1'
+        'kubejs:sturdy_knob'
     )
 })

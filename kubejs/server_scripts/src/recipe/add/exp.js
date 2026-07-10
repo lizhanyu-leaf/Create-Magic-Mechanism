@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_experience_mechanism',
                 [
                     'kubejs:incomplete_experience_mechanism',
-                    Fluid.of('kubejs:refrigerant', 150)
+                    Fluid.of('kubejs:coolant', 150)
                 ]
             )
         ],

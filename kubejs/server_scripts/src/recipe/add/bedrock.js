@@ -1,3 +1,5 @@
+// ==================== 基础配方 ====================
+
 ServerEvents.recipes(event => {
     const { create, vintageimprovements } = event.recipes
 
@@ -16,29 +18,6 @@ ServerEvents.recipes(event => {
         'minecraft:cobblestone'
     ).processingTime(1).id('kubejs:bedrock/cutting_stone_from_cobblestone')
 
-    // 深板岩应用基岩粉末
-    // bedrock_advanced
-    if (TechnologyTools.isActive('bedrock_advanced')) {
-        event.custom(
-            {
-                type: 'create:item_application',
-                ingredients: [
-                    {
-                        item: 'minecraft:deepslate'
-                    },
-                    {
-                        item: 'kubejs:bedrock_powder'
-                    }
-                ],
-                results: [
-                    {
-                        item: 'minecraft:bedrock'
-                    }
-                ]
-            }
-        ).id('kubejs:bedrock/item_application_bedrock_from_deepslate_and_powder')
-    }
-
     // 远古残骸加压
     event.remove({id: "minecraft:netherite_ingot"})
     vintageimprovements.pressurizing(
@@ -53,4 +32,27 @@ ServerEvents.recipes(event => {
             Fluid.of('minecraft:lava', 1000)
         ]
     ).superheated().id('kubejs:bedrock/pressurizing_netherite_ingot_and_ancient_debris')
+})
+
+// ==================== 科技解锁配方 ====================
+
+TechSystemEvents.onTechLoad('cmm:bedrock_advanced', event => {
+    event.custom(
+        {
+            type: 'create:item_application',
+            ingredients: [
+                {
+                    item: 'minecraft:deepslate'
+                },
+                {
+                    item: 'kubejs:bedrock_powder'
+                }
+            ],
+            results: [
+                {
+                    item: 'minecraft:bedrock'
+                }
+            ]
+        }
+    ).id('kubejs:bedrock/item_application_bedrock_from_deepslate_and_powder')
 })

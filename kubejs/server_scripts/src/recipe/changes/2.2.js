@@ -3,114 +3,114 @@ ServerEvents.recipes(event => {
 
     // iron
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_iron', 10),
+        Fluid.of('kubejs:aggregated_molten_iron', 10),
         [
             'kubejs:pack_iron',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
-    ).secondaryFluidInput(0).id('kubejs:pressurizing/aggregation_changes/assembly_molten_iron_from_pack')
+    ).secondaryFluidInput(0).id('kubejs:pressurizing/aggregation_changes/aggregated_molten_iron_from_pack')
 
     create.compacting(
         ['12x iron_ingot'],
-        Fluid.of('kubejs:assembly_molten_iron', 1)
+        Fluid.of('kubejs:aggregated_molten_iron', 1)
     ).id('kubejs:compacting/aggregation_changes/iron_ingot_from_molten')
 
     // gold
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_gold', 10),
+        Fluid.of('kubejs:aggregated_molten_gold', 10),
         [
             'kubejs:pack_gold',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
     ).secondaryFluidInput(0)
 
     create.compacting(
         ['12x gold_ingot'],
-        Fluid.of('kubejs:assembly_molten_gold', 1)
+        Fluid.of('kubejs:aggregated_molten_gold', 1)
     ).id('kubejs:compacting/aggregation_changes/gold_ingot_from_molten')
 
     // diamond
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_diamond', 10),
+        Fluid.of('kubejs:aggregated_molten_diamond', 10),
         [
             'kubejs:pack_diamond',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
     ).secondaryFluidInput(0)
 
     create.compacting(
         ['12x diamond'],
-        Fluid.of('kubejs:assembly_molten_diamond', 1)
+        Fluid.of('kubejs:aggregated_molten_diamond', 1)
     ).id('kubejs:compacting/aggregation_changes/diamond_from_molten')
 
     // copper
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_copper', 10),
+        Fluid.of('kubejs:aggregated_molten_copper', 10),
         [
             'kubejs:pack_copper',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
     ).secondaryFluidInput(0)
 
     create.compacting(
         ['12x copper_ingot'],
-        Fluid.of('kubejs:assembly_molten_copper', 1)
+        Fluid.of('kubejs:aggregated_molten_copper', 1)
     ).id('kubejs:compacting/aggregation_changes/copper_ingot_from_molten')
 
     // andesite_alloy
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_andesite_alloy', 10),
+        Fluid.of('kubejs:aggregated_molten_andesite_alloy', 10),
         [
             'kubejs:pack_andesite_alloy',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
     ).secondaryFluidInput(0)
 
     create.compacting(
         ['12x create:andesite_alloy'],
-        Fluid.of('kubejs:assembly_molten_andesite_alloy', 1)
+        Fluid.of('kubejs:aggregated_molten_andesite_alloy', 1)
     ).id('kubejs:compacting/aggregation_changes/andesite_alloy_from_molten')
 
     // brass
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_brass', 10),
+        Fluid.of('kubejs:aggregated_molten_brass', 10),
         [
             'kubejs:pack_brass',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
     ).secondaryFluidInput(0)
 
     create.compacting(
         ['12x create:brass_ingot'],
-        Fluid.of('kubejs:assembly_molten_brass', 1)
+        Fluid.of('kubejs:aggregated_molten_brass', 1)
     ).id('kubejs:compacting/aggregation_changes/brass_ingot_from_molten')
 
     // zinc
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_zinc', 10),
+        Fluid.of('kubejs:aggregated_molten_zinc', 10),
         [
             'kubejs:pack_zinc',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
     ).secondaryFluidInput(0)
 
     create.compacting(
         ['12x create:zinc_ingot'],
-        Fluid.of('kubejs:assembly_molten_zinc', 1)
+        Fluid.of('kubejs:aggregated_molten_zinc', 1)
     ).id('kubejs:compacting/aggregation_changes/zinc_ingot_from_molten')
 
     // stone
     vintageimprovements.pressurizing(
-        Fluid.of('kubejs:assembly_molten_stone', 10),
+        Fluid.of('kubejs:aggregated_molten_stone', 10),
         [
             'kubejs:pack_stone',
-            Fluid.of('kubejs:heat_lava', 200)
+            Fluid.of('kubejs:high_temperature_magma', 200)
         ]
     ).secondaryFluidInput(0)
 
     create.sequenced_assembly(
         [
-            'kubejs:assembly_block',
+            'kubejs:mineral_aggregate_block',
             Item.of('kubejs:pack_stone').withChance(0.01),
             Item.of('kubejs:pack_zinc').withChance(0.01),
             Item.of('kubejs:pack_brass').withChance(0.01),
@@ -120,73 +120,73 @@ ServerEvents.recipes(event => {
             Item.of('kubejs:pack_gold').withChance(0.01),
             Item.of('kubejs:pack_iron').withChance(0.01)
         ],
-        'kubejs:precision_mechanism_1',
+        'kubejs:sturdy_knob',
         [
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:assembly_molten_iron', 10)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:aggregated_molten_iron', 10)
                 ]
             ),
 
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:assembly_molten_gold', 10)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:aggregated_molten_gold', 10)
                 ]
             ),
 
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:assembly_molten_copper', 10)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:aggregated_molten_copper', 10)
                 ]
             ),
 
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:assembly_molten_diamond', 10)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:aggregated_molten_diamond', 10)
                 ]
             ),
 
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:assembly_molten_andesite_alloy', 10)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:aggregated_molten_andesite_alloy', 10)
                 ]
             ),
 
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:assembly_molten_zinc', 10)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:aggregated_molten_zinc', 10)
                 ]
             ),
 
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:assembly_molten_brass', 10)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:aggregated_molten_brass', 10)
                 ]
             ),
 
             create.filling(
-                'kubejs:incomplete_assembly_block',
+                'kubejs:incomplete_mineral_aggregate_block',
                 [
-                    'kubejs:incomplete_assembly_block',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    'kubejs:incomplete_mineral_aggregate_block',
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )
         ],
-        'kubejs:incomplete_assembly_block',
+        'kubejs:incomplete_mineral_aggregate_block',
         10
     )
 
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
                 [
                     'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
 
@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
                 [
                     'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
 
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
                 [
                     'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
-                    Fluid.of('kubejs:assembly_molten_andesite_alloy', 25)
+                    Fluid.of('kubejs:aggregated_molten_andesite_alloy', 25)
                 ]
             ),
 
@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
                 [
                     'kubejs:incomplete_aggregated_andesite_alloy_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )   
         ],
@@ -255,7 +255,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_iron_mechanism',
                 [
                     'kubejs:incomplete_aggregated_iron_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
 
@@ -271,7 +271,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_iron_mechanism',
                 [
                     'kubejs:incomplete_aggregated_iron_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
 
@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_iron_mechanism',
                 [
                     'kubejs:incomplete_aggregated_iron_mechanism',
-                    Fluid.of('kubejs:assembly_molten_iron', 25)
+                    Fluid.of('kubejs:aggregated_molten_iron', 25)
                 ]
             ),
 
@@ -295,7 +295,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_iron_mechanism',
                 [
                     'kubejs:incomplete_aggregated_iron_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )   
         ],
@@ -311,7 +311,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_gold_mechanism',
                 [
                     'kubejs:incomplete_aggregated_gold_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
             create.deploying(
@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_gold_mechanism',
                 [
                     'kubejs:incomplete_aggregated_gold_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
 
@@ -341,7 +341,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_gold_mechanism',
                 [
                     'kubejs:incomplete_aggregated_gold_mechanism',
-                    Fluid.of('kubejs:assembly_molten_gold', 25)
+                    Fluid.of('kubejs:aggregated_molten_gold', 25)
                 ]
             ),
 
@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_gold_mechanism',
                 [
                     'kubejs:incomplete_aggregated_gold_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )
         ],
@@ -365,7 +365,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_diamond_mechanism',
                 [
                     'kubejs:incomplete_aggregated_diamond_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
             create.deploying(
@@ -379,7 +379,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_diamond_mechanism',
                 [
                     'kubejs:incomplete_aggregated_diamond_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
             create.deploying(
@@ -393,7 +393,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_diamond_mechanism',
                 [
                     'kubejs:incomplete_aggregated_diamond_mechanism',
-                    Fluid.of('kubejs:assembly_molten_diamond', 25)
+                    Fluid.of('kubejs:aggregated_molten_diamond', 25)
                 ]
             ),
 
@@ -401,7 +401,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_diamond_mechanism',
                 [
                     'kubejs:incomplete_aggregated_diamond_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )
         ],
@@ -417,7 +417,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_zinc_mechanism',
                 [
                     'kubejs:incomplete_aggregated_zinc_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
             create.deploying(
@@ -431,7 +431,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_zinc_mechanism',
                 [
                     'kubejs:incomplete_aggregated_zinc_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
             create.deploying(
@@ -445,7 +445,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_zinc_mechanism',
                 [
                     'kubejs:incomplete_aggregated_zinc_mechanism',
-                    Fluid.of('kubejs:assembly_molten_zinc', 25)
+                    Fluid.of('kubejs:aggregated_molten_zinc', 25)
                 ]
             ),
 
@@ -453,7 +453,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_zinc_mechanism',
                 [
                     'kubejs:incomplete_aggregated_zinc_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )
         ],
@@ -469,7 +469,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_brass_mechanism',
                 [
                     'kubejs:incomplete_aggregated_brass_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
 
@@ -485,7 +485,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_brass_mechanism',
                 [
                     'kubejs:incomplete_aggregated_brass_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
 
@@ -501,7 +501,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_brass_mechanism',
                 [
                     'kubejs:incomplete_aggregated_brass_mechanism',
-                    Fluid.of('kubejs:assembly_molten_brass', 25)
+                    Fluid.of('kubejs:aggregated_molten_brass', 25)
                 ]
             ),
 
@@ -509,7 +509,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_brass_mechanism',
                 [
                     'kubejs:incomplete_aggregated_brass_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )
         ],
@@ -525,7 +525,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_copper_mechanism',
                 [
                     'kubejs:incomplete_aggregated_copper_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
             create.deploying(
@@ -539,7 +539,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_copper_mechanism',
                 [
                     'kubejs:incomplete_aggregated_copper_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
             create.deploying(
@@ -553,14 +553,14 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_copper_mechanism',
                 [
                     'kubejs:incomplete_aggregated_copper_mechanism',
-                    Fluid.of('kubejs:assembly_molten_copper', 25)
+                    Fluid.of('kubejs:aggregated_molten_copper', 25)
                 ]
             ),
             create.filling(
                 'kubejs:incomplete_aggregated_copper_mechanism',
                 [
                     'kubejs:incomplete_aggregated_copper_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )
         ],
@@ -576,7 +576,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_stone_mechanism',
                 [
                     'kubejs:incomplete_aggregated_stone_mechanism',
-                    'kubejs:assembly_block'
+                    'kubejs:mineral_aggregate_block'
                 ]
             ),
             create.deploying(
@@ -590,7 +590,7 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_stone_mechanism',
                 [
                     'kubejs:incomplete_aggregated_stone_mechanism',
-                    Fluid.of('kubejs:heat_lava', 250)
+                    Fluid.of('kubejs:high_temperature_magma', 250)
                 ]
             ),
             create.deploying(
@@ -604,14 +604,14 @@ ServerEvents.recipes(event => {
                 'kubejs:incomplete_aggregated_stone_mechanism',
                 [
                     'kubejs:incomplete_aggregated_stone_mechanism',
-                    Fluid.of('kubejs:assembly_molten_stone', 25)
+                    Fluid.of('kubejs:aggregated_molten_stone', 25)
                 ]
             ),
             create.filling(
                 'kubejs:incomplete_aggregated_stone_mechanism',
                 [
                     'kubejs:incomplete_aggregated_stone_mechanism',
-                    Fluid.of('kubejs:refrigerant', 1000)
+                    Fluid.of('kubejs:coolant', 1000)
                 ]
             )
         ],
